@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>SVMXA360__Resolution__c</name>
+    <picklistValues>
+        <masterLabel>Reconfigured Settings</masterLabel>
+        <translation>Configuración reconfigurada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replaced Hardware</masterLabel>
+        <translation>Hardware reemplazado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Reboot</masterLabel>
+        <translation>Reinicio del sistema</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgraded Firmware</masterLabel>
+        <translation>Firmware actualizado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgraded Software</masterLabel>
+        <translation>Software actualizado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Training</masterLabel>
+        <translation>Formación de usuario</translation>
+    </picklistValues>
+</CustomFieldTranslation>

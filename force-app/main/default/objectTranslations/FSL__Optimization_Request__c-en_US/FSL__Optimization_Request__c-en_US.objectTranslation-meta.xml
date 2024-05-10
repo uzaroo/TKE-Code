@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Optimization Request Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label></label>
+        <name>FSL__Related_Service_Territory</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label></label>
+        <name>FSL__Related_Service_Territory_Member</name>
+    </sharingReasons>
+</CustomObjectTranslation>

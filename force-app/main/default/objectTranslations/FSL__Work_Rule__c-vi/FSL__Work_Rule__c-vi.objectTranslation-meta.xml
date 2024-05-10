@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quy Tắc Công Việc</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <layouts>
+        <layout>Match Boolean (Service) Layout</layout>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Match Crew Size</layout>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Match Fields (Service) Layout</layout>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Match Skills</layout>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maximum Travel From Homebase Layout</layout>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Các trường</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Thông Tin Hệ Thống</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Resource Availability Layout</layout>
+        <sections>
+            <label>Nâng cao</label>
+            <section>Advanced</section>
+        </sections>
+        <sections>
+            <label>Lịch Giờ Nghỉ</label>
+            <section>Break Schedule</section>
+        </sections>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Thời Gian Di Chuyển (Trong chi phí tài nguyên)</label>
+            <section>Travel Time (At the expense of the resource)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Time Rule Layout</layout>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Rules (Service) Layout</layout>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Working Territories</layout>
+        <sections>
+            <label>Nâng cao</label>
+            <section>Advanced</section>
+        </sections>
+        <sections>
+            <label>Liên Kết Tùy Chỉnh</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Tên Quy Tắc Công Việc</nameFieldLabel>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Capacity_Limit_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Count_Rule</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Enhanced_Match_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Excluded_Resources_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Field_Working_Locations</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Boolean_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Crew_Size_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Fields_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Location_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Skills_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Max_Travel_From_Home_To_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Required_Resources_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Service_Visiting_Hours</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__TimeSlot_Designated_Work</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Time_Rule_Service</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Check_time_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Greater_than_zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Maximum_Travel_Must_Be_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Minimum_Gap_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Start_Of_Day_Time_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Time_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

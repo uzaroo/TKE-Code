@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>SVMXA360__Symptom__c</name>
+    <picklistValues>
+        <masterLabel>Error Code 0001</masterLabel>
+        <translation>Código de error 0001</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error Code 0002</masterLabel>
+        <translation>Código de error 0002</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error Code 0003</masterLabel>
+        <translation>Código de error 0003</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error Code 0004</masterLabel>
+        <translation>Código de error 0004</translation>
+    </picklistValues>
+</CustomFieldTranslation>

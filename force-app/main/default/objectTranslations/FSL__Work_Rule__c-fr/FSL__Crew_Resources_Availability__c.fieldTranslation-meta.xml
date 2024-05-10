@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Une fois l’option sélectionnée, comparez le champ Taille d’équipe minimale de l’ordre d’exécution ou l’élément d’ordre d’exécution aux Membres d’équipe d’assistance actuellement disponibles. 
+Sinon, comparez-le au champ Taille de l’équipe d’assistance.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

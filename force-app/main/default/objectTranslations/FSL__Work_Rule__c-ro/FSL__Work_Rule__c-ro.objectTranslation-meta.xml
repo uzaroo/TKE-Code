@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Regula de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Regulă de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Regulile de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Reguli de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Regulii de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Regulii de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Regulilor de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Regulilor de lucru</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Match Boolean (Service) Layout</layout>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Match Crew Size</layout>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Match Fields (Service) Layout</layout>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Match Skills</layout>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Maximum Travel From Homebase Layout</layout>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Câmpuri</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Informații despre sistem</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Resource Availability Layout</layout>
+        <sections>
+            <label>Avansat</label>
+            <section>Advanced</section>
+        </sections>
+        <sections>
+            <label>Program pauze</label>
+            <section>Break Schedule</section>
+        </sections>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Timp de deplasare (pe cheltuiala resursei)</label>
+            <section>Travel Time (At the expense of the resource)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Time Rule Layout</layout>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Rules (Service) Layout</layout>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Working Territories</layout>
+        <sections>
+            <label>Avansat</label>
+            <section>Advanced</section>
+        </sections>
+        <sections>
+            <label>Linkuri personalizate</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nume regulă de lucru</nameFieldLabel>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Capacity_Limit_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Count_Rule</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Enhanced_Match_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Excluded_Resources_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Field_Working_Locations</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Boolean_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Crew_Size_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Fields_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Location_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Match_Skills_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Max_Travel_From_Home_To_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Required_Resources_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Service_Visiting_Hours</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__TimeSlot_Designated_Work</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Time_Rule_Service</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Check_time_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Greater_than_zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Maximum_Travel_Must_Be_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Minimum_Gap_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Start_Of_Day_Time_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Time_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

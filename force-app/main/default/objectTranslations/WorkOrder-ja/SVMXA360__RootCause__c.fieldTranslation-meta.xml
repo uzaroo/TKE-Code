@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>SVMXA360__RootCause__c</name>
+    <picklistValues>
+        <masterLabel>Firmware Failure</masterLabel>
+        <translation>ファームウェアの障害</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware Failure</masterLabel>
+        <translation>ハードウェアの障害</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Problem Found</masterLabel>
+        <translation>問題は見つかりませんでした</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Failure</masterLabel>
+        <translation>ソフトウェア障害</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Issue</masterLabel>
+        <translation>ユーザーの問題</translation>
+    </picklistValues>
+</CustomFieldTranslation>

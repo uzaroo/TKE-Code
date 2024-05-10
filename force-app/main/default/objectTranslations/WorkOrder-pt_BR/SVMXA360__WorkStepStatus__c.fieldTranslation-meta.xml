@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>SVMXA360__WorkStepStatus__c</name>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation>Concluído</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End Current Step</masterLabel>
+        <translation>Fim da etapa atual</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Next Step</masterLabel>
+        <translation>Iniciar próxima etapa</translation>
+    </picklistValues>
+</CustomFieldTranslation>

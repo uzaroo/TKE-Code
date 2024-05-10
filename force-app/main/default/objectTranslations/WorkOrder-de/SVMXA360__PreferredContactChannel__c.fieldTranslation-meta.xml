@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>SVMXA360__PreferredContactChannel__c</name>
+    <picklistValues>
+        <masterLabel>Phone</masterLabel>
+        <translation>Telefon</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Text</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eMail</masterLabel>
+        <translation>E-Mail</translation>
+    </picklistValues>
+</CustomFieldTranslation>

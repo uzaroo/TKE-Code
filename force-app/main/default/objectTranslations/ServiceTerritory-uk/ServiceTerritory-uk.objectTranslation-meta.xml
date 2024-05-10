@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Address_must_be_set_if_Type_is_Office</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SFS_Non_Admin_add_edit_Op_Hours_on_ST</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validate_Parent_Territory_not_set</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validate_if_Parent_Territory_is_set</name>
+    </validationRules>
+</CustomObjectTranslation>

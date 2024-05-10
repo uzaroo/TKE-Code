@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndustriesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableAIAccelerator>false</enableAIAccelerator>
+    <enableAccountScoreEnabled>false</enableAccountScoreEnabled>
+    <enableActionableList>false</enableActionableList>
+    <enableCriteriaBasedSearchAndFilter>false</enableCriteriaBasedSearchAndFilter>
+    <enableDiscoveryFrameworkMetadata>false</enableDiscoveryFrameworkMetadata>
+    <enableEnhancedQuestionCreation>true</enableEnhancedQuestionCreation>
+    <enableEpcDeleteAccess>false</enableEpcDeleteAccess>
+    <enableGroupMembershipPref>false</enableGroupMembershipPref>
+    <enableIndustriesAssessment>false</enableIndustriesAssessment>
+    <enableInteractionRoleHierarchy>false</enableInteractionRoleHierarchy>
+    <enableInteractionSummaryPref>false</enableInteractionSummaryPref>
+    <enableInteractionSummaryRoleHierarchy>false</enableInteractionSummaryRoleHierarchy>
+    <enableOutcomes>false</enableOutcomes>
+    <enableScoringFrameworkCRMAPref>false</enableScoringFrameworkCRMAPref>
+    <enableScoringFrameworkOrgPref>false</enableScoringFrameworkOrgPref>
+    <enableSmartTags>false</enableSmartTags>
+    <enableTimelinePref>false</enableTimelinePref>
+    <enableVisitInventoryEnabled>false</enableVisitInventoryEnabled>
+    <rlaEditIfAccHasEdit>false</rlaEditIfAccHasEdit>
+</IndustriesSettings>

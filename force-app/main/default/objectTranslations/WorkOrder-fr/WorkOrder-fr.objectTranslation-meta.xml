@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>FSL__Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>Depot Work Order Layout - A360</layout>
+        <sections>
+            <label>Informations sur l&apos;actif</label>
+            <section>Asset Information</section>
+        </sections>
+        <sections>
+            <label>Fermeture</label>
+            <section>Closure</section>
+        </sections>
+        <sections>
+            <label>Informations sur la réparation en dépôt</label>
+            <section>Depot Repair Information</section>
+        </sections>
+        <sections>
+            <label>Droit</label>
+            <section>Entitlement</section>
+        </sections>
+        <sections>
+            <label>Informations sur l&apos;ordre de travail associé</label>
+            <section>Related Work Order Information</section>
+        </sections>
+        <sections>
+            <label>Informations sur les prospects</label>
+            <section>Sales Lead Information</section>
+        </sections>
+        <sections>
+            <label>Position du service</label>
+            <section>Service Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FSL Work Order Layout</layout>
+        <sections>
+            <label>Adresse</label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SFS_FSL Work Order Layout</layout>
+        <sections>
+            <label>Adresse</label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Layout - A360</layout>
+        <sections>
+            <label>Informations sur l&apos;actif</label>
+            <section>Asset Information</section>
+        </sections>
+        <sections>
+            <label>Fermeture</label>
+            <section>Closure</section>
+        </sections>
+        <sections>
+            <label>Droit</label>
+            <section>Entitlement</section>
+        </sections>
+        <sections>
+            <label>Informations sur l&apos;ordre de travail associé</label>
+            <section>Related Work Order Information</section>
+        </sections>
+        <sections>
+            <label>Informations sur les prospects</label>
+            <section>Sales Lead Information</section>
+        </sections>
+        <sections>
+            <label>Position du service</label>
+            <section>Service Location</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SVMXA360__Depot</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SVMXA360__Estimate</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SVMXA360__Field</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SVMXA360__Remote</name>
+    </recordTypes>
+</CustomObjectTranslation>

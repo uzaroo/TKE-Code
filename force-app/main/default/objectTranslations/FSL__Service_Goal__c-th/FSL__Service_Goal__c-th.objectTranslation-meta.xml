@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>เป้าหมายของบริการ</value>
+    </caseValues>
+    <layouts>
+        <layout>ASAP Layout</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Minimize Overtime</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Minimize Travel Layout</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Preferred Resource</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Resource Priority Layout</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์ความสำคัญของทรัพยากร</label>
+            <section>Resource Priority Field</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Same Site Layout</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Skill Level</layout>
+        <sections>
+            <label>ลิงก์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ฟิลด์</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ชื่อเป้าหมายบริการ</nameFieldLabel>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Asap</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Custom_Logic</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Minimize_Overtime</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Minimize_Travel</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_PreferredEngineer</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Resource_Priority</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Same_Site</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Skill_Level</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>FSL__Resource_Priority_Not_Null</name>
+    </validationRules>
+</CustomObjectTranslation>
