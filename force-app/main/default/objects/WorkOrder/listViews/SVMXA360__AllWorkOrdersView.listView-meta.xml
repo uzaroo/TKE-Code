@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AllWorkOrdersView</fullName>
+    <columns>Name</columns>
+    <columns>RecordType</columns>
+    <columns>Subject</columns>
+    <columns>Account</columns>
+    <columns>Priority</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <label>A360 - All Work Orders View</label>
+</ListView>

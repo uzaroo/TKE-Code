@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__A360_CLI_Start_End_date_integrity_check</fullName>
+    <active>true</active>
+    <description>On Entitled Services, if the Contract Line Item exists then start and end date should be within the start and end date of the Contract Line Item.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(ContractLineItemId)), 
+    OR(
+        AND(
+            NOT(ISBLANK(StartDate)),
+            NOT(ISBLANK(ContractLineItem.StartDate)),
+            StartDate &lt;  ContractLineItem.StartDate
+        ),
+        AND(
+            NOT(ISBLANK(EndDate)),
+            NOT(ISBLANK(ContractLineItem.EndDate)),
+            EndDate &gt; ContractLineItem.EndDate
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>The start and end date should be within the start and end date of the Contract Line</errorMessage>
+</ValidationRule>

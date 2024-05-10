@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__OptimalLifeExpectancy__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used in calculating asset age score in analytics</description>
+    <externalId>false</externalId>
+    <label>Optimal Life Expectancy</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

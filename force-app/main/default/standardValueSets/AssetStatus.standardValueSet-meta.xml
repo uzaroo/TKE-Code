@@ -26,4 +26,14 @@
         <default>false</default>
         <label>Obsolete</label>
     </standardValue>
+    <standardValue>
+        <fullName>Deinstalled</fullName>
+        <default>false</default>
+        <label>Deinstalled</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufactured</fullName>
+        <default>false</default>
+        <label>Manufactured</label>
+    </standardValue>
 </StandardValueSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AssetCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>Status</fields>
+    <fields>SerialNumber</fields>
+    <fields>AccountId</fields>
+    <fields>LocationId</fields>
+    <fields>RecordTypeId</fields>
+    <label>Asset Compact Layout - A360</label>
+</CompactLayout>

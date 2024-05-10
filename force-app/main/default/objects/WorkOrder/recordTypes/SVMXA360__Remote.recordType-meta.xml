@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Remote</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SVMXA360__WorkOrderCompactLayout</compactLayoutAssignment>
+    <description>Remote Triage Work Order</description>
+    <label>Remote</label>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SVMXA360__BillingType__c</picklist>
+        <values>
+            <fullName>Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SVMXA360__PreferredContactChannel__c</picklist>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eMail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SVMXA360__PurposeOfVisit__c</picklist>
+        <values>
+            <fullName>Sample Value 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Value 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SVMXA360__Resolution__c</picklist>
+        <values>
+            <fullName>Reconfigured Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replaced Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Reboot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgraded Firmware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgraded Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SVMXA360__RootCause__c</picklist>
+        <values>
+            <fullName>Firmware Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Problem Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SVMXA360__Symptom__c</picklist>
+        <values>
+            <fullName>Error Code 0001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Code 0002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Code 0003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Code 0004</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SVMXA360__WorkStepStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End Current Step</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start Next Step</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

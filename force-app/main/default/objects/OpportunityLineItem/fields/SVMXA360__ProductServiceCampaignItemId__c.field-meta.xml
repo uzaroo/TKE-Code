@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProductServiceCampaignItemId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Product Service Campaign Item Line related to the Opportunity Product record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Product Service Campaign Item Line related to the Opportunity Product record.</inlineHelpText>
+    <label>Product Service Campaign Item</label>
+    <referenceTo>ProductServiceCampaignItem</referenceTo>
+    <relationshipLabel>Opportunity Product</relationshipLabel>
+    <relationshipName>Opportunity_Product</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

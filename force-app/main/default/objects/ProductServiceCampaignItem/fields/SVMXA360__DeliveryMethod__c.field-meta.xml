@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__DeliveryMethod__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Delivery Method picklist indicates what manner of output record (if any) will be produced from the PSCI Result Line. This value defaults to the “Default Delivery Method” value indicated in the PSC header record for the PSCI Line, but may be updated manually as part of managing Result Lines.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Delivery Method picklist indicates what manner of output record (if any) will be produced from the PSCI Result Line. This value defaults to the “Default Delivery Method” value indicated in the PSC header record for the PSCI Line, but may be updated manually as part of managing Result Lines.</inlineHelpText>
+    <label>Delivery Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__DeliveryMethod</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExpectedCost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This roll-up of the Expected Cost in Contract Line Item.</description>
+    <externalId>false</externalId>
+    <label>Expected Cost</label>
+    <summarizedField>ContractLineItem.SVMXA360__ExpectedCost__c</summarizedField>
+    <summaryForeignKey>ContractLineItem.ServiceContractId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

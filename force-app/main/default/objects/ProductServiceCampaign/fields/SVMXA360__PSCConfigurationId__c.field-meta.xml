@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__PSCConfigurationId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The PSC Configuration Template associated to the PSC Record. The value in this field informs mapping behaviour when Delivery Output Records are generated from the PSCI Result Lines.</description>
+    <externalId>false</externalId>
+    <label>PSC Configuration</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <filterItems>
+            <field>SVMXA360__CONF_PSCConfiguration__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>PSC_Configuration</value>
+        </filterItems>
+        <filterItems>
+            <field>SVMXA360__CONF_PSCConfiguration__c.SVMXA360__Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>SVMXA360__CONF_PSCConfiguration__c</referenceTo>
+    <relationshipLabel>Product Service Campaigns</relationshipLabel>
+    <relationshipName>Product_Service_Campaigns</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

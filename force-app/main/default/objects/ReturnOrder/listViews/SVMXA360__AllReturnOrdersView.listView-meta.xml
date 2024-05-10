@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AllReturnOrdersView</fullName>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>ProductRequest</columns>
+    <columns>Contact</columns>
+    <columns>SVMXA360__WorkOrderId__c</columns>
+    <columns>Case</columns>
+    <columns>Account</columns>
+    <columns>SourceLocation</columns>
+    <columns>DestinationLocation</columns>
+    <columns>ReturnedBy</columns>
+    <filterScope>Everything</filterScope>
+    <label>A360 - All Return Orders View</label>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__LineType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to specify the type of Work Order line item</description>
+    <externalId>false</externalId>
+    <label>Line Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__LineType</valueSetName>
+    </valueSet>
+</CustomField>

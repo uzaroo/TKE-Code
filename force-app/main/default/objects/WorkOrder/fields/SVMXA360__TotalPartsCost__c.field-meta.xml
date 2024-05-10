@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TotalPartsCost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Roll up of Total Cost field of Product Consumed records.</description>
+    <externalId>false</externalId>
+    <label>Total Parts Cost</label>
+    <summarizedField>ProductConsumed.SVMXA360__TotalCost__c</summarizedField>
+    <summaryForeignKey>ProductConsumed.WorkOrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

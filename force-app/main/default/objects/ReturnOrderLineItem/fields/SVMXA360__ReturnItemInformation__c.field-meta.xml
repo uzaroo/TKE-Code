@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ReturnItemInformation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Additional return information specific to the returned item. Used by the receiving/depot repair processes to indicate if a returned item is repairable.</description>
+    <externalId>false</externalId>
+    <label>Return Item Information</label>
+    <length>32000</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_if_Parent_Territory_is_set</fullName>
+    <active>true</active>
+    <description>Validate that any Service Territory of type Branch, Office, and Area must have a Parent Territory populated</description>
+    <errorConditionFormula>IF( AND( OR( ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Branch&apos;), ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Area&apos;), ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Office&apos;) ),  ISBLANK( ParentTerritory.Id )  ) , true, false)</errorConditionFormula>
+    <errorMessage>Parent Territory must be set for Service Territory of type Branch, Office, and Area</errorMessage>
+</ValidationRule>

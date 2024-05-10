@@ -26,4 +26,14 @@
         <default>false</default>
         <label>Closed</label>
     </standardValue>
+    <standardValue>
+        <fullName>Received</fullName>
+        <default>false</default>
+        <label>Received</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </standardValue>
 </StandardValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__EstimateCompactLayout</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>OwnerId</fields>
+    <fields>ParentWorkOrderId</fields>
+    <fields>WorkOrderNumber</fields>
+    <fields>Status</fields>
+    <label>A360 - Estimate Compact Layout</label>
+</CompactLayout>

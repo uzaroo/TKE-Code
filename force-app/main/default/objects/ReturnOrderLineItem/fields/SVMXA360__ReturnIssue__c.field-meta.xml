@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ReturnIssue__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates an issue found against the returned item upon receiving.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates issue occurred with the returned part</inlineHelpText>
+    <label>Return Issue</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Missing Subcomponents</fullName>
+                <default>false</default>
+                <label>Missing Subcomponents</label>
+            </value>
+            <value>
+                <fullName>Wrong Item</fullName>
+                <default>false</default>
+                <label>Wrong Item</label>
+            </value>
+            <value>
+                <fullName>Wrong Quantity</fullName>
+                <default>false</default>
+                <label>Wrong Quantity</label>
+            </value>
+            <value>
+                <fullName>Shipping Damage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shipping Damage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

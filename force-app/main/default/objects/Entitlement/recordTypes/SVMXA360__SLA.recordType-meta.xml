@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SLA</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SVMXA360__EntitledSLACompactLayout</compactLayoutAssignment>
+    <description>To capture Entitlement Process by Case or Work Order for the Entitled Service</description>
+    <label>SLA</label>
+    <picklistValues>
+        <picklist>SVMXA360__ServiceCountType__c</picklist>
+        <values>
+            <fullName>Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visits</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Phone Support</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Web Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

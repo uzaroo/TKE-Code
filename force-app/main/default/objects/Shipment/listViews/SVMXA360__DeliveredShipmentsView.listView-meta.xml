@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__DeliveredShipmentsView</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>SourceLocation</columns>
+    <columns>DestinationLocation</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Delivered</value>
+    </filters>
+    <label>Delivered Shipments View - A360</label>
+</ListView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Resolution__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of fix that was applied to resolve the problem.</description>
+    <externalId>false</externalId>
+    <label>Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reconfigured Settings</fullName>
+                <default>false</default>
+                <label>Reconfigured Settings</label>
+            </value>
+            <value>
+                <fullName>Replaced Hardware</fullName>
+                <default>false</default>
+                <label>Replaced Hardware</label>
+            </value>
+            <value>
+                <fullName>System Reboot</fullName>
+                <default>false</default>
+                <label>System Reboot</label>
+            </value>
+            <value>
+                <fullName>Upgraded Firmware</fullName>
+                <default>false</default>
+                <label>Upgraded Firmware</label>
+            </value>
+            <value>
+                <fullName>Upgraded Software</fullName>
+                <default>false</default>
+                <label>Upgraded Software</label>
+            </value>
+            <value>
+                <fullName>User Training</fullName>
+                <default>false</default>
+                <label>User Training</label>
+            </value>
+            <value>
+                <fullName>Sample Value1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sample Value1</label>
+            </value>
+            <value>
+                <fullName>Sample Value2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sample Value2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -148,6 +148,7 @@
         <lookupPhoneDialogsAdditionalFields>Case</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>SourceLocation</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ReturnedBy</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SVMXA360__ContactPhone__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>Account</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Contact</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ProductRequest</searchResultsAdditionalFields>

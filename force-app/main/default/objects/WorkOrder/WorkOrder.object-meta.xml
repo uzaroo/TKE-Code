@@ -143,6 +143,8 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
         <customTabListAdditionalFields>Subject</customTabListAdditionalFields>
         <customTabListAdditionalFields>Account</customTabListAdditionalFields>
@@ -156,6 +158,7 @@
         <lookupPhoneDialogsAdditionalFields>Account</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Priority</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Status</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SVMXA360__ContactPhone__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>Subject</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Account</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Priority</searchResultsAdditionalFields>

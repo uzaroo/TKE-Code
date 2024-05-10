@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__GPSCoordinates__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is to store current Asset’s location.</description>
+    <displayLocationInDecimal>false</displayLocationInDecimal>
+    <externalId>false</externalId>
+    <label>Asset GPS coordinates</label>
+    <required>false</required>
+    <scale>6</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Location</type>
+</CustomField>

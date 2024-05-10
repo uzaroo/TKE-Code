@@ -16,4 +16,9 @@
         <default>false</default>
         <label>Received</label>
     </standardValue>
+    <standardValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+    </standardValue>
 </StandardValueSet>

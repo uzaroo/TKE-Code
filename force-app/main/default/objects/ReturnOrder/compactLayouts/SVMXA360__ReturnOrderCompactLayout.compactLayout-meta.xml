@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ReturnOrderCompactLayout</fullName>
+    <fields>Status</fields>
+    <fields>SVMXA360__WorkOrderId__c</fields>
+    <fields>DestinationLocationId</fields>
+    <label>Return Order Compact Layout - A360</label>
+</CompactLayout>

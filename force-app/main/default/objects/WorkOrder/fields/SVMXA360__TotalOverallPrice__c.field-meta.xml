@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TotalOverallPrice__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates the sum of Total Parts Price, Total Price and Total Expense Price.</description>
+    <externalId>false</externalId>
+    <formula>SVMXA360__TotalPartsPrice__c  +  TotalPrice  +  SVMXA360__TotalExpensePrice__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Overall Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

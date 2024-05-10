@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExpectedCost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates expected cost for the Contract Line.</description>
+    <externalId>false</externalId>
+    <label>Expected Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

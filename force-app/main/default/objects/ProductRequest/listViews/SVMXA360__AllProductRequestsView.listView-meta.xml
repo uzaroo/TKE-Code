@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AllProductRequestsView</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Case</columns>
+    <columns>WorkOrder</columns>
+    <columns>SourceLocation</columns>
+    <columns>DestinationLocation</columns>
+    <columns>Status</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <label>A360 - All Product Requests View</label>
+</ListView>

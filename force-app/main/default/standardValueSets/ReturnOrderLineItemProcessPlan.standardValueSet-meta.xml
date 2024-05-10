@@ -21,4 +21,19 @@
         <default>false</default>
         <label>Restock</label>
     </standardValue>
+    <standardValue>
+        <fullName>Supplier Warranty</fullName>
+        <default>false</default>
+        <label>Supplier Warranty</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Receive From Supplier</fullName>
+        <default>false</default>
+        <label>Receive From Supplier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reject</fullName>
+        <default>false</default>
+        <label>Reject</label>
+    </standardValue>
 </StandardValueSet>

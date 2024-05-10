@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__NotifyPSCOwner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, this field will ensure that an email notification is sent to the owner of the PSC Record, both when the PSC Search is finished running and when Delivery Generation is complete.</description>
+    <externalId>false</externalId>
+    <label>Send Email Notification</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

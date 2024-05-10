@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__RootCause__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Root cause of the failure.</description>
+    <externalId>false</externalId>
+    <label>Root Cause</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Firmware Failure</fullName>
+                <default>false</default>
+                <label>Firmware Failure</label>
+            </value>
+            <value>
+                <fullName>Hardware Failure</fullName>
+                <default>false</default>
+                <label>Hardware Failure</label>
+            </value>
+            <value>
+                <fullName>No Problem Found</fullName>
+                <default>false</default>
+                <label>No Problem Found</label>
+            </value>
+            <value>
+                <fullName>Software Failure</fullName>
+                <default>false</default>
+                <label>Software Failure</label>
+            </value>
+            <value>
+                <fullName>User Issue</fullName>
+                <default>false</default>
+                <label>User Issue</label>
+            </value>
+            <value>
+                <fullName>Sample Value1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sample Value1</label>
+            </value>
+            <value>
+                <fullName>Sample Value2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sample Value2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

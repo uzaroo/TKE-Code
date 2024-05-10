@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__WorkStepStatus__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Work Step Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Start Next Step</fullName>
+                <default>true</default>
+                <label>Start Next Step</label>
+            </value>
+            <value>
+                <fullName>End Current Step</fullName>
+                <default>false</default>
+                <label>End Current Step</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

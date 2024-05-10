@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__DepotCompactLayout</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>OwnerId</fields>
+    <fields>CaseId</fields>
+    <fields>Status</fields>
+    <fields>SVMXA360__CurrentWorkStep__c</fields>
+    <fields>SVMXA360__NextWorkStep__c</fields>
+    <fields>SVMXA360__WorkStepStatus__c</fields>
+    <label>A360 - Depot Compact Layout</label>
+</CompactLayout>

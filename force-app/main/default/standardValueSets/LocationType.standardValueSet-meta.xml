@@ -46,4 +46,9 @@
         <default>false</default>
         <label>Virtual</label>
     </standardValue>
+    <standardValue>
+        <fullName>Depot</fullName>
+        <default>false</default>
+        <label>Depot</label>
+    </standardValue>
 </StandardValueSet>

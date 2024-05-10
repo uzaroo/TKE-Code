@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AllCustomerAssetsView</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ASSET.INSTALL_DATE</columns>
+    <columns>ASSET.STATUS</columns>
+    <columns>SVMXA360__AssetTag__c</columns>
+    <columns>CONTACT.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.SVMXA360__CustomerOwned</value>
+    </filters>
+    <label>A360 - All Customer Assets View</label>
+</ListView>

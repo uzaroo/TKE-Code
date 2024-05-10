@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_must_be_set_if_Type_is_Office</fullName>
+    <active>true</active>
+    <description>Address must be set if Type = Office</description>
+    <errorConditionFormula>IF( AND( ISPICKVAL(SFS_Service_Territory_Type__c ,&apos;Office&apos;),  ISBLANK(Address) ),true, false)</errorConditionFormula>
+    <errorMessage>Address must be set if Type = Office</errorMessage>
+</ValidationRule>

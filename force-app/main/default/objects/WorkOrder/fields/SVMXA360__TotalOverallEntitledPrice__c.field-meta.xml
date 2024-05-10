@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TotalOverallEntitledPrice__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field sums up the Total Entitled Price field from WOLI, Product Consumed and Expense.</description>
+    <externalId>false</externalId>
+    <label>Total Overall Entitled Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

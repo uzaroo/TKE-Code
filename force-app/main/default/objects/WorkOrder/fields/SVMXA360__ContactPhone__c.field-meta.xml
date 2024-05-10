@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ContactPhone__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Primary phone number for Work Order Contact.</description>
+    <externalId>false</externalId>
+    <label>Contact Phone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

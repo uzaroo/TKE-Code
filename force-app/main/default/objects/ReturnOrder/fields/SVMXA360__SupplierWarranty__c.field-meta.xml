@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SupplierWarranty__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field when true indicates that there are supplier Warranties available.</description>
+    <externalId>false</externalId>
+    <label>Supplier Warranty</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

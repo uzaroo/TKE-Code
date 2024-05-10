@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__PackingInstructions__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Used during the returns process to indicate to the customer how the product should be packed/handled for proper return.</description>
+    <externalId>false</externalId>
+    <label>Packing/Handling Instructions</label>
+    <length>32000</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

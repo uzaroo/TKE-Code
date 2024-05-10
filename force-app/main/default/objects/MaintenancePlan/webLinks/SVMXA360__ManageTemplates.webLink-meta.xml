@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ManageTemplates</fullName>
+    <availability>online</availability>
+    <description>This button will help us to navigate to Maintenance Plan Template list view.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Manage Templates</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/lightning/o/SVMXA360__MaintenancePlanTemplate__c/list</url>
+</WebLink>

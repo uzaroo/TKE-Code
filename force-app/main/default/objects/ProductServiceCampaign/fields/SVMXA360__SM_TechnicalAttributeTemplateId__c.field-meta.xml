@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SM_TechnicalAttributeTemplateId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A lookup to the Technical Attribute Templates for Asset Technical Attributes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A lookup to the Technical Attribute Templates for Asset Technical Attributes</inlineHelpText>
+    <label>Technical Attribute Template</label>
+    <referenceTo>SVMXA360__SM_TA_Template__c</referenceTo>
+    <relationshipLabel>Product Service Campaigns</relationshipLabel>
+    <relationshipName>Product_Service_Campaigns</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

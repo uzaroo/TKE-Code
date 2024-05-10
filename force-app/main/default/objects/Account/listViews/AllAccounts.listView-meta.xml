@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>AllAccounts</fullName>
-    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
     <columns>ACCOUNT.ADDRESS1_STATE</columns>
-    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>ACCOUNT.OWNERSHIP</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
     <columns>ACCOUNT.TYPE</columns>
     <columns>CORE.USERS.FIRST_NAME</columns>
     <columns>CORE.USERS.LAST_NAME</columns>
