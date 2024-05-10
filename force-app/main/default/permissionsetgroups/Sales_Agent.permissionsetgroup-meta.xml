@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This will be used for Sales Agent  persona</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Sales Agent</label>
+    <permissionSets>Sales_Baseline</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SFS_Add_Edit_Op_Hours_on_ST</name>
+    </customPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SFS Field Service System Admin Permission Set</label>
+</PermissionSet>

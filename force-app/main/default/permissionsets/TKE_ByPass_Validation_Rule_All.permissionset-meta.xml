@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>TKE_Bypass_Validation</name>
+    </customPermissions>
+    <description>This will be used to bypass all validation rules</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>TKE ByPass Validation Rule All</label>
+</PermissionSet>

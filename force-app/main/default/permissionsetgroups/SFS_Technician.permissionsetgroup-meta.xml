@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SFS Technician</label>
+    <permissionSets>FSL_Mobile_License</permissionSets>
+    <permissionSets>FSL_Resource_License</permissionSets>
+    <permissionSets>FSL_Resource_Permissions</permissionSets>
+    <permissionSets>SFS_Base_Operations_Permission_Set</permissionSets>
+    <permissionSets>SFS_Technician_Permission_Set</permissionSets>
+    <permissionSets>force__FieldServiceMobileStandardPermSet</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
