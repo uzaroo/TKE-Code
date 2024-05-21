@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Service Objective</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Service Goal Name</label>
         <type>Text</type>
     </nameField>

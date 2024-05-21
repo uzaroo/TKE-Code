@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ReferenceNumber__c</fullName>
     <deprecated>false</deprecated>
     <description>Sales Order or PO to cover the cost of the requested service</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Reference Number</label>
     <length>255</length>

@@ -22,6 +22,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>AppointmentNumber</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>FSL__Appointment_Grade__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

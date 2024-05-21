@@ -3,6 +3,7 @@
     <fullName>SVMXA360__WarrantyEngineNotes__c</fullName>
     <deprecated>false</deprecated>
     <description>Stores the error message that occurred during the automatic warranty creation.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Warranty Engine Notes</label>
     <length>32768</length>

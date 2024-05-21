@@ -3,6 +3,7 @@
     <fullName>SVMXA360__CompletedDate__c</fullName>
     <deprecated>false</deprecated>
     <description>The date on which the Work Order is completed.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Completed Date</label>
     <required>false</required>

@@ -3,6 +3,7 @@
     <fullName>SVMXA360__DepotLocationNotes__c</fullName>
     <deprecated>false</deprecated>
     <description>Information is used to find the returned item at the depot location.  For example, Aisle 13, Shelf J, Bin 2, etc.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Depot Location Notes</label>
     <length>255</length>

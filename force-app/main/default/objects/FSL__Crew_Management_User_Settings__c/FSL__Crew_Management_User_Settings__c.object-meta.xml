@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Crew Management User Settings</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Crew Management User Settings Name</label>
         <type>Text</type>
     </nameField>

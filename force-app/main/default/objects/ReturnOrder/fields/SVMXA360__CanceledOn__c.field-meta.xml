@@ -3,6 +3,7 @@
     <fullName>SVMXA360__CanceledOn__c</fullName>
     <deprecated>false</deprecated>
     <description>The date on which the Return Order is canceled.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Canceled On</label>
     <required>false</required>

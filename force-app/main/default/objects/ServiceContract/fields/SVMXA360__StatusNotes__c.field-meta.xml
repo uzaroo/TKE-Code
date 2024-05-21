@@ -3,6 +3,7 @@
     <fullName>SVMXA360__StatusNotes__c</fullName>
     <deprecated>false</deprecated>
     <description>This field is used to capture notes when the Contract status is updated.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>This field is used to capture notes when the Contract Availability Status is updated.</inlineHelpText>
     <label>Availability Status Notes</label>

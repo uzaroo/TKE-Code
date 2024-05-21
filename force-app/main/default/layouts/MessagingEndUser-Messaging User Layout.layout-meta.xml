@@ -15,7 +15,7 @@
                 <field>LeadId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>

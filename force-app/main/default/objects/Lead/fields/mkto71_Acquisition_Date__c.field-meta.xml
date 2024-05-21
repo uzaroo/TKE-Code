@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>mkto71_Acquisition_Date__c</fullName>
     <description>This will be used for Marketo</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Acquisition Date</label>
     <required>false</required>

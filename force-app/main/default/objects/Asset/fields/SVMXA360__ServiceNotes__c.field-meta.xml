@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ServiceNotes__c</fullName>
     <deprecated>false</deprecated>
     <description>Indicates additional service notes about the Asset.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Service Notes</label>
     <length>32768</length>

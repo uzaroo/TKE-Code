@@ -293,7 +293,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Legacy_id__c</field>
+            <field>SLS_Legacy_id__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SLS_Legacy_Source__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Legacy_ID__c</field>
             <table>Contact</table>
         </columns>
         <columns>

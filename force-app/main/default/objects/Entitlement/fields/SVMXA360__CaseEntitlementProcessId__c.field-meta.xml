@@ -3,6 +3,7 @@
     <fullName>SVMXA360__CaseEntitlementProcessId__c</fullName>
     <deprecated>false</deprecated>
     <description>Reference to Case Entitlement Process.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Case Entitlement Process</label>
     <length>20</length>

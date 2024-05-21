@@ -3,6 +3,7 @@
     <fullName>FSL__Utilization_Properties__c</fullName>
     <deprecated>false</deprecated>
     <description>Selected properties for calculating utilization</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Utilization Properties</label>
     <length>255</length>

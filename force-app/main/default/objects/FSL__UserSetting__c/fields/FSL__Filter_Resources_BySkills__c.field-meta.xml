@@ -3,6 +3,7 @@
     <fullName>FSL__Filter_Resources_BySkills__c</fullName>
     <deprecated>false</deprecated>
     <description>List of selected skills for filtering resources.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Resource Skills</label>
     <length>130000</length>

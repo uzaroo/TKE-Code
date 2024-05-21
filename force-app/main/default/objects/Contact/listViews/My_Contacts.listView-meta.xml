@@ -9,7 +9,6 @@
     <columns>CONTACT.EMAIL</columns>
     <columns>CORE.USERS.FIRST_NAME</columns>
     <columns>CORE.USERS.LAST_NAME</columns>
-    <columns>CORE.USERS.ALIAS</columns>
     <filterScope>Mine</filterScope>
     <label>My Contacts</label>
 </ListView>

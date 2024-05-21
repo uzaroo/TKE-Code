@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ReturnItemInformation__c</fullName>
     <deprecated>false</deprecated>
     <description>Additional return information specific to the returned item. Used by the receiving/depot repair processes to indicate if a returned item is repairable.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Return Item Information</label>
     <length>32000</length>

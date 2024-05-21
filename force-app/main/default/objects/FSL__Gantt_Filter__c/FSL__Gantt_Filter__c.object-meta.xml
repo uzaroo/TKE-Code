@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Gantt Filter</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Gantt Filter Name</label>
         <type>Text</type>
     </nameField>

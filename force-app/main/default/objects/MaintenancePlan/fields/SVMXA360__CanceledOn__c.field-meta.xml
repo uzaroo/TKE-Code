@@ -3,6 +3,7 @@
     <fullName>SVMXA360__CanceledOn__c</fullName>
     <deprecated>false</deprecated>
     <description>This field indicates the date on which this Maintenance Plan was canceled.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>This field indicates the date on which this Maintenance Plan was canceled.</inlineHelpText>
     <label>Canceled On</label>

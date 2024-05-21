@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Scheduling Policy</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Scheduling Policy Name</label>
         <type>Text</type>
     </nameField>

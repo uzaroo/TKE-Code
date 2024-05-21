@@ -3,6 +3,7 @@
     <fullName>FSL__Identifier__c</fullName>
     <caseSensitive>false</caseSensitive>
     <deprecated>false</deprecated>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Identifier</label>
     <length>255</length>

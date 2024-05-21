@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Gantt Palette</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Gantt Palette Name</label>
         <type>Text</type>
     </nameField>

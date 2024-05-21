@@ -3,6 +3,7 @@
     <fullName>FSL__FavoriteTerritories__c</fullName>
     <deprecated>false</deprecated>
     <description>List of ids of favorite territories</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Favorite Territories</label>
     <length>130000</length>

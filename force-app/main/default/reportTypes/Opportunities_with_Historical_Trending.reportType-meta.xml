@@ -201,6 +201,21 @@
             <field>Account.Id</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Line_Of_Business__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Type_Of_Sale__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Area__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>Opportunities</masterLabel>
     </sections>
     <sections>

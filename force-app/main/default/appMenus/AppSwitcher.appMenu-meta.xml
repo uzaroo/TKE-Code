@@ -132,4 +132,12 @@
         <name>SVMXA360__Asset_360_Console</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>TKE_One_Operations</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>standard__FlowsApp</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

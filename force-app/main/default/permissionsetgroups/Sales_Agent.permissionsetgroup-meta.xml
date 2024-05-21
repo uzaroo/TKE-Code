@@ -3,6 +3,6 @@
     <description>This will be used for Sales Agent  persona</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Sales Agent</label>
-    <permissionSets>Sales_Baseline</permissionSets>
+    <permissionSets>SLS_Baseline</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

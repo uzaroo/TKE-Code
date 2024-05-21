@@ -3,6 +3,6 @@
     <fullName>Validate_Parent_Territory_not_set</fullName>
     <active>true</active>
     <description>Validate that the Parent Territory is empty for Service Territories of Region type</description>
-    <errorConditionFormula>IF( AND(ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Region&apos;), NOT(ISBLANK( ParentTerritory.Id )) ) , true, false)</errorConditionFormula>
+    <errorConditionFormula>IF( AND(ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Region&apos;), NOT(ISBLANK( ParentTerritory.Id )), NOT( $Permission.TKE_Bypass_Validation ) ) , true, false)</errorConditionFormula>
     <errorMessage>Parent Territory must be empty for Region Type</errorMessage>
 </ValidationRule>

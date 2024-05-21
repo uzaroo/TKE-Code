@@ -6,9 +6,149 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>FSL__FieldService_Admin</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Inside_Sales</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>SVMXA360__Asset_360</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>SVMXA360__Asset_360_Admin</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>SVMXA360__Asset_360_Console</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Leader</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Operations</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Success_Manager</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>TKE_One_Operations</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AllTabSet</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AppLauncher</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Community</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ExpressionSetConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__FlowsApp</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__HVSConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__IndustriesEpc</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningBolt</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__LightningSalesConsole</application>
         <default>false</default>
         <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__OnlineSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ProgramManagementConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
     </applicationVisibilities>
     <custom>false</custom>
     <fieldPermissions>
@@ -32,9 +172,29 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Billing_Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Classification__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Customer_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Description</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.EBS_Customer_ID__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -50,6 +210,16 @@
         <editable>true</editable>
         <field>Account.Jigsaw</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Legacy_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Legacy_Source__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1317,21 +1487,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>CampaignInfluence.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>CampaignInfluence.Influence</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>CampaignInfluence.RevenueShare</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Case.AccountId</field>
         <readable>true</readable>
@@ -1612,6 +1767,136 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.CodeDescription</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.CodeSetKey</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.CodeSetType</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.EndDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.IsActive</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.IsCustomCode</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.IsPrimary</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.SourceSystem</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.StartDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSet.SystemVersion</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet10Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet11Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet12Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet13Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet14Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet15Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet1Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet2Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet3Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet4Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet5Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet6Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet7Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet8Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSet9Id</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CodeSetBundle.CodeSetBundleKey</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.AccountId</field>
         <readable>true</readable>
@@ -1633,7 +1918,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.BuyerAttributes</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.Department</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.DepartmentGroup</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1688,12 +1983,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Legacy_Source__c</field>
+        <field>Contact.Legacy_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Legacy_id__c</field>
+        <field>Contact.Legacy_Source__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1732,8 +2027,23 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.SLS_Legacy_Source__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.SLS_Legacy_id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Title</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.TitleType</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2064,136 +2374,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>DocumentRecipient.StatusReason</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.AlternateEmail</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.Availability</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.AvailabilityEndDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.AvailabilityStartDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.CurrentWellnessStatus</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.DateOfBirth</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.Email</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.EmployeeNumber</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.EmployeeStatus</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.EmploymentType</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.Gender</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.HomeAddress</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.HomePhone</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.InternalOrganizationUnitId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.JobProfile</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.ManagerId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.MiddleName</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.NameSuffix</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.OutOfOfficeMessage</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.PreferredFirstName</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.PreferredPronoun</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.StatusAsOf</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.StatusEndDate</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.UserId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.WorkPhone</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee.WorkerType</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2618,6 +2798,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>FSL__Crew_Management_User_Settings__c.FSL__SelectedSkills__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>FSL__Crew_Management_User_Settings__c.FSL__SkillsLogicOperator__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2954,6 +3139,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>FSL__Optimization_Request__c.FSL__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>FSL__Optimization_Request__c.FSL__Stay_Scheduled_Services_By_Boolean__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3808,6 +3998,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>FSL__UserSetting__c.FSL__Optimization_Request_Filter_Field__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>FSL__UserSetting__c.FSL__Resource_Filter__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4312,6 +4507,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Lead_Sub_Source__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.MobilePhone</field>
         <readable>true</readable>
@@ -4595,6 +4795,11 @@
         <editable>true</editable>
         <field>MessagingSession.CaseId</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MessagingSession.EndUserLanguage</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -5837,6 +6042,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>OrderItem.SubscriptionTerm</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>PersonLifeEvent.EventDescription</field>
         <readable>true</readable>
@@ -6153,6 +6363,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ProductAttributeDefinition.StepValue</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ProductAttributeDefinition.ValueDescription</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6249,6 +6464,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ProductClassificationAttr.Sequence</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ProductClassificationAttr.StepValue</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7393,8 +7613,43 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>SchedulingWorkspace.StartDate</field>
+        <field>SFS_Certification__c.SFS_LegacyID__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFS_Certification__c.SFS_LegacySource__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFS_ResourceCertification__c.SFS_EffectiveEndDate__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFS_ResourceCertification__c.SFS_EffectiveStartDate__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SFS_ResourceCertification__c.SFS_ExternalId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SLS_Datatable_Info__mdt.SLS_Columns__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SLS_Datatable_Info__mdt.SLS_Field_Api__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SchedulingWorkspace.StartDate</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7883,6 +8138,41 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>ServiceResource.SFS_Company_Phone_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.SFS_Legacy_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.SFS_Legacy_Source__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.SFS_Personal_Phone_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.SFS_Supervisor_s_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.SFS_X6_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.SFS_X8_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>ServiceResource.SVMXA360__FullyLoadedCost__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8157,9 +8447,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>ShipmentItem.ReturnOrderLineItemId</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -8713,6 +9003,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>User.SFS_X6_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.SFS_X8_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>WarrantyTerm.SVMXA360__AssetExpression__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8895,6 +9195,11 @@
         <editable>true</editable>
         <field>WorkOrder.ParentWorkOrderId</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkOrder.PreWorkBriefPromptTemplate</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -9748,10 +10053,6 @@
         <layout>Contact-Contact Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contact-Contact Layout</layout>
-        <recordType>Contact.CustomerContact</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>ContentVersion-Content Version</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -9890,6 +10191,10 @@
     <layoutAssignments>
         <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
         <recordType>FSL__Service_Goal__c.FSL__Objective_Same_Site</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FSL__Service_Goal__c-FSL__ASAP Layout</layout>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Preferences</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FSL__Service_Goal__c-FSL__Minimize Overtime</layout>
@@ -10169,6 +10474,18 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ReturnOrderLineItem-Return Order Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SFS_Certification__c-SFS Certification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SFS_ResourceCertification__c-SFS Resource Certification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SLS_Datatable_Info__mdt-Datatable Info Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SLS_POC_object__c-SLS POC object Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>SVMXA360__SM_TA_Template__c-SVMXA360__A360 - Technical Attribute Template Layout</layout>
@@ -11130,11 +11447,6 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Contact.CustomerContact</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Entitlement.SVMXA360__EntitledServices</recordType>
         <visible>false</visible>
@@ -11182,6 +11494,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Level</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Preferences</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -11286,21 +11603,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>WorkOrder.SVMXA360__Depot</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>WorkOrder.SVMXA360__Estimate</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>WorkOrder.SVMXA360__Field</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>WorkOrder.SVMXA360__Remote</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -11331,6 +11633,14 @@
     <tabVisibilities>
         <tab>FSL__Work_Rule__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SFS_Certification__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SLS_POC_object__c</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
@@ -11502,10 +11812,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-DuplicateRecordSet</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-Employee</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -11830,10 +12136,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-SchedulingWorkspace</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>standard-SchedulingWorkspaceTerritory</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

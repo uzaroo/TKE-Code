@@ -3,6 +3,7 @@
     <fullName>FSL__DefaultLeftPanel__c</fullName>
     <deprecated>false</deprecated>
     <description>The default panel on the left side of the gantt</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Default Left Panel</label>
     <length>20</length>

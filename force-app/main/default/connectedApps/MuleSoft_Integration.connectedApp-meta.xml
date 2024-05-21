@@ -3,7 +3,8 @@
     <contactEmail>mulesoft.integration@tkelevator.com</contactEmail>
     <label>MuleSoft Integration</label>
     <oauthConfig>
-        <callbackUrl>http://localhost:8082/oauth2callback</callbackUrl>
+        <callbackUrl>http://localhost:8082/oauth2callback
+http://localhost:8081/oauth2callback</callbackUrl>
         <consumerKey>3MVG9fJfMmi0N395Uc3zeuQ3tQIJNHCYG91Vy42pRwXfXVeu0CJEu1PH8rQ7bA6uKBOb7s35D6Qw2aXgFRGXU</consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isClientCredentialEnabled>false</isClientCredentialEnabled>

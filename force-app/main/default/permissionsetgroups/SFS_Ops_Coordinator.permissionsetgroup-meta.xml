@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission set group for Ops Coordinator</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>SFS Ops Coordinator</label>
+    <mutingPermissionSets>SFS_Ops_Coordinator_Muted</mutingPermissionSets>
     <permissionSets>FSL_Dispatcher_License</permissionSets>
     <permissionSets>FSL_Dispatcher_Permissions</permissionSets>
     <permissionSets>SFS_Base_Operations_Permission_Set</permissionSets>

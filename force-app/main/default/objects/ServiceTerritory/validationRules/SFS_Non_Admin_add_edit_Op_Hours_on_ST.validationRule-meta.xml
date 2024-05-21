@@ -7,16 +7,16 @@
 					AND(
    NOT( ISNEW() ),
    ISCHANGED( OperatingHoursId ),
-			OR($Profile.Name &lt;&gt; &quot;System Administrator&quot;,
-						NOT($Permission.SFS_Add_Edit_Op_Hours_on_ST ),
-					NOT($Permission.TKE_Bypass_Validation))),
+			$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+			NOT($Permission.SFS_Add_Edit_Op_Hours_on_ST ),
+			NOT($Permission.TKE_Bypass_Validation)),
 			
 					AND(
    ISNEW(),
    NOT( ISBLANK(OperatingHoursId) ),
-			OR($Profile.Name &lt;&gt; &quot;System Administrator&quot;,
-						NOT($Permission.SFS_Add_Edit_Op_Hours_on_ST ),
-					NOT($Permission.TKE_Bypass_Validation))))</errorConditionFormula>
+			$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+			NOT($Permission.SFS_Add_Edit_Op_Hours_on_ST ),
+			NOT($Permission.TKE_Bypass_Validation)))</errorConditionFormula>
     <errorDisplayField>OperatingHoursId</errorDisplayField>
     <errorMessage>Non System Administrator users cannot add, modify,  or update Operating Hours at the Service Territory level.  Please contact a Field Service System Administrator to have changes made to the Service Territory Operating Hours.</errorMessage>
 </ValidationRule>

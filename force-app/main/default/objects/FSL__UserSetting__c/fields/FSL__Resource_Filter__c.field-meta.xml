@@ -3,6 +3,7 @@
     <fullName>FSL__Resource_Filter__c</fullName>
     <deprecated>false</deprecated>
     <description>Last selected resource filtering for gantt view</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Resource Filter</label>
     <length>131072</length>

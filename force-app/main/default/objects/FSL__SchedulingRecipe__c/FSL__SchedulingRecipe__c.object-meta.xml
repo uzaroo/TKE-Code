@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Scheduling Recipe</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Scheduling Recipe Name</label>
         <type>Text</type>
     </nameField>

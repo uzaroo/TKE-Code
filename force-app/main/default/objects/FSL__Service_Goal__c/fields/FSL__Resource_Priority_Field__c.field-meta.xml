@@ -3,6 +3,7 @@
     <fullName>FSL__Resource_Priority_Field__c</fullName>
     <defaultValue>&quot;fsl__priority__c&quot;</defaultValue>
     <deprecated>false</deprecated>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Resource Priority Field</label>
     <length>255</length>

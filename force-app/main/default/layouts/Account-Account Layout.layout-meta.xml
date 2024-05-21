@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -27,6 +26,30 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Description</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Customer_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Legacy_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Legacy_Source__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Classification__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>EBS_Customer_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Billing_Account__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -84,12 +107,7 @@
                 <field>BillingAddress</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ShippingAddress</field>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>

@@ -2,6 +2,8 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Phone_or_Email_Required</fullName>
     <active>true</active>
+    <description>US-11321</description>
     <errorConditionFormula>AND( ISBLANK( Phone ),ISBLANK(Email) , NOT($Permission.TKE_Bypass_Validation))</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
     <errorMessage>Please add a Phone Number or Email before saving a Contact</errorMessage>
 </ValidationRule>

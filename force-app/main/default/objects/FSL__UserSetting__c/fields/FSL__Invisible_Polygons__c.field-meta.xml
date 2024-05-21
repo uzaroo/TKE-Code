@@ -3,6 +3,7 @@
     <fullName>FSL__Invisible_Polygons__c</fullName>
     <deprecated>false</deprecated>
     <description>List of ids of Invisible polygons on the map</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Hidden Polygons</label>
     <length>130000</length>

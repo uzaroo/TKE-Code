@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Work Rule</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Work Rule Name</label>
         <type>Text</type>
     </nameField>

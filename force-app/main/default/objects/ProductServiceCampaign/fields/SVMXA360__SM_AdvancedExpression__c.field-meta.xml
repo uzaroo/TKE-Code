@@ -3,6 +3,7 @@
     <fullName>SVMXA360__SM_AdvancedExpression__c</fullName>
     <deprecated>false</deprecated>
     <description>The Advanced Expression for Asset and Technical Attribute search.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>The Advanced Expression for Asset and Technical Attribute search.</inlineHelpText>
     <label>Advanced Expression</label>

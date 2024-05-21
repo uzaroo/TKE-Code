@@ -3,6 +3,7 @@
     <fullName>SVMXA360__CanceledOn__c</fullName>
     <deprecated>false</deprecated>
     <description>This field indicates when the Contract’s Status was changed to Canceled</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>This field indicates when the Contract’s Status was changed to Canceled</inlineHelpText>
     <label>Canceled On</label>

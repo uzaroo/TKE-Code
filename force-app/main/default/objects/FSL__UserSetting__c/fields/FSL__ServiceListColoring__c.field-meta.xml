@@ -3,6 +3,7 @@
     <fullName>FSL__ServiceListColoring__c</fullName>
     <deprecated>false</deprecated>
     <description>Background styling for service on the list</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Service List Coloring</label>
     <length>20</length>

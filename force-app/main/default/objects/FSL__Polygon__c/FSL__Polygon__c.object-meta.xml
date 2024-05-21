@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Map Polygon</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Polygon Name</label>
         <type>Text</type>
     </nameField>

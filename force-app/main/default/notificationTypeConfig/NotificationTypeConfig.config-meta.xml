@@ -24,6 +24,13 @@
     <notificationTypeSettings>
         <notificationChannels>
             <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>bulk_action_plan_save</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>true</mobileEnabled>
         </notificationChannels>
         <notificationType>chatter_comment_on_post</notificationType>

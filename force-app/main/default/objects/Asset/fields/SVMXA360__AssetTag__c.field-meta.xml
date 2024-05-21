@@ -3,6 +3,7 @@
     <fullName>SVMXA360__AssetTag__c</fullName>
     <deprecated>false</deprecated>
     <description>Identifier used by the customer to track the Asset.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Asset Tag</label>
     <length>100</length>

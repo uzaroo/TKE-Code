@@ -3,6 +3,7 @@
     <fullName>SVMXA360__EntitlementDate__c</fullName>
     <deprecated>false</deprecated>
     <description>The date on which the Case is entitled. The entitlement check will default it to &apos;Today&apos; if this field is blank.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Entitlement Date</label>
     <required>false</required>

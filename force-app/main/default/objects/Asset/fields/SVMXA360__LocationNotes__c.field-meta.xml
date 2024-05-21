@@ -3,6 +3,7 @@
     <fullName>SVMXA360__LocationNotes__c</fullName>
     <deprecated>false</deprecated>
     <description>Indicates additional depot/warehouse location notes.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Location Notes</label>
     <length>255</length>

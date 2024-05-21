@@ -3,6 +3,7 @@
     <fullName>SVMXA360__RentalEndDate__c</fullName>
     <deprecated>false</deprecated>
     <description>Tracks the end date of the Asset rental period.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Rental End Date</label>
     <required>false</required>

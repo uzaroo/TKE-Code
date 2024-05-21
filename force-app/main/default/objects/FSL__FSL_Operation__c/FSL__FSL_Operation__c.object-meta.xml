@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>FSL Operation</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>FSL Operation Name</label>
         <type>Text</type>
     </nameField>

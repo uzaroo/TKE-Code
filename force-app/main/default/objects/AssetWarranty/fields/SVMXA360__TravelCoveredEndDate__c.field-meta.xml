@@ -3,6 +3,7 @@
     <fullName>SVMXA360__TravelCoveredEndDate__c</fullName>
     <deprecated>false</deprecated>
     <description>The date until when Travel discount is covered.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Travel Covered End Date</label>
     <required>false</required>

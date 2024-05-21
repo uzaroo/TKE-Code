@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ContactPhone__c</fullName>
     <deprecated>false</deprecated>
     <description>Field to store the customer’s phone number</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Contact Phone</label>
     <required>false</required>

@@ -3,6 +3,7 @@
     <fullName>SVMXA360__EntitlementNotes__c</fullName>
     <deprecated>false</deprecated>
     <description>Stores additional entitlement notes.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Entitlement Notes</label>
     <length>2000</length>

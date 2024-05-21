@@ -102,6 +102,11 @@
     </decisions>
     <description>Sends an email to the Field Service admin to notify them about failed Automated Bundling optimization requests.</description>
     <environments>Default</environments>
+    <formulas>
+        <name>Last24Hours</name>
+        <dataType>DateTime</dataType>
+        <expression>{!$Flow.CurrentDateTime}-1</expression>
+    </formulas>
     <interviewLabel>Send Email For Automated Bundling Failures {!$Flow.CurrentDateTime}</interviewLabel>
     <isTemplate>true</isTemplate>
     <label>Send Email For Automated Bundling Failures</label>
@@ -153,7 +158,7 @@
             <field>CreatedDate</field>
             <operator>GreaterThan</operator>
             <value>
-                <elementReference>$Flow.CurrentDate</elementReference>
+                <elementReference>Last24Hours</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -169,7 +174,7 @@
         <schedule>
             <frequency>Daily</frequency>
             <startDate>2023-11-01</startDate>
-            <startTime>23:30:00.000Z</startTime>
+            <startTime>07:00:00.000Z</startTime>
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
@@ -178,7 +183,7 @@
         <description>Stores the formatted email body text to use when the Automated Bundling optimization requests have failed.</description>
         <name>EmailBodyTextTemplate</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 10pt;&quot;&gt;Hello {!userName},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 10pt;&quot;&gt;We wanted to inform you that {!countAutomatedBundlingOptimizationRequests} of your optimization requests failed.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 10pt;&quot;&gt;Type: Automated Bundling&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 10pt;&quot;&gt;To learn more about the failed request, see &lt;/span&gt;&lt;a href=&quot;https://help.salesforce.com/s/articleView?id=sf.pfs_monitor_optimization_requests.htm&amp;amp;type=5&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(17, 85, 204); background-color: transparent; font-size: 10pt;&quot;&gt;&lt;u&gt;Monitor Field Service Schedule Optimization Requests&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 10pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 10pt;&quot;&gt;Regards,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 10pt;&quot;&gt;Salesforce Field Service&lt;/span&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;Hello {!userName},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;We wanted to inform you that {!countAutomatedBundlingOptimizationRequests} of your optimization requests failed.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;Type: Automated Bundling&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;To learn more about the failed request, see &lt;/span&gt;&lt;a href=&quot;https://help.salesforce.com/s/articleView?id=sf.pfs_monitor_optimization_requests.htm&amp;amp;type=5&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 10pt; background-color: transparent; color: rgb(17, 85, 204); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;&lt;u&gt;Monitor Field Service Schedule Optimization Requests&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;To learn more about the flow that sent this email, see &lt;/span&gt;&lt;a href=&quot;https://help.salesforce.com/s/articleView?id=sf.fs_set_up_bundling_automatic.htm&amp;amp;type=5&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 10pt; background-color: transparent; color: rgb(17, 85, 204); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;&lt;u&gt;Monitor the Automatic Bundling Requests&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;Regards,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10pt; background-color: transparent; color: rgb(0, 0, 0); font-family: &amp;quot;Salesforce Sans&amp;quot;, sans-serif;&quot;&gt;Salesforce Field Service&lt;/span&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <description>Stores the email subject to use when the Automated Bundling optimization requests have failed.</description>

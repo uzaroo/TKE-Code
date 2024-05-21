@@ -126,6 +126,17 @@
             <section>Fields</section>
         </sections>
     </layouts>
+    <layouts>
+        <layout>Skill Preference</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
     <nameFieldLabel>Nume obiectiv serviciu</nameFieldLabel>
     <recordTypes>
         <description></description>
@@ -166,6 +177,11 @@
         <description></description>
         <label></label>
         <name>FSL__Objective_Skill_Level</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FSL__Objective_Skill_Preferences</name>
     </recordTypes>
     <validationRules>
         <errorMessage></errorMessage>

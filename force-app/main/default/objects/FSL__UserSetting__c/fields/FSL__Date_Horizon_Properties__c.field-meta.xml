@@ -3,6 +3,7 @@
     <fullName>FSL__Date_Horizon_Properties__c</fullName>
     <deprecated>false</deprecated>
     <description>Selected date horizon fields</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Date Horizon Properties</label>
     <length>255</length>

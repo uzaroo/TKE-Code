@@ -275,6 +275,24 @@
                 <identifier>RecordStageNameField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Line_Of_Business__c</fieldItem>
+                <identifier>RecordLine_Of_Business__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Type_Of_Sale__c</fieldItem>
+                <identifier>RecordType_Of_Sale__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Area__c</fieldItem>
+                <identifier>RecordArea__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-bda0868e-f60d-43d1-bc15-da4b2cf8d682</name>
         <type>Facet</type>
     </flexiPageRegions>

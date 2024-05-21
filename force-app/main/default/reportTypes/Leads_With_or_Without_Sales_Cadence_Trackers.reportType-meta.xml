@@ -276,6 +276,11 @@
             <field>mkto71_Acquisition_Program__c</field>
             <table>Lead</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Lead_Sub_Source__c</field>
+            <table>Lead</table>
+        </columns>
         <masterLabel>Leads</masterLabel>
     </sections>
     <sections>

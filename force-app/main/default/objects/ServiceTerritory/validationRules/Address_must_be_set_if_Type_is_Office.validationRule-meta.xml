@@ -3,6 +3,6 @@
     <fullName>Address_must_be_set_if_Type_is_Office</fullName>
     <active>true</active>
     <description>Address must be set if Type = Office</description>
-    <errorConditionFormula>IF( AND( ISPICKVAL(SFS_Service_Territory_Type__c ,&apos;Office&apos;),  ISBLANK(Address) ),true, false)</errorConditionFormula>
+    <errorConditionFormula>IF( AND( ISPICKVAL(SFS_Service_Territory_Type__c ,&apos;Office&apos;),  ISBLANK(Address), NOT( $Permission.TKE_Bypass_Validation ) ),true, false)</errorConditionFormula>
     <errorMessage>Address must be set if Type = Office</errorMessage>
 </ValidationRule>

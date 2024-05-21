@@ -548,6 +548,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>FSL__Crew_Management_User_Settings__c.FSL__SelectedSkills__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>FSL__Crew_Management_User_Settings__c.FSL__SkillsLogicOperator__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -844,6 +849,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>FSL__Optimization_Request__c.FSL__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSL__Optimization_Request__c.FSL__Stay_Scheduled_Services_By_Boolean__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1664,6 +1674,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>FSL__UserSetting__c.FSL__Match_Gantt_Dates__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>FSL__UserSetting__c.FSL__Optimization_Request_Filter_Field__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2953,6 +2968,15 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
+        <object>FSL__Bundle_Event__e</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
         <object>FSL__Bundler_Cache_Refresh_Event__e</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
@@ -3658,6 +3682,10 @@
     </tabSettings>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>AssignPermissionSets</name>
     </userPermissions>
     <userPermissions>
@@ -3671,6 +3699,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>FieldServiceAccess</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>FreezeUsers</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -3703,6 +3735,14 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageUsers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ModifyMetadata</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>MonitorLoginHistory</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

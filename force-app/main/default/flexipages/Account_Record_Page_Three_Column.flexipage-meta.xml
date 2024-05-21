@@ -551,6 +551,42 @@
                 <identifier>RecordPhoneField2</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Customer_Type__c</fieldItem>
+                <identifier>RecordCustomer_Type__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Legacy_ID__c</fieldItem>
+                <identifier>RecordLegacy_ID__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Legacy_Source__c</fieldItem>
+                <identifier>RecordLegacy_Source__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Classification__c</fieldItem>
+                <identifier>RecordClassification__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.EBS_Customer_ID__c</fieldItem>
+                <identifier>RecordEBS_Customer_ID__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Billing_Account__c</fieldItem>
+                <identifier>RecordBilling_Account__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-9317228b-9000-4df5-9218-7d1560529bcc</name>
         <type>Facet</type>
     </flexiPageRegions>

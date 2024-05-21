@@ -3,6 +3,7 @@
     <fullName>SVMXA360__EntitlementDate__c</fullName>
     <deprecated>false</deprecated>
     <description>The entitlement date on which the Work Order is entitled. The entitlement check will default it to ‘Today’ if this field is blank.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Entitlement Date</label>
     <required>false</required>

@@ -7,7 +7,6 @@
     <enableEinsteinSearchNLSFilters>false</enableEinsteinSearchNLSFilters>
     <enableEinsteinSearchNaturalLanguage>true</enableEinsteinSearchNaturalLanguage>
     <enableEinsteinSearchPersonalization>true</enableEinsteinSearchPersonalization>
-    <enableEinsteinSearchQA>false</enableEinsteinSearchQA>
     <enablePersonalTagging>false</enablePersonalTagging>
     <enablePublicTagging>false</enablePublicTagging>
     <enableQuerySuggestionPigOn>false</enableQuerySuggestionPigOn>
@@ -764,6 +763,24 @@
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>SFS_Certification__c</name>
+            <resultsPerPageCount>0</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>SFS_ResourceCertification__c</name>
+            <resultsPerPageCount>0</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>SLS_POC_object__c</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>SVMXA360__ApplicableProduct__c</name>
             <resultsPerPageCount>0</resultsPerPageCount>
         </searchSettingsByObject>
@@ -1264,6 +1281,18 @@
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>SVMXA360__ServiceRequest__c</name>
             <resultsPerPageCount>0</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>SchedulingWorkspace</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>SchedulingWorkspaceTerritory</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>

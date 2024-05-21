@@ -38,6 +38,18 @@
                 <behavior>Edit</behavior>
                 <field>Loss_Reason__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Line_Of_Business__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Type_Of_Sale__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Area__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -3,6 +3,7 @@
     <fullName>FSL__Selected_List_View__c</fullName>
     <deprecated>false</deprecated>
     <description>Last selected list view for service appointment list</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Selected List View</label>
     <length>255</length>

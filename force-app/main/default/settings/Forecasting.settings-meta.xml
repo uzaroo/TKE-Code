@@ -233,12 +233,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -251,6 +259,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -316,11 +328,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -485,12 +500,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -503,6 +526,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -568,11 +595,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -741,12 +771,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -759,6 +797,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -825,11 +867,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -994,12 +1039,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -1012,6 +1065,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -1077,11 +1134,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1250,12 +1310,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -1268,6 +1336,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -1334,11 +1406,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1503,12 +1578,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -1521,6 +1604,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -1586,11 +1673,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1759,12 +1849,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -1777,6 +1875,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -1843,11 +1945,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2012,12 +2117,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -2030,6 +2143,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -2095,11 +2212,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2268,12 +2388,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -2286,6 +2414,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -2352,11 +2484,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2521,12 +2656,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -2539,6 +2682,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -2604,11 +2751,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2777,12 +2927,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -2795,6 +2953,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -2861,11 +3023,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3030,12 +3195,20 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pou</field>
+            <label>Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjB</field>
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjC</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pkx</field>
+            <label>Line Of Business</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjE</field>
@@ -3048,6 +3221,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NHp00000obdjD</field>
             <label>ROI Analysis Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00ND30000029pn3</field>
+            <label>Type Of Sale</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -3113,11 +3290,14 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
+            <field>00ND30000029pou</field>
             <field>00NHp00000obdjB</field>
             <field>00NHp00000obdjC</field>
+            <field>00ND30000029pkx</field>
             <field>00NHp00000obdjE</field>
             <field>00ND30000029nMW</field>
             <field>00NHp00000obdjD</field>
+            <field>00ND30000029pn3</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>

@@ -3,6 +3,7 @@
     <fullName>SVMXA360__PackingInstructions__c</fullName>
     <deprecated>false</deprecated>
     <description>Used during the returns process to indicate to the customer how the product should be packed/handled for proper return.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Packing/Handling Instructions</label>
     <length>32000</length>

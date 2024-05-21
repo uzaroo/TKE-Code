@@ -452,6 +452,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>FSL__Optimization_Request__c.FSL__Stay_Scheduled_Services_By_Boolean__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>FSL__Optimization_Request__c.FSL__Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1828,6 +1833,15 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
+        <object>FSL__Bundle_Event__e</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
         <object>FSL__Bundler_Cache_Refresh_Event__e</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
@@ -2131,4 +2145,8 @@
         <tab>FSL__CapacityManagement</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewAllUsers</name>
+    </userPermissions>
 </PermissionSet>

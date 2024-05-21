@@ -3,6 +3,7 @@
     <fullName>FSL__Service_Linking_Object_Reference_Field__c</fullName>
     <deprecated>false</deprecated>
     <description>Represents the reference field on the linking object that is matched with the service appointment matching field</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>The reference field on the linking object that is matched with the service appointment matching field</inlineHelpText>
     <label>Linking Object Reference Field</label>

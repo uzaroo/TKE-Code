@@ -3,6 +3,7 @@
     <fullName>FSL__Start_of_Day__c</fullName>
     <defaultValue>&quot;00:00&quot;</defaultValue>
     <deprecated>false</deprecated>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Start of Day</label>
     <length>5</length>

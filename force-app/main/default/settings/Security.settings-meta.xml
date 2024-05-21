@@ -6,7 +6,7 @@
     <enableAuraSecureEvalPref>true</enableAuraSecureEvalPref>
     <enableCoepHeader>false</enableCoepHeader>
     <enableCoopHeader>false</enableCoopHeader>
-    <enableCrossOrgRedirects>true</enableCrossOrgRedirects>
+    <enableCrossOrgRedirects>false</enableCrossOrgRedirects>
     <enablePermissionsPolicy>false</enablePermissionsPolicy>
     <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
     <networkAccess>

@@ -42,6 +42,10 @@
     </fieldSets>
     <fieldSets>
         <label></label>
+        <name>FSL__Optimization_Filter_By_Booleans</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
         <name>FSL__Service_Appointment_Expanded</name>
     </fieldSets>
     <fieldSets>

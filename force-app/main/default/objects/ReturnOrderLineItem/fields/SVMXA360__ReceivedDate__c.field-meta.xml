@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ReceivedDate__c</fullName>
     <deprecated>false</deprecated>
     <description>The date on which the item is received at the depot location.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Received Date</label>
     <required>false</required>

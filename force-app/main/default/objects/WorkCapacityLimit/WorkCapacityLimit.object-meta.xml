@@ -131,6 +131,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <searchLayouts>
         <customTabListAdditionalFields>ServiceTerritory</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IsSvcTerrOnlyLimit</customTabListAdditionalFields>
         <customTabListAdditionalFields>SvcApptField</customTabListAdditionalFields>
         <customTabListAdditionalFields>SvcApptFieldValDplyNm</customTabListAdditionalFields>
         <customTabListAdditionalFields>TimePeriod</customTabListAdditionalFields>
@@ -141,6 +142,7 @@
         <customTabListAdditionalFields>CapacityLimitRelaxation</customTabListAdditionalFields>
         <customTabListAdditionalFields>IsActive</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>ServiceTerritory</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IsSvcTerrOnlyLimit</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>SvcApptField</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>SvcApptFieldValDplyNm</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>TimePeriod</lookupDialogsAdditionalFields>
@@ -151,6 +153,7 @@
         <lookupDialogsAdditionalFields>CapacityLimitRelaxation</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>IsActive</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ServiceTerritory</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>IsSvcTerrOnlyLimit</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>SvcApptField</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>SvcApptFieldValDplyNm</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>TimePeriod</lookupPhoneDialogsAdditionalFields>
@@ -161,6 +164,7 @@
         <lookupPhoneDialogsAdditionalFields>CapacityLimitRelaxation</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>IsActive</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>ServiceTerritory</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IsSvcTerrOnlyLimit</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>SvcApptField</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>SvcApptFieldValDplyNm</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>TimePeriod</searchResultsAdditionalFields>

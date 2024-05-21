@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission set group for Technicians</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>SFS Technician</label>
+    <mutingPermissionSets>SFS_Technician_Muted</mutingPermissionSets>
     <permissionSets>FSL_Mobile_License</permissionSets>
     <permissionSets>FSL_Resource_License</permissionSets>
     <permissionSets>FSL_Resource_Permissions</permissionSets>

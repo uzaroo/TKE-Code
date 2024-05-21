@@ -3,6 +3,7 @@
     <fullName>FSL__Enhanced_Match_Linking_Object__c</fullName>
     <deprecated>false</deprecated>
     <description>Represents the junction object used to link service resources to the object that the service appointment matching field references</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>The junction object used to link service resources to the object that the service appointment matching field references</inlineHelpText>
     <label>Linking Object</label>

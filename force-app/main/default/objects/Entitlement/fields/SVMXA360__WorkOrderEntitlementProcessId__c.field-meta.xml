@@ -3,6 +3,7 @@
     <fullName>SVMXA360__WorkOrderEntitlementProcessId__c</fullName>
     <deprecated>false</deprecated>
     <description>Reference to WorkOrder Entitlement Process.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>WorkOrder Entitlement Process</label>
     <length>20</length>

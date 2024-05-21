@@ -371,6 +371,16 @@
             <field>GlobalIdentity</field>
             <table>User</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SFS_X8_ID__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SFS_X6_ID__c</field>
+            <table>User</table>
+        </columns>
         <masterLabel>Users</masterLabel>
     </sections>
     <sections>

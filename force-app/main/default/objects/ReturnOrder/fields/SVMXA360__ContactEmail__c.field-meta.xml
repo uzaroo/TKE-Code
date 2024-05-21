@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ContactEmail__c</fullName>
     <deprecated>false</deprecated>
     <description>Field to store the customer’s email</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Contact Email</label>
     <required>false</required>

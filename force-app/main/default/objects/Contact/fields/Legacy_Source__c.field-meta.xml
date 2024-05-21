@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Legacy_Source__c</fullName>
+    <description>US-12599</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Legacy Source</label>
     <length>255</length>

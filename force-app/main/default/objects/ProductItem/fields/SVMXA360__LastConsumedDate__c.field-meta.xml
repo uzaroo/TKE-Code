@@ -3,6 +3,7 @@
     <fullName>SVMXA360__LastConsumedDate__c</fullName>
     <deprecated>false</deprecated>
     <description>The date on which the item was last consumed on a work order.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Last Consumed Date</label>
     <required>false</required>

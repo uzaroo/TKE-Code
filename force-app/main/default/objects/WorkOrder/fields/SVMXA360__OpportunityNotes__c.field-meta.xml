@@ -3,6 +3,7 @@
     <fullName>SVMXA360__OpportunityNotes__c</fullName>
     <deprecated>false</deprecated>
     <description>For the Technician to pass along notes on the potential sales lead to the sales contact</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Opportunity Notes</label>
     <length>32000</length>

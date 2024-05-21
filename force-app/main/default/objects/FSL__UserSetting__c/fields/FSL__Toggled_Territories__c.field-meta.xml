@@ -3,6 +3,7 @@
     <fullName>FSL__Toggled_Territories__c</fullName>
     <deprecated>false</deprecated>
     <description>Decide if a territory is opened on the Gantt view</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Toggled Territories</label>
     <length>32000</length>

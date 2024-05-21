@@ -10,6 +10,10 @@
     </validationRules>
     <validationRules>
         <errorMessage></errorMessage>
+        <name>Validate_If_Parent_Terr_is_a_Level_Up</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
         <name>Validate_Parent_Territory_not_set</name>
     </validationRules>
     <validationRules>

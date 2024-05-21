@@ -17,7 +17,8 @@
     <filters>
         <field>CORE.USERS.COMPANY_NAME</field>
         <operation>startsWith</operation>
-        <value>Salesforce,Leankor,ServiceMax</value>
+        <value>Salesforce,Leankor,ServiceMax,Blue5green</value>
     </filters>
     <label>All Users - CrossFunctional</label>
+    <language>en_US</language>
 </ListView>

@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ClosedDate__c</fullName>
     <deprecated>false</deprecated>
     <description>The date on which this Work Order is closed.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Closed Date</label>
     <required>false</required>

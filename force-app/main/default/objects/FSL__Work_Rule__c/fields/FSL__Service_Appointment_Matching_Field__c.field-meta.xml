@@ -3,6 +3,7 @@
     <fullName>FSL__Service_Appointment_Matching_Field__c</fullName>
     <deprecated>false</deprecated>
     <description>Represents the service appointment field that you&apos;re matching. The field must be of type Lookup</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>The service appointment lookup field that you&apos;re matching</inlineHelpText>
     <label>Service Appointment Matching Field</label>

@@ -3,6 +3,7 @@
     <fullName>SVMXA360__PackingInstructions__c</fullName>
     <deprecated>false</deprecated>
     <description>Packing/Handling instructions for the return.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Packing/Handling Instructions</label>
     <length>32000</length>

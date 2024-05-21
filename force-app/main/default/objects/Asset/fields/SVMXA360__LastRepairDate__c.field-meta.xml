@@ -3,6 +3,7 @@
     <fullName>SVMXA360__LastRepairDate__c</fullName>
     <deprecated>false</deprecated>
     <description>Date that the asset was last repaired</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Last Repair Date</label>
     <required>false</required>

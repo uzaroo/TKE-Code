@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ClosedOn__c</fullName>
     <deprecated>false</deprecated>
     <description>The date on which the Return Order is closed.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Closed On</label>
     <required>false</required>

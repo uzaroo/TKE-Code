@@ -3,6 +3,7 @@
     <fullName>SVMXA360__RentalStartDate__c</fullName>
     <deprecated>false</deprecated>
     <description>Tracks the start date of the Asset rental period.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Rental Start Date</label>
     <required>false</required>

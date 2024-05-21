@@ -5,6 +5,7 @@
     <externalId>false</externalId>
     <label>Estimated Travel Time To Source</label>
     <required>false</required>
+    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>

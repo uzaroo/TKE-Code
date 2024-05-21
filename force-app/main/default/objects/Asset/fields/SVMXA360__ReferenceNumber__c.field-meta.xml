@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ReferenceNumber__c</fullName>
     <deprecated>false</deprecated>
     <description>An alternate reference number for the Asset.  Can be used to store a Purchase Order number, Sales Order number, etc.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Reference Number</label>
     <length>100</length>

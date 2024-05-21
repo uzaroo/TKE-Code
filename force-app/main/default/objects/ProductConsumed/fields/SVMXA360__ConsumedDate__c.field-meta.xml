@@ -3,6 +3,7 @@
     <fullName>SVMXA360__ConsumedDate__c</fullName>
     <deprecated>false</deprecated>
     <description>Date on which the item has been consumed.</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Consumed Date</label>
     <required>false</required>

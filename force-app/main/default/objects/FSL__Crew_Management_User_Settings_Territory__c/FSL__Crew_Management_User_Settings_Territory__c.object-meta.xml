@@ -156,6 +156,7 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Crew Management User Settings Territory</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Crew Management User Settings Territory</label>
         <type>Text</type>
     </nameField>
