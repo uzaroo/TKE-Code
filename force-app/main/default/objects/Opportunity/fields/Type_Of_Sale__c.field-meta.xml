@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Of_Sale__c</fullName>
+    <description>Field to capture what type of sale the Opportunity is for, under the given Line Of Business.</description>
+    <externalId>false</externalId>
+    <label>Type Of Sale</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Line_Of_Business__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Repair</fullName>
+                <default>false</default>
+                <label>Repair</label>
+            </value>
+            <value>
+                <fullName>Change Order</fullName>
+                <default>false</default>
+                <label>Change Order</label>
+            </value>
+            <value>
+                <fullName>Foreign Maintenance</fullName>
+                <default>false</default>
+                <label>Foreign Maintenance</label>
+            </value>
+            <value>
+                <fullName>NIM</fullName>
+                <default>false</default>
+                <label>NIM</label>
+            </value>
+            <value>
+                <fullName>Recapture</fullName>
+                <default>false</default>
+                <label>Recapture</label>
+            </value>
+            <value>
+                <fullName>TKExtend</fullName>
+                <default>false</default>
+                <label>TKExtend</label>
+            </value>
+            <value>
+                <fullName>Addendum</fullName>
+                <default>false</default>
+                <label>Addendum</label>
+            </value>
+            <value>
+                <fullName>New Installation</fullName>
+                <default>false</default>
+                <label>New Installation</label>
+            </value>
+            <value>
+                <fullName>Modernization</fullName>
+                <default>false</default>
+                <label>Modernization</label>
+            </value>
+            <value>
+                <fullName>Capital Plan</fullName>
+                <default>false</default>
+                <label>Capital Plan</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Repair</controllingFieldValue>
+            <valueName>Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Repair</controllingFieldValue>
+            <controllingFieldValue>New Installation</controllingFieldValue>
+            <valueName>Change Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Foreign Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>NIM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Recapture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>TKExtend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Addendum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Installation</controllingFieldValue>
+            <valueName>New Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modernization</controllingFieldValue>
+            <valueName>Modernization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modernization</controllingFieldValue>
+            <valueName>Capital Plan</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

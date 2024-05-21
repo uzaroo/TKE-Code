@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_If_Parent_Terr_is_a_Level_Up</fullName>
+    <active>true</active>
+    <description>Validation rule to check if the Parent Territory is a level up of the Service Territory being created</description>
+    <errorConditionFormula>IF( AND(ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Office&apos;), NOT(ISPICKVAL( ParentTerritory.SFS_Service_Territory_Type__c , &apos;Branch&apos;)), NOT( $Permission.TKE_Bypass_Validation )) , true, 
+(IF( AND(ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Branch&apos;), NOT(ISPICKVAL( ParentTerritory.SFS_Service_Territory_Type__c , &apos;Area&apos;)), NOT( $Permission.TKE_Bypass_Validation )) , true, 
+(IF( AND(ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Area&apos;), NOT(ISPICKVAL( ParentTerritory.SFS_Service_Territory_Type__c , &apos;Region&apos;)), NOT( $Permission.TKE_Bypass_Validation )) , true, false)))))</errorConditionFormula>
+    <errorMessage>Parent Territory must be a level up of the Service Territory being created</errorMessage>
+</ValidationRule>

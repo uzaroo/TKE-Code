@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area__c</fullName>
+    <description>Field to identify what Area the Opportunity is included in. ADO - USER STORY 12571</description>
+    <externalId>false</externalId>
+    <label>Area</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pacific</fullName>
+                <default>false</default>
+                <label>Pacific</label>
+            </value>
+            <value>
+                <fullName>Midwest</fullName>
+                <default>false</default>
+                <label>Midwest</label>
+            </value>
+            <value>
+                <fullName>Southwest</fullName>
+                <default>false</default>
+                <label>Southwest</label>
+            </value>
+            <value>
+                <fullName>California</fullName>
+                <default>false</default>
+                <label>California</label>
+            </value>
+            <value>
+                <fullName>South</fullName>
+                <default>false</default>
+                <label>South</label>
+            </value>
+            <value>
+                <fullName>Southeast</fullName>
+                <default>false</default>
+                <label>Southeast</label>
+            </value>
+            <value>
+                <fullName>Mid Atlantic</fullName>
+                <default>false</default>
+                <label>Mid Atlantic</label>
+            </value>
+            <value>
+                <fullName>Northeast</fullName>
+                <default>false</default>
+                <label>Northeast</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

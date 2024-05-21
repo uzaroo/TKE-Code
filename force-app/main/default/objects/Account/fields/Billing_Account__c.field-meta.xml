@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to indicate if this Account is designated as a billing account. ADO - USER STORY 11493</description>
+    <externalId>false</externalId>
+    <label>Billing Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>
