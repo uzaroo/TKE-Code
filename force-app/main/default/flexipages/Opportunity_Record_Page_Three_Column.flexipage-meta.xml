@@ -277,20 +277,52 @@
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Line_Of_Business__c</fieldItem>
                 <identifier>RecordLine_Of_Business__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Type_Of_Sale__c</fieldItem>
                 <identifier>RecordType_Of_Sale__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Area__c</fieldItem>
                 <identifier>RecordArea__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Lead_Sub_Source__c</fieldItem>
+                <identifier>RecordLead_Sub_Source__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Lead_Source_Description__c</fieldItem>
+                <identifier>RecordLead_Source_Description__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-bda0868e-f60d-43d1-bc15-da4b2cf8d682</name>
@@ -325,6 +357,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.NextStep</fieldItem>
                 <identifier>RecordNextStepField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Loss_Reason__c</fieldItem>
+                <identifier>RecordLoss_Reason_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f31cfb4a-cff9-4183-ab78-8e77ec6894f0</name>
@@ -579,10 +621,17 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Additional Information</value>
+                    <value>NI MOD Fields</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Line_Of_Business__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>New Installation</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -597,10 +646,17 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Description Information</value>
+                    <value>Service Fields</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Line_Of_Business__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Repair</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>

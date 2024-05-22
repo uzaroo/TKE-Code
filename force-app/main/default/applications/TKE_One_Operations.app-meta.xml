@@ -4,7 +4,7 @@
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>SFS_Service_Resource_Record_Page</content>
-        <formFactor>Large</formFactor>
+        <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>ServiceResource</pageOrSobjectType>
@@ -13,7 +13,7 @@
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>SFS_Service_Resource_Record_Page</content>
-        <formFactor>Small</formFactor>
+        <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>ServiceResource</pageOrSobjectType>
@@ -35,6 +35,96 @@
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>Product2</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>TKEAssetRecordPage</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Asset</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>TKEAssetRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Asset</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>TKEServiceContractRecordPage</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>ServiceContract</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>TKEServiceContractRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>ServiceContract</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>TKEServiceContractPlanRecordPage</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>SVMXA360__ServiceContractPlan__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>TKEServiceContractPlanRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>SVMXA360__ServiceContractPlan__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SFS_Work_Type_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>WorkType</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SFS_Work_Type_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>WorkType</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SFS_Work_Order_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>WorkOrder</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SFS_Work_Order_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>WorkOrder</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#F26C08</headerColor>
@@ -57,6 +147,7 @@
     <tabs>standard-WorkOrder</tabs>
     <tabs>standard-ServiceResource</tabs>
     <tabs>standard-ServiceTerritory</tabs>
+    <tabs>standard-Shift</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>
@@ -83,6 +174,9 @@
         </mappings>
         <mappings>
             <tab>standard-ServiceTerritory</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Shift</tab>
         </mappings>
         <mappings>
             <fieldName>AssetId</fieldName>

@@ -47,10 +47,6 @@
                 <behavior>Edit</behavior>
                 <field>EBS_Customer_ID__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Billing_Account__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -236,9 +232,33 @@
         </quickActionListItems>
     </quickActionList>
     <relatedLists>
-        <fields>Location</fields>
-        <fields>Type</fields>
-        <relatedList>AssociatedLocations</relatedList>
+        <fields>CONTRACT.NAME</fields>
+        <fields>CONTRACT.STARTDATE</fields>
+        <fields>CONTRACT.ENDDATE</fields>
+        <fields>CONTRACT.STATUS</fields>
+        <relatedList>RelatedServiceContractList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>LocationType</fields>
+        <fields>VisitorAddress</fields>
+        <fields>Billing_Account__c</fields>
+        <fields>EBS_Site_ID__c</fields>
+        <fields>Status__c</fields>
+        <relatedList>Location.Customer_Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>CustomerAccount__c</fields>
+        <fields>Start_Date__c</fields>
+        <fields>End_Date__c</fields>
+        <relatedList>Related_Customer__c.Related_Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Start_Date__c</fields>
+        <fields>End_Date__c</fields>
+        <relatedList>Related_Customer__c.CustomerAccount__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>FULL_NAME</fields>

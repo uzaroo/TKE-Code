@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Office_Hours__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field designates if the operating hours indicated on the record are for an office</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to designate that the operating hours is for use with a Branch or Office service Territory</inlineHelpText>
+    <label>Is Office Hours?</label>
+    <type>Checkbox</type>
+</CustomField>

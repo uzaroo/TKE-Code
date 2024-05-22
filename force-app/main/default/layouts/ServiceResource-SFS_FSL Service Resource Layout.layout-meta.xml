@@ -65,6 +65,10 @@
                 <behavior>Edit</behavior>
                 <field>SFS_Personal_Phone_Number__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Personal_Address__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -181,14 +185,18 @@
         <relatedList>ResourceAbsences</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>NAME</fields>
+        <fields>SFS_Certification__c.NAME</fields>
+        <fields>SFS_EffectiveStartDate__c</fields>
+        <fields>SFS_EffectiveEndDate__c</fields>
+        <relatedList>SFS_ResourceCertification__c.SFS_ServiceResource__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>SFS_ResourceCertification__c.SFS_ServiceResource__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

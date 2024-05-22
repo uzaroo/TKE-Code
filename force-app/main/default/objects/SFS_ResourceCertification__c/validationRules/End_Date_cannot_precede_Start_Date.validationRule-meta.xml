@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_cannot_precede_Start_Date</fullName>
+    <active>true</active>
+    <description>Validation rule to not allow the End Date to be before or equal to Start Date</description>
+    <errorConditionFormula>If( SFS_EffectiveEndDate__c &lt;=  SFS_EffectiveStartDate__c, true, false)</errorConditionFormula>
+    <errorMessage>End Date cannot be before or equal to the Start Date</errorMessage>
+</ValidationRule>

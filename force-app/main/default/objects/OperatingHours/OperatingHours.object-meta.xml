@@ -139,5 +139,5 @@
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

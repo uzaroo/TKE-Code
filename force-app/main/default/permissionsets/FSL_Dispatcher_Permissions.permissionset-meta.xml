@@ -13,6 +13,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSL__OptInsightHealthCheckController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSL__OptimizationHub</apexClass>
         <enabled>true</enabled>
     </classAccesses>

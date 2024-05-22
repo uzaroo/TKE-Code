@@ -149,9 +149,6 @@
             <quickActionName>FSL__LogACall</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>FSL__NewNote</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>FSL__NewEvent</quickActionName>
         </quickActionListItems>
     </quickActionList>
@@ -196,10 +193,10 @@
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedNoteList</relatedList>
+        <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedFileList</relatedList>
+        <relatedList>RelatedContentNoteList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>Name</fields>
@@ -209,12 +206,15 @@
         <fields>Status</fields>
         <relatedList>ChildWorkOrders</relatedList>
     </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0M00000Cvzna</masterLabel>
+        <masterLabel>00hD3000000ZhqZ</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

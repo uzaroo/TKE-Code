@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Information</label>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ParentLocationId</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Name</field>
@@ -25,6 +22,50 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ExternalReference</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Customer_Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Union_Local__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>EBS_Site_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Local_Fire__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Local_Police__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Dispatch_notes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Access_Notes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Billing_Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>EBS_Customer_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ParentLocationId</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -67,17 +108,29 @@
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>false</customLabel>
-        <detailHeading>false</detailHeading>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
         <editHeading>false</editHeading>
+        <label>Custom Links</label>
+        <layoutColumns/>
+        <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <miniLayout>
-        <fields>ParentLocationId</fields>
-    </miniLayout>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>AddressType</fields>
+        <fields>Description</fields>
+        <relatedList>Addresses</relatedList>
+    </relatedLists>
     <relatedObjects>ParentLocationId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
+    <summaryLayout>
+        <masterLabel>00hHp000007VZ0C</masterLabel>
+        <sizeX>4</sizeX>
+        <sizeY>0</sizeY>
+        <summaryLayoutStyle>Default</summaryLayoutStyle>
+    </summaryLayout>
 </Layout>

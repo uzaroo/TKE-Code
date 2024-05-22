@@ -6,6 +6,16 @@
     </applicationVisibilities>
     <description>Base operation permission set applicable to users.</description>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>OperatingHours.Is_Office_Hours__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceCrew.FSL__GanttColor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ServiceResource.Description</field>
         <readable>true</readable>
@@ -23,6 +33,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ServiceResource.IsOptimizationCapable</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.Personal_Address__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -52,7 +67,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ServiceTerritory.Address</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ServiceTerritory.SFS_Service_Territory_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceTerritoryMember.Address</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ServiceTerritoryMember.EffectiveEndDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -99,12 +129,21 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>false</allowCreate>
+        <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
+        <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>OperatingHours</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>ServiceCrew</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -134,6 +173,14 @@
         <object>WorkOrder</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>FSL__CrewManagement</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <tabSettings>
+        <tab>Crew_Management</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
     <tabSettings>
         <tab>standard-Asset</tab>
         <visibility>Visible</visibility>
@@ -148,6 +195,10 @@
     </tabSettings>
     <tabSettings>
         <tab>standard-Location</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>standard-OperatingHours</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>

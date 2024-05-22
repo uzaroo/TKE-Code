@@ -28,11 +28,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>FSL__Schedule_over_lower_priority_appointment__c</field>
+                <field>On_Call_Eligible__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>FSL__Use_Async_Logic__c</field>
+                <field>FSL__Schedule_over_lower_priority_appointment__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -59,6 +59,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>FSL__InternalSLRGeolocation__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FSL__Use_Async_Logic__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -228,6 +232,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
@@ -246,11 +255,6 @@
             <actionName>FSL__NewTask</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -274,9 +278,6 @@
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FSL__NewTask</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>FSL__NewNote</quickActionName>
         </quickActionListItems>
     </quickActionList>
     <relatedLists>
@@ -323,7 +324,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0M00000Cvzo9</masterLabel>
+        <masterLabel>00hD3000000ZhqP</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

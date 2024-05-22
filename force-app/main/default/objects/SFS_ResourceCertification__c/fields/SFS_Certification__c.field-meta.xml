@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_Certification__c</fullName>
+    <description>This field stores the certification of resource</description>
+    <externalId>false</externalId>
+    <label>Certification</label>
+    <referenceTo>SFS_Certification__c</referenceTo>
+    <relationshipLabel>Resource Certifications</relationshipLabel>
+    <relationshipName>Resource_Certifications</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

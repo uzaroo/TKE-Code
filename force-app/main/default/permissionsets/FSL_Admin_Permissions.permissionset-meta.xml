@@ -29,6 +29,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>FSL__OptInsightHealthCheckController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSL__OptimizationCenter</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>FSL__OptimizationHub</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -54,6 +62,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>FSL__countRule</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FSL__retrieveDataActivityLog</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <customPermissions>
@@ -3553,6 +3565,10 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <recordType>FSL__Service_Goal__c.FSL__Objective_Skill_Preferences</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>FSL__Work_Rule_Entry__c.FSL__Gap_Rule_Service</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -3638,6 +3654,10 @@
     </tabSettings>
     <tabSettings>
         <tab>FSL__Field_Service_Settings</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>FSL__OptimizationCenter</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>

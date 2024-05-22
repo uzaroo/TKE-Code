@@ -173,12 +173,6 @@
                 <identifier>RecordAccountIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Legacy_Source__c</fieldItem>
-                <identifier>RecordLegacy_Source__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-47396b09-68af-4166-943f-4fca64ddb4d8</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -249,6 +243,26 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.MailingAddress</fieldItem>
                 <identifier>RecordMailingAddressField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Legacy_ID__c</fieldItem>
+                <identifier>RecordLegacy_ID_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Legacy_Source__c</fieldItem>
+                <identifier>RecordLegacy_Source_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-aa81b07c-afba-4349-8955-59d3113c3d11</name>
@@ -349,10 +363,6 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-3b0bfbb7-e670-4aec-9c10-5dd743acd300</value>
