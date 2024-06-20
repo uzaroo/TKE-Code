@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConstructionPts__Show_Hide_All_CP_Projects_Lead</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Show/Hide All CP Projects</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/51.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;)}
+var userId = &apos;{!$User.Id}&apos;; 
+var pageIdentifier = &apos;CPRolesLead&apos;;
+var sObjectType = &apos;Lead&apos;; 
+var recordId = &apos;{!Lead.Id}&apos;; 
+var origHeight = 0; 
+var e1 = Ext.query(&quot;iframe[title=&apos;&quot;+pageIdentifier+&quot;&apos;]&quot;); 
+var itarget2 = e1[0].getAttribute(&apos;id&apos;); 
+origHeight = Ext.get(itarget2).getHeight(); 
+
+
+
+var newHeight = adjustHeight(userId, pageIdentifier,recordId); 
+
+var j$ = jQuery.noConflict(); 
+
+
+var LeadCPLink = &apos;{!Lead.ConstructionPts__CPLink__c}&apos;;
+
+var LeadCPProject = &apos;{!Lead.ConstructionPts__CP_Project__c}&apos;;
+
+var relatedSize; 
+if(LeadCPProject != null &amp;&amp; LeadCPProject != &apos;&apos; &amp;&amp; LeadCPProject != undefined){
+   var relatedCPProject = sforce.connection.query(&quot;SELECT ConstructionPts__CP_Project__c from Lead where id = &apos;&quot; + recordId + &quot;&apos;&quot;).getArray(&quot;records&quot;);
+   var relatedCPProjID = relatedCPProject[0].ConstructionPts__CP_Project__c;
+  
+   relatedSize = sforce.connection.query(&quot;SELECT count() from ConstructionPts__CP_Roles__c where ConstructionPts__CP_Project__c = &apos;&quot; + relatedCPProjID+ &quot;&apos;&quot;).size; 
+  
+}else if(LeadCPLink != null &amp;&amp; LeadCPLInk != &apos;&apos; &amp;&amp; LeadCPLInk != undefined){
+   
+   relatedSize = sforce.connection.query(&quot;SELECT count() FROM ConstructionPts__CP_Company__c where ConstructionPts__Lead__c = &apos;&quot; + recordId + &quot;&apos;&quot;).size; 
+   
+}
+
+
+
+var origHeight = 0; 
+var e1 = Ext.query(&quot;iframe[title=&apos;&quot;+pageIdentifier+&quot;&apos;]&quot;); 
+var itarget2 = e1[0].getAttribute(&apos;id&apos;); 
+origHeight = Ext.get(itarget2).getHeight(); 
+console.log(&apos;origHeight = &apos; + origHeight);
+var newHeight = adjustHeight(userId, pageIdentifier,recordId,relatedSize); 
+
+var j$ = jQuery.noConflict(); 
+
+var divHeight = j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).find(&quot;table .detailList&quot;).height(); 
+
+var firstPageLoad = true; 
+if (j$(&apos;input[id=subsqPageLoad]&apos;).length &gt; 0) { 
+firstPageLoad = false; 
+} 
+
+if (firstPageLoad == true) { 
+j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prepend(&apos;&lt;input type=&quot;hidden&quot; id=&quot;subsqPageLoad&quot; value=&quot;&quot;/&gt;&apos;); 
+var sOnClick = (String)(j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).attr(&quot;onclick&quot;)); 
+} 
+
+
+//on first load always expand
+if (firstPageLoad == true ) { 
+
+if (j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).css(&quot;display&quot;) == &quot;none&quot;) { 
+j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).click(); 
+} 
+
+} else { 
+j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).click(); 
+} 
+
+
+function adjustHeight(userId, pageIdentifier, recordId,relatedSize ) { 
+
+var newHeight = &apos;&apos;; 
+var j$ = jQuery.noConflict(); 
+var result = null; 
+
+if(parseInt(relatedSize) != 0 &amp;&amp; parseInt(relatedSize) != null){
+  newHeight = parseInt(relatedSize) * 21.2 + 45;
+}else{
+  newHeight = (parseInt(relatedSize),10) * 105 + 30 ; 
+}
+
+
+if (newHeight != null &amp;&amp; newHeight != undefined) { 
+resizeIframe(newHeight, pageIdentifier); 
+} 
+
+return newHeight; 
+} 
+
+function resizeIframe(h, ifn){ 
+var e = Ext.query(&quot;iframe[title=&quot;+ifn+&quot;]&quot;); 
+
+var itarget = e[0].getAttribute(&apos;id&apos;); 
+Ext.get(itarget).set({height: parseInt(h)+10}); 
+}</url>
+</WebLink>

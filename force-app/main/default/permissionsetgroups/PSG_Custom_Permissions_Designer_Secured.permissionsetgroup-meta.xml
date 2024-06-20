@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG - Custom Permissions Designer Secured</label>
+    <permissionSets>Leankor_Broadcast</permissionSets>
+    <permissionSets>TKE_NIMOD_Custom_Permissions</permissionSets>
+    <permissionSets>leankor__Visual_Lean_Designer_Secured</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resident_Route_Terr_must_have_parent_set</fullName>
+    <active>true</active>
+    <description>This validation rule checks if a Resident Route Territory has a parent Service Territory of Type Office set</description>
+    <errorConditionFormula>IF(
+AND(ISPICKVAL( SFS_Service_Territory_Type__c , &apos;Resident Route&apos; ), 
+OR(ISBLANK( ParentTerritory.Id ), NOT(ISPICKVAL( ParentTerritory.SFS_Service_Territory_Type__c , &apos;Office&apos;))),
+NOT( $Permission.TKE_Bypass_Validation )), 
+true, false)</errorConditionFormula>
+    <errorMessage>Resident Route Territory must have a parent Service Territory of Type Office</errorMessage>
+</ValidationRule>

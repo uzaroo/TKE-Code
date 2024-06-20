@@ -1,0 +1,2763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Controller_Model__c</fullName>
+    <description>created this as part of ADO user story 12187</description>
+    <externalId>false</externalId>
+    <label>Controller Model</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Controller_Manufacturer__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Relay Logic</fullName>
+                <default>false</default>
+                <label>Relay Logic</label>
+            </value>
+            <value>
+                <fullName>PLS-3</fullName>
+                <default>false</default>
+                <label>PLS-3</label>
+            </value>
+            <value>
+                <fullName>Relay Generic</fullName>
+                <default>false</default>
+                <label>Relay Generic</label>
+            </value>
+            <value>
+                <fullName>Omega 1000</fullName>
+                <default>false</default>
+                <label>Omega 1000</label>
+            </value>
+            <value>
+                <fullName>ACS 150</fullName>
+                <default>false</default>
+                <label>ACS 150</label>
+            </value>
+            <value>
+                <fullName>Advance Selector 450</fullName>
+                <default>false</default>
+                <label>Advance Selector 450</label>
+            </value>
+            <value>
+                <fullName>Advance Selector 451</fullName>
+                <default>false</default>
+                <label>Advance Selector 451</label>
+            </value>
+            <value>
+                <fullName>Dynaglide I</fullName>
+                <default>false</default>
+                <label>Dynaglide I</label>
+            </value>
+            <value>
+                <fullName>Generic Relay</fullName>
+                <default>false</default>
+                <label>Generic Relay</label>
+            </value>
+            <value>
+                <fullName>TMS 200</fullName>
+                <default>false</default>
+                <label>TMS 200</label>
+            </value>
+            <value>
+                <fullName>TMS 500</fullName>
+                <default>false</default>
+                <label>TMS 500</label>
+            </value>
+            <value>
+                <fullName>TMS 50A AV</fullName>
+                <default>false</default>
+                <label>TMS 50A AV</label>
+            </value>
+            <value>
+                <fullName>TMS 516</fullName>
+                <default>false</default>
+                <label>TMS 516</label>
+            </value>
+            <value>
+                <fullName>TMS 600</fullName>
+                <default>false</default>
+                <label>TMS 600</label>
+            </value>
+            <value>
+                <fullName>TMS 700</fullName>
+                <default>false</default>
+                <label>TMS 700</label>
+            </value>
+            <value>
+                <fullName>TMS 900</fullName>
+                <default>false</default>
+                <label>TMS 900</label>
+            </value>
+            <value>
+                <fullName>TMS 9000</fullName>
+                <default>false</default>
+                <label>TMS 9000</label>
+            </value>
+            <value>
+                <fullName>TMS 900plus</fullName>
+                <default>false</default>
+                <label>TMS 900plus</label>
+            </value>
+            <value>
+                <fullName>Selective Collective</fullName>
+                <default>false</default>
+                <label>Selective Collective</label>
+            </value>
+            <value>
+                <fullName>Autoquip</fullName>
+                <default>false</default>
+                <label>Autoquip</label>
+            </value>
+            <value>
+                <fullName>UDT-15</fullName>
+                <default>false</default>
+                <label>UDT-15</label>
+            </value>
+            <value>
+                <fullName>EL96</fullName>
+                <default>false</default>
+                <label>EL96</label>
+            </value>
+            <value>
+                <fullName>LRL42</fullName>
+                <default>false</default>
+                <label>LRL42</label>
+            </value>
+            <value>
+                <fullName>Relay</fullName>
+                <default>false</default>
+                <label>Relay</label>
+            </value>
+            <value>
+                <fullName>Futura Hydraulic</fullName>
+                <default>false</default>
+                <label>Futura Hydraulic</label>
+            </value>
+            <value>
+                <fullName>Futura Traction</fullName>
+                <default>false</default>
+                <label>Futura Traction</label>
+            </value>
+            <value>
+                <fullName>Impact</fullName>
+                <default>false</default>
+                <label>Impact</label>
+            </value>
+            <value>
+                <fullName>Meridia</fullName>
+                <default>false</default>
+                <label>Meridia</label>
+            </value>
+            <value>
+                <fullName>SWIFT 1000</fullName>
+                <default>false</default>
+                <label>SWIFT 1000</label>
+            </value>
+            <value>
+                <fullName>SWIFT 5000</fullName>
+                <default>false</default>
+                <label>SWIFT 5000</label>
+            </value>
+            <value>
+                <fullName>Printed Circuit Board</fullName>
+                <default>false</default>
+                <label>Printed Circuit Board</label>
+            </value>
+            <value>
+                <fullName>Hand Wired</fullName>
+                <default>false</default>
+                <label>Hand Wired</label>
+            </value>
+            <value>
+                <fullName>Flex H</fullName>
+                <default>false</default>
+                <label>Flex H</label>
+            </value>
+            <value>
+                <fullName>Flex T</fullName>
+                <default>false</default>
+                <label>Flex T</label>
+            </value>
+            <value>
+                <fullName>DW1514</fullName>
+                <default>false</default>
+                <label>DW1514</label>
+            </value>
+            <value>
+                <fullName>Handi-Lift II</fullName>
+                <default>false</default>
+                <label>Handi-Lift II</label>
+            </value>
+            <value>
+                <fullName>Series 15</fullName>
+                <default>false</default>
+                <label>Series 15</label>
+            </value>
+            <value>
+                <fullName>Magnetic</fullName>
+                <default>false</default>
+                <label>Magnetic</label>
+            </value>
+            <value>
+                <fullName>Craftsman Relay</fullName>
+                <default>false</default>
+                <label>Craftsman Relay</label>
+            </value>
+            <value>
+                <fullName>D100A</fullName>
+                <default>false</default>
+                <label>D100A</label>
+            </value>
+            <value>
+                <fullName>Composite</fullName>
+                <default>false</default>
+                <label>Composite</label>
+            </value>
+            <value>
+                <fullName>DMC I</fullName>
+                <default>false</default>
+                <label>DMC I</label>
+            </value>
+            <value>
+                <fullName>DMC IA</fullName>
+                <default>false</default>
+                <label>DMC IA</label>
+            </value>
+            <value>
+                <fullName>LMH</fullName>
+                <default>false</default>
+                <label>LMH</label>
+            </value>
+            <value>
+                <fullName>LMT</fullName>
+                <default>false</default>
+                <label>LMT</label>
+            </value>
+            <value>
+                <fullName>MM II</fullName>
+                <default>false</default>
+                <label>MM II</label>
+            </value>
+            <value>
+                <fullName>Modular Composite Loopstick</fullName>
+                <default>false</default>
+                <label>Modular Composite Loopstick</label>
+            </value>
+            <value>
+                <fullName>MSC1</fullName>
+                <default>false</default>
+                <label>MSC1</label>
+            </value>
+            <value>
+                <fullName>P and B Relay Hydraulic</fullName>
+                <default>false</default>
+                <label>P and B Relay Hydraulic</label>
+            </value>
+            <value>
+                <fullName>Rotary Hydraulic</fullName>
+                <default>false</default>
+                <label>Rotary Hydraulic</label>
+            </value>
+            <value>
+                <fullName>SGT</fullName>
+                <default>false</default>
+                <label>SGT</label>
+            </value>
+            <value>
+                <fullName>Solid State Hydraulic</fullName>
+                <default>false</default>
+                <label>Solid State Hydraulic</label>
+            </value>
+            <value>
+                <fullName>SS5t</fullName>
+                <default>false</default>
+                <label>SS5t</label>
+            </value>
+            <value>
+                <fullName>TDQ 1</fullName>
+                <default>false</default>
+                <label>TDQ 1</label>
+            </value>
+            <value>
+                <fullName>Traflomatic I</fullName>
+                <default>false</default>
+                <label>Traflomatic I</label>
+            </value>
+            <value>
+                <fullName>Traflomatic II</fullName>
+                <default>false</default>
+                <label>Traflomatic II</label>
+            </value>
+            <value>
+                <fullName>Traflomatic III</fullName>
+                <default>false</default>
+                <label>Traflomatic III</label>
+            </value>
+            <value>
+                <fullName>Traflomatic IV</fullName>
+                <default>false</default>
+                <label>Traflomatic IV</label>
+            </value>
+            <value>
+                <fullName>WCR Hydraulic</fullName>
+                <default>false</default>
+                <label>WCR Hydraulic</label>
+            </value>
+            <value>
+                <fullName>H800</fullName>
+                <default>false</default>
+                <label>H800</label>
+            </value>
+            <value>
+                <fullName>H900</fullName>
+                <default>false</default>
+                <label>H900</label>
+            </value>
+            <value>
+                <fullName>Pixel</fullName>
+                <default>false</default>
+                <label>Pixel</label>
+            </value>
+            <value>
+                <fullName>Prodigy</fullName>
+                <default>false</default>
+                <label>Prodigy</label>
+            </value>
+            <value>
+                <fullName>V800</fullName>
+                <default>false</default>
+                <label>V800</label>
+            </value>
+            <value>
+                <fullName>V900</fullName>
+                <default>false</default>
+                <label>V900</label>
+            </value>
+            <value>
+                <fullName>Relay Control</fullName>
+                <default>false</default>
+                <label>Relay Control</label>
+            </value>
+            <value>
+                <fullName>C-2631</fullName>
+                <default>false</default>
+                <label>C-2631</label>
+            </value>
+            <value>
+                <fullName>6006H</fullName>
+                <default>false</default>
+                <label>6006H</label>
+            </value>
+            <value>
+                <fullName>2002H Serial Link</fullName>
+                <default>false</default>
+                <label>2002H Serial Link</label>
+            </value>
+            <value>
+                <fullName>Solid State</fullName>
+                <default>false</default>
+                <label>Solid State</label>
+            </value>
+            <value>
+                <fullName>DC GL Mic400</fullName>
+                <default>false</default>
+                <label>DC GL Mic400</label>
+            </value>
+            <value>
+                <fullName>ExcelDyne</fullName>
+                <default>false</default>
+                <label>ExcelDyne</label>
+            </value>
+            <value>
+                <fullName>GS8000 NX Escalator</fullName>
+                <default>false</default>
+                <label>GS8000 NX Escalator</label>
+            </value>
+            <value>
+                <fullName>GS8100 Moving Walk</fullName>
+                <default>false</default>
+                <label>GS8100 Moving Walk</label>
+            </value>
+            <value>
+                <fullName>HydroDyne</fullName>
+                <default>false</default>
+                <label>HydroDyne</label>
+            </value>
+            <value>
+                <fullName>Millennium</fullName>
+                <default>false</default>
+                <label>Millennium</label>
+            </value>
+            <value>
+                <fullName>Millennium II Hydraulic</fullName>
+                <default>false</default>
+                <label>Millennium II Hydraulic</label>
+            </value>
+            <value>
+                <fullName>Millennium II Traction</fullName>
+                <default>false</default>
+                <label>Millennium II Traction</label>
+            </value>
+            <value>
+                <fullName>Millennium III</fullName>
+                <default>false</default>
+                <label>Millennium III</label>
+            </value>
+            <value>
+                <fullName>Millennium V Viridian</fullName>
+                <default>false</default>
+                <label>Millennium V Viridian</label>
+            </value>
+            <value>
+                <fullName>PLC Escalator</fullName>
+                <default>false</default>
+                <label>PLC Escalator</label>
+            </value>
+            <value>
+                <fullName>Royal SuperDyne</fullName>
+                <default>false</default>
+                <label>Royal SuperDyne</label>
+            </value>
+            <value>
+                <fullName>Talon MRL</fullName>
+                <default>false</default>
+                <label>Talon MRL</label>
+            </value>
+            <value>
+                <fullName>GALaxy Hydraulic</fullName>
+                <default>false</default>
+                <label>GALaxy Hydraulic</label>
+            </value>
+            <value>
+                <fullName>GALaxy Traction</fullName>
+                <default>false</default>
+                <label>GALaxy Traction</label>
+            </value>
+            <value>
+                <fullName>Microprocessor</fullName>
+                <default>false</default>
+                <label>Microprocessor</label>
+            </value>
+            <value>
+                <fullName>Grote Relay</fullName>
+                <default>false</default>
+                <label>Grote Relay</label>
+            </value>
+            <value>
+                <fullName>1092 IC</fullName>
+                <default>false</default>
+                <label>1092 IC</label>
+            </value>
+            <value>
+                <fullName>300A</fullName>
+                <default>false</default>
+                <label>300A</label>
+            </value>
+            <value>
+                <fullName>Accuflite</fullName>
+                <default>false</default>
+                <label>Accuflite</label>
+            </value>
+            <value>
+                <fullName>EVC ELC Model 1thru5</fullName>
+                <default>false</default>
+                <label>EVC ELC Model 1thru5</label>
+            </value>
+            <value>
+                <fullName>GAM</fullName>
+                <default>false</default>
+                <label>GAM</label>
+            </value>
+            <value>
+                <fullName>Goldflite</fullName>
+                <default>false</default>
+                <label>Goldflite</label>
+            </value>
+            <value>
+                <fullName>HYL</fullName>
+                <default>false</default>
+                <label>HYL</label>
+            </value>
+            <value>
+                <fullName>Miconic FM</fullName>
+                <default>false</default>
+                <label>Miconic FM</label>
+            </value>
+            <value>
+                <fullName>PHC</fullName>
+                <default>false</default>
+                <label>PHC</label>
+            </value>
+            <value>
+                <fullName>SAM</fullName>
+                <default>false</default>
+                <label>SAM</label>
+            </value>
+            <value>
+                <fullName>CX Escalator</fullName>
+                <default>false</default>
+                <label>CX Escalator</label>
+            </value>
+            <value>
+                <fullName>V Escalator</fullName>
+                <default>false</default>
+                <label>V Escalator</label>
+            </value>
+            <value>
+                <fullName>LEV</fullName>
+                <default>false</default>
+                <label>LEV</label>
+            </value>
+            <value>
+                <fullName>Belt Manlift</fullName>
+                <default>false</default>
+                <label>Belt Manlift</label>
+            </value>
+            <value>
+                <fullName>Hyundai Escalator</fullName>
+                <default>false</default>
+                <label>Hyundai Escalator</label>
+            </value>
+            <value>
+                <fullName>ECO 3000</fullName>
+                <default>false</default>
+                <label>ECO 3000</label>
+            </value>
+            <value>
+                <fullName>EcoSpace</fullName>
+                <default>false</default>
+                <label>EcoSpace</label>
+            </value>
+            <value>
+                <fullName>ES5000</fullName>
+                <default>false</default>
+                <label>ES5000</label>
+            </value>
+            <value>
+                <fullName>KCM831</fullName>
+                <default>false</default>
+                <label>KCM831</label>
+            </value>
+            <value>
+                <fullName>MiniSpace</fullName>
+                <default>false</default>
+                <label>MiniSpace</label>
+            </value>
+            <value>
+                <fullName>Miprom 21</fullName>
+                <default>false</default>
+                <label>Miprom 21</label>
+            </value>
+            <value>
+                <fullName>Miprom HS</fullName>
+                <default>false</default>
+                <label>Miprom HS</label>
+            </value>
+            <value>
+                <fullName>Miprom I</fullName>
+                <default>false</default>
+                <label>Miprom I</label>
+            </value>
+            <value>
+                <fullName>Miprom II</fullName>
+                <default>false</default>
+                <label>Miprom II</label>
+            </value>
+            <value>
+                <fullName>Miprom SL</fullName>
+                <default>false</default>
+                <label>Miprom SL</label>
+            </value>
+            <value>
+                <fullName>Miprom ST</fullName>
+                <default>false</default>
+                <label>Miprom ST</label>
+            </value>
+            <value>
+                <fullName>MonoSpace</fullName>
+                <default>false</default>
+                <label>MonoSpace</label>
+            </value>
+            <value>
+                <fullName>Resolve 100</fullName>
+                <default>false</default>
+                <label>Resolve 100</label>
+            </value>
+            <value>
+                <fullName>Resolve 20</fullName>
+                <default>false</default>
+                <label>Resolve 20</label>
+            </value>
+            <value>
+                <fullName>SSC-6010</fullName>
+                <default>false</default>
+                <label>SSC-6010</label>
+            </value>
+            <value>
+                <fullName>TMS550</fullName>
+                <default>false</default>
+                <label>TMS550</label>
+            </value>
+            <value>
+                <fullName>EH 102</fullName>
+                <default>false</default>
+                <label>EH 102</label>
+            </value>
+            <value>
+                <fullName>Otis Sigma ARES ART Escalator</fullName>
+                <default>false</default>
+                <label>Otis Sigma ARES ART Escalator</label>
+            </value>
+            <value>
+                <fullName>Otis Sigma Di 1</fullName>
+                <default>false</default>
+                <label>Otis Sigma Di 1</label>
+            </value>
+            <value>
+                <fullName>Otis Sigma Di 5</fullName>
+                <default>false</default>
+                <label>Otis Sigma Di 5</label>
+            </value>
+            <value>
+                <fullName>Otis Sigma Ds 4</fullName>
+                <default>false</default>
+                <label>Otis Sigma Ds 4</label>
+            </value>
+            <value>
+                <fullName>Otis Sigma IRIS MRL</fullName>
+                <default>false</default>
+                <label>Otis Sigma IRIS MRL</label>
+            </value>
+            <value>
+                <fullName>Otis Sigma Other</fullName>
+                <default>false</default>
+                <label>Otis Sigma Other</label>
+            </value>
+            <value>
+                <fullName>VMW</fullName>
+                <default>false</default>
+                <label>VMW</label>
+            </value>
+            <value>
+                <fullName>Cartop</fullName>
+                <default>false</default>
+                <label>Cartop</label>
+            </value>
+            <value>
+                <fullName>TRC</fullName>
+                <default>false</default>
+                <label>TRC</label>
+            </value>
+            <value>
+                <fullName>PL-45</fullName>
+                <default>false</default>
+                <label>PL-45</label>
+            </value>
+            <value>
+                <fullName>MUFACX</fullName>
+                <default>false</default>
+                <label>MUFACX</label>
+            </value>
+            <value>
+                <fullName>HMC HS</fullName>
+                <default>false</default>
+                <label>HMC HS</label>
+            </value>
+            <value>
+                <fullName>HMC PHC-1000</fullName>
+                <default>false</default>
+                <label>HMC PHC-1000</label>
+            </value>
+            <value>
+                <fullName>HMC-1000</fullName>
+                <default>false</default>
+                <label>HMC-1000</label>
+            </value>
+            <value>
+                <fullName>iControl</fullName>
+                <default>false</default>
+                <label>iControl</label>
+            </value>
+            <value>
+                <fullName>IMC</fullName>
+                <default>false</default>
+                <label>IMC</label>
+            </value>
+            <value>
+                <fullName>Motion 2000</fullName>
+                <default>false</default>
+                <label>Motion 2000</label>
+            </value>
+            <value>
+                <fullName>Motion 3000 ES Escalator</fullName>
+                <default>false</default>
+                <label>Motion 3000 ES Escalator</label>
+            </value>
+            <value>
+                <fullName>Motion 4000</fullName>
+                <default>false</default>
+                <label>Motion 4000</label>
+            </value>
+            <value>
+                <fullName>VFMC</fullName>
+                <default>false</default>
+                <label>VFMC</label>
+            </value>
+            <value>
+                <fullName>VVMC</fullName>
+                <default>false</default>
+                <label>VVMC</label>
+            </value>
+            <value>
+                <fullName>Element</fullName>
+                <default>false</default>
+                <label>Element</label>
+            </value>
+            <value>
+                <fullName>PLC</fullName>
+                <default>false</default>
+                <label>PLC</label>
+            </value>
+            <value>
+                <fullName>CVT 1000</fullName>
+                <default>false</default>
+                <label>CVT 1000</label>
+            </value>
+            <value>
+                <fullName>CVT 2400</fullName>
+                <default>false</default>
+                <label>CVT 2400</label>
+            </value>
+            <value>
+                <fullName>CVT 8600</fullName>
+                <default>false</default>
+                <label>CVT 8600</label>
+            </value>
+            <value>
+                <fullName>CVT 8800</fullName>
+                <default>false</default>
+                <label>CVT 8800</label>
+            </value>
+            <value>
+                <fullName>CVT A I</fullName>
+                <default>false</default>
+                <label>CVT A I</label>
+            </value>
+            <value>
+                <fullName>2C 2BC</fullName>
+                <default>false</default>
+                <label>2C 2BC</label>
+            </value>
+            <value>
+                <fullName>AC E4LP</fullName>
+                <default>false</default>
+                <label>AC E4LP</label>
+            </value>
+            <value>
+                <fullName>Diamond Trac MRL</fullName>
+                <default>false</default>
+                <label>Diamond Trac MRL</label>
+            </value>
+            <value>
+                <fullName>Elenessa MRL VFGL</fullName>
+                <default>false</default>
+                <label>Elenessa MRL VFGL</label>
+            </value>
+            <value>
+                <fullName>GPH IDH Hydraulic</fullName>
+                <default>false</default>
+                <label>GPH IDH Hydraulic</label>
+            </value>
+            <value>
+                <fullName>GPM III</fullName>
+                <default>false</default>
+                <label>GPM III</label>
+            </value>
+            <value>
+                <fullName>Series Z Escalator</fullName>
+                <default>false</default>
+                <label>Series Z Escalator</label>
+            </value>
+            <value>
+                <fullName>Spiral Escalator</fullName>
+                <default>false</default>
+                <label>Spiral Escalator</label>
+            </value>
+            <value>
+                <fullName>VFDL GPS I</fullName>
+                <default>false</default>
+                <label>VFDL GPS I</label>
+            </value>
+            <value>
+                <fullName>VFDL GPS II</fullName>
+                <default>false</default>
+                <label>VFDL GPS II</label>
+            </value>
+            <value>
+                <fullName>VFEH</fullName>
+                <default>false</default>
+                <label>VFEH</label>
+            </value>
+            <value>
+                <fullName>VFEL GPS III</fullName>
+                <default>false</default>
+                <label>VFEL GPS III</label>
+            </value>
+            <value>
+                <fullName>VFGH</fullName>
+                <default>false</default>
+                <label>VFGH</label>
+            </value>
+            <value>
+                <fullName>VFGL GPS IV</fullName>
+                <default>false</default>
+                <label>VFGL GPS IV</label>
+            </value>
+            <value>
+                <fullName>6010</fullName>
+                <default>false</default>
+                <label>6010</label>
+            </value>
+            <value>
+                <fullName>24V Escalator</fullName>
+                <default>false</default>
+                <label>24V Escalator</label>
+            </value>
+            <value>
+                <fullName>HS</fullName>
+                <default>false</default>
+                <label>HS</label>
+            </value>
+            <value>
+                <fullName>Miprom 2100 Hydraulic</fullName>
+                <default>false</default>
+                <label>Miprom 2100 Hydraulic</label>
+            </value>
+            <value>
+                <fullName>SL</fullName>
+                <default>false</default>
+                <label>SL</label>
+            </value>
+            <value>
+                <fullName>ST</fullName>
+                <default>false</default>
+                <label>ST</label>
+            </value>
+            <value>
+                <fullName>Uniprom Miprom 1 Hydraulic</fullName>
+                <default>false</default>
+                <label>Uniprom Miprom 1 Hydraulic</label>
+            </value>
+            <value>
+                <fullName>Uniprom Miprom 1 Traction</fullName>
+                <default>false</default>
+                <label>Uniprom Miprom 1 Traction</label>
+            </value>
+            <value>
+                <fullName>EMAC 2000</fullName>
+                <default>false</default>
+                <label>EMAC 2000</label>
+            </value>
+            <value>
+                <fullName>EMAC 2005</fullName>
+                <default>false</default>
+                <label>EMAC 2005</label>
+            </value>
+            <value>
+                <fullName>M100</fullName>
+                <default>false</default>
+                <label>M100</label>
+            </value>
+            <value>
+                <fullName>M1600</fullName>
+                <default>false</default>
+                <label>M1600</label>
+            </value>
+            <value>
+                <fullName>M200</fullName>
+                <default>false</default>
+                <label>M200</label>
+            </value>
+            <value>
+                <fullName>M3200</fullName>
+                <default>false</default>
+                <label>M3200</label>
+            </value>
+            <value>
+                <fullName>NorthStar9000</fullName>
+                <default>false</default>
+                <label>NorthStar9000</label>
+            </value>
+            <value>
+                <fullName>TC181</fullName>
+                <default>false</default>
+                <label>TC181</label>
+            </value>
+            <value>
+                <fullName>TC3200</fullName>
+                <default>false</default>
+                <label>TC3200</label>
+            </value>
+            <value>
+                <fullName>Tronic 301</fullName>
+                <default>false</default>
+                <label>Tronic 301</label>
+            </value>
+            <value>
+                <fullName>Tronic 401</fullName>
+                <default>false</default>
+                <label>Tronic 401</label>
+            </value>
+            <value>
+                <fullName>C20</fullName>
+                <default>false</default>
+                <label>C20</label>
+            </value>
+            <value>
+                <fullName>Arca I</fullName>
+                <default>false</default>
+                <label>Arca I</label>
+            </value>
+            <value>
+                <fullName>Arca II</fullName>
+                <default>false</default>
+                <label>Arca II</label>
+            </value>
+            <value>
+                <fullName>uP 870</fullName>
+                <default>false</default>
+                <label>uP 870</label>
+            </value>
+            <value>
+                <fullName>uP900</fullName>
+                <default>false</default>
+                <label>uP900</label>
+            </value>
+            <value>
+                <fullName>Mcroflite Intellinet</fullName>
+                <default>false</default>
+                <label>Mcroflite Intellinet</label>
+            </value>
+            <value>
+                <fullName>Microflite</fullName>
+                <default>false</default>
+                <label>Microflite</label>
+            </value>
+            <value>
+                <fullName>Microflite Ultra 2000</fullName>
+                <default>false</default>
+                <label>Microflite Ultra 2000</label>
+            </value>
+            <value>
+                <fullName>Series 90</fullName>
+                <default>false</default>
+                <label>Series 90</label>
+            </value>
+            <value>
+                <fullName>Tricon by MCE</fullName>
+                <default>false</default>
+                <label>Tricon by MCE</label>
+            </value>
+            <value>
+                <fullName>101</fullName>
+                <default>false</default>
+                <label>101</label>
+            </value>
+            <value>
+                <fullName>211</fullName>
+                <default>false</default>
+                <label>211</label>
+            </value>
+            <value>
+                <fullName>311</fullName>
+                <default>false</default>
+                <label>311</label>
+            </value>
+            <value>
+                <fullName>401</fullName>
+                <default>false</default>
+                <label>401</label>
+            </value>
+            <value>
+                <fullName>411</fullName>
+                <default>false</default>
+                <label>411</label>
+            </value>
+            <value>
+                <fullName>311M 411M</fullName>
+                <default>false</default>
+                <label>311M 411M</label>
+            </value>
+            <value>
+                <fullName>335M</fullName>
+                <default>false</default>
+                <label>335M</label>
+            </value>
+            <value>
+                <fullName>506 NCE Escalator</fullName>
+                <default>false</default>
+                <label>506 NCE Escalator</label>
+            </value>
+            <value>
+                <fullName>508 NCE Escalator</fullName>
+                <default>false</default>
+                <label>508 NCE Escalator</label>
+            </value>
+            <value>
+                <fullName>A Base</fullName>
+                <default>false</default>
+                <label>A Base</label>
+            </value>
+            <value>
+                <fullName>B Base</fullName>
+                <default>false</default>
+                <label>B Base</label>
+            </value>
+            <value>
+                <fullName>CB Base</fullName>
+                <default>false</default>
+                <label>CB Base</label>
+            </value>
+            <value>
+                <fullName>Escalair</fullName>
+                <default>false</default>
+                <label>Escalair</label>
+            </value>
+            <value>
+                <fullName>Gamma D</fullName>
+                <default>false</default>
+                <label>Gamma D</label>
+            </value>
+            <value>
+                <fullName>GCS Elevonic R</fullName>
+                <default>false</default>
+                <label>GCS Elevonic R</label>
+            </value>
+            <value>
+                <fullName>Gen2 GCS</fullName>
+                <default>false</default>
+                <label>Gen2 GCS</label>
+            </value>
+            <value>
+                <fullName>Gen2 MECS</fullName>
+                <default>false</default>
+                <label>Gen2 MECS</label>
+            </value>
+            <value>
+                <fullName>Hydrofit</fullName>
+                <default>false</default>
+                <label>Hydrofit</label>
+            </value>
+            <value>
+                <fullName>LR</fullName>
+                <default>false</default>
+                <label>LR</label>
+            </value>
+            <value>
+                <fullName>LRV LRS</fullName>
+                <default>false</default>
+                <label>LRV LRS</label>
+            </value>
+            <value>
+                <fullName>MRS</fullName>
+                <default>false</default>
+                <label>MRS</label>
+            </value>
+            <value>
+                <fullName>MRV</fullName>
+                <default>false</default>
+                <label>MRV</label>
+            </value>
+            <value>
+                <fullName>MRVF</fullName>
+                <default>false</default>
+                <label>MRVF</label>
+            </value>
+            <value>
+                <fullName>NextStep Escalator</fullName>
+                <default>false</default>
+                <label>NextStep Escalator</label>
+            </value>
+            <value>
+                <fullName>SPEC60 MRQ</fullName>
+                <default>false</default>
+                <label>SPEC60 MRQ</label>
+            </value>
+            <value>
+                <fullName>Type J</fullName>
+                <default>false</default>
+                <label>Type J</label>
+            </value>
+            <value>
+                <fullName>10N0B</fullName>
+                <default>false</default>
+                <label>10N0B</label>
+            </value>
+            <value>
+                <fullName>21AUH</fullName>
+                <default>false</default>
+                <label>21AUH</label>
+            </value>
+            <value>
+                <fullName>UCLS</fullName>
+                <default>false</default>
+                <label>UCLS</label>
+            </value>
+            <value>
+                <fullName>Galvanized</fullName>
+                <default>false</default>
+                <label>Galvanized</label>
+            </value>
+            <value>
+                <fullName>Yellow 500</fullName>
+                <default>false</default>
+                <label>Yellow 500</label>
+            </value>
+            <value>
+                <fullName>CR1000</fullName>
+                <default>false</default>
+                <label>CR1000</label>
+            </value>
+            <value>
+                <fullName>V-1504</fullName>
+                <default>false</default>
+                <label>V-1504</label>
+            </value>
+            <value>
+                <fullName>Miconic A</fullName>
+                <default>false</default>
+                <label>Miconic A</label>
+            </value>
+            <value>
+                <fullName>3300</fullName>
+                <default>false</default>
+                <label>3300</label>
+            </value>
+            <value>
+                <fullName>5400</fullName>
+                <default>false</default>
+                <label>5400</label>
+            </value>
+            <value>
+                <fullName>321A</fullName>
+                <default>false</default>
+                <label>321A</label>
+            </value>
+            <value>
+                <fullName>330A</fullName>
+                <default>false</default>
+                <label>330A</label>
+            </value>
+            <value>
+                <fullName>400A</fullName>
+                <default>false</default>
+                <label>400A</label>
+            </value>
+            <value>
+                <fullName>500A</fullName>
+                <default>false</default>
+                <label>500A</label>
+            </value>
+            <value>
+                <fullName>9300 Escalator</fullName>
+                <default>false</default>
+                <label>9300 Escalator</label>
+            </value>
+            <value>
+                <fullName>9500 Moving Walk</fullName>
+                <default>false</default>
+                <label>9500 Moving Walk</label>
+            </value>
+            <value>
+                <fullName>9700 Escalator</fullName>
+                <default>false</default>
+                <label>9700 Escalator</label>
+            </value>
+            <value>
+                <fullName>Miconic HX</fullName>
+                <default>false</default>
+                <label>Miconic HX</label>
+            </value>
+            <value>
+                <fullName>Miconic TX R4</fullName>
+                <default>false</default>
+                <label>Miconic TX R4</label>
+            </value>
+            <value>
+                <fullName>Miconic TX R5</fullName>
+                <default>false</default>
+                <label>Miconic TX R5</label>
+            </value>
+            <value>
+                <fullName>Miconic V VM</fullName>
+                <default>false</default>
+                <label>Miconic V VM</label>
+            </value>
+            <value>
+                <fullName>MPH II</fullName>
+                <default>false</default>
+                <label>MPH II</label>
+            </value>
+            <value>
+                <fullName>SWE Escalator</fullName>
+                <default>false</default>
+                <label>SWE Escalator</label>
+            </value>
+            <value>
+                <fullName>SWU Escalator</fullName>
+                <default>false</default>
+                <label>SWU Escalator</label>
+            </value>
+            <value>
+                <fullName>Silver Cross</fullName>
+                <default>false</default>
+                <label>Silver Cross</label>
+            </value>
+            <value>
+                <fullName>SRA Traction</fullName>
+                <default>false</default>
+                <label>SRA Traction</label>
+            </value>
+            <value>
+                <fullName>SRD Traction</fullName>
+                <default>false</default>
+                <label>SRD Traction</label>
+            </value>
+            <value>
+                <fullName>SRH Hydraulic</fullName>
+                <default>false</default>
+                <label>SRH Hydraulic</label>
+            </value>
+            <value>
+                <fullName>140403</fullName>
+                <default>false</default>
+                <label>140403</label>
+            </value>
+            <value>
+                <fullName>TMC</fullName>
+                <default>false</default>
+                <label>TMC</label>
+            </value>
+            <value>
+                <fullName>Destination Advance</fullName>
+                <default>false</default>
+                <label>Destination Advance</label>
+            </value>
+            <value>
+                <fullName>ICON</fullName>
+                <default>false</default>
+                <label>ICON</label>
+            </value>
+            <value>
+                <fullName>ISIS I</fullName>
+                <default>false</default>
+                <label>ISIS I</label>
+            </value>
+            <value>
+                <fullName>ISIS II</fullName>
+                <default>false</default>
+                <label>ISIS II</label>
+            </value>
+            <value>
+                <fullName>Loire</fullName>
+                <default>false</default>
+                <label>Loire</label>
+            </value>
+            <value>
+                <fullName>Orinoco</fullName>
+                <default>false</default>
+                <label>Orinoco</label>
+            </value>
+            <value>
+                <fullName>TAC20</fullName>
+                <default>false</default>
+                <label>TAC20</label>
+            </value>
+            <value>
+                <fullName>TAC20 03</fullName>
+                <default>false</default>
+                <label>TAC20 03</label>
+            </value>
+            <value>
+                <fullName>TAC22</fullName>
+                <default>false</default>
+                <label>TAC22</label>
+            </value>
+            <value>
+                <fullName>TAC32</fullName>
+                <default>false</default>
+                <label>TAC32</label>
+            </value>
+            <value>
+                <fullName>TAC32H</fullName>
+                <default>false</default>
+                <label>TAC32H</label>
+            </value>
+            <value>
+                <fullName>TAC32T</fullName>
+                <default>false</default>
+                <label>TAC32T</label>
+            </value>
+            <value>
+                <fullName>TAC32T Slim</fullName>
+                <default>false</default>
+                <label>TAC32T Slim</label>
+            </value>
+            <value>
+                <fullName>TAC50</fullName>
+                <default>false</default>
+                <label>TAC50</label>
+            </value>
+            <value>
+                <fullName>TAC50 03</fullName>
+                <default>false</default>
+                <label>TAC50 03</label>
+            </value>
+            <value>
+                <fullName>TAC50 04 16 Bit</fullName>
+                <default>false</default>
+                <label>TAC50 04 16 Bit</label>
+            </value>
+            <value>
+                <fullName>TAC50 04 32 Bit</fullName>
+                <default>false</default>
+                <label>TAC50 04 32 Bit</label>
+            </value>
+            <value>
+                <fullName>Tugela</fullName>
+                <default>false</default>
+                <label>Tugela</label>
+            </value>
+            <value>
+                <fullName>Velino</fullName>
+                <default>false</default>
+                <label>Velino</label>
+            </value>
+            <value>
+                <fullName>Victoria</fullName>
+                <default>false</default>
+                <label>Victoria</label>
+            </value>
+            <value>
+                <fullName>21009</fullName>
+                <default>false</default>
+                <label>21009</label>
+            </value>
+            <value>
+                <fullName>Green Box</fullName>
+                <default>false</default>
+                <label>Green Box</label>
+            </value>
+            <value>
+                <fullName>1200MP</fullName>
+                <default>false</default>
+                <label>1200MP</label>
+            </value>
+            <value>
+                <fullName>1210MP</fullName>
+                <default>false</default>
+                <label>1210MP</label>
+            </value>
+            <value>
+                <fullName>1220MP</fullName>
+                <default>false</default>
+                <label>1220MP</label>
+            </value>
+            <value>
+                <fullName>1230MP</fullName>
+                <default>false</default>
+                <label>1230MP</label>
+            </value>
+            <value>
+                <fullName>Ascension 1000</fullName>
+                <default>false</default>
+                <label>Ascension 1000</label>
+            </value>
+            <value>
+                <fullName>Ascension 2000</fullName>
+                <default>false</default>
+                <label>Ascension 2000</label>
+            </value>
+            <value>
+                <fullName>MDU</fullName>
+                <default>false</default>
+                <label>MDU</label>
+            </value>
+            <value>
+                <fullName>VCS 1</fullName>
+                <default>false</default>
+                <label>VCS 1</label>
+            </value>
+            <value>
+                <fullName>VH</fullName>
+                <default>false</default>
+                <label>VH</label>
+            </value>
+            <value>
+                <fullName>VHC 102</fullName>
+                <default>false</default>
+                <label>VHC 102</label>
+            </value>
+            <value>
+                <fullName>Vertrans Relay</fullName>
+                <default>false</default>
+                <label>Vertrans Relay</label>
+            </value>
+            <value>
+                <fullName>Hydro Controller</fullName>
+                <default>false</default>
+                <label>Hydro Controller</label>
+            </value>
+            <value>
+                <fullName>EPOCH I</fullName>
+                <default>false</default>
+                <label>EPOCH I</label>
+            </value>
+            <value>
+                <fullName>EPOCH II MTM</fullName>
+                <default>false</default>
+                <label>EPOCH II MTM</label>
+            </value>
+            <value>
+                <fullName>EPOCH II VA</fullName>
+                <default>false</default>
+                <label>EPOCH II VA</label>
+            </value>
+            <value>
+                <fullName>Modular B-100 Escalator</fullName>
+                <default>false</default>
+                <label>Modular B-100 Escalator</label>
+            </value>
+            <value>
+                <fullName>Modular B-200 Escalator</fullName>
+                <default>false</default>
+                <label>Modular B-200 Escalator</label>
+            </value>
+            <value>
+                <fullName>Modular B-250 Escalator</fullName>
+                <default>false</default>
+                <label>Modular B-250 Escalator</label>
+            </value>
+            <value>
+                <fullName>MPH I</fullName>
+                <default>false</default>
+                <label>MPH I</label>
+            </value>
+            <value>
+                <fullName>SMF3 TTL</fullName>
+                <default>false</default>
+                <label>SMF3 TTL</label>
+            </value>
+            <value>
+                <fullName>World Class</fullName>
+                <default>false</default>
+                <label>World Class</label>
+            </value>
+            <value>
+                <fullName>2BC-HYL</fullName>
+                <default>false</default>
+                <label>2BC-HYL</label>
+            </value>
+            <value>
+                <fullName>ERL</fullName>
+                <default>false</default>
+                <label>ERL</label>
+            </value>
+            <value>
+                <fullName>REL</fullName>
+                <default>false</default>
+                <label>REL</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Midstate</controllingFieldValue>
+            <valueName>PLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Millar</controllingFieldValue>
+            <valueName>CVT 1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Millar</controllingFieldValue>
+            <valueName>CVT 2400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Millar</controllingFieldValue>
+            <valueName>CVT 8600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Millar</controllingFieldValue>
+            <valueName>CVT 8800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Millar</controllingFieldValue>
+            <valueName>CVT A I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precise</controllingFieldValue>
+            <controllingFieldValue>Oliver &amp; Williams</controllingFieldValue>
+            <controllingFieldValue>Cal-West</controllingFieldValue>
+            <controllingFieldValue>Amtech</controllingFieldValue>
+            <controllingFieldValue>Coast</controllingFieldValue>
+            <controllingFieldValue>Delta</controllingFieldValue>
+            <controllingFieldValue>ERM</controllingFieldValue>
+            <valueName>Relay Generic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R&amp;O</controllingFieldValue>
+            <valueName>Galvanized</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>R&amp;O</controllingFieldValue>
+            <valueName>Yellow 500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rafiner</controllingFieldValue>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <controllingFieldValue>O&amp;K</controllingFieldValue>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <controllingFieldValue>Warsaw</controllingFieldValue>
+            <controllingFieldValue>Elevator Research Company</controllingFieldValue>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <controllingFieldValue>GAL</controllingFieldValue>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <controllingFieldValue>OThompson</controllingFieldValue>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>Generic Relay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ram Elevators and Lifts</controllingFieldValue>
+            <valueName>CR1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reliable</controllingFieldValue>
+            <controllingFieldValue>Rotary</controllingFieldValue>
+            <controllingFieldValue>Salish</controllingFieldValue>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <controllingFieldValue>Monarch</controllingFieldValue>
+            <controllingFieldValue>Motovator</controllingFieldValue>
+            <controllingFieldValue>Automatisation JRT</controllingFieldValue>
+            <controllingFieldValue>Baxco</controllingFieldValue>
+            <controllingFieldValue>Canton</controllingFieldValue>
+            <controllingFieldValue>Carrier-Lifts</controllingFieldValue>
+            <controllingFieldValue>CEC/Swift</controllingFieldValue>
+            <controllingFieldValue>Schumacher</controllingFieldValue>
+            <controllingFieldValue>Sedgewick</controllingFieldValue>
+            <controllingFieldValue>A&amp;D Elevator (Angelo &amp; Dominic Elevator)</controllingFieldValue>
+            <controllingFieldValue>Serge</controllingFieldValue>
+            <controllingFieldValue>Abell</controllingFieldValue>
+            <controllingFieldValue>Shepard Warner</controllingFieldValue>
+            <controllingFieldValue>Alimak</controllingFieldValue>
+            <controllingFieldValue>American Crescent</controllingFieldValue>
+            <controllingFieldValue>Southern</controllingFieldValue>
+            <controllingFieldValue>Amtech</controllingFieldValue>
+            <controllingFieldValue>Stross</controllingFieldValue>
+            <controllingFieldValue>Atlas Elevator - San Francisco</controllingFieldValue>
+            <controllingFieldValue>CEMCO</controllingFieldValue>
+            <controllingFieldValue>CJ Anderson</controllingFieldValue>
+            <controllingFieldValue>Concord</controllingFieldValue>
+            <controllingFieldValue>Concordia</controllingFieldValue>
+            <controllingFieldValue>Thames Valley</controllingFieldValue>
+            <controllingFieldValue>Toshiba</controllingFieldValue>
+            <controllingFieldValue>TriState Elevator of PA</controllingFieldValue>
+            <controllingFieldValue>Turnbull</controllingFieldValue>
+            <controllingFieldValue>Creative and Design Machine</controllingFieldValue>
+            <controllingFieldValue>Delaware</controllingFieldValue>
+            <controllingFieldValue>Delta</controllingFieldValue>
+            <controllingFieldValue>Eastern</controllingFieldValue>
+            <controllingFieldValue>Elevator Electric</controllingFieldValue>
+            <controllingFieldValue>Viola</controllingFieldValue>
+            <controllingFieldValue>Virginia Controls</controllingFieldValue>
+            <controllingFieldValue>Waupaca</controllingFieldValue>
+            <controllingFieldValue>Westbrook</controllingFieldValue>
+            <controllingFieldValue>Wheelovator</controllingFieldValue>
+            <controllingFieldValue>Energy</controllingFieldValue>
+            <controllingFieldValue>ESCO</controllingFieldValue>
+            <controllingFieldValue>FS Payne</controllingFieldValue>
+            <controllingFieldValue>White Evans</controllingFieldValue>
+            <controllingFieldValue>WICO</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Garaventa</controllingFieldValue>
+            <controllingFieldValue>Giant Lift</controllingFieldValue>
+            <controllingFieldValue>Gillespie</controllingFieldValue>
+            <controllingFieldValue>Global Tardif</controllingFieldValue>
+            <controllingFieldValue>Globe Hoist</controllingFieldValue>
+            <controllingFieldValue>HI TECH</controllingFieldValue>
+            <controllingFieldValue>Houston Elevator</controllingFieldValue>
+            <controllingFieldValue>Hunter Hayes</controllingFieldValue>
+            <controllingFieldValue>Inclinator</controllingFieldValue>
+            <controllingFieldValue>Industrial Equip and Design</controllingFieldValue>
+            <controllingFieldValue>International Elevator</controllingFieldValue>
+            <controllingFieldValue>Kestner and Hecht</controllingFieldValue>
+            <controllingFieldValue>Kimball Elevator</controllingFieldValue>
+            <controllingFieldValue>KM White</controllingFieldValue>
+            <controllingFieldValue>Lagerquist</controllingFieldValue>
+            <controllingFieldValue>Oracle</controllingFieldValue>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <controllingFieldValue>Park</controllingFieldValue>
+            <controllingFieldValue>Pflow</controllingFieldValue>
+            <controllingFieldValue>Phoenix</controllingFieldValue>
+            <controllingFieldValue>Porchlift</controllingFieldValue>
+            <controllingFieldValue>Powder Systems</controllingFieldValue>
+            <controllingFieldValue>Matot</controllingFieldValue>
+            <controllingFieldValue>Mid-American</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>San Jose</controllingFieldValue>
+            <controllingFieldValue>Access Elevator</controllingFieldValue>
+            <controllingFieldValue>Chico Elevator</controllingFieldValue>
+            <controllingFieldValue>General Elevator Baltimore</controllingFieldValue>
+            <controllingFieldValue>General Elevator Florida</controllingFieldValue>
+            <controllingFieldValue>General Elevator Texas</controllingFieldValue>
+            <controllingFieldValue>Inland Elevator</controllingFieldValue>
+            <controllingFieldValue>JB Ersham &amp; Son</controllingFieldValue>
+            <controllingFieldValue>Plunger Lift</controllingFieldValue>
+            <valueName>Relay Logic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>2C 2BC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>AC E4LP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>Diamond Trac MRL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>Elenessa MRL VFGL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>GPH IDH Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>GPM III</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>Series Z Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>Spiral Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>VFDL GPS I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>VFDL GPS II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>VFEH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>VFEL GPS III</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>VFGH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mitsubishi</controllingFieldValue>
+            <valueName>VFGL GPS IV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Savaria</controllingFieldValue>
+            <valueName>V-1504</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>300A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>Miconic A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>3300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>5400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>321A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>330A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>400A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>500A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>9300 Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>9500 Moving Walk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>9700 Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>Miconic HX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>Miconic TX R4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>Miconic TX R5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>Miconic V VM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>MPH II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>SWE Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schindler</controllingFieldValue>
+            <valueName>SWU Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Miprom 21</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>6010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>24V Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>HS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>Miprom 2100 Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>SL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>ST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>Uniprom Miprom 1 Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <valueName>Uniprom Miprom 1 Traction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mowrey</controllingFieldValue>
+            <valueName>EMAC 2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mowrey</controllingFieldValue>
+            <valueName>EMAC 2005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Northern</controllingFieldValue>
+            <valueName>M100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Northern</controllingFieldValue>
+            <valueName>M1600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Northern</controllingFieldValue>
+            <valueName>M200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Northern</controllingFieldValue>
+            <valueName>M3200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Northern</controllingFieldValue>
+            <valueName>NorthStar9000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Northern</controllingFieldValue>
+            <valueName>TC181</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Northern</controllingFieldValue>
+            <valueName>TC3200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>O&amp;K</controllingFieldValue>
+            <valueName>Tronic 301</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>O&amp;K</controllingFieldValue>
+            <valueName>Tronic 401</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autoquip</controllingFieldValue>
+            <valueName>Autoquip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Omron</controllingFieldValue>
+            <valueName>C20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autoquip Miner</controllingFieldValue>
+            <valueName>UDT-15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bella Lift</controllingFieldValue>
+            <valueName>EL96</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bella Lift</controllingFieldValue>
+            <valueName>LRL42</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brazos Elevator</controllingFieldValue>
+            <controllingFieldValue>Southwestern</controllingFieldValue>
+            <controllingFieldValue>Sydney</controllingFieldValue>
+            <controllingFieldValue>Taylor</controllingFieldValue>
+            <controllingFieldValue>General Elevator Hartford</controllingFieldValue>
+            <controllingFieldValue>Kersher</controllingFieldValue>
+            <valueName>Relay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEC/Swift</controllingFieldValue>
+            <valueName>Futura Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEC/Swift</controllingFieldValue>
+            <valueName>Futura Traction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEC/Swift</controllingFieldValue>
+            <valueName>Impact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEC/Swift</controllingFieldValue>
+            <valueName>Meridia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEC/Swift</controllingFieldValue>
+            <valueName>SWIFT 1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEC/Swift</controllingFieldValue>
+            <valueName>SWIFT 5000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Silver State</controllingFieldValue>
+            <valueName>Silver Cross</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access Industrial</controllingFieldValue>
+            <valueName>PLS-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SmartRise</controllingFieldValue>
+            <valueName>SRA Traction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SmartRise</controllingFieldValue>
+            <valueName>SRD Traction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SmartRise</controllingFieldValue>
+            <valueName>SRH Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SmartRise</controllingFieldValue>
+            <valueName>140403</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Southeastern</controllingFieldValue>
+            <valueName>TMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Amtech</controllingFieldValue>
+            <valueName>Omega 1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>ACS 150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>Advance Selector 450</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>Advance Selector 451</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>Dynaglide I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 50A AV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 516</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 900</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 9000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Armor</controllingFieldValue>
+            <valueName>TMS 900plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atlas Elevator - San Francisco</controllingFieldValue>
+            <valueName>Selective Collective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Century</controllingFieldValue>
+            <valueName>Printed Circuit Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Century</controllingFieldValue>
+            <valueName>Hand Wired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cetek</controllingFieldValue>
+            <valueName>Flex H</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cetek</controllingFieldValue>
+            <valueName>Flex T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cheney</controllingFieldValue>
+            <valueName>DW1514</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cheney</controllingFieldValue>
+            <valueName>Handi-Lift II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claddagh</controllingFieldValue>
+            <valueName>Series 15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>Destination Advance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>ICON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>ISIS I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>ISIS II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>Loire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>Orinoco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC20 03</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC32H</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC32T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC32T Slim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC50 03</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC50 04 16 Bit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>TAC50 04 32 Bit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>Tugela</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>Velino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>thyssenkrupp Elevator</controllingFieldValue>
+            <valueName>Victoria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Timberline Equipment Limited</controllingFieldValue>
+            <valueName>21009</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TriCounty</controllingFieldValue>
+            <valueName>Green Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <valueName>1200MP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <valueName>1210MP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <valueName>1220MP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <valueName>1230MP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <valueName>Ascension 1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <valueName>Ascension 2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>US Elevator</controllingFieldValue>
+            <valueName>MDU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consolidated Steel</controllingFieldValue>
+            <valueName>Magnetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Craftsman</controllingFieldValue>
+            <valueName>Craftsman Relay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cutler-Hammer</controllingFieldValue>
+            <valueName>D100A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>Composite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>DMC I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>DMC IA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>LMH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>LMT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>MM II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>Modular Composite Loopstick</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>MSC1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>P and B Relay Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>Rotary Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>SGT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <controllingFieldValue>General Elevator Hartford</controllingFieldValue>
+            <valueName>Solid State Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>SS5t</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>TDQ 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>Traflomatic I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>Traflomatic II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>Traflomatic III</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>Traflomatic IV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dover</controllingFieldValue>
+            <valueName>WCR Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevator Controls Incorporated</controllingFieldValue>
+            <valueName>H800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevator Controls Incorporated</controllingFieldValue>
+            <valueName>H900</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevator Controls Incorporated</controllingFieldValue>
+            <valueName>Pixel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevator Controls Incorporated</controllingFieldValue>
+            <valueName>Prodigy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevator Controls Incorporated</controllingFieldValue>
+            <valueName>V800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevator Controls Incorporated</controllingFieldValue>
+            <valueName>V900</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vertitron Midwest</controllingFieldValue>
+            <valueName>VCS 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vertitron Midwest</controllingFieldValue>
+            <valueName>VH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vertitron Midwest</controllingFieldValue>
+            <valueName>VHC 102</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vertrans</controllingFieldValue>
+            <valueName>Vertrans Relay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Western</controllingFieldValue>
+            <valueName>Hydro Controller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>EPOCH I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>EPOCH II MTM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>EPOCH II VA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>Modular B-100 Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>Modular B-200 Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>Modular B-250 Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>MPH I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>SMF3 TTL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>World Class</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>2BC-HYL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>ERL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westinghouse</controllingFieldValue>
+            <valueName>REL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elevator Industries</controllingFieldValue>
+            <valueName>Relay Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Elser Elevator</controllingFieldValue>
+            <valueName>C-2631</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ERM</controllingFieldValue>
+            <valueName>6006H</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ERM</controllingFieldValue>
+            <valueName>2002H Serial Link</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESI</controllingFieldValue>
+            <controllingFieldValue>General Elevator Baltimore</controllingFieldValue>
+            <controllingFieldValue>General Elevator Florida</controllingFieldValue>
+            <controllingFieldValue>General Elevator Texas</controllingFieldValue>
+            <valueName>Solid State</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>DC GL Mic400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>ExcelDyne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>GS8000 NX Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>GS8100 Moving Walk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>HydroDyne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>Millennium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>Millennium II Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>Millennium II Traction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>Millennium III</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>Millennium V Viridian</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>PLC Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>Royal SuperDyne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fujitec</controllingFieldValue>
+            <valueName>Talon MRL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GAL</controllingFieldValue>
+            <valueName>GALaxy Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GAL</controllingFieldValue>
+            <valueName>GALaxy Traction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Elevator Baltimore</controllingFieldValue>
+            <controllingFieldValue>General Elevator Florida</controllingFieldValue>
+            <controllingFieldValue>General Elevator Texas</controllingFieldValue>
+            <valueName>Microprocessor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grote</controllingFieldValue>
+            <valueName>Grote Relay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>1092 IC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>Accuflite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>EVC ELC Model 1thru5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>GAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>Goldflite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>HYL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>Miconic FM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>PHC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haughton</controllingFieldValue>
+            <valueName>SAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <valueName>CX Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hitachi</controllingFieldValue>
+            <valueName>V Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Elevator</controllingFieldValue>
+            <valueName>LEV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Humphrey Manlift</controllingFieldValue>
+            <valueName>Belt Manlift</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hyundai</controllingFieldValue>
+            <valueName>Hyundai Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>ECO 3000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>EcoSpace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>ES5000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>KCM831</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>MiniSpace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Miprom HS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Miprom I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Miprom II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Miprom SL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Miprom ST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>MonoSpace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Resolve 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>Resolve 20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>SSC-6010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kone</controllingFieldValue>
+            <valueName>TMS550</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Langley Lift</controllingFieldValue>
+            <valueName>EH 102</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orona</controllingFieldValue>
+            <valueName>Arca I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orona</controllingFieldValue>
+            <valueName>Arca II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orona</controllingFieldValue>
+            <valueName>uP 870</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orona</controllingFieldValue>
+            <valueName>uP900</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OThompson</controllingFieldValue>
+            <valueName>Mcroflite Intellinet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OThompson</controllingFieldValue>
+            <valueName>Microflite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OThompson</controllingFieldValue>
+            <valueName>Microflite Ultra 2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OThompson</controllingFieldValue>
+            <valueName>Series 90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OThompson</controllingFieldValue>
+            <valueName>Tricon by MCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>101</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>211</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>311</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>401</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>411</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>311M 411M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>335M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>506 NCE Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>508 NCE Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>A Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>B Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>CB Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>Escalair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>Gamma D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>GCS Elevonic R</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>Gen2 GCS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>Gen2 MECS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>Hydrofit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>LR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>LRV LRS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>MRS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>MRV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>MRVF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>NextStep Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>SPEC60 MRQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>Type J</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>10N0B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>21AUH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otis</controllingFieldValue>
+            <valueName>UCLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LG</controllingFieldValue>
+            <valueName>Otis Sigma ARES ART Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LG</controllingFieldValue>
+            <valueName>Otis Sigma Di 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LG</controllingFieldValue>
+            <valueName>Otis Sigma Di 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LG</controllingFieldValue>
+            <valueName>Otis Sigma Ds 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LG</controllingFieldValue>
+            <valueName>Otis Sigma IRIS MRL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LG</controllingFieldValue>
+            <valueName>Otis Sigma Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lift U Hogan MFG</controllingFieldValue>
+            <valueName>VMW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Long</controllingFieldValue>
+            <valueName>Cartop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Long</controllingFieldValue>
+            <valueName>TRC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mac&apos;s Lifts</controllingFieldValue>
+            <valueName>PL-45</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maida Technologies Inc</controllingFieldValue>
+            <valueName>MUFACX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>HMC HS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>HMC PHC-1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>HMC-1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>iControl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>IMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>Motion 2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>Motion 3000 ES Escalator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>Motion 4000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>VFMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>VVMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MCE</controllingFieldValue>
+            <valueName>Element</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

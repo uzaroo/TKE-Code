@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_or_Billing_Acct_requires_EBS_ID</fullName>
+    <active>false</active>
+    <description>Rule requires EBS Customer ID field if Customer Type field is NOT &apos;Prospect&apos;. ADO - USER STORY 12553.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(Customer_Type__c, &quot;Prospect&quot;)) &amp;&amp;
+ISBLANK(EBS_Customer_ID__c) &amp;&amp;
+$Permission.TKE_Bypass_Validation = FALSE</errorConditionFormula>
+    <errorMessage>An EBS Customer ID is required in order to update an account to a customer or billing account. The EBS Customer ID is provided via integration with Oracle.</errorMessage>
+</ValidationRule>

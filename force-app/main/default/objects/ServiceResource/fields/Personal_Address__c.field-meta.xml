@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>RelatedRecord.Street &amp; BR() &amp;
+RelatedRecord.City &amp; &quot;, &quot; &amp;
+RelatedRecord.State &amp; &quot; &quot; &amp;
+RelatedRecord.PostalCode &amp; BR() &amp;
+RelatedRecord.Country</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Personal Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

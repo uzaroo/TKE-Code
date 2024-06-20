@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_Service_Territory__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Look up to service territory. To be used on WorkOrder flow.</description>
+    <externalId>false</externalId>
+    <label>Service Territory</label>
+    <referenceTo>ServiceTerritory</referenceTo>
+    <relationshipLabel>Locations</relationshipLabel>
+    <relationshipName>Locations</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

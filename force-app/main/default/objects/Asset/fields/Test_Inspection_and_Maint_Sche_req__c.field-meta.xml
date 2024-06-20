@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Inspection_and_Maint_Sche_req__c</fullName>
+    <description>created this as part of ADO user story 12187</description>
+    <externalId>false</externalId>
+    <label>Test/Inspection and Maint Sche req</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AHJ Commission Date</fullName>
+                <default>false</default>
+                <label>AHJ Commission Date</label>
+            </value>
+            <value>
+                <fullName>Gov&apos;t Inspection Date</fullName>
+                <default>false</default>
+                <label>Gov&apos;t Inspection Date</label>
+            </value>
+            <value>
+                <fullName>Periodic Safety Test Date</fullName>
+                <default>false</default>
+                <label>Periodic Safety Test Date</label>
+            </value>
+            <value>
+                <fullName>CAT1 Safety Test Date</fullName>
+                <default>false</default>
+                <label>CAT1 Safety Test Date</label>
+            </value>
+            <value>
+                <fullName>Contract Start Date</fullName>
+                <default>false</default>
+                <label>Contract Start Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

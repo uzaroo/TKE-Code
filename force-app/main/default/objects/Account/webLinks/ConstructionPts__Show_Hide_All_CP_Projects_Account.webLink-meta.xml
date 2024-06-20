@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConstructionPts__Show_Hide_All_CP_Projects_Account</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Show/Hide All CP Projects</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/51.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;)}
+var userId = &apos;{!$User.Id}&apos;; 
+var pageIdentifier = &apos;CPRolesAccount&apos;; 
+var sObjectType = &apos;Account&apos;; 
+var recordId = &apos;{!Account.Id}&apos;; ;
+
+var relatedSize = sforce.connection.query(&quot;SELECT count() FROM ConstructionPts__CP_Company__c where ConstructionPts__Account__c = &apos;&quot; + recordId + &quot;&apos;&quot;).size;
+
+console.log(&apos;relatedSize = &apos; + relatedSize);
+
+var origHeight = 0; 
+var e1 = Ext.query(&quot;iframe[title=&apos;&quot;+pageIdentifier+&quot;&apos;]&quot;); 
+var itarget2 = e1[0].getAttribute(&apos;id&apos;); 
+origHeight = Ext.get(itarget2).getHeight(); 
+console.log(&apos;origHeight = &apos; + origHeight);
+var newHeight = adjustHeight(userId, pageIdentifier,recordId,relatedSize); 
+
+var j$ = jQuery.noConflict(); 
+
+var divHeight = j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).find(&quot;table .detailList&quot;).height(); 
+console.log(&apos;divHeight&apos; + divHeight);
+var firstPageLoad = true; 
+if (j$(&apos;input[id=subsqPageLoad]&apos;).length &gt; 0) { 
+firstPageLoad = false; 
+} 
+
+if (firstPageLoad == true) { 
+j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prepend(&apos;&lt;input type=&quot;hidden&quot; id=&quot;subsqPageLoad&quot; value=&quot;&quot;/&gt;&apos;); 
+var sOnClick = (String)(j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).attr(&quot;onclick&quot;)); 
+} 
+
+
+//on first load always expand
+if (firstPageLoad == true ) { 
+
+if (j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).css(&quot;display&quot;) == &quot;none&quot;) { 
+j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).click(); 
+} 
+
+} else { 
+j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).click(); 
+} 
+
+
+function adjustHeight(userId, pageIdentifier, recordId,relatedSize ) { 
+
+var newHeight = &apos;&apos;; 
+var j$ = jQuery.noConflict(); 
+var result = null; 
+
+if(parseInt(relatedSize) != 0 &amp;&amp; parseInt(relatedSize) != null){
+  newHeight = parseInt(relatedSize) * 21.2+ 45;
+}else{
+  newHeight = (parseInt(relatedSize),10) * 105 + 30 ; 
+}
+
+
+if (newHeight != null &amp;&amp; newHeight != undefined) { 
+resizeIframe(newHeight, pageIdentifier); 
+} 
+
+return newHeight; 
+} 
+
+function resizeIframe(h, ifn){ 
+var e = Ext.query(&quot;iframe[title=&quot;+ifn+&quot;]&quot;); 
+
+var itarget = e[0].getAttribute(&apos;id&apos;); 
+Ext.get(itarget).set({height: parseInt(h)+10}); 
+}</url>
+</WebLink>

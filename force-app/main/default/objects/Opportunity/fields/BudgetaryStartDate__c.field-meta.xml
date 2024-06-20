@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BudgetaryStartDate__c</fullName>
+    <description>This field is implemented as specified in ADO - 11552</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to indicate how far in advance of the customer&apos;s fiscal year start date they need their budgetary $s</inlineHelpText>
+    <label>Budgetary Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

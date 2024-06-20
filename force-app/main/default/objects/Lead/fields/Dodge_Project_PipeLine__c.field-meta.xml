@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dodge_Project_PipeLine__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(BEGINS(ConstructionPts__CP_Project__r.ConstructionPts__ProjectID__c,&apos;Dodge&apos;)), HYPERLINK(&apos;/apex/ConstructionPts__Dodge_PipeLine?ProjectReport=&apos; + ConstructionPts__CP_Project__r.ConstructionPts__ProjectID__c + &apos;?idp=U2FsZXNGb3JjZQ2&apos; ,&apos;View Project&apos;,&apos;_self&apos; ),&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dodge Project (PipeLine)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set group is created as specified in US-11373</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SLS Sales Rep</label>
+    <permissionSets>SLS_Baseline</permissionSets>
+    <permissionSets>SLS_Lead_Management</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complete_State</fullName>
+    <active>true</active>
+    <description>This validation is created as per ADO story - 11893</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName == &apos;Billing_Account&apos;,
+     ISBLANK(BillingState),
+     ISNEW(), 
+     NOT( $Permission.TKE_Bypass_Validation ))</errorConditionFormula>
+    <errorDisplayField>BillingState</errorDisplayField>
+    <errorMessage>Complete this field</errorMessage>
+</ValidationRule>

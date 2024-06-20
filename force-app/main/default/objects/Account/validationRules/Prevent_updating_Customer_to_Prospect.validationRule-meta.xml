@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_updating_Customer_to_Prospect</fullName>
+    <active>true</active>
+    <description>Rule prevents changing Customer Type to Prospect, if already set as Customer. ADO - USER STORY 12553.</description>
+    <errorConditionFormula>ISCHANGED(Customer_Type__c) &amp;&amp;
+TEXT(PRIORVALUE(Customer_Type__c)) &lt;&gt; &quot;Prospect&quot; &amp;&amp;
+NOT(ISBLANK(EBS_Customer_ID__c)) &amp;&amp;
+ISPICKVAL(Customer_Type__c, &quot;Prospect&quot;) &amp;&amp;
+$Permission.TKE_Bypass_Validation = FALSE</errorConditionFormula>
+    <errorMessage>An Account can not be changed back to a Prospect after it has been updated to be a Customer.</errorMessage>
+</ValidationRule>

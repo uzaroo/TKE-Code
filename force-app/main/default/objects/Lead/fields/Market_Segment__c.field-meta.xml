@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Segment__c</fullName>
+    <description>US-11375</description>
+    <externalId>false</externalId>
+    <label>Market Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airport</fullName>
+                <default>false</default>
+                <label>Airport</label>
+            </value>
+            <value>
+                <fullName>Education/Religion</fullName>
+                <default>false</default>
+                <label>Education/Religion</label>
+            </value>
+            <value>
+                <fullName>Entertainment/Leisure</fullName>
+                <default>false</default>
+                <label>Entertainment/Leisure</label>
+            </value>
+            <value>
+                <fullName>Ferry Terminal</fullName>
+                <default>false</default>
+                <label>Ferry Terminal</label>
+            </value>
+            <value>
+                <fullName>Hospital / Healthcare</fullName>
+                <default>false</default>
+                <label>Hospital / Healthcare</label>
+            </value>
+            <value>
+                <fullName>Hotel / Restaurant</fullName>
+                <default>false</default>
+                <label>Hotel / Restaurant</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Marine</fullName>
+                <default>false</default>
+                <label>Marine</label>
+            </value>
+            <value>
+                <fullName>Metro/Subway</fullName>
+                <default>false</default>
+                <label>Metro/Subway</label>
+            </value>
+            <value>
+                <fullName>Mixed Use Buildings</fullName>
+                <default>false</default>
+                <label>Mixed Use Buildings</label>
+            </value>
+            <value>
+                <fullName>Office</fullName>
+                <default>false</default>
+                <label>Office</label>
+            </value>
+            <value>
+                <fullName>Parking Garage</fullName>
+                <default>false</default>
+                <label>Parking Garage</label>
+            </value>
+            <value>
+                <fullName>Private Residential</fullName>
+                <default>false</default>
+                <label>Private Residential</label>
+            </value>
+            <value>
+                <fullName>Railway / Bus Station</fullName>
+                <default>false</default>
+                <label>Railway / Bus Station</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Urban Mobility</fullName>
+                <default>false</default>
+                <label>Urban Mobility</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

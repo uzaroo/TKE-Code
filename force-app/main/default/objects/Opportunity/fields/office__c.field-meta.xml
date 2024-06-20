@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>office__c</fullName>
+    <description>This is created as part of 14152</description>
+    <externalId>false</externalId>
+    <label>Office</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Office</valueSetName>
+    </valueSet>
+</CustomField>

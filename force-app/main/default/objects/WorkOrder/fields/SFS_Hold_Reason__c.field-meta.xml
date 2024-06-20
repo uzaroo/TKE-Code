@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_Hold_Reason__c</fullName>
+    <description>Field to hold value when status selected is On Hold</description>
+    <externalId>false</externalId>
+    <label>Hold Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Access Issue</fullName>
+                <default>false</default>
+                <label>Access Issue</label>
+            </value>
+            <value>
+                <fullName>Mod/Repair</fullName>
+                <default>false</default>
+                <label>Mod/Repair</label>
+            </value>
+            <value>
+                <fullName>Safety/Power Outage</fullName>
+                <default>false</default>
+                <label>Safety/Power Outage</label>
+            </value>
+            <value>
+                <fullName>Shutdown by AHJ</fullName>
+                <default>false</default>
+                <label>Shutdown by AHJ</label>
+            </value>
+            <value>
+                <fullName>Waiting on Assistance</fullName>
+                <default>false</default>
+                <label>Waiting on Assistance</label>
+            </value>
+            <value>
+                <fullName>Waiting on Parts</fullName>
+                <default>false</default>
+                <label>Waiting on Parts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_noFixedGap30minBreak__c</fullName>
+    <description>This field is set to true if the associated service territory has no fixed gap duration set and the service resource has a 30 mins of lunch break duration</description>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(ISPICKVAL( ServiceTerritory.SFS_Fixed_Gap_Duration__c , &apos;&apos;),
+OR(ISPICKVAL( ServiceResource.SFS_LunchBreakDuration__c , &apos;30&apos;),ISPICKVAL( ServiceResource.SFS_LunchBreakDuration__c , &apos;&apos;)))
+,true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>No Fixed Gap with 30min Break</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

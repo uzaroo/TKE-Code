@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Controller_Type__c</fullName>
+    <description>created this as part of ADO user story 12187</description>
+    <externalId>false</externalId>
+    <label>Controller Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Controller_Model__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Relay Logic</fullName>
+                <default>false</default>
+                <label>Relay Logic</label>
+            </value>
+            <value>
+                <fullName>Microprocessor</fullName>
+                <default>false</default>
+                <label>Microprocessor</label>
+            </value>
+            <value>
+                <fullName>Solid State</fullName>
+                <default>false</default>
+                <label>Solid State</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>400A</controllingFieldValue>
+            <controllingFieldValue>Miprom HS</controllingFieldValue>
+            <controllingFieldValue>500A</controllingFieldValue>
+            <controllingFieldValue>Miprom I</controllingFieldValue>
+            <controllingFieldValue>9300 Escalator</controllingFieldValue>
+            <controllingFieldValue>Miprom II</controllingFieldValue>
+            <controllingFieldValue>9500 Moving Walk</controllingFieldValue>
+            <controllingFieldValue>Miprom SL</controllingFieldValue>
+            <controllingFieldValue>9700 Escalator</controllingFieldValue>
+            <controllingFieldValue>Miprom ST</controllingFieldValue>
+            <controllingFieldValue>Miconic HX</controllingFieldValue>
+            <controllingFieldValue>MonoSpace</controllingFieldValue>
+            <controllingFieldValue>Miconic TX R4</controllingFieldValue>
+            <controllingFieldValue>Resolve 100</controllingFieldValue>
+            <controllingFieldValue>Miconic TX R5</controllingFieldValue>
+            <controllingFieldValue>Resolve 20</controllingFieldValue>
+            <controllingFieldValue>Miconic V VM</controllingFieldValue>
+            <controllingFieldValue>MPH II</controllingFieldValue>
+            <controllingFieldValue>TMS550</controllingFieldValue>
+            <controllingFieldValue>TMS 200</controllingFieldValue>
+            <controllingFieldValue>TMS 500</controllingFieldValue>
+            <controllingFieldValue>TMS 50A AV</controllingFieldValue>
+            <controllingFieldValue>TMS 516</controllingFieldValue>
+            <controllingFieldValue>TMS 600</controllingFieldValue>
+            <controllingFieldValue>TMS 700</controllingFieldValue>
+            <controllingFieldValue>TMS 900</controllingFieldValue>
+            <controllingFieldValue>TMS 9000</controllingFieldValue>
+            <controllingFieldValue>TMS 900plus</controllingFieldValue>
+            <controllingFieldValue>SWE Escalator</controllingFieldValue>
+            <controllingFieldValue>SWU Escalator</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma ARES ART Escalator</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Di 1</controllingFieldValue>
+            <controllingFieldValue>SRA Traction</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Di 5</controllingFieldValue>
+            <controllingFieldValue>SRD Traction</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Ds 4</controllingFieldValue>
+            <controllingFieldValue>SRH Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma IRIS MRL</controllingFieldValue>
+            <controllingFieldValue>140403</controllingFieldValue>
+            <controllingFieldValue>Omega 1000</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Other</controllingFieldValue>
+            <controllingFieldValue>VMW</controllingFieldValue>
+            <controllingFieldValue>Destination Advance</controllingFieldValue>
+            <controllingFieldValue>Cartop</controllingFieldValue>
+            <controllingFieldValue>ICON</controllingFieldValue>
+            <controllingFieldValue>TRC</controllingFieldValue>
+            <controllingFieldValue>EL96</controllingFieldValue>
+            <controllingFieldValue>Futura Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Futura Traction</controllingFieldValue>
+            <controllingFieldValue>Impact</controllingFieldValue>
+            <controllingFieldValue>Meridia</controllingFieldValue>
+            <controllingFieldValue>ISIS I</controllingFieldValue>
+            <controllingFieldValue>ISIS II</controllingFieldValue>
+            <controllingFieldValue>MUFACX</controllingFieldValue>
+            <controllingFieldValue>Loire</controllingFieldValue>
+            <controllingFieldValue>HMC HS</controllingFieldValue>
+            <controllingFieldValue>Orinoco</controllingFieldValue>
+            <controllingFieldValue>HMC PHC-1000</controllingFieldValue>
+            <controllingFieldValue>TAC20</controllingFieldValue>
+            <controllingFieldValue>HMC-1000</controllingFieldValue>
+            <controllingFieldValue>TAC20 03</controllingFieldValue>
+            <controllingFieldValue>iControl</controllingFieldValue>
+            <controllingFieldValue>TAC22</controllingFieldValue>
+            <controllingFieldValue>IMC</controllingFieldValue>
+            <controllingFieldValue>TAC32</controllingFieldValue>
+            <controllingFieldValue>Motion 2000</controllingFieldValue>
+            <controllingFieldValue>TAC32H</controllingFieldValue>
+            <controllingFieldValue>Motion 3000 ES Escalator</controllingFieldValue>
+            <controllingFieldValue>TAC32T</controllingFieldValue>
+            <controllingFieldValue>Motion 4000</controllingFieldValue>
+            <controllingFieldValue>SWIFT 1000</controllingFieldValue>
+            <controllingFieldValue>SWIFT 5000</controllingFieldValue>
+            <controllingFieldValue>Flex H</controllingFieldValue>
+            <controllingFieldValue>Flex T</controllingFieldValue>
+            <controllingFieldValue>Series 15</controllingFieldValue>
+            <controllingFieldValue>TAC32T Slim</controllingFieldValue>
+            <controllingFieldValue>VFMC</controllingFieldValue>
+            <controllingFieldValue>TAC50</controllingFieldValue>
+            <controllingFieldValue>VVMC</controllingFieldValue>
+            <controllingFieldValue>TAC50 03</controllingFieldValue>
+            <controllingFieldValue>Element</controllingFieldValue>
+            <controllingFieldValue>TAC50 04 16 Bit</controllingFieldValue>
+            <controllingFieldValue>PLC</controllingFieldValue>
+            <controllingFieldValue>TAC50 04 32 Bit</controllingFieldValue>
+            <controllingFieldValue>CVT 1000</controllingFieldValue>
+            <controllingFieldValue>Tugela</controllingFieldValue>
+            <controllingFieldValue>CVT 2400</controllingFieldValue>
+            <controllingFieldValue>Velino</controllingFieldValue>
+            <controllingFieldValue>CVT 8600</controllingFieldValue>
+            <controllingFieldValue>Victoria</controllingFieldValue>
+            <controllingFieldValue>CVT 8800</controllingFieldValue>
+            <controllingFieldValue>CVT A I</controllingFieldValue>
+            <controllingFieldValue>DMC I</controllingFieldValue>
+            <controllingFieldValue>DMC IA</controllingFieldValue>
+            <controllingFieldValue>MM II</controllingFieldValue>
+            <controllingFieldValue>AC E4LP</controllingFieldValue>
+            <controllingFieldValue>Diamond Trac MRL</controllingFieldValue>
+            <controllingFieldValue>Elenessa MRL VFGL</controllingFieldValue>
+            <controllingFieldValue>GPH IDH Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Ascension 1000</controllingFieldValue>
+            <controllingFieldValue>GPM III</controllingFieldValue>
+            <controllingFieldValue>Ascension 2000</controllingFieldValue>
+            <controllingFieldValue>Series Z Escalator</controllingFieldValue>
+            <controllingFieldValue>Spiral Escalator</controllingFieldValue>
+            <controllingFieldValue>VCS 1</controllingFieldValue>
+            <controllingFieldValue>VFDL GPS I</controllingFieldValue>
+            <controllingFieldValue>VH</controllingFieldValue>
+            <controllingFieldValue>VFDL GPS II</controllingFieldValue>
+            <controllingFieldValue>VHC 102</controllingFieldValue>
+            <controllingFieldValue>VFEH</controllingFieldValue>
+            <controllingFieldValue>Traflomatic III</controllingFieldValue>
+            <controllingFieldValue>Traflomatic IV</controllingFieldValue>
+            <controllingFieldValue>VFEL GPS III</controllingFieldValue>
+            <controllingFieldValue>VFGH</controllingFieldValue>
+            <controllingFieldValue>EPOCH I</controllingFieldValue>
+            <controllingFieldValue>VFGL GPS IV</controllingFieldValue>
+            <controllingFieldValue>EPOCH II MTM</controllingFieldValue>
+            <controllingFieldValue>EPOCH II VA</controllingFieldValue>
+            <controllingFieldValue>HS</controllingFieldValue>
+            <controllingFieldValue>SL</controllingFieldValue>
+            <controllingFieldValue>MPH I</controllingFieldValue>
+            <controllingFieldValue>ST</controllingFieldValue>
+            <controllingFieldValue>H800</controllingFieldValue>
+            <controllingFieldValue>H900</controllingFieldValue>
+            <controllingFieldValue>Pixel</controllingFieldValue>
+            <controllingFieldValue>Prodigy</controllingFieldValue>
+            <controllingFieldValue>V800</controllingFieldValue>
+            <controllingFieldValue>V900</controllingFieldValue>
+            <controllingFieldValue>6006H</controllingFieldValue>
+            <controllingFieldValue>World Class</controllingFieldValue>
+            <controllingFieldValue>EMAC 2000</controllingFieldValue>
+            <controllingFieldValue>EMAC 2005</controllingFieldValue>
+            <controllingFieldValue>M100</controllingFieldValue>
+            <controllingFieldValue>M1600</controllingFieldValue>
+            <controllingFieldValue>M200</controllingFieldValue>
+            <controllingFieldValue>M3200</controllingFieldValue>
+            <controllingFieldValue>NorthStar9000</controllingFieldValue>
+            <controllingFieldValue>TC181</controllingFieldValue>
+            <controllingFieldValue>TC3200</controllingFieldValue>
+            <controllingFieldValue>2002H Serial Link</controllingFieldValue>
+            <controllingFieldValue>DC GL Mic400</controllingFieldValue>
+            <controllingFieldValue>ExcelDyne</controllingFieldValue>
+            <controllingFieldValue>GS8000 NX Escalator</controllingFieldValue>
+            <controllingFieldValue>GS8100 Moving Walk</controllingFieldValue>
+            <controllingFieldValue>HydroDyne</controllingFieldValue>
+            <controllingFieldValue>Millennium</controllingFieldValue>
+            <controllingFieldValue>Millennium II Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Millennium II Traction</controllingFieldValue>
+            <controllingFieldValue>Arca I</controllingFieldValue>
+            <controllingFieldValue>Arca II</controllingFieldValue>
+            <controllingFieldValue>uP 870</controllingFieldValue>
+            <controllingFieldValue>uP900</controllingFieldValue>
+            <controllingFieldValue>Mcroflite Intellinet</controllingFieldValue>
+            <controllingFieldValue>Microflite</controllingFieldValue>
+            <controllingFieldValue>Microflite Ultra 2000</controllingFieldValue>
+            <controllingFieldValue>Millennium III</controllingFieldValue>
+            <controllingFieldValue>Millennium V Viridian</controllingFieldValue>
+            <controllingFieldValue>PLC Escalator</controllingFieldValue>
+            <controllingFieldValue>Royal SuperDyne</controllingFieldValue>
+            <controllingFieldValue>Talon MRL</controllingFieldValue>
+            <controllingFieldValue>GALaxy Hydraulic</controllingFieldValue>
+            <controllingFieldValue>GALaxy Traction</controllingFieldValue>
+            <controllingFieldValue>Microprocessor</controllingFieldValue>
+            <controllingFieldValue>Series 90</controllingFieldValue>
+            <controllingFieldValue>Tricon by MCE</controllingFieldValue>
+            <controllingFieldValue>101</controllingFieldValue>
+            <controllingFieldValue>211</controllingFieldValue>
+            <controllingFieldValue>311</controllingFieldValue>
+            <controllingFieldValue>401</controllingFieldValue>
+            <controllingFieldValue>411</controllingFieldValue>
+            <controllingFieldValue>311M 411M</controllingFieldValue>
+            <controllingFieldValue>335M</controllingFieldValue>
+            <controllingFieldValue>506 NCE Escalator</controllingFieldValue>
+            <controllingFieldValue>GAM</controllingFieldValue>
+            <controllingFieldValue>PHC</controllingFieldValue>
+            <controllingFieldValue>SAM</controllingFieldValue>
+            <controllingFieldValue>CX Escalator</controllingFieldValue>
+            <controllingFieldValue>508 NCE Escalator</controllingFieldValue>
+            <controllingFieldValue>Gamma D</controllingFieldValue>
+            <controllingFieldValue>GCS Elevonic R</controllingFieldValue>
+            <controllingFieldValue>Gen2 GCS</controllingFieldValue>
+            <controllingFieldValue>Gen2 MECS</controllingFieldValue>
+            <controllingFieldValue>Hydrofit</controllingFieldValue>
+            <controllingFieldValue>LRV LRS</controllingFieldValue>
+            <controllingFieldValue>NextStep Escalator</controllingFieldValue>
+            <controllingFieldValue>SPEC60 MRQ</controllingFieldValue>
+            <controllingFieldValue>Type J</controllingFieldValue>
+            <controllingFieldValue>21AUH</controllingFieldValue>
+            <controllingFieldValue>V Escalator</controllingFieldValue>
+            <controllingFieldValue>Belt Manlift</controllingFieldValue>
+            <controllingFieldValue>Hyundai Escalator</controllingFieldValue>
+            <controllingFieldValue>ECO 3000</controllingFieldValue>
+            <controllingFieldValue>Miconic A</controllingFieldValue>
+            <controllingFieldValue>EcoSpace</controllingFieldValue>
+            <controllingFieldValue>3300</controllingFieldValue>
+            <controllingFieldValue>ES5000</controllingFieldValue>
+            <controllingFieldValue>5400</controllingFieldValue>
+            <controllingFieldValue>KCM831</controllingFieldValue>
+            <controllingFieldValue>321A</controllingFieldValue>
+            <controllingFieldValue>MiniSpace</controllingFieldValue>
+            <controllingFieldValue>330A</controllingFieldValue>
+            <valueName>Microprocessor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SSC-6010</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma ARES ART Escalator</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Di 1</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Di 5</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Ds 4</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma IRIS MRL</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Other</controllingFieldValue>
+            <controllingFieldValue>Autoquip</controllingFieldValue>
+            <controllingFieldValue>UDT-15</controllingFieldValue>
+            <controllingFieldValue>LMH</controllingFieldValue>
+            <controllingFieldValue>LMT</controllingFieldValue>
+            <controllingFieldValue>Modular Composite Loopstick</controllingFieldValue>
+            <controllingFieldValue>1200MP</controllingFieldValue>
+            <controllingFieldValue>1210MP</controllingFieldValue>
+            <controllingFieldValue>1220MP</controllingFieldValue>
+            <controllingFieldValue>1230MP</controllingFieldValue>
+            <controllingFieldValue>Series Z Escalator</controllingFieldValue>
+            <controllingFieldValue>MDU</controllingFieldValue>
+            <controllingFieldValue>Spiral Escalator</controllingFieldValue>
+            <controllingFieldValue>VCS 1</controllingFieldValue>
+            <controllingFieldValue>VH</controllingFieldValue>
+            <controllingFieldValue>VHC 102</controllingFieldValue>
+            <controllingFieldValue>Solid State Hydraulic</controllingFieldValue>
+            <controllingFieldValue>6010</controllingFieldValue>
+            <controllingFieldValue>Miprom 2100 Hydraulic</controllingFieldValue>
+            <controllingFieldValue>SMF3 TTL</controllingFieldValue>
+            <controllingFieldValue>Uniprom Miprom 1 Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Uniprom Miprom 1 Traction</controllingFieldValue>
+            <controllingFieldValue>M100</controllingFieldValue>
+            <controllingFieldValue>M1600</controllingFieldValue>
+            <controllingFieldValue>M200</controllingFieldValue>
+            <controllingFieldValue>M3200</controllingFieldValue>
+            <controllingFieldValue>Solid State</controllingFieldValue>
+            <controllingFieldValue>GS8000 NX Escalator</controllingFieldValue>
+            <controllingFieldValue>GS8100 Moving Walk</controllingFieldValue>
+            <controllingFieldValue>Arca I</controllingFieldValue>
+            <controllingFieldValue>Arca II</controllingFieldValue>
+            <controllingFieldValue>uP 870</controllingFieldValue>
+            <controllingFieldValue>uP900</controllingFieldValue>
+            <controllingFieldValue>1092 IC</controllingFieldValue>
+            <controllingFieldValue>Series 90</controllingFieldValue>
+            <controllingFieldValue>Accuflite</controllingFieldValue>
+            <controllingFieldValue>EVC ELC Model 1thru5</controllingFieldValue>
+            <controllingFieldValue>Goldflite</controllingFieldValue>
+            <controllingFieldValue>Miconic FM</controllingFieldValue>
+            <controllingFieldValue>CX Escalator</controllingFieldValue>
+            <controllingFieldValue>A Base</controllingFieldValue>
+            <controllingFieldValue>B Base</controllingFieldValue>
+            <controllingFieldValue>CB Base</controllingFieldValue>
+            <controllingFieldValue>LR</controllingFieldValue>
+            <controllingFieldValue>Type J</controllingFieldValue>
+            <controllingFieldValue>V Escalator</controllingFieldValue>
+            <controllingFieldValue>Hyundai Escalator</controllingFieldValue>
+            <controllingFieldValue>Miprom 21</controllingFieldValue>
+            <valueName>Solid State</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Generic Relay</controllingFieldValue>
+            <controllingFieldValue>EH 102</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma ARES ART Escalator</controllingFieldValue>
+            <controllingFieldValue>Silver Cross</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Di 1</controllingFieldValue>
+            <controllingFieldValue>Relay Logic</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Di 5</controllingFieldValue>
+            <controllingFieldValue>PLS-3</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Ds 4</controllingFieldValue>
+            <controllingFieldValue>Relay Generic</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma IRIS MRL</controllingFieldValue>
+            <controllingFieldValue>Otis Sigma Other</controllingFieldValue>
+            <controllingFieldValue>TMC</controllingFieldValue>
+            <controllingFieldValue>ACS 150</controllingFieldValue>
+            <controllingFieldValue>Advance Selector 450</controllingFieldValue>
+            <controllingFieldValue>Advance Selector 451</controllingFieldValue>
+            <controllingFieldValue>Dynaglide I</controllingFieldValue>
+            <controllingFieldValue>Selective Collective</controllingFieldValue>
+            <controllingFieldValue>LRL42</controllingFieldValue>
+            <controllingFieldValue>Relay</controllingFieldValue>
+            <controllingFieldValue>PL-45</controllingFieldValue>
+            <controllingFieldValue>Printed Circuit Board</controllingFieldValue>
+            <controllingFieldValue>Hand Wired</controllingFieldValue>
+            <controllingFieldValue>DW1514</controllingFieldValue>
+            <controllingFieldValue>Handi-Lift II</controllingFieldValue>
+            <controllingFieldValue>Magnetic</controllingFieldValue>
+            <controllingFieldValue>21009</controllingFieldValue>
+            <controllingFieldValue>Green Box</controllingFieldValue>
+            <controllingFieldValue>2C 2BC</controllingFieldValue>
+            <controllingFieldValue>Craftsman Relay</controllingFieldValue>
+            <controllingFieldValue>D100A</controllingFieldValue>
+            <controllingFieldValue>Composite</controllingFieldValue>
+            <controllingFieldValue>MSC1</controllingFieldValue>
+            <controllingFieldValue>Series Z Escalator</controllingFieldValue>
+            <controllingFieldValue>Spiral Escalator</controllingFieldValue>
+            <controllingFieldValue>VCS 1</controllingFieldValue>
+            <controllingFieldValue>VH</controllingFieldValue>
+            <controllingFieldValue>VHC 102</controllingFieldValue>
+            <controllingFieldValue>P and B Relay Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Rotary Hydraulic</controllingFieldValue>
+            <controllingFieldValue>SGT</controllingFieldValue>
+            <controllingFieldValue>SS5t</controllingFieldValue>
+            <controllingFieldValue>TDQ 1</controllingFieldValue>
+            <controllingFieldValue>Traflomatic I</controllingFieldValue>
+            <controllingFieldValue>Traflomatic II</controllingFieldValue>
+            <controllingFieldValue>Vertrans Relay</controllingFieldValue>
+            <controllingFieldValue>Hydro Controller</controllingFieldValue>
+            <controllingFieldValue>24V Escalator</controllingFieldValue>
+            <controllingFieldValue>Modular B-100 Escalator</controllingFieldValue>
+            <controllingFieldValue>Modular B-200 Escalator</controllingFieldValue>
+            <controllingFieldValue>Modular B-250 Escalator</controllingFieldValue>
+            <controllingFieldValue>WCR Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Relay Control</controllingFieldValue>
+            <controllingFieldValue>C-2631</controllingFieldValue>
+            <controllingFieldValue>2BC-HYL</controllingFieldValue>
+            <controllingFieldValue>ERL</controllingFieldValue>
+            <controllingFieldValue>REL</controllingFieldValue>
+            <controllingFieldValue>M100</controllingFieldValue>
+            <controllingFieldValue>M1600</controllingFieldValue>
+            <controllingFieldValue>M200</controllingFieldValue>
+            <controllingFieldValue>M3200</controllingFieldValue>
+            <controllingFieldValue>GS8000 NX Escalator</controllingFieldValue>
+            <controllingFieldValue>GS8100 Moving Walk</controllingFieldValue>
+            <controllingFieldValue>Tronic 301</controllingFieldValue>
+            <controllingFieldValue>Tronic 401</controllingFieldValue>
+            <controllingFieldValue>C20</controllingFieldValue>
+            <controllingFieldValue>Arca I</controllingFieldValue>
+            <controllingFieldValue>Arca II</controllingFieldValue>
+            <controllingFieldValue>uP 870</controllingFieldValue>
+            <controllingFieldValue>uP900</controllingFieldValue>
+            <controllingFieldValue>Grote Relay</controllingFieldValue>
+            <controllingFieldValue>Series 90</controllingFieldValue>
+            <controllingFieldValue>300A</controllingFieldValue>
+            <controllingFieldValue>Goldflite</controllingFieldValue>
+            <controllingFieldValue>HYL</controllingFieldValue>
+            <controllingFieldValue>CX Escalator</controllingFieldValue>
+            <controllingFieldValue>Escalair</controllingFieldValue>
+            <controllingFieldValue>MRS</controllingFieldValue>
+            <controllingFieldValue>MRV</controllingFieldValue>
+            <controllingFieldValue>MRVF</controllingFieldValue>
+            <controllingFieldValue>Type J</controllingFieldValue>
+            <controllingFieldValue>10N0B</controllingFieldValue>
+            <controllingFieldValue>UCLS</controllingFieldValue>
+            <controllingFieldValue>V Escalator</controllingFieldValue>
+            <controllingFieldValue>Galvanized</controllingFieldValue>
+            <controllingFieldValue>LEV</controllingFieldValue>
+            <controllingFieldValue>Yellow 500</controllingFieldValue>
+            <controllingFieldValue>CR1000</controllingFieldValue>
+            <controllingFieldValue>Hyundai Escalator</controllingFieldValue>
+            <controllingFieldValue>V-1504</controllingFieldValue>
+            <valueName>Relay Logic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

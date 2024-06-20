@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Controller_Manufacturer__c</fullName>
+    <description>created this as part of ADO user story 12187</description>
+    <externalId>false</externalId>
+    <label>Controller Manufacturer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A&amp;D Elevator (Angelo &amp; Dominic Elevator)</fullName>
+                <default>false</default>
+                <label>A&amp;D Elevator (Angelo &amp; Dominic Elevator)</label>
+            </value>
+            <value>
+                <fullName>Abell</fullName>
+                <default>false</default>
+                <label>Abell</label>
+            </value>
+            <value>
+                <fullName>Access Elevator</fullName>
+                <default>false</default>
+                <label>Access Elevator</label>
+            </value>
+            <value>
+                <fullName>Access Industrial</fullName>
+                <default>false</default>
+                <label>Access Industrial</label>
+            </value>
+            <value>
+                <fullName>Alimak</fullName>
+                <default>false</default>
+                <label>Alimak</label>
+            </value>
+            <value>
+                <fullName>American Crescent</fullName>
+                <default>false</default>
+                <label>American Crescent</label>
+            </value>
+            <value>
+                <fullName>Amtech</fullName>
+                <default>false</default>
+                <label>Amtech</label>
+            </value>
+            <value>
+                <fullName>Armor</fullName>
+                <default>false</default>
+                <label>Armor</label>
+            </value>
+            <value>
+                <fullName>Atlas Elevator - San Francisco</fullName>
+                <default>false</default>
+                <label>Atlas Elevator - San Francisco</label>
+            </value>
+            <value>
+                <fullName>Automatisation JRT</fullName>
+                <default>false</default>
+                <label>Automatisation JRT</label>
+            </value>
+            <value>
+                <fullName>Autoquip</fullName>
+                <default>false</default>
+                <label>Autoquip</label>
+            </value>
+            <value>
+                <fullName>Autoquip Miner</fullName>
+                <default>false</default>
+                <label>Autoquip Miner</label>
+            </value>
+            <value>
+                <fullName>Baxco</fullName>
+                <default>false</default>
+                <label>Baxco</label>
+            </value>
+            <value>
+                <fullName>Bella Lift</fullName>
+                <default>false</default>
+                <label>Bella Lift</label>
+            </value>
+            <value>
+                <fullName>Brazos Elevator</fullName>
+                <default>false</default>
+                <label>Brazos Elevator</label>
+            </value>
+            <value>
+                <fullName>Cal-West</fullName>
+                <default>false</default>
+                <label>Cal-West</label>
+            </value>
+            <value>
+                <fullName>Canton</fullName>
+                <default>false</default>
+                <label>Canton</label>
+            </value>
+            <value>
+                <fullName>Carrier-Lifts</fullName>
+                <default>false</default>
+                <label>Carrier-Lifts</label>
+            </value>
+            <value>
+                <fullName>CEC/Swift</fullName>
+                <default>false</default>
+                <label>CEC/Swift</label>
+            </value>
+            <value>
+                <fullName>CEMCO</fullName>
+                <default>false</default>
+                <label>CEMCO</label>
+            </value>
+            <value>
+                <fullName>Century</fullName>
+                <default>false</default>
+                <label>Century</label>
+            </value>
+            <value>
+                <fullName>Cetek</fullName>
+                <default>false</default>
+                <label>Cetek</label>
+            </value>
+            <value>
+                <fullName>Cheney</fullName>
+                <default>false</default>
+                <label>Cheney</label>
+            </value>
+            <value>
+                <fullName>Chico Elevator</fullName>
+                <default>false</default>
+                <label>Chico Elevator</label>
+            </value>
+            <value>
+                <fullName>CJ Anderson</fullName>
+                <default>false</default>
+                <label>CJ Anderson</label>
+            </value>
+            <value>
+                <fullName>Claddagh</fullName>
+                <default>false</default>
+                <label>Claddagh</label>
+            </value>
+            <value>
+                <fullName>Coast</fullName>
+                <default>false</default>
+                <label>Coast</label>
+            </value>
+            <value>
+                <fullName>Concord</fullName>
+                <default>false</default>
+                <label>Concord</label>
+            </value>
+            <value>
+                <fullName>Concordia</fullName>
+                <default>false</default>
+                <label>Concordia</label>
+            </value>
+            <value>
+                <fullName>Consolidated Steel</fullName>
+                <default>false</default>
+                <label>Consolidated Steel</label>
+            </value>
+            <value>
+                <fullName>Craftsman</fullName>
+                <default>false</default>
+                <label>Craftsman</label>
+            </value>
+            <value>
+                <fullName>Creative and Design Machine</fullName>
+                <default>false</default>
+                <label>Creative and Design Machine</label>
+            </value>
+            <value>
+                <fullName>Cutler-Hammer</fullName>
+                <default>false</default>
+                <label>Cutler-Hammer</label>
+            </value>
+            <value>
+                <fullName>Delaware</fullName>
+                <default>false</default>
+                <label>Delaware</label>
+            </value>
+            <value>
+                <fullName>Delta</fullName>
+                <default>false</default>
+                <label>Delta</label>
+            </value>
+            <value>
+                <fullName>Dover</fullName>
+                <default>false</default>
+                <label>Dover</label>
+            </value>
+            <value>
+                <fullName>Eastern</fullName>
+                <default>false</default>
+                <label>Eastern</label>
+            </value>
+            <value>
+                <fullName>Elevator Controls Incorporated</fullName>
+                <default>false</default>
+                <label>Elevator Controls Incorporated</label>
+            </value>
+            <value>
+                <fullName>Elevator Electric</fullName>
+                <default>false</default>
+                <label>Elevator Electric</label>
+            </value>
+            <value>
+                <fullName>Elevator Industries</fullName>
+                <default>false</default>
+                <label>Elevator Industries</label>
+            </value>
+            <value>
+                <fullName>Elevator Research Company</fullName>
+                <default>false</default>
+                <label>Elevator Research Company</label>
+            </value>
+            <value>
+                <fullName>Elser Elevator</fullName>
+                <default>false</default>
+                <label>Elser Elevator</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>ERM</fullName>
+                <default>false</default>
+                <label>ERM</label>
+            </value>
+            <value>
+                <fullName>ESCO</fullName>
+                <default>false</default>
+                <label>ESCO</label>
+            </value>
+            <value>
+                <fullName>ESI</fullName>
+                <default>false</default>
+                <label>ESI</label>
+            </value>
+            <value>
+                <fullName>FS Payne</fullName>
+                <default>false</default>
+                <label>FS Payne</label>
+            </value>
+            <value>
+                <fullName>Fujitec</fullName>
+                <default>false</default>
+                <label>Fujitec</label>
+            </value>
+            <value>
+                <fullName>GAL</fullName>
+                <default>false</default>
+                <label>GAL</label>
+            </value>
+            <value>
+                <fullName>Garaventa</fullName>
+                <default>false</default>
+                <label>Garaventa</label>
+            </value>
+            <value>
+                <fullName>General Elevator Baltimore</fullName>
+                <default>false</default>
+                <label>General Elevator Baltimore</label>
+            </value>
+            <value>
+                <fullName>General Elevator Florida</fullName>
+                <default>false</default>
+                <label>General Elevator Florida</label>
+            </value>
+            <value>
+                <fullName>General Elevator Hartford</fullName>
+                <default>false</default>
+                <label>General Elevator Hartford</label>
+            </value>
+            <value>
+                <fullName>General Elevator Texas</fullName>
+                <default>false</default>
+                <label>General Elevator Texas</label>
+            </value>
+            <value>
+                <fullName>Giant Lift</fullName>
+                <default>false</default>
+                <label>Giant Lift</label>
+            </value>
+            <value>
+                <fullName>Gillespie</fullName>
+                <default>false</default>
+                <label>Gillespie</label>
+            </value>
+            <value>
+                <fullName>Global Tardif</fullName>
+                <default>false</default>
+                <label>Global Tardif</label>
+            </value>
+            <value>
+                <fullName>Globe Hoist</fullName>
+                <default>false</default>
+                <label>Globe Hoist</label>
+            </value>
+            <value>
+                <fullName>Grote</fullName>
+                <default>false</default>
+                <label>Grote</label>
+            </value>
+            <value>
+                <fullName>Haughton</fullName>
+                <default>false</default>
+                <label>Haughton</label>
+            </value>
+            <value>
+                <fullName>HI TECH</fullName>
+                <default>false</default>
+                <label>HI TECH</label>
+            </value>
+            <value>
+                <fullName>Hitachi</fullName>
+                <default>false</default>
+                <label>Hitachi</label>
+            </value>
+            <value>
+                <fullName>Home Elevator</fullName>
+                <default>false</default>
+                <label>Home Elevator</label>
+            </value>
+            <value>
+                <fullName>Houston Elevator</fullName>
+                <default>false</default>
+                <label>Houston Elevator</label>
+            </value>
+            <value>
+                <fullName>Humphrey Manlift</fullName>
+                <default>false</default>
+                <label>Humphrey Manlift</label>
+            </value>
+            <value>
+                <fullName>Hunter Hayes</fullName>
+                <default>false</default>
+                <label>Hunter Hayes</label>
+            </value>
+            <value>
+                <fullName>Hyundai</fullName>
+                <default>false</default>
+                <label>Hyundai</label>
+            </value>
+            <value>
+                <fullName>Inclinator</fullName>
+                <default>false</default>
+                <label>Inclinator</label>
+            </value>
+            <value>
+                <fullName>Industrial Equip and Design</fullName>
+                <default>false</default>
+                <label>Industrial Equip and Design</label>
+            </value>
+            <value>
+                <fullName>Inland Elevator</fullName>
+                <default>false</default>
+                <label>Inland Elevator</label>
+            </value>
+            <value>
+                <fullName>International Elevator</fullName>
+                <default>false</default>
+                <label>International Elevator</label>
+            </value>
+            <value>
+                <fullName>JB Ersham &amp; Son</fullName>
+                <default>false</default>
+                <label>JB Ersham &amp; Son</label>
+            </value>
+            <value>
+                <fullName>Kersher</fullName>
+                <default>false</default>
+                <label>Kersher</label>
+            </value>
+            <value>
+                <fullName>Kestner and Hecht</fullName>
+                <default>false</default>
+                <label>Kestner and Hecht</label>
+            </value>
+            <value>
+                <fullName>Kimball Elevator</fullName>
+                <default>false</default>
+                <label>Kimball Elevator</label>
+            </value>
+            <value>
+                <fullName>KM White</fullName>
+                <default>false</default>
+                <label>KM White</label>
+            </value>
+            <value>
+                <fullName>Kone</fullName>
+                <default>false</default>
+                <label>Kone</label>
+            </value>
+            <value>
+                <fullName>Lagerquist</fullName>
+                <default>false</default>
+                <label>Lagerquist</label>
+            </value>
+            <value>
+                <fullName>Langley Lift</fullName>
+                <default>false</default>
+                <label>Langley Lift</label>
+            </value>
+            <value>
+                <fullName>LG</fullName>
+                <default>false</default>
+                <label>LG</label>
+            </value>
+            <value>
+                <fullName>Lift U Hogan MFG</fullName>
+                <default>false</default>
+                <label>Lift U Hogan MFG</label>
+            </value>
+            <value>
+                <fullName>Long</fullName>
+                <default>false</default>
+                <label>Long</label>
+            </value>
+            <value>
+                <fullName>Mac&apos;s Lifts</fullName>
+                <default>false</default>
+                <label>Mac&apos;s Lifts</label>
+            </value>
+            <value>
+                <fullName>Maida Technologies Inc</fullName>
+                <default>false</default>
+                <label>Maida Technologies Inc</label>
+            </value>
+            <value>
+                <fullName>Matot</fullName>
+                <default>false</default>
+                <label>Matot</label>
+            </value>
+            <value>
+                <fullName>MCE</fullName>
+                <default>false</default>
+                <label>MCE</label>
+            </value>
+            <value>
+                <fullName>Mid-American</fullName>
+                <default>false</default>
+                <label>Mid-American</label>
+            </value>
+            <value>
+                <fullName>Midstate</fullName>
+                <default>false</default>
+                <label>Midstate</label>
+            </value>
+            <value>
+                <fullName>Millar</fullName>
+                <default>false</default>
+                <label>Millar</label>
+            </value>
+            <value>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+                <label>Minnesota</label>
+            </value>
+            <value>
+                <fullName>Mitsubishi</fullName>
+                <default>false</default>
+                <label>Mitsubishi</label>
+            </value>
+            <value>
+                <fullName>Monarch</fullName>
+                <default>false</default>
+                <label>Monarch</label>
+            </value>
+            <value>
+                <fullName>Montgomery</fullName>
+                <default>false</default>
+                <label>Montgomery</label>
+            </value>
+            <value>
+                <fullName>Motovator</fullName>
+                <default>false</default>
+                <label>Motovator</label>
+            </value>
+            <value>
+                <fullName>Mowrey</fullName>
+                <default>false</default>
+                <label>Mowrey</label>
+            </value>
+            <value>
+                <fullName>Northern</fullName>
+                <default>false</default>
+                <label>Northern</label>
+            </value>
+            <value>
+                <fullName>O&amp;K</fullName>
+                <default>false</default>
+                <label>O&amp;K</label>
+            </value>
+            <value>
+                <fullName>Oliver &amp; Williams</fullName>
+                <default>false</default>
+                <label>Oliver &amp; Williams</label>
+            </value>
+            <value>
+                <fullName>Omron</fullName>
+                <default>false</default>
+                <label>Omron</label>
+            </value>
+            <value>
+                <fullName>Oracle</fullName>
+                <default>false</default>
+                <label>Oracle</label>
+            </value>
+            <value>
+                <fullName>Orona</fullName>
+                <default>false</default>
+                <label>Orona</label>
+            </value>
+            <value>
+                <fullName>OThompson</fullName>
+                <default>false</default>
+                <label>OThompson</label>
+            </value>
+            <value>
+                <fullName>Otis</fullName>
+                <default>false</default>
+                <label>Otis</label>
+            </value>
+            <value>
+                <fullName>Park</fullName>
+                <default>false</default>
+                <label>Park</label>
+            </value>
+            <value>
+                <fullName>Pflow</fullName>
+                <default>false</default>
+                <label>Pflow</label>
+            </value>
+            <value>
+                <fullName>Phoenix</fullName>
+                <default>false</default>
+                <label>Phoenix</label>
+            </value>
+            <value>
+                <fullName>Plunger Lift</fullName>
+                <default>false</default>
+                <label>Plunger Lift</label>
+            </value>
+            <value>
+                <fullName>Porchlift</fullName>
+                <default>false</default>
+                <label>Porchlift</label>
+            </value>
+            <value>
+                <fullName>Powder Systems</fullName>
+                <default>false</default>
+                <label>Powder Systems</label>
+            </value>
+            <value>
+                <fullName>Precise</fullName>
+                <default>false</default>
+                <label>Precise</label>
+            </value>
+            <value>
+                <fullName>R&amp;O</fullName>
+                <default>false</default>
+                <label>R&amp;O</label>
+            </value>
+            <value>
+                <fullName>Rafiner</fullName>
+                <default>false</default>
+                <label>Rafiner</label>
+            </value>
+            <value>
+                <fullName>Ram Elevators and Lifts</fullName>
+                <default>false</default>
+                <label>Ram Elevators and Lifts</label>
+            </value>
+            <value>
+                <fullName>Reliable</fullName>
+                <default>false</default>
+                <label>Reliable</label>
+            </value>
+            <value>
+                <fullName>Rotary</fullName>
+                <default>false</default>
+                <label>Rotary</label>
+            </value>
+            <value>
+                <fullName>Salish</fullName>
+                <default>false</default>
+                <label>Salish</label>
+            </value>
+            <value>
+                <fullName>San Jose</fullName>
+                <default>false</default>
+                <label>San Jose</label>
+            </value>
+            <value>
+                <fullName>Savaria</fullName>
+                <default>false</default>
+                <label>Savaria</label>
+            </value>
+            <value>
+                <fullName>Schindler</fullName>
+                <default>false</default>
+                <label>Schindler</label>
+            </value>
+            <value>
+                <fullName>Schumacher</fullName>
+                <default>false</default>
+                <label>Schumacher</label>
+            </value>
+            <value>
+                <fullName>Sedgewick</fullName>
+                <default>false</default>
+                <label>Sedgewick</label>
+            </value>
+            <value>
+                <fullName>Serge</fullName>
+                <default>false</default>
+                <label>Serge</label>
+            </value>
+            <value>
+                <fullName>Shepard Warner</fullName>
+                <default>false</default>
+                <label>Shepard Warner</label>
+            </value>
+            <value>
+                <fullName>Silver State</fullName>
+                <default>false</default>
+                <label>Silver State</label>
+            </value>
+            <value>
+                <fullName>SmartRise</fullName>
+                <default>false</default>
+                <label>SmartRise</label>
+            </value>
+            <value>
+                <fullName>Southeastern</fullName>
+                <default>false</default>
+                <label>Southeastern</label>
+            </value>
+            <value>
+                <fullName>Southern</fullName>
+                <default>false</default>
+                <label>Southern</label>
+            </value>
+            <value>
+                <fullName>Southwestern</fullName>
+                <default>false</default>
+                <label>Southwestern</label>
+            </value>
+            <value>
+                <fullName>Stross</fullName>
+                <default>false</default>
+                <label>Stross</label>
+            </value>
+            <value>
+                <fullName>Sydney</fullName>
+                <default>false</default>
+                <label>Sydney</label>
+            </value>
+            <value>
+                <fullName>Taylor</fullName>
+                <default>false</default>
+                <label>Taylor</label>
+            </value>
+            <value>
+                <fullName>Thames Valley</fullName>
+                <default>false</default>
+                <label>Thames Valley</label>
+            </value>
+            <value>
+                <fullName>thyssenkrupp Elevator</fullName>
+                <default>false</default>
+                <label>thyssenkrupp Elevator</label>
+            </value>
+            <value>
+                <fullName>Timberline Equipment Limited</fullName>
+                <default>false</default>
+                <label>Timberline Equipment Limited</label>
+            </value>
+            <value>
+                <fullName>Toshiba</fullName>
+                <default>false</default>
+                <label>Toshiba</label>
+            </value>
+            <value>
+                <fullName>TriCounty</fullName>
+                <default>false</default>
+                <label>TriCounty</label>
+            </value>
+            <value>
+                <fullName>TriState Elevator of PA</fullName>
+                <default>false</default>
+                <label>TriState Elevator of PA</label>
+            </value>
+            <value>
+                <fullName>Turnbull</fullName>
+                <default>false</default>
+                <label>Turnbull</label>
+            </value>
+            <value>
+                <fullName>US Elevator</fullName>
+                <default>false</default>
+                <label>US Elevator</label>
+            </value>
+            <value>
+                <fullName>Vertitron Midwest</fullName>
+                <default>false</default>
+                <label>Vertitron Midwest</label>
+            </value>
+            <value>
+                <fullName>Vertrans</fullName>
+                <default>false</default>
+                <label>Vertrans</label>
+            </value>
+            <value>
+                <fullName>Viola</fullName>
+                <default>false</default>
+                <label>Viola</label>
+            </value>
+            <value>
+                <fullName>Virginia Controls</fullName>
+                <default>false</default>
+                <label>Virginia Controls</label>
+            </value>
+            <value>
+                <fullName>Warsaw</fullName>
+                <default>false</default>
+                <label>Warsaw</label>
+            </value>
+            <value>
+                <fullName>Waupaca</fullName>
+                <default>false</default>
+                <label>Waupaca</label>
+            </value>
+            <value>
+                <fullName>Westbrook</fullName>
+                <default>false</default>
+                <label>Westbrook</label>
+            </value>
+            <value>
+                <fullName>Western</fullName>
+                <default>false</default>
+                <label>Western</label>
+            </value>
+            <value>
+                <fullName>Westinghouse</fullName>
+                <default>false</default>
+                <label>Westinghouse</label>
+            </value>
+            <value>
+                <fullName>Wheelovator</fullName>
+                <default>false</default>
+                <label>Wheelovator</label>
+            </value>
+            <value>
+                <fullName>White Evans</fullName>
+                <default>false</default>
+                <label>White Evans</label>
+            </value>
+            <value>
+                <fullName>WICO</fullName>
+                <default>false</default>
+                <label>WICO</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

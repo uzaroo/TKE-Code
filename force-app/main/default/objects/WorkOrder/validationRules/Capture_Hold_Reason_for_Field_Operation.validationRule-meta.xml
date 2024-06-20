@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capture_Hold_Reason_for_Field_Operation</fullName>
+    <active>true</active>
+    <description>When the status is Hold, hold reason must be provided.</description>
+    <errorConditionFormula>AND(
+				RecordType.DeveloperName = &apos;SFS_Field_Operations&apos;,
+				ISPICKVAL(Status, &apos;Hold&apos;) ,
+				ISBLANK(TEXT(SFS_Hold_Reason__c))
+				)</errorConditionFormula>
+    <errorDisplayField>SFS_Hold_Reason__c</errorDisplayField>
+    <errorMessage>Hold Reason required when Status is Hold</errorMessage>
+</ValidationRule>

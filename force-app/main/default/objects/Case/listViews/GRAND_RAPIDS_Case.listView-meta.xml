@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GRAND_RAPIDS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>GRAND RAPIDS</label>
+    <queue>GRAND_RAPIDS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

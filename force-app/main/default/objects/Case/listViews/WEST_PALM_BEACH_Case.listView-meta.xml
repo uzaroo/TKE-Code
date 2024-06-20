@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WEST_PALM_BEACH_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>WEST PALM BEACH</label>
+    <queue>WEST_PALM_BEACH</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

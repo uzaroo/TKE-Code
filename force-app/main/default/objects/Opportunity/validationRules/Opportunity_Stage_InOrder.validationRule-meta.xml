@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Stage_InOrder</fullName>
+    <active>true</active>
+    <description>US-13097Validation to make sure opp stage is in order</description>
+    <errorConditionFormula>AND(OR( PRIORVALUE(StageName) == &apos;Closed Won&apos; ,PRIORVALUE(StageName) == &apos;Closed Lost&apos;),PRIORVALUE(StageName) != TEXT(StageName))</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Cannot change from closed to any</errorMessage>
+</ValidationRule>

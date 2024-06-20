@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Front_Door_Complexities__c</fullName>
+    <description>created this as part of ADO user story 12187</description>
+    <externalId>false</externalId>
+    <label>Front Door Complexities</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 - Spd Side Opening (SSSS)</fullName>
+                <default>false</default>
+                <label>1 - Spd Side Opening (SSSS)</label>
+            </value>
+            <value>
+                <fullName>2 - Spd Side Opening (2SSS)</fullName>
+                <default>false</default>
+                <label>2 - Spd Side Opening (2SSS)</label>
+            </value>
+            <value>
+                <fullName>3 - Spd Side Opening (3SSS)</fullName>
+                <default>false</default>
+                <label>3 - Spd Side Opening (3SSS)</label>
+            </value>
+            <value>
+                <fullName>Accordian Gate</fullName>
+                <default>false</default>
+                <label>Accordian Gate</label>
+            </value>
+            <value>
+                <fullName>Bi-Parting Manual (VERTICAL BI-PART (MANUAL))</fullName>
+                <default>false</default>
+                <label>Bi-Parting Manual (VERTICAL BI-PART (MANUAL))</label>
+            </value>
+            <value>
+                <fullName>Bi-Parting Power (VERTICAL BI-PART (POWER))</fullName>
+                <default>false</default>
+                <label>Bi-Parting Power (VERTICAL BI-PART (POWER))</label>
+            </value>
+            <value>
+                <fullName>Center Opening (SSCO)</fullName>
+                <default>false</default>
+                <label>Center Opening (SSCO)</label>
+            </value>
+            <value>
+                <fullName>2 SPD Center Opening  (2SCO)</fullName>
+                <default>false</default>
+                <label>2 SPD Center Opening  (2SCO)</label>
+            </value>
+            <value>
+                <fullName>3 SPD Center Opening  (3SCO)</fullName>
+                <default>false</default>
+                <label>3 SPD Center Opening  (3SCO)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Scissor Gate</fullName>
+                <default>false</default>
+                <label>Scissor Gate</label>
+            </value>
+            <value>
+                <fullName>Swing</fullName>
+                <default>false</default>
+                <label>Swing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

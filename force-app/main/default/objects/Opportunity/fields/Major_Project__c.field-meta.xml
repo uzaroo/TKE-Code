@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Major_Project__c</fullName>
+    <description>Field to identify if the Opportunity is considered to be a Major Project, based on Opportunity Amount and the Line Of Business.This is created as part of US-11792</description>
+    <externalId>false</externalId>
+    <formula>OR ( AND (ISPICKVAL( Line_Of_Business__c ,&apos;New Installation&apos;), Amount &gt;= 5000000),AND(ISPICKVAL(Line_Of_Business__c ,&apos;Modernization&apos;), Amount &gt;= 3000000))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Major project criteria: New Installation (≥ $5M) or Modernization (≥ $3M).</inlineHelpText>
+    <label>Major Project?</label>
+    <type>Checkbox</type>
+</CustomField>

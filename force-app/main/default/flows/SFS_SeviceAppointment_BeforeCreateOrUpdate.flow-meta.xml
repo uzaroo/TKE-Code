@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <description>Assign Gantt label to SA</description>
+        <name>Assign_Gantt_Label_to_SA</name>
+        <label>Assign Gantt Label to SA</label>
+        <locationX>611</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSL__GanttLabel__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GanttLabelFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SA_s_Work_Type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Icon_from_Work_Type</name>
+        <label>Assign Icon from Work Type</label>
+        <locationX>479</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSL__GanttIcon__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SFS_Work_Order__r.WorkType.SFS_Gantt_Icon__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Asset</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_the_Certification_on_SA</name>
+        <label>Set the Certification on SA</label>
+        <locationX>50</locationX>
+        <locationY>1559</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.SFS_Certification__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Escalator_Certification.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_WorkOrder_on_SA</name>
+        <label>Set WorkOrder on SA</label>
+        <locationX>611</locationX>
+        <locationY>611</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.SFS_Work_Order__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Associated_WO.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Gantt_Label_to_SA</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Asset</name>
+        <label>Check Asset</label>
+        <locationX>611</locationX>
+        <locationY>1127</locationY>
+        <defaultConnectorLabel>Asset does not exist</defaultConnectorLabel>
+        <rules>
+            <name>Asset_not_empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Associated_WO.AssetId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Asset_an_Escalator</targetReference>
+            </connector>
+            <label>Asset not empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Certification_Exists</name>
+        <label>Check Certification Exists?</label>
+        <locationX>182</locationX>
+        <locationY>1451</locationY>
+        <defaultConnectorLabel>No Certification Found</defaultConnectorLabel>
+        <rules>
+            <name>Certification_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Escalator_Certification</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_the_Certification_on_SA</targetReference>
+            </connector>
+            <label>Certification Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_WO</name>
+        <label>Check WO</label>
+        <locationX>858</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>WO Not Found</defaultConnectorLabel>
+        <rules>
+            <name>WO_not_empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Associated_WO</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_WorkOrder_on_SA</targetReference>
+            </connector>
+            <label>WO not empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Created_or_Updated</name>
+        <label>Created or Updated</label>
+        <locationX>1114</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Update</defaultConnectorLabel>
+        <rules>
+            <name>Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Associated_WO</targetReference>
+            </connector>
+            <label>Create</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Asset_an_Escalator</name>
+        <label>Is Asset an Escalator</label>
+        <locationX>380</locationX>
+        <locationY>1235</locationY>
+        <defaultConnectorLabel>Non Escalator</defaultConnectorLabel>
+        <rules>
+            <name>Escalator</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Associated_WO.Asset.TKE_AssetType__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Escalator</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Escalator_Certification</targetReference>
+            </connector>
+            <label>Escalator</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>SA_s_Work_Type</name>
+        <label>SA&apos;s Work Type</label>
+        <locationX>611</locationX>
+        <locationY>827</locationY>
+        <defaultConnector>
+            <targetReference>Check_Asset</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Is Null</defaultConnectorLabel>
+        <rules>
+            <name>Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SFS_Work_Order__r.WorkTypeId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Icon_from_Work_Type</targetReference>
+            </connector>
+            <label>Not Null</label>
+        </rules>
+    </decisions>
+    <description>1. This flow auto-populates the Certification on SA Create
+2. This flow sets the WorkOrder on SA create
+3. ADO-12043: This flow sets Gantt label on SA on create and update</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>GanttLabelFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.SFS_Work_Order__r.Location.Name})) , {!$Record.SFS_Work_Order__r.Location.Name} +&quot; - &quot;,&quot;&quot;) + IF(NOT(ISBLANK({!$Record.SFS_Work_Order__r.Asset.Name} )), {!$Record.SFS_Work_Order__r.Asset.Name},&quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>SFS_SeviceAppointment_BeforeCreateOrUpdate {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SFS SeviceAppointment BeforeCreateOrUpdate</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Associated_WO</name>
+        <label>Get Associated WO</label>
+        <locationX>858</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_WO</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>WorkOrder</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>AssetId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Escalator_Certification</name>
+        <label>Get Escalator Certification</label>
+        <locationX>182</locationX>
+        <locationY>1343</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Certification_Exists</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Escalator</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SFS_Certification__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>988</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Created_or_Updated</targetReference>
+        </connector>
+        <object>ServiceAppointment</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Sub_Type__c</fullName>
+    <description>Story #13473</description>
+    <externalId>false</externalId>
+    <label>Case Sub Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Callback</fullName>
+                <default>false</default>
+                <label>Callback</label>
+            </value>
+            <value>
+                <fullName>Entrapment</fullName>
+                <default>false</default>
+                <label>Entrapment</label>
+            </value>
+            <value>
+                <fullName>Reception</fullName>
+                <default>false</default>
+                <label>Reception</label>
+            </value>
+            <value>
+                <fullName>Non Verbal Response</fullName>
+                <default>false</default>
+                <label>Non Verbal Response</label>
+            </value>
+            <value>
+                <fullName>Testing</fullName>
+                <default>false</default>
+                <label>Testing</label>
+            </value>
+            <value>
+                <fullName>Person Answer No Problem</fullName>
+                <default>false</default>
+                <label>Person Answer No Problem</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Callback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>ADA</controllingFieldValue>
+            <valueName>Entrapment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Reception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ADA</controllingFieldValue>
+            <valueName>Non Verbal Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ADA</controllingFieldValue>
+            <valueName>Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ADA</controllingFieldValue>
+            <valueName>Person Answer No Problem</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

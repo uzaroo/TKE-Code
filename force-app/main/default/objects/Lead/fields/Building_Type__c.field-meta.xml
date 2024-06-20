@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Building_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Building Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Market_Segment__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4+ Star Hotel</fullName>
+                <default>false</default>
+                <label>4+ Star Hotel</label>
+            </value>
+            <value>
+                <fullName>Airport</fullName>
+                <default>false</default>
+                <label>Airport</label>
+            </value>
+            <value>
+                <fullName>Budget Hotel / Motel / Hostel</fullName>
+                <default>false</default>
+                <label>Budget Hotel / Motel / Hostel</label>
+            </value>
+            <value>
+                <fullName>Business Office - High / Premium</fullName>
+                <default>false</default>
+                <label>Business Office - High / Premium</label>
+            </value>
+            <value>
+                <fullName>Business Office - Low/Functional</fullName>
+                <default>false</default>
+                <label>Business Office - Low/Functional</label>
+            </value>
+            <value>
+                <fullName>Business Office - Medium / Comfort</fullName>
+                <default>false</default>
+                <label>Business Office - Medium / Comfort</label>
+            </value>
+            <value>
+                <fullName>Cargo Ship</fullName>
+                <default>false</default>
+                <label>Cargo Ship</label>
+            </value>
+            <value>
+                <fullName>Casino</fullName>
+                <default>false</default>
+                <label>Casino</label>
+            </value>
+            <value>
+                <fullName>Cinema Complex</fullName>
+                <default>false</default>
+                <label>Cinema Complex</label>
+            </value>
+            <value>
+                <fullName>Convention/Business Center</fullName>
+                <default>false</default>
+                <label>Convention/Business Center</label>
+            </value>
+            <value>
+                <fullName>Cruise Liner</fullName>
+                <default>false</default>
+                <label>Cruise Liner</label>
+            </value>
+            <value>
+                <fullName>Cultural Center</fullName>
+                <default>false</default>
+                <label>Cultural Center</label>
+            </value>
+            <value>
+                <fullName>Dam</fullName>
+                <default>false</default>
+                <label>Dam</label>
+            </value>
+            <value>
+                <fullName>Ferry</fullName>
+                <default>false</default>
+                <label>Ferry</label>
+            </value>
+            <value>
+                <fullName>Ferry Terminal</fullName>
+                <default>false</default>
+                <label>Ferry Terminal</label>
+            </value>
+            <value>
+                <fullName>Functional Department Stores</fullName>
+                <default>false</default>
+                <label>Functional Department Stores</label>
+            </value>
+            <value>
+                <fullName>Functional Shopping Mall</fullName>
+                <default>false</default>
+                <label>Functional Shopping Mall</label>
+            </value>
+            <value>
+                <fullName>Government / Public Office</fullName>
+                <default>false</default>
+                <label>Government / Public Office</label>
+            </value>
+            <value>
+                <fullName>Ind. Park / Factory / Plant</fullName>
+                <default>false</default>
+                <label>Ind. Park / Factory / Plant</label>
+            </value>
+            <value>
+                <fullName>Med Center / Office / Clinic</fullName>
+                <default>false</default>
+                <label>Med Center / Office / Clinic</label>
+            </value>
+            <value>
+                <fullName>Metro/Subway</fullName>
+                <default>false</default>
+                <label>Metro/Subway</label>
+            </value>
+            <value>
+                <fullName>Mid-Range Hotel</fullName>
+                <default>false</default>
+                <label>Mid-Range Hotel</label>
+            </value>
+            <value>
+                <fullName>Mining Facility</fullName>
+                <default>false</default>
+                <label>Mining Facility</label>
+            </value>
+            <value>
+                <fullName>Mixed Use - Functional</fullName>
+                <default>false</default>
+                <label>Mixed Use - Functional</label>
+            </value>
+            <value>
+                <fullName>Mixed Use - Premium</fullName>
+                <default>false</default>
+                <label>Mixed Use - Premium</label>
+            </value>
+            <value>
+                <fullName>Museum</fullName>
+                <default>false</default>
+                <label>Museum</label>
+            </value>
+            <value>
+                <fullName>Oil/Gas Facility</fullName>
+                <default>false</default>
+                <label>Oil/Gas Facility</label>
+            </value>
+            <value>
+                <fullName>Oil Platform</fullName>
+                <default>false</default>
+                <label>Oil Platform</label>
+            </value>
+            <value>
+                <fullName>Owned/Rented Apartments</fullName>
+                <default>false</default>
+                <label>Owned/Rented Apartments</label>
+            </value>
+            <value>
+                <fullName>Parking Garage</fullName>
+                <default>false</default>
+                <label>Parking Garage</label>
+            </value>
+            <value>
+                <fullName>Port</fullName>
+                <default>false</default>
+                <label>Port</label>
+            </value>
+            <value>
+                <fullName>Power Station</fullName>
+                <default>false</default>
+                <label>Power Station</label>
+            </value>
+            <value>
+                <fullName>Premium Shopping Mall</fullName>
+                <default>false</default>
+                <label>Premium Shopping Mall</label>
+            </value>
+            <value>
+                <fullName>Private Hospital - Functional</fullName>
+                <default>false</default>
+                <label>Private Hospital - Functional</label>
+            </value>
+            <value>
+                <fullName>Private Hospital - Premium</fullName>
+                <default>false</default>
+                <label>Private Hospital - Premium</label>
+            </value>
+            <value>
+                <fullName>Private School</fullName>
+                <default>false</default>
+                <label>Private School</label>
+            </value>
+            <value>
+                <fullName>Private University/College</fullName>
+                <default>false</default>
+                <label>Private University/College</label>
+            </value>
+            <value>
+                <fullName>Public Hospital</fullName>
+                <default>false</default>
+                <label>Public Hospital</label>
+            </value>
+            <value>
+                <fullName>Public Library</fullName>
+                <default>false</default>
+                <label>Public Library</label>
+            </value>
+            <value>
+                <fullName>Public School</fullName>
+                <default>false</default>
+                <label>Public School</label>
+            </value>
+            <value>
+                <fullName>Public University/College</fullName>
+                <default>false</default>
+                <label>Public University/College</label>
+            </value>
+            <value>
+                <fullName>Railway / Bus Station</fullName>
+                <default>false</default>
+                <label>Railway / Bus Station</label>
+            </value>
+            <value>
+                <fullName>Rehabilitation Center</fullName>
+                <default>false</default>
+                <label>Rehabilitation Center</label>
+            </value>
+            <value>
+                <fullName>Religious Center</fullName>
+                <default>false</default>
+                <label>Religious Center</label>
+            </value>
+            <value>
+                <fullName>Restaurant/Bar/Club</fullName>
+                <default>false</default>
+                <label>Restaurant/Bar/Club</label>
+            </value>
+            <value>
+                <fullName>Retirement / Nursing Home</fullName>
+                <default>false</default>
+                <label>Retirement / Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Science Park/Lab</fullName>
+                <default>false</default>
+                <label>Science Park/Lab</label>
+            </value>
+            <value>
+                <fullName>Single Family Home</fullName>
+                <default>false</default>
+                <label>Single Family Home</label>
+            </value>
+            <value>
+                <fullName>Sports Complex</fullName>
+                <default>false</default>
+                <label>Sports Complex</label>
+            </value>
+            <value>
+                <fullName>Supermarket / Hypermarket</fullName>
+                <default>false</default>
+                <label>Supermarket / Hypermarket</label>
+            </value>
+            <value>
+                <fullName>Supply Ship</fullName>
+                <default>false</default>
+                <label>Supply Ship</label>
+            </value>
+            <value>
+                <fullName>Theme Park</fullName>
+                <default>false</default>
+                <label>Theme Park</label>
+            </value>
+            <value>
+                <fullName>Urban Mobility</fullName>
+                <default>false</default>
+                <label>Urban Mobility</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+            <value>
+                <fullName>War Ship</fullName>
+                <default>false</default>
+                <label>War Ship</label>
+            </value>
+            <value>
+                <fullName>Wind Mill / Wind Park</fullName>
+                <default>false</default>
+                <label>Wind Mill / Wind Park</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>Business Office - High / Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>Business Office - Low/Functional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>Business Office - Medium / Comfort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>Government / Public Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parking Garage</controllingFieldValue>
+            <valueName>Parking Garage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Residential</controllingFieldValue>
+            <valueName>Owned/Rented Apartments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Residential</controllingFieldValue>
+            <valueName>Single Family Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Railway / Bus Station</controllingFieldValue>
+            <valueName>Railway / Bus Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Functional Department Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Functional Shopping Mall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Premium Shopping Mall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Supermarket / Hypermarket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Urban Mobility</controllingFieldValue>
+            <valueName>Urban Mobility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Airport</controllingFieldValue>
+            <valueName>Airport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education/Religion</controllingFieldValue>
+            <valueName>Private School</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education/Religion</controllingFieldValue>
+            <valueName>Private University/College</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education/Religion</controllingFieldValue>
+            <valueName>Public Library</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education/Religion</controllingFieldValue>
+            <valueName>Public School</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education/Religion</controllingFieldValue>
+            <valueName>Public University/College</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education/Religion</controllingFieldValue>
+            <valueName>Religious Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entertainment/Leisure</controllingFieldValue>
+            <valueName>Casino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entertainment/Leisure</controllingFieldValue>
+            <valueName>Cinema Complex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entertainment/Leisure</controllingFieldValue>
+            <valueName>Convention/Business Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entertainment/Leisure</controllingFieldValue>
+            <valueName>Cultural Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entertainment/Leisure</controllingFieldValue>
+            <valueName>Museum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entertainment/Leisure</controllingFieldValue>
+            <valueName>Sports Complex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entertainment/Leisure</controllingFieldValue>
+            <valueName>Theme Park</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ferry Terminal</controllingFieldValue>
+            <valueName>Ferry Terminal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospital / Healthcare</controllingFieldValue>
+            <valueName>Med Center / Office / Clinic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospital / Healthcare</controllingFieldValue>
+            <valueName>Private Hospital - Functional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospital / Healthcare</controllingFieldValue>
+            <valueName>Private Hospital - Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospital / Healthcare</controllingFieldValue>
+            <valueName>Public Hospital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospital / Healthcare</controllingFieldValue>
+            <valueName>Rehabilitation Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospital / Healthcare</controllingFieldValue>
+            <valueName>Retirement / Nursing Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hotel / Restaurant</controllingFieldValue>
+            <valueName>4+ Star Hotel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hotel / Restaurant</controllingFieldValue>
+            <valueName>Budget Hotel / Motel / Hostel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hotel / Restaurant</controllingFieldValue>
+            <valueName>Mid-Range Hotel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hotel / Restaurant</controllingFieldValue>
+            <valueName>Restaurant/Bar/Club</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Dam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Ind. Park / Factory / Plant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Mining Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Oil/Gas Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Power Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Science Park/Lab</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Wind Mill / Wind Park</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marine</controllingFieldValue>
+            <valueName>Cargo Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marine</controllingFieldValue>
+            <valueName>Cruise Liner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marine</controllingFieldValue>
+            <valueName>Ferry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marine</controllingFieldValue>
+            <valueName>Oil Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marine</controllingFieldValue>
+            <valueName>Port</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marine</controllingFieldValue>
+            <valueName>Supply Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marine</controllingFieldValue>
+            <valueName>War Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metro/Subway</controllingFieldValue>
+            <valueName>Metro/Subway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mixed Use Buildings</controllingFieldValue>
+            <valueName>Mixed Use - Functional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mixed Use Buildings</controllingFieldValue>
+            <valueName>Mixed Use - Premium</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

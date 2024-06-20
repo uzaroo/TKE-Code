@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LAS_VEGAS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>LAS VEGAS</label>
+    <queue>LAS_VEGAS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>
