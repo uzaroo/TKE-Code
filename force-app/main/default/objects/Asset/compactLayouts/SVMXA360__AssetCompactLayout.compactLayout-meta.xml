@@ -6,6 +6,6 @@
     <fields>SerialNumber</fields>
     <fields>AccountId</fields>
     <fields>LocationId</fields>
-    <fields>RecordTypeId</fields>
+    <fields>IVR_Required__c</fields>
     <label>Asset Compact Layout - A360</label>
 </CompactLayout>

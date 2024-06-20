@@ -82,11 +82,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>Description</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>DueDate</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -367,5 +362,15 @@
         <isRequired>false</isRequired>
     </availableFields>
     <description>Preview box for a service in the service list</description>
+    <displayedFields>
+        <field>Description</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Dispatch_Notes__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
     <label>Service Appointment List Preview</label>
 </FieldSet>

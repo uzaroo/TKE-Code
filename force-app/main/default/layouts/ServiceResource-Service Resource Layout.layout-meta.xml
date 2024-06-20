@@ -176,6 +176,12 @@
         <fields>EndDate</fields>
         <relatedList>ServiceResourcePreferences</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>LocationType</fields>
+        <fields>VisitorAddress</fields>
+        <relatedList>Location.Preferred_Service_Resource__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

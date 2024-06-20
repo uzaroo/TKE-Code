@@ -7,6 +7,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>ActualDuration</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>FSL__Appointment_Grade__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -57,12 +62,7 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>Duration</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>DurationType</field>
+        <field>DurationInMinutes</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -328,6 +328,16 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
+        <field>Duration</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DurationType</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>SchedStartTime</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -354,16 +364,6 @@
     </displayedFields>
     <displayedFields>
         <field>ActualEndTime</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>DurationInMinutes</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>ActualDuration</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

@@ -136,23 +136,24 @@
         <customTabListAdditionalFields>JobProfile</customTabListAdditionalFields>
         <customTabListAdditionalFields>ServiceResource</customTabListAdditionalFields>
         <customTabListAdditionalFields>ServiceTerritory</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
         <customTabListAdditionalFields>RecordsetFilterCriteria</customTabListAdditionalFields>
         <customTabListAdditionalFields>IsNonStandard</customTabListAdditionalFields>
-        <customTabListAdditionalFields>BackgroundColor</customTabListAdditionalFields>
         <customTabListAdditionalFields>IsHolidayShift</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
+        <excludedStandardButtons>CreateShiftsFromPattern</excludedStandardButtons>
+        <excludedStandardButtons>AddSegments</excludedStandardButtons>
+        <excludedStandardButtons>BatchAssignment</excludedStandardButtons>
+        <excludedStandardButtons>BulkUpdateShifts</excludedStandardButtons>
+        <excludedStandardButtons>CreateShiftFromTemplate</excludedStandardButtons>
         <lookupDialogsAdditionalFields>StartTime</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>EndTime</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Status</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>JobProfile</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ServiceResource</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ServiceTerritory</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>RecordsetFilterCriteria</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>IsNonStandard</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>BackgroundColor</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>IsHolidayShift</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>StartTime</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>EndTime</lookupPhoneDialogsAdditionalFields>
@@ -160,11 +161,8 @@
         <lookupPhoneDialogsAdditionalFields>JobProfile</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ServiceResource</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ServiceTerritory</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>RecordsetFilterCriteria</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>IsNonStandard</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>BackgroundColor</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>IsHolidayShift</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>StartTime</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>EndTime</searchResultsAdditionalFields>
@@ -172,11 +170,8 @@
         <searchResultsAdditionalFields>JobProfile</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ServiceResource</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ServiceTerritory</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>RecordsetFilterCriteria</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>IsNonStandard</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>BackgroundColor</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>IsHolidayShift</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>

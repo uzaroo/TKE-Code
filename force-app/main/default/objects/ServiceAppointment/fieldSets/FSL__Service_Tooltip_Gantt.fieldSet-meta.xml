@@ -37,6 +37,16 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>ArrivalWindowEndTime</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>ArrivalWindowStartTime</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>FSL__Auto_Schedule__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -207,6 +217,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>ParentRecordId</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>ParentRecordStatusCategory</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -292,6 +307,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>Status</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>StatusCategory</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -321,24 +341,14 @@
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
-    <availableFields>
+    <description>Service Tooltip Gantt</description>
+    <displayedFields>
         <field>WorkTypeId</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
-    </availableFields>
-    <description>Service Tooltip Gantt</description>
-    <displayedFields>
-        <field>Status</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>ArrivalWindowStartTime</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>ArrivalWindowEndTime</field>
+        <field>Asset_Serial_Number__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -349,11 +359,6 @@
     </displayedFields>
     <displayedFields>
         <field>DueDate</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>ParentRecordId</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

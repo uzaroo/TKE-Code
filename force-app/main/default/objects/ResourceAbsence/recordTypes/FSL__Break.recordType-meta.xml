@@ -42,21 +42,24 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>SFS_ApprovalStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Medical</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Meeting</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Training</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Vacation</fullName>
+            <fullName>Break</fullName>
             <default>true</default>
         </values>
     </picklistValues>

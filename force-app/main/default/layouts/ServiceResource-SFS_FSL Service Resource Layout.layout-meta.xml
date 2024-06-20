@@ -39,6 +39,10 @@
                 <behavior>Edit</behavior>
                 <field>SchedulingConstraintId</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SFS_LunchBreakDuration__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -182,6 +186,8 @@
         <fields>Type</fields>
         <fields>FSL__GanttLabel__c</fields>
         <fields>Name</fields>
+        <fields>SFS_ApprovalStatus__c</fields>
+        <fields>SFS_Approved_Rejected_By__c</fields>
         <relatedList>ResourceAbsences</relatedList>
     </relatedLists>
     <relatedLists>
@@ -197,6 +203,12 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>LocationType</fields>
+        <fields>VisitorAddress</fields>
+        <relatedList>Location.Preferred_Service_Resource__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

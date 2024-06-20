@@ -13,6 +13,14 @@
     <columns>ACCOUNT.TYPE</columns>
     <columns>CORE.USERS.FIRST_NAME</columns>
     <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>EBS_Customer_ID__c</columns>
+    <columns>EBS_Site_Id__c</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>Customer_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer</value>
+    </filters>
     <label>All Accounts</label>
 </ListView>

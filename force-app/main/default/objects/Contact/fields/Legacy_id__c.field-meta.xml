@@ -3,7 +3,7 @@
     <fullName>Legacy_ID__c</fullName>
     <description>US-12599</description>
     <encryptionScheme>None</encryptionScheme>
-    <externalId>true</externalId>
+    <externalId>false</externalId>
     <label>Legacy ID</label>
     <length>255</length>
     <required>false</required>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ProductCode</fullName>
+    <description>ADO story # 12171
+This  field will be used to reflect existing TKE product codes.</description>
     <trackHistory>false</trackHistory>
 </CustomField>

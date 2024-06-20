@@ -485,6 +485,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Asset.Case__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>AssignedResource.ActualTravelTime</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2871,6 +2876,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>WorkType.FSL__Exact_Appointments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkType.SFS_Gantt_Icon__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>

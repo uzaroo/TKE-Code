@@ -6,6 +6,7 @@
     <mutingPermissionSets>SFS_Ops_Manager_Muted</mutingPermissionSets>
     <permissionSets>FSL_Dispatcher_License</permissionSets>
     <permissionSets>FSL_Dispatcher_Permissions</permissionSets>
+    <permissionSets>SFS_Asset_360_Branch_Ops_Permission_Set</permissionSets>
     <permissionSets>SFS_Base_Operations_Permission_Set</permissionSets>
     <permissionSets>SFS_Ops_Manager_Permission_Set</permissionSets>
     <status>Updated</status>

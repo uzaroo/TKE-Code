@@ -235,6 +235,12 @@
         <fields>ExecutionOrder</fields>
         <relatedList>NewWorkSteps</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>TITLE</fields>
+        <fields>LAST_UPDATE</fields>
+        <fields>CREATEDBY_USER</fields>
+        <relatedList>RelatedLinkedArticleList</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

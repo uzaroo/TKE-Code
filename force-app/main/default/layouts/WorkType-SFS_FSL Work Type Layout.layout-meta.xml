@@ -29,6 +29,10 @@
         <label>Scheduling Related</label>
         <layoutColumns>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SFS_Gantt_Icon__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>DurationType</field>
             </layoutItems>
@@ -50,7 +54,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>FSL__Exact_Appointments__c</field>
+                <field>Is_Visible_to_Call_Center__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Duration_Based_on_Min_Crew_Size__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>

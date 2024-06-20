@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Loss_Reason__c</fullName>
+    <description>Field to capture the reason that an Opportunity is lost.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Select the Loss Reason.</inlineHelpText>
     <label>Loss Reason</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
@@ -10,29 +12,44 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Lost to Competitor</fullName>
-                <default>false</default>
-                <label>Lost to Competitor</label>
-            </value>
-            <value>
-                <fullName>No Budget / Lost Funding</fullName>
-                <default>false</default>
-                <label>No Budget / Lost Funding</label>
-            </value>
-            <value>
-                <fullName>No Decision / Non-Responsive</fullName>
-                <default>false</default>
-                <label>No Decision / Non-Responsive</label>
-            </value>
-            <value>
                 <fullName>Price</fullName>
                 <default>false</default>
                 <label>Price</label>
             </value>
             <value>
-                <fullName>Other</fullName>
+                <fullName>Duplicate</fullName>
                 <default>false</default>
-                <label>Other</label>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Invalid TKTRIP</fullName>
+                <default>false</default>
+                <label>Invalid TKTRIP</label>
+            </value>
+            <value>
+                <fullName>Lack of Customer Response</fullName>
+                <default>false</default>
+                <label>Lack of Customer Response</label>
+            </value>
+            <value>
+                <fullName>No Bid</fullName>
+                <default>false</default>
+                <label>No Bid</label>
+            </value>
+            <value>
+                <fullName>Not Convertible</fullName>
+                <default>false</default>
+                <label>Not Convertible</label>
+            </value>
+            <value>
+                <fullName>Product reason</fullName>
+                <default>false</default>
+                <label>Product reason</label>
+            </value>
+            <value>
+                <fullName>Project Cancelled</fullName>
+                <default>false</default>
+                <label>Project Cancelled</label>
             </value>
         </valueSetDefinition>
     </valueSet>

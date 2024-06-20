@@ -128,7 +128,7 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>Read</externalSharingModel>
     <searchLayouts>
         <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.STARTDATE</customTabListAdditionalFields>
@@ -143,5 +143,5 @@
         <searchResultsAdditionalFields>CONTRACT.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.STATUSINDICATOR</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>Read</sharingModel>
 </CustomObject>

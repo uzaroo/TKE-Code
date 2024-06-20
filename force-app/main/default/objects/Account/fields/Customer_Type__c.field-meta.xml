@@ -21,6 +21,18 @@
                 <default>false</default>
                 <label>Customer</label>
             </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Customer and Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer and Billing</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

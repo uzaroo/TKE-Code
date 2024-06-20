@@ -24,6 +24,33 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>SFS_Hold_Reason__c</picklist>
+        <values>
+            <fullName>Access Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mod%2FRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety%2FPower Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shutdown by AHJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Parts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>SVMXA360__BillingType__c</picklist>
         <values>
             <fullName>Billable</fullName>

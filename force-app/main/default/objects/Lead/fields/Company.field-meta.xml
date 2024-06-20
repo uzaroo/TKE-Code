@@ -3,4 +3,5 @@
     <fullName>Company</fullName>
     <encryptionScheme>None</encryptionScheme>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
 </CustomField>

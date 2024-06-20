@@ -97,11 +97,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>EarliestStartTime</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>FSL__Emergency__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -223,6 +218,11 @@
     </availableFields>
     <availableFields>
         <field>ParentRecordStatusCategory</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>ParentRecordType</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -353,12 +353,12 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>DueDate</field>
+        <field>EarliestStartTime</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>ParentRecordType</field>
+        <field>DueDate</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

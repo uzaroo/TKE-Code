@@ -42,13 +42,24 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Type</picklist>
+        <picklist>SFS_ApprovalStatus__c</picklist>
         <values>
-            <fullName>Medical</fullName>
+            <fullName>Approved</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Meeting</fullName>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Non-paid PTO</fullName>
             <default>false</default>
         </values>
         <values>
@@ -56,8 +67,8 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Vacation</fullName>
-            <default>true</default>
+            <fullName>Vacation - PTO</fullName>
+            <default>false</default>
         </values>
     </picklistValues>
 </RecordType>

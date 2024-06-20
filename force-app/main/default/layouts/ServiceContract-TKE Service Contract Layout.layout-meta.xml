@@ -43,6 +43,10 @@
                 <behavior>Edit</behavior>
                 <field>SVMXA360__ContractAuthoringStatus__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Office__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

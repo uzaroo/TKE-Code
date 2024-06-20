@@ -9,6 +9,7 @@
     <columns>ASSET.STATUS</columns>
     <columns>SVMXA360__AssetTag__c</columns>
     <columns>CONTACT.NAME</columns>
+    <columns>Location</columns>
     <filterScope>Everything</filterScope>
     <label>A360 - All Assets View</label>
 </ListView>

@@ -4,6 +4,8 @@
     <deprecated>false</deprecated>
     <description>The cost of the Product.</description>
     <externalId>false</externalId>
+    <inlineHelpText>ADO story # 12171
+This field will be used to store the cost of  products.</inlineHelpText>
     <label>Product Cost</label>
     <precision>18</precision>
     <required>false</required>

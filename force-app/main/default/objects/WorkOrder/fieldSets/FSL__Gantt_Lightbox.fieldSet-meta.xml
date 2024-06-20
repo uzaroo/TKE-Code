@@ -82,11 +82,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>LocationId</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>Longitude</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -201,11 +196,6 @@
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
-    <availableFields>
-        <field>FSL__VisitingHours__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
     <description>Gantt Lightbox</description>
     <displayedFields>
         <field>ServiceTerritoryId</field>
@@ -239,6 +229,21 @@
     </displayedFields>
     <displayedFields>
         <field>AssetId</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LocationId</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>FSL__VisitingHours__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>SVMXA360__BillingType__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

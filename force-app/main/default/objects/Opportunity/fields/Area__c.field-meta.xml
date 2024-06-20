@@ -4,7 +4,7 @@
     <description>Field to identify what Area the Opportunity is included in. ADO - USER STORY 12571</description>
     <externalId>false</externalId>
     <label>Area</label>
-    <required>true</required>
+    <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>

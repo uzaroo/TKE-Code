@@ -154,7 +154,6 @@
         <searchResultsAdditionalFields>ENTITLEMENT.STARTDATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ENTITLEMENT.ENDDATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ENTITLEMENT.STATUS</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

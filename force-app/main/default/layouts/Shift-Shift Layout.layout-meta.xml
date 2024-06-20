@@ -35,6 +35,10 @@
                 <behavior>Edit</behavior>
                 <field>BackgroundColor</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Office__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

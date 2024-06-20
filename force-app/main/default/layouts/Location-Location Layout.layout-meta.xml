@@ -49,15 +49,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Dispatch_notes__c</field>
+                <field>Dispatch_Notes__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Access_Notes__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Billing_Account__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -66,6 +62,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ParentLocationId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Record_Type_Name__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -118,10 +118,32 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
+        <fields>ASSET.NAME</fields>
+        <fields>ASSET.SERIAL_NUMBER</fields>
+        <fields>ASSET.INSTALL_DATE</fields>
+        <fields>ASSET.QUANTITY</fields>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>CONTACT.NAME</fields>
+        <fields>ASSET.STATUS</fields>
+        <relatedList>RelatedAssetList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>LocationType</fields>
+        <fields>CreatedBy</fields>
+        <relatedList>ChildLocations</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>Name</fields>
         <fields>AddressType</fields>
         <fields>Description</fields>
         <relatedList>Addresses</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedFileList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedObjects>ParentLocationId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

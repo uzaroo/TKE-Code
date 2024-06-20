@@ -130,14 +130,6 @@
     </customPermissions>
     <customPermissions>
         <enabled>true</enabled>
-        <name>FSL__Service_List_Contractors</name>
-    </customPermissions>
-    <customPermissions>
-        <enabled>true</enabled>
-        <name>FSL__Service_List_Crews</name>
-    </customPermissions>
-    <customPermissions>
-        <enabled>true</enabled>
         <name>FSL__Service_List_Exclude_Bundle_Members</name>
     </customPermissions>
     <customPermissions>
@@ -159,10 +151,6 @@
     <customPermissions>
         <enabled>true</enabled>
         <name>FSL__Service_List_Scheuled</name>
-    </customPermissions>
-    <customPermissions>
-        <enabled>true</enabled>
-        <name>FSL__Service_List_Selected</name>
     </customPermissions>
     <customPermissions>
         <enabled>true</enabled>
@@ -203,6 +191,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.OperatingHoursId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Case__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

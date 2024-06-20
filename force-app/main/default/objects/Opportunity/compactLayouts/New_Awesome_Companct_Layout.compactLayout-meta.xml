@@ -3,7 +3,8 @@
     <fullName>New_Awesome_Companct_Layout</fullName>
     <fields>Name</fields>
     <fields>AccountId</fields>
-    <fields>CloseDate</fields>
+    <fields>Line_Of_Business__c</fields>
+    <fields>Type_Of_Sale__c</fields>
     <fields>Amount</fields>
     <fields>OwnerId</fields>
     <label>New Awesome Compact Layout</label>

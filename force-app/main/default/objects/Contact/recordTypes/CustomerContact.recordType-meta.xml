@@ -2,7 +2,44 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CustomerContact</fullName>
     <active>true</active>
+    <compactLayoutAssignment>TKE_Contact_Compact_Layout</compactLayoutAssignment>
+    <description>General / default contact record type</description>
     <label>Customer Contact</label>
+    <picklistValues>
+        <picklist>BuyerAttributes</picklist>
+        <values>
+            <fullName>BusinessUser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Champion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DecisionMaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ExecutiveSponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TechnicalExpert</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
     <picklistValues>
         <picklist>GenderIdentity</picklist>
         <values>
@@ -25,47 +62,58 @@
     <picklistValues>
         <picklist>LeadSource</picklist>
         <values>
-            <fullName>Advertisement</fullName>
+            <fullName>Event</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Customer Event</fullName>
+            <fullName>List%2C Report%2C or Publication</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Employee Referral</fullName>
+            <fullName>Marketing</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>External Referral</fullName>
+            <fullName>Organic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Sub_Source__c</picklist>
+        <values>
+            <fullName>Campaign</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Google AdWords</fullName>
+            <fullName>Construct Connect</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Other</fullName>
+            <fullName>List Purchase</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Partner</fullName>
+            <fullName>Online Form</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Purchased List</fullName>
+            <fullName>Online Help</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Trade Show</fullName>
+            <fullName>Plan and Design</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Webinar</fullName>
+            <fullName>Publication</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Website</fullName>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Dashboard</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -120,6 +168,21 @@
         </values>
         <values>
             <fullName>They%2FThem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leankor__Level__c</picklist>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
             <default>false</default>
         </values>
     </picklistValues>

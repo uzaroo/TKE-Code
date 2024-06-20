@@ -38,6 +38,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>SFS_Fixed_Gap_Duration__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Address</field>
             </layoutItems>
             <layoutItems>
@@ -110,6 +114,12 @@
         <fields>EffectiveStartDate</fields>
         <fields>EffectiveEndDate</fields>
         <relatedList>ServiceTerritoryMembers</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>LocationType</fields>
+        <fields>VisitorAddress</fields>
+        <relatedList>Location.SFS_Service_Territory__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

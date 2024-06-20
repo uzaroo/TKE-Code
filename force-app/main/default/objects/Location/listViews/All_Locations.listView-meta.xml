@@ -6,6 +6,12 @@
     <columns>VisitorAddress</columns>
     <columns>LastModifiedBy</columns>
     <columns>LastModifiedDate</columns>
+    <columns>Customer_Account__c</columns>
+    <columns>EBS_Customer_ID__c</columns>
+    <columns>EBS_Site_ID__c</columns>
+    <columns>Status__c</columns>
+    <columns>Union_Local__c</columns>
+    <columns>CreatedDate</columns>
     <filterScope>Everything</filterScope>
     <label>All Locations</label>
 </ListView>
