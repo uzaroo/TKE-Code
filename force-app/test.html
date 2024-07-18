@@ -1,0 +1,1 @@
+IF(OR(WorkType.Name == ‘Entrapment’, SFS_Work_Order__r.Case.Injury_Reported__c, SFS_Work_Order__r.Case.Safety_Concern__c,  SFS_Work_Order__r.SFS_Has_Critical_Asset__c, SFS_Work_Order__r.Overdue_Service__c, DATEVALUE(DueDate) ==  TODAY()), 1, WorkType.Base_Priority__c)
