@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ANAHEIM_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>ANAHEIM</label>
+    <queue>ANAHEIM</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

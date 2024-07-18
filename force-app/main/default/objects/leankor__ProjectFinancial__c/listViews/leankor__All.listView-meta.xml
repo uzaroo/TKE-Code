@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__All</fullName>
+    <columns>leankor__FinancialBreakdownStructure__c</columns>
+    <columns>leankor__Project__c</columns>
+    <columns>NAME</columns>
+    <columns>leankor__FinancialAccount__c</columns>
+    <columns>leankor__ProjectFinancial__c</columns>
+    <columns>leankor__AllowFinancialEntry__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

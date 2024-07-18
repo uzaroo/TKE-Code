@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__KanbanCard__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Kanban card instance that includes this base line.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Kanban card which will include this base line.</inlineHelpText>
+    <label>Kanban Card</label>
+    <referenceTo>leankor__KanbanCard__c</referenceTo>
+    <relationshipLabel>Kanban Card Baselines</relationshipLabel>
+    <relationshipName>Kanban_Card_Baselines</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

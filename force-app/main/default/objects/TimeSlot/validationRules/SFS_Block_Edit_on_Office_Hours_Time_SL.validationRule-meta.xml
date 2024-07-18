@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_Block_Edit_on_Office_Hours_Time_SL</fullName>
+    <active>true</active>
+    <description>This validation rule is in place to block the editing of time slots related to an operating hour record with he box checked for &quot;Is Office Hours?&quot;. Escapes are included for custom perm and SysAdmin</description>
+    <errorConditionFormula>AND(OperatingHours.Is_Office_Hours__c = True,
+
+NOT($Permission.SFS_Edit_Office_Hours),
+NOT($Permission.TKE_Bypass_Validation)
+
+)</errorConditionFormula>
+    <errorMessage>Only SFS Admin users, and Salesforce System Administrator Users can edit the Time Slots on operating hours that are designated as Office operating hours. Please work with an SFS Admin user if changes need to be made to these operating hours fields</errorMessage>
+</ValidationRule>

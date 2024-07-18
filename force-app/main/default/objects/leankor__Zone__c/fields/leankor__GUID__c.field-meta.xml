@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__GUID__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <defaultValue>&quot;305ee49a-8489-4091-bf76-8a07048066f7&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The globally unique identifier of this zone. There must not be another ID like it in the entire system.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>true</externalId>
+    <inlineHelpText>Enter a globally unique identifier for this zone. It must be in the format of &quot;305ee49a-8489-4091-bf76-8a07048066f7&quot;.</inlineHelpText>
+    <label>GUID</label>
+    <length>40</length>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

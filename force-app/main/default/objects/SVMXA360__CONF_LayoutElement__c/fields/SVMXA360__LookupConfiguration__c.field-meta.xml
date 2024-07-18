@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__LookupConfiguration__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup configuration for the elements of data type lookup</description>
+    <externalId>false</externalId>
+    <label>Lookup Configuration</label>
+    <referenceTo>SVMXA360__CONF_LookupConfiguration__c</referenceTo>
+    <relationshipLabel>Layout Elements</relationshipLabel>
+    <relationshipName>Layout_Elements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

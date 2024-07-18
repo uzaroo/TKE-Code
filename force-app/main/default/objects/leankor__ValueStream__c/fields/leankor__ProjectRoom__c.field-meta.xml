@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProjectRoom__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A virtual room which contains one or more value streams (kanban boards).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a project room that this value stream should live in. This helps organize your key processes.</inlineHelpText>
+    <label>Project</label>
+    <referenceTo>leankor__ProjectRoom__c</referenceTo>
+    <relationshipLabel>Value Streams</relationshipLabel>
+    <relationshipName>ValueStreams</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

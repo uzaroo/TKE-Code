@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TransactionElement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to Transaction Element for which expression based mapping details is stored</description>
+    <externalId>false</externalId>
+    <label>Transaction Element</label>
+    <referenceTo>SVMXA360__CONF_LayoutElement__c</referenceTo>
+    <relationshipLabel>Expression Based Mappings</relationshipLabel>
+    <relationshipName>Expression_Based_Mappings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

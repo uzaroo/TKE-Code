@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProcessWizardStepId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Process Wizard Step ID for the input parameters.</description>
+    <externalId>false</externalId>
+    <label>Process Wizard Step</label>
+    <referenceTo>SVMXA360__CONF_ProcessWizardStep__c</referenceTo>
+    <relationshipLabel>Process Step Parameters</relationshipLabel>
+    <relationshipName>Process_Step_Parameters</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

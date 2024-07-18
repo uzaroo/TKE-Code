@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__AssetID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the unique identifier of the kanban card template. It is copied into the Kanban Card from the template at creation of the new cards.</description>
+    <displayFormat>LEAN{0000000000}</displayFormat>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter a unique identifiers beginning with pound (#) and with no spaces. Underscores (_) are okay to use.</inlineHelpText>
+    <label>Asset ID</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

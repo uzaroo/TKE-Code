@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__OpenNewTab__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If true then opens the module a new browser tab.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate if the module is to open in a new browser tab.</inlineHelpText>
+    <label>Open in new tab</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Set_Milestone_Name_Completion</name>
+        <label>Set Milestone Name</label>
+        <locationX>443</locationX>
+        <locationY>371</locationY>
+        <assignmentItems>
+            <assignToReference>vMilestoneName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Service Completion - A360</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Milestone_Name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Milestone_Name_Response_Time</name>
+        <label>Set Milestone Name</label>
+        <locationX>351</locationX>
+        <locationY>296</locationY>
+        <assignmentItems>
+            <assignToReference>vMilestoneName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Service Response - A360</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Milestone_Name</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Work_Order_Status</name>
+        <label>Work Order Status</label>
+        <locationX>436</locationX>
+        <locationY>118</locationY>
+        <defaultConnectorLabel>No Action</defaultConnectorLabel>
+        <rules>
+            <name>eInProgress</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Progress</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Milestone_Name_Response_Time</targetReference>
+            </connector>
+            <label>In Progress</label>
+        </rules>
+        <rules>
+            <name>eCompleted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Milestone_Name_Completion</targetReference>
+            </connector>
+            <label>Completed</label>
+        </rules>
+    </decisions>
+    <description>Complete milestone associated with work order status</description>
+    <interviewLabel>Manage Milestones Completion {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>A360 - Manage Milestones Completion</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Milestone_Name</name>
+        <label>Update Milestone Name</label>
+        <locationX>887</locationX>
+        <locationY>310</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>IsCompleted</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>vMilestoneName</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CompletionDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EntityMilestone</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Work_Order_Status</targetReference>
+        </connector>
+        <object>WorkOrder</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>vMilestoneName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStreamToBoardType</fullName>
+    <active>true</active>
+    <description>Value Stream Link can not be blank for  Board Type &apos;Gantt Cards Linked to Board&apos;.</description>
+    <errorConditionFormula>AND( ISPICKVAL( leankor__BoardType__c , &apos;Gantt Cards Linked to Board&apos;) ,ISBLANK( leankor__ValueStreamLink__c ))</errorConditionFormula>
+    <errorMessage>Value Stream Link must be set for Board Type &apos;Gantt Cards Linked to Board&apos;.</errorMessage>
+</ValidationRule>

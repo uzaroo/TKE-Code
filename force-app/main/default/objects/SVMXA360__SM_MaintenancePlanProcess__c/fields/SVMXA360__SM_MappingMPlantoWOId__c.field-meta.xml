@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SM_MappingMPlantoWOId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Mapping to be applied from Maintenance Plan on generation of Work Order</description>
+    <externalId>false</externalId>
+    <label>Mapping MPlan to Work Order</label>
+    <referenceTo>SVMXA360__CONF_ObjectMapping__c</referenceTo>
+    <relationshipLabel>A360 Maintenance Plan Processes (Mapping MPlan to Work Order)</relationshipLabel>
+    <relationshipName>A360_Maintenance_Plan_Processes2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

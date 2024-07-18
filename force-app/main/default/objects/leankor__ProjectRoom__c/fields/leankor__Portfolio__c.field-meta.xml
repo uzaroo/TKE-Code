@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Portfolio__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The parent Portfolio in which this Project resides.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Leankor Portfolio in which to place this Project.</inlineHelpText>
+    <label>Folder</label>
+    <referenceTo>leankor__Portfolio__c</referenceTo>
+    <relationshipName>ProjectRooms</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

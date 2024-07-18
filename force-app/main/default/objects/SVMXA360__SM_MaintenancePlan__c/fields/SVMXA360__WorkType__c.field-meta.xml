@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__WorkType__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The associated work type. Work orders generated from the maintenance plan inherit its work type’s duration, required skills and products, and linked articles. Maintenance assets covered by the plan use the this work type, unless a work type has been assigned to them at the Maintenance Asset Level.</description>
+    <externalId>false</externalId>
+    <label>Work Type</label>
+    <referenceTo>WorkType</referenceTo>
+    <relationshipLabel>A360 Maintenance Plans</relationshipLabel>
+    <relationshipName>A360_Maintenance_Plans</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

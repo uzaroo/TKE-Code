@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__State__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The state in which the kanban card was left after the last saved.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the state in which the kanban card was left after the last saved. Possible values include &apos;inzone&apos;, &apos;nozone&apos; or &apos;inzone-rejectconfirm&apos; (i.e. user put card in a zone but did not allow business rules to run)</inlineHelpText>
+    <label>State</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Zone__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Key initiatives may have one or more sub-processes within value streams which are a critical make-or-break part of success.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a zone (sub-process owned by a specific team in the enterprise) which is critical to achieving this key initiative. NOTE: The zone does not have to be related to the value stream entered on this page, nor do you have to select a value stream.</inlineHelpText>
+    <label>Zone</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>leankor__Zone__c.leankor__ValueStream__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.leankor__ValueStream__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>leankor__Zone__c</referenceTo>
+    <relationshipLabel>Key Initiative Core Processes</relationshipLabel>
+    <relationshipName>KeyInitiativeCoreProcesses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

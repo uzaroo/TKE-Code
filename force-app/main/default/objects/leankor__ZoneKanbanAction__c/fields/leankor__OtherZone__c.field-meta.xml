@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__OtherZone__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This will contain Zone ID for previous Zone ID if type is &quot;EnterZone&quot; and New Zone ID when Type is &quot;Left zone&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This will contain Zone ID for previous Zone ID if type is &quot;EnterZone&quot; and New Zone ID when Type is &quot;Left zone&quot;</inlineHelpText>
+    <label>Other Zone</label>
+    <referenceTo>leankor__Zone__c</referenceTo>
+    <relationshipLabel>ZoneKanban Actions (Other Zone)</relationshipLabel>
+    <relationshipName>OtherZone_ZoneKanban</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TemplateId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Template containing the attributes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Template containing the attributes</inlineHelpText>
+    <label>Template</label>
+    <referenceTo>SVMXA360__SM_TA_Template__c</referenceTo>
+    <relationshipLabel>Technical Attribute Template Items</relationshipLabel>
+    <relationshipName>TechnicalAttributeTemplateItems</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

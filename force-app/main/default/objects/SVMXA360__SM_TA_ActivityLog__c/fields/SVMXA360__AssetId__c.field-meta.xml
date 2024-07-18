@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AssetId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Asset Id of the record on which technical attributes are being captured.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Asset Id of the record on which technical attributes are being captured.</inlineHelpText>
+    <label>Asset</label>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Technical Attribute Activity Logs</relationshipLabel>
+    <relationshipName>TechnicalAttributeActivityLogs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

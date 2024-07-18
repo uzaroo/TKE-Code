@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__IntroLocation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field containing all board types/views in side of it.</description>
+    <externalId>false</externalId>
+    <label>IntroLocation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calendar View</fullName>
+                <default>false</default>
+                <label>Calendar View</label>
+            </value>
+            <value>
+                <fullName>Card Hierarchy</fullName>
+                <default>false</default>
+                <label>Card Hierarchy</label>
+            </value>
+            <value>
+                <fullName>Kanban Board</fullName>
+                <default>false</default>
+                <label>Kanban Board</label>
+            </value>
+            <value>
+                <fullName>Main Nav</fullName>
+                <default>false</default>
+                <label>Main Nav</label>
+            </value>
+            <value>
+                <fullName>Portfolio View</fullName>
+                <default>false</default>
+                <label>Portfolio View</label>
+            </value>
+            <value>
+                <fullName>Whiteboard</fullName>
+                <default>false</default>
+                <label>Whiteboard</label>
+            </value>
+            <value>
+                <fullName>New NAV</fullName>
+                <default>false</default>
+                <label>New NAV</label>
+            </value>
+            <value>
+                <fullName>Project Nav</fullName>
+                <default>false</default>
+                <label>Project Nav</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

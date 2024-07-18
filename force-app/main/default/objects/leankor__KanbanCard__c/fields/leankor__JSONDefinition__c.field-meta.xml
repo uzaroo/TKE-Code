@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__JSONDefinition__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The JSON definition of a kanban card template expressed as a valid Sencha Touch 2 &quot;config&quot; block of a Tab Panel Class .</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter valid JSON which expresses as Sencha Touch 2 &quot;config&quot; block of the Tab Panel Class. It can then be used to tailor the kanban card.</inlineHelpText>
+    <label>JSON Definition</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

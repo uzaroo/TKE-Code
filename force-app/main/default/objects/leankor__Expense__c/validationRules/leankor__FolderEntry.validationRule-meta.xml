@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__FolderEntry</fullName>
+    <active>true</active>
+    <description>Validation for &quot;Folder&quot; requirement.</description>
+    <errorConditionFormula>IF(OR(ISBLANK(leankor__Portfolio__c), ISBLANK(leankor__ProjectFinancial__c)), FALSE, leankor__Portfolio__c &lt;&gt; leankor__ProjectFinancial__r.leankor__Project__r.leankor__Portfolio__c)</errorConditionFormula>
+    <errorDisplayField>leankor__Portfolio__c</errorDisplayField>
+    <errorMessage>Folder must be the same as the folder associated with the project financial.</errorMessage>
+</ValidationRule>

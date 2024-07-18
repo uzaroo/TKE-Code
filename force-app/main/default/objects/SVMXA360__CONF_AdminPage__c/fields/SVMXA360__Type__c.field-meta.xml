@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To define whether it&apos;s a group header or an admin page.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GROUP</fullName>
+                <default>false</default>
+                <label>GROUP</label>
+            </value>
+            <value>
+                <fullName>PAGE</fullName>
+                <default>false</default>
+                <label>PAGE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

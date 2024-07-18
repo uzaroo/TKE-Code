@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStreamLink__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The value stream to which this icon or image will jump if double-tapped on the page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the value stream to which this icon or image will jump if double-tapped on the page.</inlineHelpText>
+    <label>Value Stream Link</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>Markers (Value Stream Link)</relationshipLabel>
+    <relationshipName>MarkersLink</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

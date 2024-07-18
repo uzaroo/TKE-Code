@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Probability__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Probability</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Likely</fullName>
+                <default>false</default>
+                <label>Likely</label>
+            </value>
+            <value>
+                <fullName>Very Likely</fullName>
+                <default>false</default>
+                <label>Very Likely</label>
+            </value>
+            <value>
+                <fullName>Imminent</fullName>
+                <default>false</default>
+                <label>Imminent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

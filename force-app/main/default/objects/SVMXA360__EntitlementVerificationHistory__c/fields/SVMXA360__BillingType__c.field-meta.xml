@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__BillingType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>How the service order expenses will be accounted for</description>
+    <externalId>false</externalId>
+    <label>Billing Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__BillingType</valueSetName>
+    </valueSet>
+</CustomField>

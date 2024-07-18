@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__CompletionVariance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The difference between the target completion date and the actual date in which the card was marked done using the harvey balls.</description>
+    <externalId>false</externalId>
+    <formula>(DATEVALUE(leankor__DueDateTime__c) -(IF(ISNULL(leankor__HarveyBallDoneDate__c),TODAY(),leankor__HarveyBallDoneDate__c) ))/IF((DATEVALUE(leankor__DueDateTime__c) - DATEVALUE(CreatedDate)==0), 1,(DATEVALUE(leankor__DueDateTime__c) - DATEVALUE(CreatedDate)) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The difference between the target completion date and the actual date in which the card was marked done using the harvey balls.</inlineHelpText>
+    <label>Completion Variance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

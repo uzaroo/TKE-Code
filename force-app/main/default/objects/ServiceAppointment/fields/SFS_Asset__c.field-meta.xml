@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_Asset__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field stores the Asset associated with the SA&apos;s parent record (Work Order)</description>
+    <externalId>false</externalId>
+    <label>Asset</label>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Service Appointments</relationshipLabel>
+    <relationshipName>Service_Appointments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

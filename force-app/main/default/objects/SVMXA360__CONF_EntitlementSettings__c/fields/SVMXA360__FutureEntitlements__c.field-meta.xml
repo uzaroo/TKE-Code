@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__FutureEntitlements__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates whether to visualize future coverages when performing interactive entitlement (True) or not (False).</description>
+    <externalId>false</externalId>
+    <label>Future Entitlements</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

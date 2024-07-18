@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ShowDateOnCardFace__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, this will show the Date on Card Face for (Kanban Board, White board, Rollup board and Dashboard cards)</inlineHelpText>
+    <label>Show Date On Card Face</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

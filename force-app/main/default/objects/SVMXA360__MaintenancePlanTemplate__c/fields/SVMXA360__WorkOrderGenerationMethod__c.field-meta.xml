@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__WorkOrderGenerationMethod__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Programmatically specifies how work orders are generated when more than one asset is associated with the Maintenance Plan. The value in this field will auto-populate a field of the same name on the Maintenance Plan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Programmatically specifies how work orders are generated when more than one asset is associated with the Maintenance Plan. The value in this field will auto-populate a field of the same name on the Maintenance Plan.</inlineHelpText>
+    <label>Work Order Generation Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WorkOrderPerAsset</fullName>
+                <default>true</default>
+                <label>One work order per asset</label>
+            </value>
+            <value>
+                <fullName>WorkOrderLineItemPerAsset</fullName>
+                <default>false</default>
+                <label>One work order line item per asset</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

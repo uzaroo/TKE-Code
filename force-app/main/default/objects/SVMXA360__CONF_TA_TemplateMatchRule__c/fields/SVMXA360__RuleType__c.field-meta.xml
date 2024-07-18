@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__RuleType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates if a match rule record is parent/master or child</description>
+    <externalId>false</externalId>
+    <label>Rule Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Master</fullName>
+                <default>false</default>
+                <label>Master</label>
+            </value>
+            <value>
+                <fullName>Detail</fullName>
+                <default>false</default>
+                <label>Detail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

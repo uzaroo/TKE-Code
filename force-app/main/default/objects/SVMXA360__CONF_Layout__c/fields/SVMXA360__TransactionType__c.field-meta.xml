@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TransactionType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Determines if the transaction is creating or editing records.</description>
+    <externalId>false</externalId>
+    <label>Transaction Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standalone Edit</fullName>
+                <default>false</default>
+                <label>Standalone Edit</label>
+            </value>
+            <value>
+                <fullName>Source to Target</fullName>
+                <default>false</default>
+                <label>Source to Target</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

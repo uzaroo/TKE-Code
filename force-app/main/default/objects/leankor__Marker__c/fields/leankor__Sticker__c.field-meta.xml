@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Sticker__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The sticker from which this marker was created. If empty, it means a custom image was uploaded from the users device.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the sticker which created this marker. If left empty, the system assumes a custom image was uploaded from the users device.</inlineHelpText>
+    <label>Sticker</label>
+    <referenceTo>leankor__Sticker__c</referenceTo>
+    <relationshipLabel>Markers</relationshipLabel>
+    <relationshipName>Markers</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

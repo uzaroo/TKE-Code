@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__All</fullName>
+    <columns>NAME</columns>
+    <columns>leankor__User__c</columns>
+    <columns>leankor__ExpenseCategory__c</columns>
+    <columns>leankor__ExpenseSubCategory__c</columns>
+    <columns>leankor__ExpenseAccount__c</columns>
+    <columns>leankor__InternalHourlyRate__c</columns>
+    <columns>leankor__ExternalHourlyRate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>leankor__Resource__c.leankor__Labor</value>
+    </filters>
+    <label>All</label>
+</ListView>

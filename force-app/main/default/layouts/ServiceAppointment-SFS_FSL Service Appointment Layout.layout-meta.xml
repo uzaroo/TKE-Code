@@ -45,14 +45,6 @@
                 <field>ServiceTerritoryId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Status</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>StatusCategory</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>SFS_Hold_Reason__c</field>
             </layoutItems>

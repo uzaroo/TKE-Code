@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ChatterUI__c</fullName>
+    <deprecated>false</deprecated>
+    <description>UI Types:
+LightningChatter - it will show lightning chatter in both classic exp. and lightning exp 
+ClassicChatter - it will show classic chatter in both classic exp. and lightning exp with lightningstylesheet 
+Auto - it will dynamically change to classic chatter in class exp. and lightning chatter in lightning exp</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The UI to be used for chatter page. Eg:[LightningChatter,ClassicChatter,Auto]</inlineHelpText>
+    <label>ChatterUI</label>
+    <length>20</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

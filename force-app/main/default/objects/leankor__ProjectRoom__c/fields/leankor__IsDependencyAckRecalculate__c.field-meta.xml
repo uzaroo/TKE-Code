@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__IsDependencyAckRecalculate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If this is set, the user has to acknowledge/approve the automatic recalculation of the external successor dependency and its chain of successors from the Project Dependency Gantt (PDG). User has to initiate the recalculation from the Dependency line (Lead/Lag popup window) between the externally dependent items.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Require Acknowledgement of External Successor Dependency Recalculation.</inlineHelpText>
+    <label>Ack. External Dependency Recalculation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__UserId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Stores User detail, who initiated the action</description>
+    <externalId>false</externalId>
+    <inlineHelpText>User who initiated the action</inlineHelpText>
+    <label>User Id</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>ApplicationUsageData</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__All</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>leankor__Date__c</columns>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>leankor__Plan__c</columns>
+    <columns>leankor__Category__c</columns>
+    <columns>leankor__ExpenseNumber__c</columns>
+    <columns>leankor__ExpenseAmount__c</columns>
+    <columns>leankor__Portfolio__c</columns>
+    <columns>leankor__Project__c</columns>
+    <columns>leankor__ProjectBoard__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

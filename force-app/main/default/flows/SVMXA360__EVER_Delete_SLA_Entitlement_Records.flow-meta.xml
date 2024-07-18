@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <description>This flow will be triggered on the deletion of the Entitlement record. This flow will delete the SLA Entitlement records related to the Entitlement records whose records type is Entitlement Services.</description>
+    <label>A360 - SLA Entitlement Record Deletion</label>
+    <processMetadataValues>
+        <name>AssociatedRecord</name>
+        <value/>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

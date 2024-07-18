@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TechnicalAttributeId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores the related Technical Attribute Record.</description>
+    <externalId>false</externalId>
+    <label>Technical Attribute</label>
+    <referenceTo>SVMXA360__SM_TA_TechnicalAttribute__c</referenceTo>
+    <relationshipLabel>A360 User Group Technical Attributes</relationshipLabel>
+    <relationshipName>A360_User_Group_Technical_Attributes</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

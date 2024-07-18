@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AdvancedCriteriaType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Refers a global value set, indicating the selected criteria for expression evaluation</description>
+    <externalId>false</externalId>
+    <label>Advanced Criteria Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__AdvancedCriteriaType</valueSetName>
+    </valueSet>
+</CustomField>

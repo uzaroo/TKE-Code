@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TagDefinition__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to Tag definition object</description>
+    <externalId>false</externalId>
+    <label>Tag Definition</label>
+    <referenceTo>SVMXA360__CONF_TagDefinition__c</referenceTo>
+    <relationshipLabel>Tag Elements</relationshipLabel>
+    <relationshipName>TagElements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

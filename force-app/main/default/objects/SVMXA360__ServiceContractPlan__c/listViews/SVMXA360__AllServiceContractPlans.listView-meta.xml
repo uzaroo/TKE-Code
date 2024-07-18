@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AllServiceContractPlans</fullName>
+    <columns>NAME</columns>
+    <columns>SVMXA360__Description__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>SVMXA360__IsActive__c</columns>
+    <columns>SVMXA360__ContractTermDuration__c</columns>
+    <columns>SVMXA360__ContractTermUnitOfTime__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>A360 - All Service Contract Plans</label>
+</ListView>

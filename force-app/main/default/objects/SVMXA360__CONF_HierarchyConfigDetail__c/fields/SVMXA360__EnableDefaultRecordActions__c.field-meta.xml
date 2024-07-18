@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__EnableDefaultRecordActions__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The default user actions like Edit, Clone and Delete will be visible to the user on the record when this option ‘Enable Default Record Actions’ is checked.</description>
+    <externalId>false</externalId>
+    <label>Enable Default Record Actions</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

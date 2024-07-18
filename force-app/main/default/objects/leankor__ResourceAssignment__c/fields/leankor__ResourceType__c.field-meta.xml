@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ResourceType__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The resource type that is associated with the record at the time of assignment. The values in Expense Category, Expense Sub-Category and Expense Account may differ with the values in Resource Type</description>
+    <externalId>false</externalId>
+    <label>Resource Type</label>
+    <referenceTo>leankor__ResourceType__c</referenceTo>
+    <relationshipLabel>Resource Assignments</relationshipLabel>
+    <relationshipName>ResourceTypeAssignments</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

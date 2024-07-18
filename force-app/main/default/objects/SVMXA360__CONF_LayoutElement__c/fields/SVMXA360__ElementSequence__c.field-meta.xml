@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ElementSequence__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Order in which the element should be displayed in the section: Related tab.</description>
+    <externalId>false</externalId>
+    <label>Element Sequence</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

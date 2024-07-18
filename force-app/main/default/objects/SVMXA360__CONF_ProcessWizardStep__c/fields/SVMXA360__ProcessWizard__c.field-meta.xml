@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProcessWizard__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Master record.</description>
+    <externalId>false</externalId>
+    <label>Process Wizard</label>
+    <referenceTo>SVMXA360__CONF_ProcessWizard__c</referenceTo>
+    <relationshipLabel>Process Wizard Steps</relationshipLabel>
+    <relationshipName>Process_Wizard_Steps</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

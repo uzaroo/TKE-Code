@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Title__c</fullName>
+    <defaultValue>&quot;&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This filed shows title at the head of Swimlane.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This filed shows title at the head of Swimlane.</inlineHelpText>
+    <label>Title</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

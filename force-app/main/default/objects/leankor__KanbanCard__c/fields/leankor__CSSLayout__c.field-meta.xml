@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__CSSLayout__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the specific cascading style sheet (CSS) layout for the kanban card. It can be derived from the CSS Layout of the kanban card template.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Modify this CSS to suit your needs. It was derived from the kanban card template CSS Layout field, so if you ever need to revert, it&apos;s only a click away.</inlineHelpText>
+    <label>CSS Layout</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

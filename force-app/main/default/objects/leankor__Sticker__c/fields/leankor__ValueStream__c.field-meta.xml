@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStream__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The specific value stream in-which this sticker is available for use.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the specific value stream to-which this sticker will apply. Blank means it is globally visible to all value streams.</inlineHelpText>
+    <label>Value Stream</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>Stickers</relationshipLabel>
+    <relationshipName>Stickers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

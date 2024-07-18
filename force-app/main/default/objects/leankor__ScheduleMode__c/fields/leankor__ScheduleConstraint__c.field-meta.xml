@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ScheduleConstraint__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Schedule Constraint</label>
+    <referenceTo>leankor__ScheduleConstraint__c</referenceTo>
+    <relationshipLabel>Schedule Modes</relationshipLabel>
+    <relationshipName>ConstraintScheduleModes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

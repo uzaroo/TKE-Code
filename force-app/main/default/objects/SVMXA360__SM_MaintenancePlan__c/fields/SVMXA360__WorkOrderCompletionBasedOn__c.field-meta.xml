@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__WorkOrderCompletionBasedOn__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date/Time field on work order based on which work order closure is considered</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate which Date/Time field on the Work Order will be used to inform Interval Adjustment and Work Order generation, when processing based on the completion of a previous Work Order.</inlineHelpText>
+    <label>Work Order Completion is Based On</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SVMXA360__ClosedDate__c</fullName>
+                <default>false</default>
+                <label>Closed Date</label>
+            </value>
+            <value>
+                <fullName>SVMXA360__CompletedDate__c</fullName>
+                <default>false</default>
+                <label>Completed Date</label>
+            </value>
+            <value>
+                <fullName>EndDate</fullName>
+                <default>false</default>
+                <label>End Date</label>
+            </value>
+            <value>
+                <fullName>SlaExitDate</fullName>
+                <default>false</default>
+                <label>Entitlement Process End Time</label>
+            </value>
+            <value>
+                <fullName>SlaStartDate</fullName>
+                <default>false</default>
+                <label>Entitlement Process Start Time</label>
+            </value>
+            <value>
+                <fullName>StopStartDate</fullName>
+                <default>false</default>
+                <label>Stopped Since</label>
+            </value>
+            <value>
+                <fullName>StartDate</fullName>
+                <default>false</default>
+                <label>Start Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

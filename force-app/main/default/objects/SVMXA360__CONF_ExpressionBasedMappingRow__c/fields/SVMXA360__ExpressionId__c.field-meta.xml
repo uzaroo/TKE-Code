@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExpressionId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Expression to be evaluated for applying Mapping</description>
+    <externalId>false</externalId>
+    <label>Expression</label>
+    <referenceTo>SVMXA360__CONF_Expression__c</referenceTo>
+    <relationshipLabel>Expression Based Mapping Rows</relationshipLabel>
+    <relationshipName>Expression_Based_Mapping_Rows</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

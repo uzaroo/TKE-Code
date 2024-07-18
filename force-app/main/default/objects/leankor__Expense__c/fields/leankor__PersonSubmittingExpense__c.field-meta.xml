@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__PersonSubmittingExpense__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is the User who is submitting the expense item. Important to track in case they need to get paid by the company or for reporting and security purpose.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the person who made this expense item.</inlineHelpText>
+    <label>Person Submitting Expense</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>User.Email</field>
+            <operation>equals</operation>
+            <valueField>$User.Email</valueField>
+        </filterItems>
+        <infoMessage>Default filter will find your User record. To search other users, click the &quot;Show all results&quot; link below.</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Expenses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

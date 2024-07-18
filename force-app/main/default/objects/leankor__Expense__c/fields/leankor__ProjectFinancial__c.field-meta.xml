@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProjectFinancial__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The associated project financial account.</description>
+    <externalId>false</externalId>
+    <label>Project Financial</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>leankor__ProjectFinancial__c.leankor__Project__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.leankor__Project__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>leankor__ProjectFinancial__c.leankor__AllowFinancialEntry__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>leankor__ProjectFinancial__c</referenceTo>
+    <relationshipLabel>Expenses</relationshipLabel>
+    <relationshipName>Expenses_ProjectFinancial</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SPMActionId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is a lookup to &lt;SPM Txn object&gt; to store SPM Transaction for the associated Action title</description>
+    <externalId>false</externalId>
+    <label>SPM Action</label>
+    <referenceTo>SVMXA360__CONF_Layout__c</referenceTo>
+    <relationshipLabel>A360 Mobile Configuration Details</relationshipLabel>
+    <relationshipName>A360_MobileConfigurationDetails</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

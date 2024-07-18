@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__CustomCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>SVMXA360__DeveloperName__c</fields>
+    <label>Custom Compact Layout</label>
+</CompactLayout>

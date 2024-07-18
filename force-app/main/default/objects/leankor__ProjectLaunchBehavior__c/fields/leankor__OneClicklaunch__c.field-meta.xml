@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__OneClicklaunch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If true then launch the module on a single click from the project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate if the module is to automatically launch when selecting the project.</inlineHelpText>
+    <label>One Click Launch</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

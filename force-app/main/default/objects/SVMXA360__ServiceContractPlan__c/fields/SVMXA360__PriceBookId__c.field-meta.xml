@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__PriceBookId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Price book which would be used in Contracts while authoring.</description>
+    <externalId>false</externalId>
+    <label>Price Book</label>
+    <referenceTo>Pricebook2</referenceTo>
+    <relationshipLabel>Service Contract Plans</relationshipLabel>
+    <relationshipName>Service_Contract_Plans</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

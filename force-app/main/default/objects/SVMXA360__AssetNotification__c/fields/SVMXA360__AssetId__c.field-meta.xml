@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AssetId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Asset related to this Asset Notification Record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Asset related to this Asset Notification Record.</inlineHelpText>
+    <label>Asset</label>
+    <referenceTo>Asset</referenceTo>
+    <relationshipLabel>Asset Notifications</relationshipLabel>
+    <relationshipName>Asset_Notifications</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

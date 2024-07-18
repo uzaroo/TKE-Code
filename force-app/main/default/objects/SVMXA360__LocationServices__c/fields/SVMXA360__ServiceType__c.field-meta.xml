@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ServiceType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates the type of Service for which a matching Location needs to be found</description>
+    <externalId>false</externalId>
+    <label>Service Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Depot</fullName>
+                <default>false</default>
+                <label>Depot</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__JSONDataSmall4__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To accommodate larger JSON packages we must split them up so Visualforce Streaming API can handle them.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter fourth JSON segment.</inlineHelpText>
+    <label>JSON Data Small4</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

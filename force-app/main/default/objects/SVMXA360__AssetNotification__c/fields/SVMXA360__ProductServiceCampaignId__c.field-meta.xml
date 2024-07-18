@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProductServiceCampaignId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Product Service Campaign related to the Asset Notification Record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Product Service Campaign related to the Asset Notification Record.</inlineHelpText>
+    <label>Product Service Campaign</label>
+    <referenceTo>ProductServiceCampaign</referenceTo>
+    <relationshipLabel>Asset Notifications</relationshipLabel>
+    <relationshipName>Asset_Notifications</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

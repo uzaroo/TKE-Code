@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__PaymentNotes__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This area is for when customers are invoiced for an expense but maybe they only pay half or some portion. In that case, the user can type some notes here about the partial payment.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter exceptions here, such as partial payments or other issue with expense recovery.</inlineHelpText>
+    <label>Payment Notes</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

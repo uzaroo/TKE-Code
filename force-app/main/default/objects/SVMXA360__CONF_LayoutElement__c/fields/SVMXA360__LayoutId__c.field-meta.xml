@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__LayoutId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Stores the header layout ID for the given element.</description>
+    <externalId>false</externalId>
+    <label>Layout</label>
+    <referenceTo>SVMXA360__CONF_Layout__c</referenceTo>
+    <relationshipLabel>Layout Elements</relationshipLabel>
+    <relationshipName>Layout_Elements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

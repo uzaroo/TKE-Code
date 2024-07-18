@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__DisableDateInMyWork__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Disable the ability to change dates from My Work is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When this is checked, the ability of changing dates from My Work is disabled.</inlineHelpText>
+    <label>Disable Changing Date In My Work</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

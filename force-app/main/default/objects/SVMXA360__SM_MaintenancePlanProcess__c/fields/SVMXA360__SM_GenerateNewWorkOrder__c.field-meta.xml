@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SM_GenerateNewWorkOrder__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If the MP Process has qualified a maintenance plan and created a work order for a criteria-based condition, users may not want the MP Process to generate another work order for that criteria until the existing work order has been closed/completed. Set this checkbox to true to ensure that the MP Process Engine will not create new work orders for conditions where a work order already exists and is not closed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the MP Process has qualified a maintenance plan and created a work order for a criteria-based condition, users may not want the MP Process to generate another work order for that criteria until the existing work order has been closed/completed. Set this checkbox to true to ensure that the MP Process Engine will not create new work orders for conditions where a work order already exists and is not closed.</inlineHelpText>
+    <label>Generate Work Order if not Pre Existing</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

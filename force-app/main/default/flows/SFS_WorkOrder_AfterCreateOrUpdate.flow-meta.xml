@@ -4,7 +4,7 @@
     <decisions>
         <name>Are_there_any_SAs_for_update</name>
         <label>Are there any SAs for update</label>
-        <locationX>374</locationX>
+        <locationX>446</locationX>
         <locationY>647</locationY>
         <defaultConnector>
             <targetReference>Group_Id_Found</targetReference>
@@ -30,7 +30,7 @@
         <description>Creation or Update of Record</description>
         <name>Create_Update</name>
         <label>Create/Update?</label>
-        <locationX>176</locationX>
+        <locationX>248</locationX>
         <locationY>323</locationY>
         <defaultConnector>
             <targetReference>SFS_WorkOrder_Share_SubFlow</targetReference>
@@ -46,14 +46,20 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>Platform_Event_Subflow</targetReference>
+            </connector>
             <label>Create</label>
         </rules>
     </decisions>
     <decisions>
         <name>Group_Id_Found</name>
         <label>Group Id Found?</label>
-        <locationX>374</locationX>
+        <locationX>446</locationX>
         <locationY>947</locationY>
+        <defaultConnector>
+            <targetReference>Work_Order_Status</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes</name>
@@ -71,7 +77,58 @@
             <label>Yes</label>
         </rules>
     </decisions>
-    <description>Record Triggered flow for After Operations on WorkOrder</description>
+    <decisions>
+        <name>Work_Order_Status</name>
+        <label>Work Order Status</label>
+        <locationX>446</locationX>
+        <locationY>1247</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Progress</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Field Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Canceled</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Platform_Event_Subflow_Update</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <description>Record Triggered flow for After Operations on WorkOrder
+AD- 14551 Added subflow call to publish platform event.</description>
     <environments>Default</environments>
     <formulas>
         <description>Creation Record</description>
@@ -103,8 +160,11 @@
     <recordCreates>
         <name>Create_WO_Share_Record</name>
         <label>Create WO Share Record</label>
-        <locationX>242</locationX>
+        <locationX>314</locationX>
         <locationY>1055</locationY>
+        <connector>
+            <targetReference>Work_Order_Status</targetReference>
+        </connector>
         <inputAssignments>
             <field>AccessLevel</field>
             <value>
@@ -129,7 +189,7 @@
     <recordUpdates>
         <name>update_related_SAs</name>
         <label>update Related SAs</label>
-        <locationX>242</locationX>
+        <locationX>314</locationX>
         <locationY>755</locationY>
         <connector>
             <targetReference>Group_Id_Found</targetReference>
@@ -137,21 +197,48 @@
         <inputReference>toBeUpdatedSAs</inputReference>
     </recordUpdates>
     <start>
-        <locationX>50</locationX>
+        <locationX>122</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Create_Update</targetReference>
         </connector>
-        <filterFormula>{!$Record.RecordType.DeveloperName}= &apos;SFS_Field_Operations&apos;</filterFormula>
         <object>WorkOrder</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
     <subflows>
+        <name>Platform_Event_Subflow</name>
+        <label>Platform Event Subflow</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <flowName>Publish_Platform_Event_Subflow</flowName>
+        <inputAssignments>
+            <name>varWorkOrderRecord</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Platform_Event_Subflow_Update</name>
+        <label>Platform Event Subflow</label>
+        <locationX>314</locationX>
+        <locationY>1355</locationY>
+        <flowName>Publish_Platform_Event_Subflow</flowName>
+        <inputAssignments>
+            <name>varWorkOrderRecord</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
         <name>SFS_Populate_SA_Fields_From_WO_SubFlow</name>
         <label>SFS Populate SA Fields From WO SubFlow</label>
-        <locationX>374</locationX>
+        <locationX>446</locationX>
         <locationY>539</locationY>
         <connector>
             <targetReference>Are_there_any_SAs_for_update</targetReference>
@@ -183,7 +270,7 @@
     <subflows>
         <name>SFS_WorkOrder_Share_SubFlow</name>
         <label>SFS WorkOrder Share SubFlow</label>
-        <locationX>374</locationX>
+        <locationX>446</locationX>
         <locationY>431</locationY>
         <connector>
             <targetReference>SFS_Populate_SA_Fields_From_WO_SubFlow</targetReference>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ExpenseTemplate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The expense template that this expense is cloned from. This is mainly used as a helper field for re-linking cloned expense when cloning a project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the expense template that this expense is to be cloned from.</inlineHelpText>
+    <label>Expense Template</label>
+    <referenceTo>leankor__Expense__c</referenceTo>
+    <relationshipLabel>Expenses (Expense Template)</relationshipLabel>
+    <relationshipName>ExpenseTemplates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

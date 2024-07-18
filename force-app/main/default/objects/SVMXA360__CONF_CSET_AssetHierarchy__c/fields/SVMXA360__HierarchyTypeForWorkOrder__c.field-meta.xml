@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__HierarchyTypeForWorkOrder__c</fullName>
+    <defaultValue>&apos;location_to_asset&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Type of hierarchy for the Work Order. Valid values are 1. location_to_asset 2. asset_only 3. account_to_asset</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of hierarchy for the Work Order. Valid values are 1. location_to_asset 2. asset_only 3. account_to_asset</inlineHelpText>
+    <label>Type of hierarchy for Work Order</label>
+    <length>30</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

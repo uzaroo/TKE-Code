@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProjectManager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The user managing the project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the manager of the project.</inlineHelpText>
+    <label>Project Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>ProjectUsers</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

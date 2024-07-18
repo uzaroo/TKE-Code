@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignments>
+        <name>Set_SA_Updated_Value</name>
+        <label>Set SA Updated Value</label>
+        <locationX>182</locationX>
+        <locationY>650</locationY>
+        <assignmentItems>
+            <assignToReference>varSA.SFS_Hold_Reason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Select_Hold_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varSA.Follow_Up_Visit_Needed__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Select_FollowUp_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varSA.Follow_Up_Assigned_To_Me__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Assign_To_Me</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varSA.Adjuster_Needed__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Assign_To_Me</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Service_Appointment</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>SelectAssignToMe</name>
+        <choiceText>AssignToMe</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <elementReference>AssignToMe</elementReference>
+        </value>
+    </choices>
+    <choices>
+        <name>varfollowUp</name>
+        <choiceText>Follow Up Needed</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Follow Up</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>varHold</name>
+        <choiceText>Hold Needed</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hold</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Reason_Check</name>
+        <label>Reason Check</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Follow_up_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Hold_Reason</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Can_Not_complete_Reason</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>varHold</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Hold_Reason_Screen</targetReference>
+            </connector>
+            <label>Hold Reason</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>followUpReasonPickList</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Follow_Up_Visit_Needed__c</picklistField>
+        <picklistObject>ServiceAppointment</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>holdReasonPickList</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>SFS_Hold_Reason__c</picklistField>
+        <picklistObject>ServiceAppointment</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>WaitingAssistance</name>
+        <dataType>Boolean</dataType>
+        <expression>CONTAINS({!Select_FollowUp_Reason}, &apos;Waiting&apos;)</expression>
+    </formulas>
+    <interviewLabel>SFS Can not Complete Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SFS Can not Complete Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <recordLookups>
+        <name>Get_Service_Appointment</name>
+        <label>Get Service Appointment</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Cannot_Complete_Reason</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Id</elementReference>
+            </value>
+        </filters>
+        <object>ServiceAppointment</object>
+        <outputReference>varSA</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Service_Appointment</name>
+        <label>Update Service Appointment</label>
+        <locationX>182</locationX>
+        <locationY>758</locationY>
+        <inputReference>varSA</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Cannot_Complete_Reason</name>
+        <label>Cannot Complete Reason</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Reason_Check</targetReference>
+        </connector>
+        <fields>
+            <name>Can_Not_complete_Reason</name>
+            <choiceReferences>varHold</choiceReferences>
+            <choiceReferences>varfollowUp</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Can Not complete Reason</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Follow_up_Screen</name>
+        <label>Follow up Screen</label>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Set_SA_Updated_Value</targetReference>
+        </connector>
+        <fields>
+            <name>Select_FollowUp_Reason</name>
+            <choiceReferences>followUpReasonPickList</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select FollowUp Reason</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Assign_To_Me</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Assign To Me</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Adjuster_Needed</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Adjuster Needed</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>ResetValues</inputsOnNextNavToAssocScrn>
+            <isDisabled>
+                <elementReference>WaitingAssistance</elementReference>
+            </isDisabled>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Hold_Reason_Screen</name>
+        <label>Hold Reason Screen</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Set_SA_Updated_Value</targetReference>
+        </connector>
+        <fields>
+            <name>Select_Hold_Reason</name>
+            <choiceReferences>holdReasonPickList</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select Hold Reason</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Service_Appointment</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>AssignToMe</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>varfollowUp</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varSA</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__MasterContainer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field contains ID of Master Container in which Swimlane persents.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains ID of Master Container in which Swimlane persents.</inlineHelpText>
+    <label>Master Container</label>
+    <referenceTo>leankor__MasterContainer__c</referenceTo>
+    <relationshipLabel>Swimlanes</relationshipLabel>
+    <relationshipName>Swimlanes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

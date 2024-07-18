@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__GlobalTemplatesOnly</fullName>
+    <columns>NAME</columns>
+    <columns>leankor__AssetID__c</columns>
+    <columns>leankor__Title__c</columns>
+    <columns>leankor__Color__c</columns>
+    <columns>leankor__Height__c</columns>
+    <columns>leankor__Width__c</columns>
+    <columns>leankor__JSONDefinition__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>leankor__ValueStream__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>leankor__DerivedFrom__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Global Templates Only</label>
+</ListView>

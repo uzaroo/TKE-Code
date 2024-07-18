@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Expense_Layout</fullName>
+    <fields>leankor__Category__c</fields>
+    <fields>leankor__ForecastDate__c</fields>
+    <fields>Name</fields>
+    <label>Expense Layout</label>
+</CompactLayout>

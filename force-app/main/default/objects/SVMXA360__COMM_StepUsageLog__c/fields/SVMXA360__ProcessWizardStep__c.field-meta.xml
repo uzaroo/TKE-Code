@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProcessWizardStep__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Parent step id</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Parent step id</inlineHelpText>
+    <label>Process Wizard Step</label>
+    <referenceTo>SVMXA360__CONF_ProcessWizardStep__c</referenceTo>
+    <relationshipLabel>Step Usage Log</relationshipLabel>
+    <relationshipName>StepUsageLog</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

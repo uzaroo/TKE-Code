@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExpressionBasedMapping__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Master Detail relationship to Expression Based Mapping with target information, on which mapping conditional mapping rows are defined</description>
+    <externalId>false</externalId>
+    <label>Expression Based Mapping</label>
+    <referenceTo>SVMXA360__CONF_ExpressionBasedMapping__c</referenceTo>
+    <relationshipLabel>Expression Based Mapping Rows</relationshipLabel>
+    <relationshipName>Expression_Based_Mapping_Rows</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

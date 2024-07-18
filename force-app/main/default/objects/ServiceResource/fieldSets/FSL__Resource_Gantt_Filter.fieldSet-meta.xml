@@ -37,6 +37,16 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>IsActive</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>IsCapacityBased</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>IsOptimizationCapable</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -87,6 +97,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>ResourceType</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>SchedulingConstraintId</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -103,17 +118,7 @@
     </availableFields>
     <description>Resource Gantt Filter</description>
     <displayedFields>
-        <field>IsCapacityBased</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>IsActive</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>ResourceType</field>
+        <field>Adjuster__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

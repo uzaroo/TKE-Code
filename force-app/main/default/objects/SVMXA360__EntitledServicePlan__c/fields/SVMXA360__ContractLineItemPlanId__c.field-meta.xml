@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ContractLineItemPlanId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The lookup relationship to Applicable Contract Line Product.</description>
+    <externalId>false</externalId>
+    <label>Applicable Contract Line Product</label>
+    <referenceTo>SVMXA360__ContractLineItemPlan__c</referenceTo>
+    <relationshipLabel>Entitled Service Plans</relationshipLabel>
+    <relationshipName>Entitled_Service_Plans</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

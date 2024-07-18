@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Layout__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Master detail lookup to Layout.</description>
+    <externalId>false</externalId>
+    <label>Layout</label>
+    <referenceTo>SVMXA360__CONF_Layout__c</referenceTo>
+    <relationshipLabel>Layout Sections</relationshipLabel>
+    <relationshipName>LayoutSections</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

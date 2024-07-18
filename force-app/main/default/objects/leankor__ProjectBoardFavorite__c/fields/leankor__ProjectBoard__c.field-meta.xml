@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProjectBoard__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The reference to the board/valuestream.</description>
+    <externalId>false</externalId>
+    <label>Project Board</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>Project Board Favorites</relationshipLabel>
+    <relationshipName>ProjectBoardFavorites</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

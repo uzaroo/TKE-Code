@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SourceRecordId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Salesforce Id of the Source record from where the Asset’s technical attributes are captured</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Salesforce Id of the Source record from where the Asset’s technical attributes are captured</inlineHelpText>
+    <label>Source Record Id</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

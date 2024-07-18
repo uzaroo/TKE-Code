@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__DerivedFrom__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Kanban Card Template record from which this one was derived (cloned).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Pick the Kanban Card Template from which this template was derived. This is important, because we don&apos;t want to display both this template and its ancestor as icons in the fan-out buttons at the bottom-left.</inlineHelpText>
+    <label>Derived From</label>
+    <referenceTo>leankor__KanbanCardTemplate__c</referenceTo>
+    <relationshipLabel>Derived Kanban Card Templates</relationshipLabel>
+    <relationshipName>DerivedFromKanbanCardTemplate</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

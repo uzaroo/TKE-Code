@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__DoesGenerateUponCompletion__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Programmatically indicates whether a Maintenance Plan should generate the new batch (for Work Order Generation) upon completing the last work order in the previous batch. The value in this field will auto-populate a field of the same name on the Maintenance Plan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Programmatically indicates whether a Maintenance Plan should generate the new batch (for Work Order Generation) upon completing the last work order in the previous batch. The value in this field will auto-populate a field of the same name on the Maintenance Plan.</inlineHelpText>
+    <label>Generate New Batch Upon Completion</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

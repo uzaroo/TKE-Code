@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__MasterContainer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Master Container which the kanban card crossed into.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Master Container which the kanban card crossed into.</inlineHelpText>
+    <label>Master Container</label>
+    <referenceTo>leankor__MasterContainer__c</referenceTo>
+    <relationshipLabel>ZoneKanban Actions</relationshipLabel>
+    <relationshipName>ZoneKanban_Actions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

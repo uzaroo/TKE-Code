@@ -117,11 +117,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>FSL__GanttIcon__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>FSL__GanttLabel__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -352,6 +347,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <description>Columns of service appointment list</description>
+    <displayedFields>
+        <field>FSL__GanttIcon__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
     <displayedFields>
         <field>AppointmentNumber</field>
         <isFieldManaged>false</isFieldManaged>

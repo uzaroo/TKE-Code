@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Unit__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Unit of measurement of the attribute</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Unit of measurement of the attribute</inlineHelpText>
+    <label>Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__Unit</valueSetName>
+    </valueSet>
+</CustomField>

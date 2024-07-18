@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__DisableAutoTranslationOfActivity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Disable automatic translation of schedule of activity or milestone with linked cards.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, this will disable the automatic translation of schedule of activity or milestone with linked cards.</inlineHelpText>
+    <label>Disable Auto-Translation Of Activity</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

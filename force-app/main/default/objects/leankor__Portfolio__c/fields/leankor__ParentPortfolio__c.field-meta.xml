@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ParentPortfolio__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is the parent Portfolio record. There can be many levels of Portfolios.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the parent Portfolio record.</inlineHelpText>
+    <label>Parent Folder</label>
+    <referenceTo>leankor__Portfolio__c</referenceTo>
+    <relationshipName>ChildPortfolios</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

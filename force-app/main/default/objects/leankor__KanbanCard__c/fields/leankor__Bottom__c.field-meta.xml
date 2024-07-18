@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Bottom__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The coordinate of the bottom of the kanban. This is usually not used, as &quot;top&quot; and &quot;left&quot; are used by the interface to position the cards.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The coordinate of the bottom of the kanban. This is usually not used, as &quot;top&quot; and &quot;left&quot; are used by the interface to position the cards. Zero is a good default value here.</inlineHelpText>
+    <label>Bottom</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

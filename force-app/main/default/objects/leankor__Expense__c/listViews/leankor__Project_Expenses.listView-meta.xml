@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Project_Expenses</fullName>
+    <columns>NAME</columns>
+    <columns>leankor__Category__c</columns>
+    <columns>leankor__Chargeable__c</columns>
+    <columns>leankor__Date__c</columns>
+    <columns>leankor__ExpenseAmount__c</columns>
+    <columns>leankor__Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Project Expenses</label>
+</ListView>

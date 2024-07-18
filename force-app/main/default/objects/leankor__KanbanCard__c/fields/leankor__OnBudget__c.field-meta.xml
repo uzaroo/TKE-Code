@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__OnBudget__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>On Budget</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amber</fullName>
+                <color>#FF9900</color>
+                <default>false</default>
+                <label>Amber</label>
+            </value>
+            <value>
+                <fullName>Green</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Green</label>
+            </value>
+            <value>
+                <fullName>Red</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Red</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

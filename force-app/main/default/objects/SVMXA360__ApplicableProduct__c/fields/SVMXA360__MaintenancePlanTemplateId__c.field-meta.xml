@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__MaintenancePlanTemplateId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Maintenance Plan Template with which this Applicable Product record is associated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Maintenance Plan Template with which this Applicable Product record is associated.</inlineHelpText>
+    <label>Maintenance Plan Template</label>
+    <referenceTo>SVMXA360__MaintenancePlanTemplate__c</referenceTo>
+    <relationshipLabel>Applicable Products</relationshipLabel>
+    <relationshipName>Applicable_Products</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

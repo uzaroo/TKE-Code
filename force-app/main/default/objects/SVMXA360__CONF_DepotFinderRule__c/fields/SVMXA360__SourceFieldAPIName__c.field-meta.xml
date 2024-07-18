@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SourceFieldAPIName__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will have the API name of the source record whose value needs to be used along with the field API name provided in the Matching Location Service field to get the matching Location or Depot.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Source Field Name</label>
+    <length>250</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

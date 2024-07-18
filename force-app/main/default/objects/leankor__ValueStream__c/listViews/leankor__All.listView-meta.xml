@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__All</fullName>
+    <columns>OBJECT_ID</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>leankor__ProjectRoom__c</columns>
+    <columns>leankor__KanbanCardCount__c</columns>
+    <columns>leankor__KanbanCardThroughput__c</columns>
+    <columns>leankor__ProjectRoomLink__c</columns>
+    <columns>NAME</columns>
+    <columns>leankor__BoardType__c</columns>
+    <columns>leankor__CaseCardCategory__c</columns>
+    <columns>leankor__CaseRecordType__c</columns>
+    <columns>leankor__Portfolio__c</columns>
+    <columns>leankor__PortfolioMode__c</columns>
+    <columns>leankor__ValueStreamCardLink__c</columns>
+    <columns>leankor__ValueStreamLink__c</columns>
+    <columns>leankor__DisableCalendarView__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SM_Standard__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If true, signifies the standard/default process. This field can only be checked for one process at any given time since only one process can considered the standard process.</description>
+    <externalId>false</externalId>
+    <label>Standard</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

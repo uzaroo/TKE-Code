@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Width__c</fullName>
+    <defaultValue>390</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field shows width of master Container that how much wide Master Container is.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field shows width of master Container that how much wide Master Container is.</inlineHelpText>
+    <label>Width</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

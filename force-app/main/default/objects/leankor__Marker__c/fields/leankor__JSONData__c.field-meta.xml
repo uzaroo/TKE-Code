@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__JSONData__c</fullName>
+    <defaultValue>&quot;{}&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The data saved from the JSON Definition fields of the image or icon marker on the page.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the data saved from the JSON Definition fields of the image or icon marker on the page.</inlineHelpText>
+    <label>JSON Data</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

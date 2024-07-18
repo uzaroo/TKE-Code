@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Sticker__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Sticker which is to be affixed to the particular Kanban Card.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Sticker which is to be affixed to the particular Kanban Card.</inlineHelpText>
+    <label>Sticker</label>
+    <referenceTo>leankor__Sticker__c</referenceTo>
+    <relationshipLabel>Kanban Card Stickers</relationshipLabel>
+    <relationshipName>KanbanCardStickers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

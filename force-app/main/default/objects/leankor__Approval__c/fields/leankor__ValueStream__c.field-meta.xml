@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStream__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is a field reference to the board/gantt (ValueStream)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a field reference to the board/gantt</inlineHelpText>
+    <label>Value Stream</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipName>Approvals_ValueStream</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

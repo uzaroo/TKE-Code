@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__MaintenanceWorkRuleId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to the Maintenance Work Rule which is applied on the Work Order generated.</description>
+    <externalId>false</externalId>
+    <label>A360 Maintenance Work Rule</label>
+    <referenceTo>SVMXA360__SM_MaintenanceWorkRule__c</referenceTo>
+    <relationshipLabel>A360 Conditional Outputs</relationshipLabel>
+    <relationshipName>A360_Conditional_Outputs</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

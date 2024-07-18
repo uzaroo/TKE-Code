@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__CmpID__c</fullName>
+    <defaultValue>&quot;kanban-1&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The HTML identifier of this kanban card the last time it existed on a web page. This value is saved for future use, so for uniquely identifying kanban cards please use GUID.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a unique name such as &quot;kanban-1&quot; for this card. The name need not be unique across the global system, just unique within the value stream.</inlineHelpText>
+    <label>Component ID</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

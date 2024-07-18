@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_Service_Appointment_For_Technician</fullName>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <columns>FSL__GanttLabel__c</columns>
+    <columns>WorkType</columns>
+    <filterScope>Mine</filterScope>
+    <label>SFS Service Appointment For Technician</label>
+</ListView>

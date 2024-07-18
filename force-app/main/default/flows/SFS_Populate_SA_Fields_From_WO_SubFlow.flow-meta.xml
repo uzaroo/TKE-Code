@@ -133,7 +133,7 @@
                 <leftValueReference>currentWO.Asset.TKE_AssetType__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Escalator</stringValue>
+                    <stringValue>Escalator/Walkway</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -246,7 +246,8 @@
             <label>Yes</label>
         </rules>
     </decisions>
-    <description>Subflow to handle derivation from WO to SA</description>
+    <description>Subflow to handle derivation from WO to SA
+ADO 12043: Update Gantt Label on SA on Asset Update</description>
     <environments>Default</environments>
     <formulas>
         <name>GanttLabelFormula</name>

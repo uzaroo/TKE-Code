@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProductFamily__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The product family of the Applicable Product. The picklist values should align with the &apos;Product Family&apos; field on the Product object. When a Maintenance Plan is created using the Maintenance Plan Template, this product family retrieves the Assets linked to the source record to create Maintenance Assets on the Plan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The product family of the Applicable Product. The picklist values should align with the &apos;Product Family&apos; field on the Product object. When a Maintenance Plan is created using the Maintenance Plan Template, this product family retrieves the Assets linked to the source record to create Maintenance Assets on the Plan.</inlineHelpText>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__ProductFamily</valueSetName>
+    </valueSet>
+</CustomField>

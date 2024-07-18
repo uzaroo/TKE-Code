@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__PointPicklist__c</fullName>
+    <defaultValue>&quot;[]&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field contains sequence of pick list values i.e 1,20,25,30.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains sequence of pick list values i.e 1,20,25,30.</inlineHelpText>
+    <label>Point Picklist</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

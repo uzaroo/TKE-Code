@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ResourceAssignment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The associated resource assignment.</description>
+    <externalId>false</externalId>
+    <label>Resource Assignment</label>
+    <referenceTo>leankor__ResourceAssignment__c</referenceTo>
+    <relationshipLabel>Expense Resource Assignments</relationshipLabel>
+    <relationshipName>ExpenseResourceAssignments_Resource</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

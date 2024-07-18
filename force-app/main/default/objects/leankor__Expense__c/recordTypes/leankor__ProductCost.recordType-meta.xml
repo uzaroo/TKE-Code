@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProductCost</fullName>
+    <active>true</active>
+    <description>This is the direct cost of goods sold amount related to a service or product sold.</description>
+    <label>Product Cost</label>
+    <picklistValues>
+        <picklist>leankor__Category__c</picklist>
+        <values>
+            <fullName>Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufactured Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Meal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leankor__ExpenseAccount__c</picklist>
+        <values>
+            <fullName>Cement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control PCB boards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ropes%2C rain gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Panels</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leankor__ExpenseSubCategory__c</picklist>
+        <values>
+            <fullName>Direct Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indirect Materials %2F Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Employee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

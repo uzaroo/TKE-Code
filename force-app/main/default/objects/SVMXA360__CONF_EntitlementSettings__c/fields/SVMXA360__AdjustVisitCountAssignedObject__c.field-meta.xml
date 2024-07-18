@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AdjustVisitCountAssignedObject__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Automatic increment or decrement of Remaining Visit count when the Entitled Service is assigned to the selected object.</description>
+    <externalId>false</externalId>
+    <label>Adjust Visit Count Assigned Object</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case</fullName>
+                <default>false</default>
+                <label>Case</label>
+            </value>
+            <value>
+                <fullName>WorkOrder</fullName>
+                <default>false</default>
+                <label>Work Order</label>
+            </value>
+            <value>
+                <fullName>ReturnOrder</fullName>
+                <default>false</default>
+                <label>Return Order</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

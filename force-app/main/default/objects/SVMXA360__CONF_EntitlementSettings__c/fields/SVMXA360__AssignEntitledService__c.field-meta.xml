@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AssignEntitledService__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, applies Entitled Service based on entitlement rule criteria.</description>
+    <externalId>false</externalId>
+    <label>Assign Entitled Service</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

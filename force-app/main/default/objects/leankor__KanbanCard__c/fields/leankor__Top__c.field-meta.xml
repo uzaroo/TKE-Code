@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Top__c</fullName>
+    <defaultValue>100</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The top of a kanban card follows a coordinate system which is similar to &quot;y&quot; but not including the thickness of the top tab bar. In other words, top &lt; y.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the top coordinate of the kanban card. Top is similar to the y coordinate except less than y by the number of pixels wide the tool bar at the top of the browser window.</inlineHelpText>
+    <label>Top</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

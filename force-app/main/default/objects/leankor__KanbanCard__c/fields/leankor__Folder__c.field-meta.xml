@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Folder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The name of the folder where the item is located.</description>
+    <externalId>false</externalId>
+    <formula>leankor__ValueStream__r.leankor__ProjectRoom__r.leankor__Portfolio__r.Name</formula>
+    <inlineHelpText>The folder where the item resides.</inlineHelpText>
+    <label>Folder</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

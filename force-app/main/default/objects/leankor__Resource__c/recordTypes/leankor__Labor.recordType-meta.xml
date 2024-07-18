@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Labor</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>leankor__Leankor</compactLayoutAssignment>
+    <label>Labor</label>
+    <picklistValues>
+        <picklist>leankor__ExpenseAccount__c</picklist>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Estimators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Craft services %2F food services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crane operators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Specialist I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Managers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leankor__ExpenseCategory__c</picklist>
+        <values>
+            <fullName>Labor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leankor__ExpenseSubCategory__c</picklist>
+        <values>
+            <fullName>External Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Employee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

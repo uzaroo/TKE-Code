@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__EventCategory__c</fullName>
+    <defaultValue>&quot;Cloning&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The general grouping or category of events. For example &quot;Cloning&quot; or &quot;MovingCards&quot;. No spaces.</description>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Event Category</label>
+    <length>80</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

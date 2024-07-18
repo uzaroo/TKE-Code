@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__kanbanSequence__c</fullName>
+    <defaultValue>&quot;&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This method use for white board to keep records for card for order manage.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This method use for white board to keep records for card for order manage.</inlineHelpText>
+    <label>Kanban Sequence</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

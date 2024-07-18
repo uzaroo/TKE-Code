@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Y__c</fullName>
+    <defaultValue>100</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The y coordinate of the kanban card on the value stream surface.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the y coordinate of the kanban card on the page. The value of &quot;top&quot; is approximately the same as this field except the &quot;top&quot; value does not include the thickness of the top menu bar.</inlineHelpText>
+    <label>Y Coordinate</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

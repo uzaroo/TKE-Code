@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__PointSequence__c</fullName>
+    <defaultValue>&quot;[1,2,3,5,8,13,21,34,55,89]&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is used to set default sequence for all newly created board .</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The modified Fibonacci sequence used in Agile story point sizing. Eg: [1,2,3,5,8,13,21,34.....]</inlineHelpText>
+    <label>Global Point Sequence</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

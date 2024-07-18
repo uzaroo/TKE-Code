@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Height__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The height in pixels of the image  on the page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the height in pixels of the image  on the page.</inlineHelpText>
+    <label>Height</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

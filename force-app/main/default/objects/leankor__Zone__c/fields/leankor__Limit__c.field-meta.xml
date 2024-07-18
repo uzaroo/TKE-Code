@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Limit__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field shows maximum limit of KanbanCard that can be in Swimlane. This limit depends on user.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field shows maximum limit of KanbanCard that can be in Swimlane. This limit depends on user.</inlineHelpText>
+    <label>Limit</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

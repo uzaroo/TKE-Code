@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__NotificationFilterCriteria__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Expression to display only those Asset notification records that meet the expression criteria.</description>
+    <externalId>false</externalId>
+    <label>Notification Filter Criteria</label>
+    <referenceTo>SVMXA360__CONF_Expression__c</referenceTo>
+    <relationshipLabel>Hierarchy Configuration Detail (Notification Filter Criteria)</relationshipLabel>
+    <relationshipName>Hierarchy_Configuration_Detail1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

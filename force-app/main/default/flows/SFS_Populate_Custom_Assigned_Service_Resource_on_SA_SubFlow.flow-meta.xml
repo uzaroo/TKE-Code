@@ -317,7 +317,7 @@
             <targetReference>Get_All_Assigned_Resources_for_the_SA</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>CrewCounter</name>
         <dataType>Number</dataType>

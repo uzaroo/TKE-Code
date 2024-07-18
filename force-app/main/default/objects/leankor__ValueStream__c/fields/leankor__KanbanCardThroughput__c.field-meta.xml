@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__KanbanCardThroughput__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The number of kanban cards that pass through this value stream in a 24-hr period. &quot;Pass through&quot; is defined as entering into a zone and then at some point &quot;hyper-jumping&quot; to another value stream.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of kanban cards that pass through this value stream in a 24-hr period. &quot;Pass through&quot; is defined as entering into a zone and then at some point &quot;hyper-jumping&quot; to another value stream.</inlineHelpText>
+    <label>Kanban Card Throughput</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

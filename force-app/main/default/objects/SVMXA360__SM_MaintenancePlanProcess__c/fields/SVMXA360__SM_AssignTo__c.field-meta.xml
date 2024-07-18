@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SM_AssignTo__c</fullName>
+    <deprecated>false</deprecated>
+    <description>User value to be fetched from to assign Work Order generated from the Maintenance Plan process</description>
+    <externalId>false</externalId>
+    <label>Assign To</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>User</fullName>
+                <default>false</default>
+                <label>User</label>
+            </value>
+            <value>
+                <fullName>Queue</fullName>
+                <default>false</default>
+                <label>Queue</label>
+            </value>
+            <value>
+                <fullName>Configurable User Field</fullName>
+                <default>false</default>
+                <label>Configurable User Field</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

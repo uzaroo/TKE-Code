@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AttributeId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to technical attribute.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup to technical attribute.</inlineHelpText>
+    <label>Attribute</label>
+    <referenceTo>SVMXA360__SM_TA_TechnicalAttribute__c</referenceTo>
+    <relationshipLabel>Asset Technical Attributes</relationshipLabel>
+    <relationshipName>AssetTechnicalAttributes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

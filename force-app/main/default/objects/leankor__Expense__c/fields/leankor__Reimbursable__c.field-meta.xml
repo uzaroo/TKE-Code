@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Reimbursable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This is true if the expense was paid by an employee or contractor with their own money and they require reimbursement by the company.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if the employee paid the expense with their personal funds.</inlineHelpText>
+    <label>Reimbursable</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

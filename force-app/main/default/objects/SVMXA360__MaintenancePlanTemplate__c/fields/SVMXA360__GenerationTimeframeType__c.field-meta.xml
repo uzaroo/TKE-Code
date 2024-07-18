@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__GenerationTimeframeType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The unit of frequency for the Generation Timeframe field. The values in this field and the Generation Timeframe field are mapped to the Maintenance Plan created using this Maintenance Plan Template.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The unit of frequency for the Generation Timeframe field. The values in this field and the Generation Timeframe field are mapped to the Maintenance Plan created using this Maintenance Plan Template.</inlineHelpText>
+    <label>Generation Timeframe Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__UnitOfTime</valueSetName>
+    </valueSet>
+</CustomField>

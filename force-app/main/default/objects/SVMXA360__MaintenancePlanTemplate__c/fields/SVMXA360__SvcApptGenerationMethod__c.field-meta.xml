@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SvcApptGenerationMethod__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Programmatically specifies how service appointments are generated when more than one asset is associated with the Maintenance Plan and work order generation method is set to &apos;One work order line item per asset&apos;. The value in this field will auto-populate a field of the same name on the Maintenance Plan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Programmatically specifies how service appointments are generated when more than one asset is associated with the Maintenance Plan and work order generation method is set to &apos;One work order line item per asset&apos;. The value in this field will auto-populate a field of the same name on the Maintenance Plan.</inlineHelpText>
+    <label>Service Appointment Generation Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SvcApptPerWorkOrder</fullName>
+                <default>false</default>
+                <label>One service appointment per work order</label>
+            </value>
+            <value>
+                <fullName>SvcApptPerWorkOrderLineItem</fullName>
+                <default>false</default>
+                <label>One service appointment per work order line item</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

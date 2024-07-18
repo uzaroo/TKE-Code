@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__TypeEntry</fullName>
+    <active>true</active>
+    <description>Validation for &quot;Type&quot; requirement.</description>
+    <errorConditionFormula>IF(OR(leankor__Type__c == &quot;startnoearlierthan&quot;, leankor__Type__c == &quot;startnolaterthan&quot;, leankor__Type__c == &quot;muststarton&quot;, leankor__Type__c == &quot;finishnoearlierthan&quot;, leankor__Type__c == &quot;finishnolaterthan&quot;, leankor__Type__c == &quot;mustfinishon&quot;, leankor__Type__c == &quot;assoonaspossible&quot;, leankor__Type__c == &quot;aslateaspossible&quot;), false, true)</errorConditionFormula>
+    <errorDisplayField>leankor__Type__c</errorDisplayField>
+    <errorMessage>Type must be one of the following: startnoearlierthan, startnolaterthan, muststarton, finishnoearlierthan, finishnolaterthan, mustfinishon, assoonaspossible, aslateaspossible.</errorMessage>
+</ValidationRule>

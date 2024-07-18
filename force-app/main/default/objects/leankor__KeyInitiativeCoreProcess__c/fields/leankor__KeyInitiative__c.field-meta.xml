@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__KeyInitiative__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A key initiative is a set of related projects which leverage critical value streams within the enterprise.  An initiative can rely on one or more value streams and/or zones (sub-processes owned by named teams).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a key initiative.A key initiative is a set of related projects which leverage critical value streams within the enterprise.  An initiative can rely on one or more value streams and/or zones (sub-processes owned by named teams).</inlineHelpText>
+    <label>Key Initiative</label>
+    <referenceTo>leankor__KeyInitiative__c</referenceTo>
+    <relationshipLabel>Key Initiative Core Processes</relationshipLabel>
+    <relationshipName>KeyInitiativeCoreProcesses</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExpenseItem__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The values for the Expenses incurred.</description>
+    <externalId>false</externalId>
+    <label>Expense Item</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__ExpenseItem</valueSetName>
+    </valueSet>
+</CustomField>

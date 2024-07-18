@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Eligible_For_Service__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>User Stories 12625, 12171. Mapped from Oracle CPQ Parts field: eligible_for_service</description>
+    <externalId>false</externalId>
+    <label>Eligible For Service?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

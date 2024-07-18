@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProjectExpense</fullName>
+    <active>true</active>
+    <description>This is a project expense directly attributed to the delivery of a service or product to the customer.</description>
+    <label>Project Expense</label>
+    <picklistValues>
+        <picklist>leankor__Category__c</picklist>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depreciation of Assets%2FEquipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufactured Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leankor__ExpenseAccount__c</picklist>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Estimators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control PCB boards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Craft services %2F food services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crane operators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Specialist I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Managers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ropes%2C rain gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Panels</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leankor__ExpenseSubCategory__c</picklist>
+        <values>
+            <fullName>Direct Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indirect Materials %2F Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Employee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

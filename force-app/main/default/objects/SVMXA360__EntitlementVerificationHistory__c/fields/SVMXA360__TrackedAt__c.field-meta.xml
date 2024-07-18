@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TrackedAt__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Entity specified here is considered to perform Entitlement check for.</description>
+    <externalId>false</externalId>
+    <label>Tracked At</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Asset</fullName>
+                <default>false</default>
+                <label>Asset</label>
+            </value>
+            <value>
+                <fullName>Parent Asset</fullName>
+                <default>false</default>
+                <label>Parent Asset</label>
+            </value>
+            <value>
+                <fullName>Root Asset</fullName>
+                <default>false</default>
+                <label>Root Asset</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

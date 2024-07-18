@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__PreviousDatetimeValue__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Datetime representation of the previous attribute value (when Data Type = Datetime)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Datetime representation of the previous attribute value (when Data Type = Datetime)</inlineHelpText>
+    <label>Previous Datetime Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

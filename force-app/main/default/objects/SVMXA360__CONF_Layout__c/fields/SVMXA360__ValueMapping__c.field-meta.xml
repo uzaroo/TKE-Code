@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ValueMapping__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to value mapping, which will be applied during run time.</description>
+    <externalId>false</externalId>
+    <label>Value Mapping</label>
+    <referenceTo>SVMXA360__CONF_ObjectMapping__c</referenceTo>
+    <relationshipLabel>Layouts (Value Mapping)</relationshipLabel>
+    <relationshipName>Layouts1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

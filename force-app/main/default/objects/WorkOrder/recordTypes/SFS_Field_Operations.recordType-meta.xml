@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SFS_Field_Operations</fullName>
     <active>true</active>
+    <compactLayoutAssignment>SFS_Work_Order_Compact_Layout</compactLayoutAssignment>
     <description>Work order record type for SFS</description>
     <label>Field Operations</label>
     <picklistValues>

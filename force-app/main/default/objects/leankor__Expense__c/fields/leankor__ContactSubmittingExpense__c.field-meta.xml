@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ContactSubmittingExpense__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is the same as the User lookup for person submitting expense, but uses the Contact object in case it must be a person who is not licensed to use Leankor but must be put in the database.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>You can optionally select a Contact for the person submitting the expense if they are not a Leankor or Salesforce user.</inlineHelpText>
+    <label>Contact Submitting (Optional)</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Expenses</relationshipLabel>
+    <relationshipName>Expenses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

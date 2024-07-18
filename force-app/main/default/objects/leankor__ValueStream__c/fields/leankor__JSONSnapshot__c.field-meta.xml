@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__JSONSnapshot__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the saved position and meta-data for kanban cards on the value stream.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This text is not to be changed unless you know the core internals of how value streams parse and use JSON data.</inlineHelpText>
+    <label>JSON Snapshot</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

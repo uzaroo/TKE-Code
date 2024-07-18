@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__JSONPayload__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The JSON payload which can extend the amount of contextual information provided by the event publisher.</description>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>JSON Payload</label>
+    <length>64000</length>
+    <type>LongTextArea</type>
+    <visibleLines>20</visibleLines>
+</CustomField>

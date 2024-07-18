@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProductFamily__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The product family of the CLI Plan. The picklist values should align with the &apos;Product Family&apos; field on the Product object.  When a Service Contract is created using the SCON Plan, this product family retrieves the Assets linked to the source record to create Contract Line Items on the SCON.</description>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SVMXA360__ProductFamily</valueSetName>
+    </valueSet>
+</CustomField>

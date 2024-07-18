@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__KanbanVerb__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field defines what kind of real time event occurred.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select which type of realtime event just occurred.</inlineHelpText>
+    <label>Kanban Verb</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OpenValueStream</fullName>
+                <default>false</default>
+                <label>OpenValueStream</label>
+            </value>
+            <value>
+                <fullName>MoveKanban</fullName>
+                <default>false</default>
+                <label>MoveKanban</label>
+            </value>
+            <value>
+                <fullName>CloseValueStream</fullName>
+                <default>false</default>
+                <label>CloseValueStream</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

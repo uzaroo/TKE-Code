@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__PrintingURL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The URL of the print server application that is used for exporting Gantt chart to PDF or PNG file.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The URL of the print server application that is used for exporting Gantt chart to PDF or PNG file.</inlineHelpText>
+    <label>Print Server URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

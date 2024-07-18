@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__KanbanCardEntry</fullName>
+    <active>true</active>
+    <description>Validation for &quot;KanbanCard&quot; requirement.</description>
+    <errorConditionFormula>IF(OR(ISBLANK(leankor__KanbanCard__c), ISBLANK(leankor__ProjectFinancial__c)), FALSE, leankor__ProjectFinancial__r.leankor__Project__c &lt;&gt; leankor__KanbanCard__r.leankor__ValueStream__r.leankor__ProjectRoom__c)</errorConditionFormula>
+    <errorDisplayField>leankor__KanbanCard__c</errorDisplayField>
+    <errorMessage>Project of the card must be the same as the project associated with the project financial.</errorMessage>
+</ValidationRule>

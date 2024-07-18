@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__EntitlementId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The ID of the Entitlement resulted after performing an entitlement check.</description>
+    <externalId>false</externalId>
+    <label>Entitlement</label>
+    <referenceTo>Entitlement</referenceTo>
+    <relationshipLabel>Entitlement Verification Histories</relationshipLabel>
+    <relationshipName>EntitlementVerificationHistorys</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

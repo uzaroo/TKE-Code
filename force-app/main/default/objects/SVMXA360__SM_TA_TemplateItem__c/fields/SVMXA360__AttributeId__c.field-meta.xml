@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AttributeId__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Attribute being displayed within the template</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Attribute being displayed within the template</inlineHelpText>
+    <label>Attribute</label>
+    <referenceTo>SVMXA360__SM_TA_TechnicalAttribute__c</referenceTo>
+    <relationshipLabel>Technical Attribute Template Items</relationshipLabel>
+    <relationshipName>TechnicalAttributeTemplateItems</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__MaintenanceWindowStartDays__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates the number of days before the Maintenance Plan Work Order&apos;s suggested service date in which the related service appointment can be scheduled. The value in this field will auto-populate a field of the same name on the Maintenance Plan, which will influence behavior for Work Order generation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the number of days before the Maintenance Plan Work Order&apos;s suggested service date in which the related service appointment can be scheduled. The value in this field will auto-populate a field of the same name on the Maintenance Plan, which will influence behavior for Work Order generation.</inlineHelpText>
+    <label>Maintenance Window Start (Days)</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

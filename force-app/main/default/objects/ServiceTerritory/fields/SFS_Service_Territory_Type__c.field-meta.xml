@@ -36,6 +36,11 @@
                 <default>false</default>
                 <label>Resident Route</label>
             </value>
+            <value>
+                <fullName>Sub Office</fullName>
+                <default>false</default>
+                <label>Sub Office</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

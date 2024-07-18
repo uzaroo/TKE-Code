@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Module__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The module that the set up is related to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the module to set up.</inlineHelpText>
+    <label>Select SetUp</label>
+    <referenceTo>leankor__Module__c</referenceTo>
+    <relationshipLabel>ProjectLaunchBehaviors</relationshipLabel>
+    <relationshipName>ProjectLaunchBehaviorModules</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

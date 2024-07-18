@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__HierarchyOrder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This has the options for Hierarchy Order.</description>
+    <externalId>false</externalId>
+    <label>Hierarchy Order</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>asset_only</fullName>
+                <default>false</default>
+                <label>Asset Only</label>
+            </value>
+            <value>
+                <fullName>location_to_asset</fullName>
+                <default>false</default>
+                <label>Location &gt; Asset</label>
+            </value>
+            <value>
+                <fullName>account_to_asset</fullName>
+                <default>false</default>
+                <label>Account &gt; Asset</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

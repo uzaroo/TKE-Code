@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__DeliveryBatchSize__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This setting indicates the maximum number of PSC search results that can be considered per batch for the Delivery Output Generation Batch Process.</description>
+    <externalId>false</externalId>
+    <label>Delivery Batch Size</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

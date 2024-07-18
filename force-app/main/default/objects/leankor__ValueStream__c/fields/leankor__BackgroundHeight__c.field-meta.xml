@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__BackgroundHeight__c</fullName>
+    <defaultValue>800</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The background image height (in pixels).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the background image height (in pixels).</inlineHelpText>
+    <label>BackgroundHeight</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

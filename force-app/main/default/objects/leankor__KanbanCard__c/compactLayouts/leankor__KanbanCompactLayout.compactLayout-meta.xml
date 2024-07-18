@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__KanbanCompactLayout</fullName>
+    <fields>leankor__Title__c</fields>
+    <fields>leankor__PriorityDescription__c</fields>
+    <label>Kanban Compact Layout</label>
+</CompactLayout>

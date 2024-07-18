@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProjectRoom__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The room or project where the board resides.</description>
+    <externalId>false</externalId>
+    <formula>leankor__ValueStream__r.leankor__ProjectRoom__r.Name</formula>
+    <label>Project</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

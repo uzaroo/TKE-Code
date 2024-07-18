@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ServiceContractPlanId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The primary master-detail relationship.</description>
+    <externalId>false</externalId>
+    <label>Service Contract Plan</label>
+    <referenceTo>SVMXA360__ServiceContractPlan__c</referenceTo>
+    <relationshipLabel>Offered Maintenance Plan Templates</relationshipLabel>
+    <relationshipName>Offered_Maintenance_Plan_Templates</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

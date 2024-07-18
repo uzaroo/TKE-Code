@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__EpochEndTime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores epoch time finish</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Epoch time value.</inlineHelpText>
+    <label>End Time (in millisec)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

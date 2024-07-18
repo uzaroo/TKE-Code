@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExpressionType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To determine whether the expression will be used for Entitlement rule, lookup, or, be common.</description>
+    <externalId>false</externalId>
+    <label>Expression Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COMM-EXPRESSION</fullName>
+                <default>false</default>
+                <label>COMM-EXPRESSION</label>
+            </value>
+            <value>
+                <fullName>EVER-RULE-CRITERIA</fullName>
+                <default>false</default>
+                <label>EVER-RULE-CRITERIA</label>
+            </value>
+            <value>
+                <fullName>LOOKUP-EXPRESSION</fullName>
+                <default>false</default>
+                <label>LOOKUP-EXPRESSION</label>
+            </value>
+            <value>
+                <fullName>VISIBILITY-RULE-CRITERIA</fullName>
+                <default>false</default>
+                <label>VISIBILITY-RULE-CRITERIA</label>
+            </value>
+            <value>
+                <fullName>CONFIGURATION-FILTER</fullName>
+                <default>false</default>
+                <label>CONFIGURATION-FILTER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

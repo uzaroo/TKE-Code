@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Sub_Source__c</fullName>
+    <description>This field is created as the story - US-11374</description>
+    <externalId>false</externalId>
+    <label>Lead Sub Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LeadSource</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Online Help</fullName>
+                <default>false</default>
+                <label>Online Help</label>
+            </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>Online Form</fullName>
+                <default>false</default>
+                <label>Online Form</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Plan and Design</fullName>
+                <default>false</default>
+                <label>Plan and Design</label>
+            </value>
+            <value>
+                <fullName>List Purchase</fullName>
+                <default>false</default>
+                <label>List Purchase</label>
+            </value>
+            <value>
+                <fullName>Publication</fullName>
+                <default>false</default>
+                <label>Publication</label>
+            </value>
+            <value>
+                <fullName>Construct Connect</fullName>
+                <default>false</default>
+                <label>Construct Connect</label>
+            </value>
+            <value>
+                <fullName>System Dashboard</fullName>
+                <default>false</default>
+                <label>System Dashboard</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Online Help</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Online Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Social Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Plan and Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>List, Report, or Publication</controllingFieldValue>
+            <valueName>List Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>List, Report, or Publication</controllingFieldValue>
+            <valueName>Publication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>List, Report, or Publication</controllingFieldValue>
+            <valueName>Construct Connect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>List, Report, or Publication</controllingFieldValue>
+            <valueName>System Dashboard</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Approval__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is a reference to the parent approval (Approval)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a reference to the parent approval</inlineHelpText>
+    <label>Approval</label>
+    <referenceTo>leankor__Approval__c</referenceTo>
+    <relationshipLabel>Leankor Item Approvals</relationshipLabel>
+    <relationshipName>ItemApprovals_Approval</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

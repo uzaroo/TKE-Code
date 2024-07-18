@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TimeTaken__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Time difference in seconds between end and start of the process.</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(SVMXA360__EpochEndTime__c)  &amp;&amp; ISBLANK(SVMXA360__EpochStartTime__c )) , 
+   ( SVMXA360__EpochEndTime__c  -  SVMXA360__EpochStartTime__c ) / 1000,
+    NULL
+)</formula>
+    <label>Time Taken in Seconds</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

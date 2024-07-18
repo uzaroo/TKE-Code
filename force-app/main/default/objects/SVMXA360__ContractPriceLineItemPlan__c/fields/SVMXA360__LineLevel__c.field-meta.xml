@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__LineLevel__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates whether the Contract Price Line Item Plan belongs to the Service Contract Plan, the Entitled Service Plan, the Applicable Contract Line Product, or both the ES and CLI Plans.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(SVMXA360__ContractLineItemPlanId__c), IF(ISBLANK(SVMXA360__EntitledServicePlanId__c), $Label.svmxa360__Label_ServiceContractPlan, $Label.svmxa360__Label_EntitledServicePlan), IF(ISBLANK(SVMXA360__EntitledServicePlanId__c), $Label.svmxa360__Label_ContractLineItemPlan, $Label.svmxa360__Label_CLIPlanAndESPlan))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Line Level</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

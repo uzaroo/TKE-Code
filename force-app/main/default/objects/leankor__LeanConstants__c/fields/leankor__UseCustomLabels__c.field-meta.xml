@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__UseCustomLabels__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This setting allows the use of custom labels value in Leankor application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When this is checked, it enables the ability to use the strings/values from Custom Labels in Leankor application.</inlineHelpText>
+    <label>Use Custom Labels</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The high level categorization of the expense.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the most appropriate category for this expense.</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Depreciation of Assets/Equipment</fullName>
+                <default>false</default>
+                <label>Depreciation of Assets/Equipment</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <label>Hotel</label>
+            </value>
+            <value>
+                <fullName>Labor</fullName>
+                <default>false</default>
+                <label>Labor</label>
+            </value>
+            <value>
+                <fullName>Manufactured Product</fullName>
+                <default>false</default>
+                <label>Manufactured Product</label>
+            </value>
+            <value>
+                <fullName>Materials</fullName>
+                <default>true</default>
+                <label>Materials</label>
+            </value>
+            <value>
+                <fullName>Meal</fullName>
+                <default>false</default>
+                <label>Meal</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Purchased Equipment</fullName>
+                <default>false</default>
+                <label>Purchased Equipment</label>
+            </value>
+            <value>
+                <fullName>Rental Equipment</fullName>
+                <default>false</default>
+                <label>Rental Equipment</label>
+            </value>
+            <value>
+                <fullName>Revenue</fullName>
+                <default>false</default>
+                <label>Revenue</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Employee Salary</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Employee Salary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

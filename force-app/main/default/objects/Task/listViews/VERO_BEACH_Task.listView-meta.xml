@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VERO_BEACH_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>VERO BEACH</label>
+    <queue>VERO_BEACH</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

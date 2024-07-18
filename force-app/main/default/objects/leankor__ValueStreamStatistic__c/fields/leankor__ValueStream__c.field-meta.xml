@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStream__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field contain Value Stream ID.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contain Value Stream ID.</inlineHelpText>
+    <label>Value Stream</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>ValueStreamStatistics</relationshipLabel>
+    <relationshipName>ValueStreamStatistic</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

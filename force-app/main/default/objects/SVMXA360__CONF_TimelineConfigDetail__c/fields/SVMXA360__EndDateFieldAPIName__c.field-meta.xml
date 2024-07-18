@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__EndDateFieldAPIName__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The API name of the end date field to use as the date to plot a record on the timeline. When provided, the record is displayed as a band rather than a plot point.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The API name of the end date field to use as the date to plot a record on the timeline. When provided, the record is displayed as a band rather than a plot point.</inlineHelpText>
+    <label>End Date Field</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

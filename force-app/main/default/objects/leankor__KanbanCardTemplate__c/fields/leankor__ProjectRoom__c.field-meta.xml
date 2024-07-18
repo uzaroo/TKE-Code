@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ProjectRoom__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field Contain Room Id if Kanban Card Template is defined global for Room Only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field Contain Room Id if Kanban Card Template is defined global for Room Only.</inlineHelpText>
+    <label>Project Room</label>
+    <referenceTo>leankor__ProjectRoom__c</referenceTo>
+    <relationshipLabel>Kanban Card Templates</relationshipLabel>
+    <relationshipName>KanbanCardTemplates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

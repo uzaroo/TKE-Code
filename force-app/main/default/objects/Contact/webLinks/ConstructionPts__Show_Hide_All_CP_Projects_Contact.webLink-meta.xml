@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConstructionPts__Show_Hide_All_CP_Projects_Contact</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Show/Hide All CP Projects</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/51.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;)}
+var userId = &apos;{!$User.Id}&apos;; 
+var pageIdentifier = &apos;CPRolesContact&apos;;
+var sObjectType = &apos;Contact&apos;; 
+var recordId = &apos;{!Contact.Id}&apos;; 
+
+var origHeight = 0;
+var e1 = Ext.query(&quot;iframe[title=&apos;&quot;+pageIdentifier+&quot;&apos;]&quot;);  
+if (e1[0] != null &amp;&amp; e1[0] != undefined) {
+      var itarget2 = e1[0].getAttribute(&apos;id&apos;); 
+      origHeight =  Ext.get(itarget2).getHeight();
+}
+
+var newHeight = adjustHeight(userId, pageIdentifier,recordId);
+//alert(&apos;newHeight = &apos; + newHeight);
+
+var j$ = jQuery.noConflict();
+
+var firstPageLoad = true;
+if (j$(&apos;input[id=subsqPageLoad]&apos;).length &gt; 0) {
+    firstPageLoad = false;
+}
+
+if (firstPageLoad == true) {
+   j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prepend(&apos;&lt;input type=&quot;hidden&quot; id=&quot;subsqPageLoad&quot; value=&quot;&quot;/&gt;&apos;);
+   var sOnClick = (String)(j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).attr(&quot;onclick&quot;));
+} 
+
+
+//on first load always expand
+if (firstPageLoad == true ) {
+   
+    if (j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).css(&quot;display&quot;) == &quot;none&quot;) {
+        j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).click();
+    } 
+   
+} else { 
+   j$(&quot;[id=&quot; + itarget2 + &quot;]&quot;).parents(&apos;div[class=pbSubsection]&apos;).prev().find(&quot;img&quot;).click();   
+}
+
+
+function adjustHeight(userId, pageIdentifier, recordId) {
+
+var newHeight = &apos;&apos;;
+
+var result = null;
+try {
+   result = sforce.connection.query(&quot;SELECT ConstructionPts__Data_Value__c,Id,Name,ConstructionPts__Record_Id__c, ConstructionPts__UserId__c, ConstructionPts__VF_Inline_Page_Identifier__c FROM ConstructionPts__CP_Dynamic_UserData__c WHERE ConstructionPts__UserId__c = &apos;&quot; + userId + &quot;&apos; and ConstructionPts__VF_Inline_Page_Identifier__c  like &apos;%&quot; + pageIdentifier + &quot;%&apos; and ConstructionPts__Record_Id__c = &apos;&quot; + recordId + &quot;&apos; LIMIT 1&quot;);
+  
+ // alert(&apos;result = &apos; + result);   
+ } catch (error) {
+        alert(&apos;Insufficient privileges: there has been an error showing/hiding All CP Data info!&apos;);
+    }
+    if (result != null &amp;&amp; result != undefined) {
+      var records = result.getArray(&quot;records&quot;);
+
+ 
+      for (var i=0; i&lt; records.length; i++) {
+         var record = records[i];
+         newHeight = records[i].ConstructionPts__Data_Value__c;
+      }
+
+      if (newHeight != null &amp;&amp; newHeight != undefined) {
+         resizeIframe(newHeight, pageIdentifier);
+      }
+    }
+   return newHeight;
+}
+
+function resizeIframe(h, ifn){
+   var e = Ext.query(&quot;iframe[title=&quot;+ifn+&quot;]&quot;);  
+
+   if (e[0] != null &amp;&amp; e[0] != undefined) {   
+      var itarget = e[0].getAttribute(&apos;id&apos;); 
+      Ext.get(itarget).set({height: parseInt(h)+10});
+   }
+}</url>
+</WebLink>

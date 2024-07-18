@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFS_Work_Order_Compact_Layout</fullName>
+    <fields>SFS_Gantt_Label__c</fields>
+    <fields>WorkTypeId</fields>
+    <fields>WorkOrderNumber</fields>
+    <label>SFS Work Order Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__DisableKanbanCardShadow__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Remove shadow of kanban card while dragging and dropping a card.</inlineHelpText>
+    <label>Disable Kanban Card Shadow</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

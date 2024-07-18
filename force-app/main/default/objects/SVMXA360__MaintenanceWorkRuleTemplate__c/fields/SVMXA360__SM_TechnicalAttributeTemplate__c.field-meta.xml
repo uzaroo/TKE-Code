@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SM_TechnicalAttributeTemplate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A lookup to the Technical Attribute Templates for Asset Technical Attributes. Utilized by A360 Maintenance Plans, this field influences what categories and attributes are available for selection in the condition definitions of a work rule template.</description>
+    <externalId>false</externalId>
+    <label>Technical Attribute Template</label>
+    <referenceTo>SVMXA360__SM_TA_Template__c</referenceTo>
+    <relationshipLabel>Maintenance Work Rule Templates</relationshipLabel>
+    <relationshipName>Maintenance_Work_Rule_Templates</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

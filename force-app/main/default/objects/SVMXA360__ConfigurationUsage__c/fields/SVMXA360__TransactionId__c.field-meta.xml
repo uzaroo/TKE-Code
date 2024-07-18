@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TransactionId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field stores transaction Id</description>
+    <externalId>false</externalId>
+    <label>SPM Transaction</label>
+    <referenceTo>SVMXA360__CONF_Layout__c</referenceTo>
+    <relationshipLabel>Configuration Usages</relationshipLabel>
+    <relationshipName>ConfigurationUsages</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

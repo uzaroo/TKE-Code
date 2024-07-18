@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Office_Type_ServiceTerritory</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(ISNULL(ParentTerritoryId), NOT(ISPICKVAL(ParentTerritory.SFS_Service_Territory_Type__c,&apos;Office&apos;)))</errorConditionFormula>
+    <errorDisplayField>ParentTerritoryId</errorDisplayField>
+    <errorMessage>The parent territory of type &apos;Office&apos; must be present.</errorMessage>
+</ValidationRule>

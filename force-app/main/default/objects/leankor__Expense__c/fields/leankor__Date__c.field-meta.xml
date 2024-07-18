@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Date__c</fullName>
+    <defaultValue>Today()</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The date of the expense. This is the date the expense was incurred.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date the expense was incurred. If the expense should be recognized in phases or multiple payments, enter several different expense entries with future dates.</inlineHelpText>
+    <label>Date</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

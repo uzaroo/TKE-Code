@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__AllowManagingChildAssets__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enables create, Update, View and deleting of child Assets through Manage Child Asset component.</description>
+    <externalId>false</externalId>
+    <label>Allow Managing Child Assets</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

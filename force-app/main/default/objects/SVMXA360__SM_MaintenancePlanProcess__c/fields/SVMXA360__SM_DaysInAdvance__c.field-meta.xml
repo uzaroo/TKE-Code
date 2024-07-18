@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SM_DaysInAdvance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The number of days in advance the Work Order needs to be created. This setting is specific to time-based Work Rule Conditions, whereas the Threshold field on the Condition supports the Frequency and Criteria-based Work Rule Conditions.</description>
+    <externalId>false</externalId>
+    <label>Days In Advance</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

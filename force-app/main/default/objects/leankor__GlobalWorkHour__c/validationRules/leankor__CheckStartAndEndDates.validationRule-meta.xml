@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__CheckStartAndEndDates</fullName>
+    <active>true</active>
+    <description>Start Date must be less than or equal to the End Date.</description>
+    <errorConditionFormula>leankor__StartDate__c &gt;  leankor__EndDate__c</errorConditionFormula>
+    <errorDisplayField>leankor__StartDate__c</errorDisplayField>
+    <errorMessage>Start Date must be less than or equal to the End Date.</errorMessage>
+</ValidationRule>

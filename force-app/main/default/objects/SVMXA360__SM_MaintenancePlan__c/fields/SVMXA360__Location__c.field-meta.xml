@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The associated location, which typically represents the customer location that is covered by the maintenance service.</description>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <referenceTo>Location</referenceTo>
+    <relationshipLabel>A360 Maintenance Plans</relationshipLabel>
+    <relationshipName>A360_Maintenance_Plans</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

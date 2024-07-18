@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>Send an email notification to a milestone&apos;s owner on CV when it is created,moved or deleted.</description>
+    <label>Leankor Milestone Email Notification From Calendar View</label>
+    <processMetadataValues>
+        <name>AssociatedRecord</name>
+        <value/>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+</Flow>

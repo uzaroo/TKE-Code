@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__PlannedExpense__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is a lookup from an actual expense record to the associated planned expense.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the planned expense to which this actual expense will be matched.</inlineHelpText>
+    <label>Match to Forecast Exp.</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>leankor__Expense__c.leankor__Plan__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>leankor__Expense__c.leankor__IsForecast__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>leankor__Expense__c.leankor__Project__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.leankor__Project__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>leankor__Expense__c.leankor__Category__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.leankor__Category__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>leankor__Expense__c.leankor__IsCurrForecast__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <infoMessage>Please find the matching planning entry.</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>leankor__Expense__c</referenceTo>
+    <relationshipLabel>Actual Expenses</relationshipLabel>
+    <relationshipName>ActualMatchedExpenses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__TaskDateCheck__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is used to check the task due date logic (if true then task is forced to be created between the card start date and due date and if value is false then the task can be created in any date).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to check the task due date logic (if true then task is forced to be created between the card start date and due date and if value is false then the task can be created in any date).</inlineHelpText>
+    <label>Task Due Date Check</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

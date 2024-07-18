@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ExpenseAccount__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Expense Account</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>leankor__ExpenseSubCategory__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>leankor__ExpenseAccount</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Direct Materials</controllingFieldValue>
+            <valueName>Control PCB boards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct Materials</controllingFieldValue>
+            <valueName>Solar Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>CAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>Construction Estimators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>Craft services / food services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>Crane operators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>Electricians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>Engineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>Inspection Specialist I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Contractor</controllingFieldValue>
+            <controllingFieldValue>External Services</controllingFieldValue>
+            <controllingFieldValue>Internal Contractor</controllingFieldValue>
+            <controllingFieldValue>Internal Employee</controllingFieldValue>
+            <valueName>Project Managers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indirect Materials / Supplies</controllingFieldValue>
+            <valueName>Cement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indirect Materials / Supplies</controllingFieldValue>
+            <valueName>Ropes, rain gear</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

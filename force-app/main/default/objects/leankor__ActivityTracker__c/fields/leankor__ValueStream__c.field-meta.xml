@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStream__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The board in which the activity is performed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The board in which the activity is performed.</inlineHelpText>
+    <label>Value Stream</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>Activity Trackers</relationshipLabel>
+    <relationshipName>ActivityTrackers_ValueStream</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

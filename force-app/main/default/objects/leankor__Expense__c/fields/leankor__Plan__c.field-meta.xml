@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Plan__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This is checked if the expense record is actually for a planned expense and not yet a real expense. We will use a lookup field to this same Expense object to link from actual expenses to the associated planned expense.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this expense entry is only for planning purposes, check this on. For actual expense entries, leave this unchecked.</inlineHelpText>
+    <label>Planning Entry</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

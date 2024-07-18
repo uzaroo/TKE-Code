@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__MaintenancePlanProcessId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The config to be applied while processing the Maintenance Plan created from the template. If the field is left blank, then the default standard Process will be applied.</description>
+    <externalId>false</externalId>
+    <label>Maintenance Plan Process</label>
+    <referenceTo>SVMXA360__SM_MaintenancePlanProcess__c</referenceTo>
+    <relationshipLabel>Maintenance Plan Templates</relationshipLabel>
+    <relationshipName>Maintenance_Plan_Templates</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

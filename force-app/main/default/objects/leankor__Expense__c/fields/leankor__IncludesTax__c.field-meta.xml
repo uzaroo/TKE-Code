@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__IncludesTax__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This is checked if the expense amount includes local, state / provincial or federal taxes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this if your expense amount includes any taxes.</inlineHelpText>
+    <label>Includes Tax</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

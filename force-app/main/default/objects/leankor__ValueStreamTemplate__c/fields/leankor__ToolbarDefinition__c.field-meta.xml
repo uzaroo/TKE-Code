@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ToolbarDefinition__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the HTML definition of the value stream toolbar.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Cut and paste into this field HTML which defines the structure of the Realtime Kanban toolbar which displays beside or above the value stream.</inlineHelpText>
+    <label>Toolbar Definition</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -143,6 +143,14 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
+    <profileSearchLayouts>
+        <fields>Name</fields>
+        <fields>Asset</fields>
+        <fields>Status</fields>
+        <fields>WorkType</fields>
+        <fields>EndDate</fields>
+        <profileName>SFS Technician - Minimum Access</profileName>
+    </profileSearchLayouts>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>

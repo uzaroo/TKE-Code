@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ActualDuration__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The difference between the time it took to complete the card (from create date to harvey ball completed) and the estimated time the user entered into the estimated duration field.</description>
+    <externalId>false</externalId>
+    <formula>leankor__Actual_Time_Taken__c- leankor__Budgeted_Time__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The difference between the time it took to complete the card (from create date to harvey ball completed) and the estimated time the user entered into the estimated duration field.</inlineHelpText>
+    <label>Duration Variance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The user who has the authority to implement the request</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The user who has the authority to implement the request</inlineHelpText>
+    <label>Approver</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>ItemApprovals_Approver</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

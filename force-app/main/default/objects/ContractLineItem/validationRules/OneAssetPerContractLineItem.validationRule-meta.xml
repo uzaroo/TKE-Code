@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OneAssetPerContractLineItem</fullName>
+    <active>false</active>
+    <description>ADO User Story # 12319
+This validation rule is checking that there should be only one asset per contract line item</description>
+    <errorConditionFormula>NOT(ISBLANK( AssetId )) &amp;&amp; NOT(ISBLANK(PRIORVALUE( AssetId )))</errorConditionFormula>
+    <errorMessage>A Contract Line Item can only be associated with one asset.</errorMessage>
+</ValidationRule>

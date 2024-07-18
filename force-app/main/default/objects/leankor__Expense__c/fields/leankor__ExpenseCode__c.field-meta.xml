@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ExpenseCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The accounting code for this expense item.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the expense code provided by the accounting department. This code must match your company&apos;s chart of accounts.</inlineHelpText>
+    <label>Expense Code</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MONTREAL_NEW_CONSTRUCTION_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>MONTREAL NEW CONSTRUCTION</label>
+    <queue>MONTREAL_NEW_CONSTRUCTION</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

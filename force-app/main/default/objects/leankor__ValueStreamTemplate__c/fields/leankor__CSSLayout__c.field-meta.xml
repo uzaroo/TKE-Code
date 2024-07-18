@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__CSSLayout__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The cascading style sheet (CSS) which defines the overall look and feel of the Value Streams which derive from this Value Stream Template.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Cut and paste the CSS which applies across the entire Value Stream Template into the field.</inlineHelpText>
+    <label>CSS Layout</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

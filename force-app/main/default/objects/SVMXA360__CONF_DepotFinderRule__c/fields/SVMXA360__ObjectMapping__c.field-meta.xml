@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ObjectMapping__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Object mapping to use, which is a mapping between Location to Return Order object.</description>
+    <externalId>false</externalId>
+    <label>Object Mapping</label>
+    <referenceTo>SVMXA360__CONF_ObjectMapping__c</referenceTo>
+    <relationshipLabel>Depot Finder Rules</relationshipLabel>
+    <relationshipName>Depot_Finder_Rules</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

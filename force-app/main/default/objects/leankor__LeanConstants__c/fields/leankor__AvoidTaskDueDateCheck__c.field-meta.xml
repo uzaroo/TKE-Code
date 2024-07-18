@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__AvoidTaskDueDateCheck__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, the tasks on a Kanban Card may have due dates outside of the card range.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, the tasks on a Kanban Card may have due dates outside of the card range.</inlineHelpText>
+    <label>Avoid Task Due Date Check</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

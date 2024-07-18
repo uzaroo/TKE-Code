@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ExpenseAccount__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Expense Account</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CAD</fullName>
+                <default>false</default>
+                <label>CAD</label>
+            </value>
+            <value>
+                <fullName>Cement</fullName>
+                <default>false</default>
+                <label>Cement</label>
+            </value>
+            <value>
+                <fullName>Construction Estimators</fullName>
+                <default>false</default>
+                <label>Construction Estimators</label>
+            </value>
+            <value>
+                <fullName>Control PCB Boards</fullName>
+                <default>false</default>
+                <label>Control PCB Boards</label>
+            </value>
+            <value>
+                <fullName>Craft Services / Food Services</fullName>
+                <default>false</default>
+                <label>Craft Services / Food Services</label>
+            </value>
+            <value>
+                <fullName>Crane Operators</fullName>
+                <default>false</default>
+                <label>Crane Operators</label>
+            </value>
+            <value>
+                <fullName>Electricians</fullName>
+                <default>false</default>
+                <label>Electricians</label>
+            </value>
+            <value>
+                <fullName>Engineers</fullName>
+                <default>false</default>
+                <label>Engineers</label>
+            </value>
+            <value>
+                <fullName>Inspection Specialist I</fullName>
+                <default>false</default>
+                <label>Inspection Specialist I</label>
+            </value>
+            <value>
+                <fullName>Project Managers</fullName>
+                <default>false</default>
+                <label>Project Managers</label>
+            </value>
+            <value>
+                <fullName>Ropes, rain gear</fullName>
+                <default>false</default>
+                <label>Ropes, rain gear</label>
+            </value>
+            <value>
+                <fullName>Solar Panels</fullName>
+                <default>false</default>
+                <label>Solar Panels</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

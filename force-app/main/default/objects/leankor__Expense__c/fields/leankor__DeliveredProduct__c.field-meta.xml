@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__DeliveredProduct__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is a lookup to the exact product to which this expense will be attributed as a direct cost of goods sold.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This expense directly resulted in the selected product or service being delivered.</inlineHelpText>
+    <label>Delivered Product</label>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Expenses</relationshipLabel>
+    <relationshipName>ProjectExpense</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

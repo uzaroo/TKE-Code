@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__zoneMode__c</fullName>
+    <defaultValue>&quot;Free Form&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field contain behaver for zone on baord.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contain behaver for zone on baord.</inlineHelpText>
+    <label>Zone Mode</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

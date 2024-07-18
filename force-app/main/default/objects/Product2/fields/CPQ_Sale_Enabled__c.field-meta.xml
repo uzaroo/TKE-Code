@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Sale_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>User Stories 12625, 12171. Mapped from Oracle CPQ Parts field: sale_enabled_flag</description>
+    <externalId>false</externalId>
+    <label>Sale Enabled?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

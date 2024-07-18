@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ExitFlowName__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The unique name of a Force.com Flow which will be executed every time a kanban card exits the zone. This is NOT the &quot;Flow Name&quot;, but rather the &quot;Unique Name&quot; which has no spaces.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the unique name of a Force.com Flow which will be executed every time a kanban card exits the zone. This is NOT the &quot;Flow Name&quot;, but rather the &quot;Unique Name&quot; which was given to the flow upon initial creation.</inlineHelpText>
+    <label>Exit Flow Name</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

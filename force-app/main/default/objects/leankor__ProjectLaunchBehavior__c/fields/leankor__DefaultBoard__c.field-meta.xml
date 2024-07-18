@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__DefaultBoard__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Default board type to open.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select default board type to open.</inlineHelpText>
+    <label>Default Board</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.leankor__Project__c</field>
+            <operation>equals</operation>
+            <valueField>leankor__ValueStream__c.leankor__ProjectRoom__r.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>ProjectLaunchBehaviors</relationshipLabel>
+    <relationshipName>ProjectLaunchBehaviorValueStreams</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

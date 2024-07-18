@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceContractNotNUll</fullName>
+    <active>true</active>
+    <description>ADO User Story # 12319
+Validation rule to check that service contract should not be null on contract line item.</description>
+    <errorConditionFormula>ISBLANK(  ServiceContractId )</errorConditionFormula>
+    <errorMessage>The Service Contract field cannot be null on a Contract Line Item record.</errorMessage>
+</ValidationRule>

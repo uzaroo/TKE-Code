@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__MaintenancePlanProcessId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field indicates which Maintenance Plan Process will review and process the maintenance plan. Each maintenance plan can only be associated to one MP Process. If the field is left blank, the Maintenance Plan will be processed using the default standard MP Process.</description>
+    <externalId>false</externalId>
+    <label>A360 Maintenance Plan Process</label>
+    <referenceTo>SVMXA360__SM_MaintenancePlanProcess__c</referenceTo>
+    <relationshipLabel>A360 Maintenance Plans (A360 Maintenance Plan Process)</relationshipLabel>
+    <relationshipName>A360_Maintenance_Plans</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

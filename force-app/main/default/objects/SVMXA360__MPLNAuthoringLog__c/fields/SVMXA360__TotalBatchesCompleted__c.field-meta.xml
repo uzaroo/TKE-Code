@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__TotalBatchesCompleted__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The total batches which were completed. Will be updated by each batch on master record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The total batches which were completed. Will be updated by each batch on master record.</inlineHelpText>
+    <label>Total Batches Completed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

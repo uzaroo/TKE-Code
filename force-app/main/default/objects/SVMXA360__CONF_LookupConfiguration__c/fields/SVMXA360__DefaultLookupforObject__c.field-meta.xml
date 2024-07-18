@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__DefaultLookupforObject__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If enabled, the lookup config will be made default for the selected object.</description>
+    <externalId>false</externalId>
+    <label>Default Lookup for Object</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

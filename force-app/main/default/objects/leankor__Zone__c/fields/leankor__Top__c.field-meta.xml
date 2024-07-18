@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Top__c</fullName>
+    <defaultValue>300</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The top edge of the zone. This is similar to the y-coordinate, except that position zero starts just below the upper tab bar (i.e. you must subtract the tab bar thickness from Y).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the position of the top edge of the zone. This value is similar to the y-coordinate, except that position zero starts just below the upper tab bar (i.e. you must subtract the tab bar thickness from Y).</inlineHelpText>
+    <label>Top</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

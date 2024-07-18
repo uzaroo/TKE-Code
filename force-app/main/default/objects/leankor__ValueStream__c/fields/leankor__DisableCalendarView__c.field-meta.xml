@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__DisableCalendarView__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field can Disable Calendar View logo from Board View.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field can Disable Calendar View logo from Board View.</inlineHelpText>
+    <label>Disable Calendar View</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

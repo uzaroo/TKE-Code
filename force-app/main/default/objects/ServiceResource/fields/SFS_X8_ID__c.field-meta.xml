@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SFS_X8_ID__c</fullName>
     <externalId>false</externalId>
-    <formula>RelatedRecord.SFS_X8_ID__c</formula>
+    <formula>RelatedRecord.TKE_X8_ID__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>8 ID</label>
     <required>false</required>

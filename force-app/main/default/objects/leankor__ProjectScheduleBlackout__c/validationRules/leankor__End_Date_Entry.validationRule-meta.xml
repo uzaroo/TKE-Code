@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__End_Date_Entry</fullName>
+    <active>true</active>
+    <description>Validation for &quot;End Date&quot; requirement.</description>
+    <errorConditionFormula>leankor__EndDate__c &lt; leankor__StartDate__c</errorConditionFormula>
+    <errorDisplayField>leankor__EndDate__c</errorDisplayField>
+    <errorMessage>End Date must be on or after the Start Date.</errorMessage>
+</ValidationRule>

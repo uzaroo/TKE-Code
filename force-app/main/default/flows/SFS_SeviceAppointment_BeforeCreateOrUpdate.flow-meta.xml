@@ -6,7 +6,7 @@
         <name>Assign_Gantt_Label_to_SA</name>
         <label>Assign Gantt Label to SA</label>
         <locationX>611</locationX>
-        <locationY>719</locationY>
+        <locationY>611</locationY>
         <assignmentItems>
             <assignToReference>$Record.FSL__GanttLabel__c</assignToReference>
             <operator>Assign</operator>
@@ -15,19 +15,35 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>SA_s_Work_Type</targetReference>
+            <targetReference>Assign_Icon_from_Work_Type</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_Icon_from_Work_Type</name>
         <label>Assign Icon from Work Type</label>
-        <locationX>479</locationX>
-        <locationY>935</locationY>
+        <locationX>611</locationX>
+        <locationY>719</locationY>
         <assignmentItems>
             <assignToReference>$Record.FSL__GanttIcon__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Record.SFS_Work_Order__r.WorkType.SFS_Gantt_Icon__c</elementReference>
+                <elementReference>Get_Associated_WO.WorkType.SFS_Gantt_Icon__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_WorkOrder_on_SA</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_IsMultiDay</name>
+        <label>Set IsMultiDay</label>
+        <locationX>479</locationX>
+        <locationY>1043</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FSL__IsMultiDay__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </assignmentItems>
         <connector>
@@ -38,7 +54,7 @@
         <name>Set_the_Certification_on_SA</name>
         <label>Set the Certification on SA</label>
         <locationX>50</locationX>
-        <locationY>1559</locationY>
+        <locationY>1667</locationY>
         <assignmentItems>
             <assignToReference>$Record.SFS_Certification__c</assignToReference>
             <operator>Assign</operator>
@@ -51,7 +67,7 @@
         <name>Set_WorkOrder_on_SA</name>
         <label>Set WorkOrder on SA</label>
         <locationX>611</locationX>
-        <locationY>611</locationY>
+        <locationY>827</locationY>
         <assignmentItems>
             <assignToReference>$Record.SFS_Work_Order__c</assignToReference>
             <operator>Assign</operator>
@@ -60,14 +76,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Assign_Gantt_Label_to_SA</targetReference>
+            <targetReference>Check_IsMultiDay</targetReference>
         </connector>
     </assignments>
     <decisions>
         <name>Check_Asset</name>
         <label>Check Asset</label>
         <locationX>611</locationX>
-        <locationY>1127</locationY>
+        <locationY>1235</locationY>
         <defaultConnectorLabel>Asset does not exist</defaultConnectorLabel>
         <rules>
             <name>Asset_not_empty</name>
@@ -89,7 +105,7 @@
         <name>Check_Certification_Exists</name>
         <label>Check Certification Exists?</label>
         <locationX>182</locationX>
-        <locationY>1451</locationY>
+        <locationY>1559</locationY>
         <defaultConnectorLabel>No Certification Found</defaultConnectorLabel>
         <rules>
             <name>Certification_Exists</name>
@@ -105,6 +121,38 @@
                 <targetReference>Set_the_Certification_on_SA</targetReference>
             </connector>
             <label>Certification Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_IsMultiDay</name>
+        <label>Check IsMultiDay</label>
+        <locationX>611</locationX>
+        <locationY>935</locationY>
+        <defaultConnector>
+            <targetReference>Check_Asset</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Associated_WO.Duration</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>8.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Associated_WO.DurationType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hours</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_IsMultiDay</targetReference>
+            </connector>
+            <label>Yes</label>
         </rules>
     </decisions>
     <decisions>
@@ -124,7 +172,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Set_WorkOrder_on_SA</targetReference>
+                <targetReference>Assign_Gantt_Label_to_SA</targetReference>
             </connector>
             <label>WO not empty</label>
         </rules>
@@ -155,7 +203,7 @@
         <name>Is_Asset_an_Escalator</name>
         <label>Is Asset an Escalator</label>
         <locationX>380</locationX>
-        <locationY>1235</locationY>
+        <locationY>1343</locationY>
         <defaultConnectorLabel>Non Escalator</defaultConnectorLabel>
         <rules>
             <name>Escalator</name>
@@ -173,44 +221,31 @@
             <label>Escalator</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>SA_s_Work_Type</name>
-        <label>SA&apos;s Work Type</label>
-        <locationX>611</locationX>
-        <locationY>827</locationY>
-        <defaultConnector>
-            <targetReference>Check_Asset</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Is Null</defaultConnectorLabel>
-        <rules>
-            <name>Not_Null</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.SFS_Work_Order__r.WorkTypeId</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Assign_Icon_from_Work_Type</targetReference>
-            </connector>
-            <label>Not Null</label>
-        </rules>
-    </decisions>
     <description>1. This flow auto-populates the Certification on SA Create
 2. This flow sets the WorkOrder on SA create
-3. ADO-12043: This flow sets Gantt label on SA on create and update</description>
+3. This flow sets Gantt label on SA on create and update
+4. This flow sets the FSL__IsMultiDay__c to true when duration is greater than 8.</description>
     <environments>Default</environments>
     <formulas>
         <name>GanttLabelFormula</name>
         <dataType>String</dataType>
-        <expression>IF(NOT(ISBLANK({!$Record.SFS_Work_Order__r.Location.Name})) , {!$Record.SFS_Work_Order__r.Location.Name} +&quot; - &quot;,&quot;&quot;) + IF(NOT(ISBLANK({!$Record.SFS_Work_Order__r.Asset.Name} )), {!$Record.SFS_Work_Order__r.Asset.Name},&quot;&quot;)</expression>
+        <expression>IF(NOT(ISBLANK({!Get_Associated_WO.Location.Name})) , {!Get_Associated_WO.Location.Name} +&quot; - &quot;,&quot;&quot;) + IF(NOT(ISBLANK({!Get_Associated_WO.Asset.Name} )), {!Get_Associated_WO.Asset.Name}+&quot; - &quot; ,&quot;&quot;)+{!Get_Associated_WO.Asset.SerialNumber}</expression>
     </formulas>
     <formulas>
         <name>ISNEW</name>
         <dataType>Boolean</dataType>
         <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>varMultiDay</name>
+        <dataType>Number</dataType>
+        <expression>Value({!$CustomMetadata.SFS_Custom_Settings__mdt.Multi_Day_Duration.Value__c})</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>varMultiDayCheck</name>
+        <dataType>Boolean</dataType>
+        <expression>true</expression>
     </formulas>
     <interviewLabel>SFS_SeviceAppointment_BeforeCreateOrUpdate {!$Flow.CurrentDateTime}</interviewLabel>
     <label>SFS SeviceAppointment BeforeCreateOrUpdate</label>
@@ -254,13 +289,17 @@
         <object>WorkOrder</object>
         <queriedFields>Id</queriedFields>
         <queriedFields>AssetId</queriedFields>
+        <queriedFields>Duration</queriedFields>
+        <queriedFields>DurationType</queriedFields>
+        <queriedFields>LocationId</queriedFields>
+        <queriedFields>WorkTypeId</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>Get_Escalator_Certification</name>
         <label>Get Escalator Certification</label>
         <locationX>182</locationX>
-        <locationY>1343</locationY>
+        <locationY>1451</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_Certification_Exists</targetReference>

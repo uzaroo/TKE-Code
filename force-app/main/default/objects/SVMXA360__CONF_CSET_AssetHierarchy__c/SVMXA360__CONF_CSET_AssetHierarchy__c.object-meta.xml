@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>A360 Mobile Asset Hierarchy Configuration is deprecated. Please use A360 Mobile Configuration</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Asset Hierarchy Configuration-Not in use</label>
+    <visibility>Public</visibility>
+</CustomObject>

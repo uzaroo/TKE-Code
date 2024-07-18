@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__MyWorkLoadsTasks__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>this value will be true so Task will be show on my work.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, Leankor will load the Tasks on My Work</inlineHelpText>
+    <label>My Work Loads Tasks</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

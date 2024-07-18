@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__InviteProfile__c</fullName>
+    <defaultValue>&quot;None&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The profile name to use when new users are created through the invitation feature of leankor.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The Profile name to use when new users are created through the invitation feature of Leankor. For example, Standard User and System Administrator are two examples of Profile names.</inlineHelpText>
+    <label>InviteProfile</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

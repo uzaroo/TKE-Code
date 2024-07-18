@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ProcessWizardStep__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores value of current step reference.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Stores value of current step reference.</inlineHelpText>
+    <label>Process Wizard Step</label>
+    <referenceTo>SVMXA360__CONF_ProcessWizardStep__c</referenceTo>
+    <relationshipLabel>Process Wizard Step Dependency (Process Wizard Step)</relationshipLabel>
+    <relationshipName>Wizard_Step_Dependency</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

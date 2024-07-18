@@ -143,5 +143,5 @@
         <searchResultsAdditionalFields>WorkOrder</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ExecutionOrder</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

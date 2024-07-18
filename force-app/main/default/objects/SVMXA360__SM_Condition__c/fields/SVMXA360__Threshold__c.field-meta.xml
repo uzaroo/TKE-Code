@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Threshold__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The threshold percentage of the operand/operator value at which the WO needs to be created</description>
+    <externalId>false</externalId>
+    <label>Threshold %</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Assign_a_User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>If a user different than the one owning the card or owning a task has done some work, this field will hold that identified user.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the user who has performed work on this card or task (if different than the existing owner).</inlineHelpText>
+    <label>Assign a User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Time_Cards1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

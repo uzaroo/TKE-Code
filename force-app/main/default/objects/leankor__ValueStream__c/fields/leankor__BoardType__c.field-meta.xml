@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__BoardType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is field require to selected Project Board type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select type of project board type.</inlineHelpText>
+    <label>Board Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Kanban Board</fullName>
+                <default>true</default>
+                <label>Kanban Board</label>
+            </value>
+            <value>
+                <fullName>Whiteboard</fullName>
+                <default>false</default>
+                <label>Whiteboard</label>
+            </value>
+            <value>
+                <fullName>Portfolio View</fullName>
+                <default>false</default>
+                <label>Portfolio View</label>
+            </value>
+            <value>
+                <fullName>Card Hierarchy</fullName>
+                <default>false</default>
+                <label>Card Hierarchy</label>
+            </value>
+            <value>
+                <fullName>Plan Board</fullName>
+                <default>false</default>
+                <label>Plan Board</label>
+            </value>
+            <value>
+                <fullName>DashBoard</fullName>
+                <default>false</default>
+                <label>DashBoard</label>
+            </value>
+            <value>
+                <fullName>UberBoard</fullName>
+                <default>false</default>
+                <label>UberBoard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

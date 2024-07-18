@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ZoneGUID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The unique GUID of the Zone in which this kanban card currently resides. This is not the Force.com record ID.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the unique GUID of the Zone in which this kanban card currently resides. This is not the Force.com record ID.</inlineHelpText>
+    <label>Zone GUID</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

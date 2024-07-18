@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__FilterCriteria__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to an expression to display only those records that meet the expression criteria.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup to an expression to display only those records that meet the expression criteria.</inlineHelpText>
+    <label>Filter Criteria</label>
+    <referenceTo>SVMXA360__CONF_Expression__c</referenceTo>
+    <relationshipLabel>Hierarchy Configuration Detail (Filter Criteria)</relationshipLabel>
+    <relationshipName>Hierarchy_Configuration_Detail</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

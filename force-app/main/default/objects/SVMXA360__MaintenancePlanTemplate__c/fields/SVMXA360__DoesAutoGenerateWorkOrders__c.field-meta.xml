@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__DoesAutoGenerateWorkOrders__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates whether Work Orders are auto-generated for the Maintenance Plan. This field auto-populates a checkbox of the same name in the Maintenance Plan upon creation. NOTE: If this field is set to &apos;true&apos; on a Maintenance Plan, it will disable the ability to generate work orders manually.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether Work Orders are auto-generated for the Maintenance Plan. This field auto-populates a checkbox of the same name in the Maintenance Plan upon creation. NOTE: If this field is set to &apos;true&apos; on a Maintenance Plan, it will disable the ability to generate work orders manually.</inlineHelpText>
+    <label>Auto-generate Work Orders</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

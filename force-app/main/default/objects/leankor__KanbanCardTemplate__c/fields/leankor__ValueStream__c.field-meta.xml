@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStream__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The value stream on-which this kanban card template can be used.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the value stream inwhich this kanban card template can be use. If blank, it applies to all value streams globally.</inlineHelpText>
+    <label>Value Stream</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>Kanban Card Templates</relationshipLabel>
+    <relationshipName>Kanban_Card_Templates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__WarrantyStackRankingOrder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The order in which stack ranking will be performed on the warranty field.</description>
+    <externalId>false</externalId>
+    <label>Warranty Stack Ranking Order</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ascending</fullName>
+                <default>false</default>
+                <label>Ascending</label>
+            </value>
+            <value>
+                <fullName>Descending</fullName>
+                <default>false</default>
+                <label>Descending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

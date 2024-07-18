@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ServiceContractPlanCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>OwnerId</fields>
+    <fields>SVMXA360__PriceBookId__c</fields>
+    <fields>SVMXA360__IsActive__c</fields>
+    <fields>SVMXA360__ContractTermDuration__c</fields>
+    <fields>SVMXA360__ContractTermUnitOfTime__c</fields>
+    <label>A360 - Service Contract Plan Compact Layout</label>
+</CompactLayout>

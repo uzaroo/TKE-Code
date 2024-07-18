@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__GUID__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <defaultValue>&quot;305ee49a-8489-4091-bf76-8a07048055f9&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>A 36 character, globally unique identifier of this kanban card instance. It is automatically generated each time a card is created and survives the entire life-cycle of the kanban.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>true</externalId>
+    <inlineHelpText>Enter a valid GUID such as &quot;305ee49a-8489-4091-bf76-8a07048055f9&quot;</inlineHelpText>
+    <label>GUID</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

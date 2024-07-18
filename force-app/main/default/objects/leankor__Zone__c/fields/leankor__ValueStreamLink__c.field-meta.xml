@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStreamLink__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is the value stream which provides a detailed process view under the are of the zone.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the value stream which provides a detailed process view under the are of the zone.</inlineHelpText>
+    <label>Value Stream Link</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>Zones (Value Stream Link)</relationshipLabel>
+    <relationshipName>ZonesDrillDown</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__HierarchyConfigurationDetailId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The master Hierarchy configuration detail for which the fields are configured.</description>
+    <externalId>false</externalId>
+    <label>Hierarchy Configuration Detail</label>
+    <referenceTo>SVMXA360__CONF_HierarchyConfigDetail__c</referenceTo>
+    <relationshipName>Hierarchy_Configuration_Fields</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

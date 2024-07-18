@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HOUSTON_DOWNTOWN_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>HOUSTON DOWNTOWN</label>
+    <queue>HOUSTON_DOWNTOWN</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

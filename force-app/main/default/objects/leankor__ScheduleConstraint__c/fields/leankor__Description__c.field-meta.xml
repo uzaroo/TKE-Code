@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The description of the constraint type.</description>
+    <externalId>false</externalId>
+    <label>Description</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>aslateaspossible</fullName>
+                <default>true</default>
+                <label>As late as possible</label>
+            </value>
+            <value>
+                <fullName>assoonaspossible</fullName>
+                <default>false</default>
+                <label>As soon as possible</label>
+            </value>
+            <value>
+                <fullName>finishnoearlierthan</fullName>
+                <default>false</default>
+                <label>Finish no earlier than</label>
+            </value>
+            <value>
+                <fullName>finishnolaterthan</fullName>
+                <default>false</default>
+                <label>Finish no later than</label>
+            </value>
+            <value>
+                <fullName>mustfinishon</fullName>
+                <default>false</default>
+                <label>Must finish on</label>
+            </value>
+            <value>
+                <fullName>muststarton</fullName>
+                <default>false</default>
+                <label>Must start on</label>
+            </value>
+            <value>
+                <fullName>startnoearlierthan</fullName>
+                <default>false</default>
+                <label>Start no earlier than</label>
+            </value>
+            <value>
+                <fullName>startnolaterthan</fullName>
+                <default>false</default>
+                <label>Start no later than</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

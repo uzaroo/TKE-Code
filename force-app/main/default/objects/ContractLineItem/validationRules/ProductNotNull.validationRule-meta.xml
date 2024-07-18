@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductNotNull</fullName>
+    <active>true</active>
+    <description>ADO Story # 12319
+Validation rule to check that the product should not be empty on contract line item.</description>
+    <errorConditionFormula>ISBLANK( Asset.Product2Id )</errorConditionFormula>
+    <errorMessage>The Product field cannot be null on a Contract Line Item record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExtendedEditDisplayColumns__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores the value of the number of columns to be displayed in the extended edit display for detail lines. Values can be either 1 or 2.</description>
+    <externalId>false</externalId>
+    <label>Extended Edit Display Columns</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

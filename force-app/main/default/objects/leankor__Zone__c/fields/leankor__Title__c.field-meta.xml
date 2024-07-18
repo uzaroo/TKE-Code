@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Title__c</fullName>
+    <defaultValue>&quot;zone 1&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The title of the zone which will show up at the top of the object on the web page.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a descriptive title for the zone. It will be displayed on the top bar of the zone.</inlineHelpText>
+    <label>Title</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

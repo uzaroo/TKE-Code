@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To identify type of element.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Field</fullName>
+                <default>false</default>
+                <label>Field</label>
+            </value>
+            <value>
+                <fullName>Empty Space</fullName>
+                <default>false</default>
+                <label>Empty Space</label>
+            </value>
+            <value>
+                <fullName>Button</fullName>
+                <default>false</default>
+                <label>Button</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

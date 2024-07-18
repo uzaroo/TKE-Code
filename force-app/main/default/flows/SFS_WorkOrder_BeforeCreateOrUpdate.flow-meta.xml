@@ -48,13 +48,6 @@
                 <elementReference>$Record.Case.Contact.AccountId</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>$Record.Priority</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>Critical</stringValue>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Get_Multi_Day_Duration</targetReference>
         </connector>
@@ -85,6 +78,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.Location.SFS_Service_Territory__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.FSL__VisitingHours__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Location.Visiting_Hours__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -118,9 +118,9 @@
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>varResultingQuotient</leftValueReference>
-                <operator>GreaterThan</operator>
+                <operator>IsNull</operator>
                 <rightValue>
-                    <elementReference>varResultInNumber</elementReference>
+                    <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -155,8 +155,8 @@
         </rules>
     </decisions>
     <decisions>
-        <name>IsCaseSetAndSubTypeIsEntrapment</name>
-        <label>IsCaseSetAndSubTypeIsEntrapment</label>
+        <name>IsCaseSet</name>
+        <label>IsCaseSet</label>
         <locationX>182</locationX>
         <locationY>395</locationY>
         <defaultConnector>
@@ -164,7 +164,7 @@
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Sub_Type_Entrapment</name>
+            <name>Type_Emergency</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.CaseId</leftValueReference>
@@ -173,17 +173,10 @@
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.Case.Case_Sub_Type__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Entrapment</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
                 <targetReference>Derive_fields_from_Case</targetReference>
             </connector>
-            <label>Sub Type = Entrapment</label>
+            <label>Type = Emergency</label>
         </rules>
     </decisions>
     <decisions>
@@ -204,7 +197,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>IsCaseSetAndSubTypeIsEntrapment</targetReference>
+                <targetReference>IsCaseSet</targetReference>
             </connector>
             <label>Create</label>
         </rules>
@@ -255,7 +248,8 @@
     </decisions>
     <description>1. 05-06-2024 [US-11990] Flow to populate territory based on Location Territory
 2. ADO US - 12294 - If Case is set for the work order and the sub type is Entrapment then WO is automatically created with the attributes populated - Account, Location, Asset, Subject is set to Case Subject, Description is set to Case Description, Contact is set to Case Contact and Priority = Critical
-3. AD0-12129 Calculation for multi day based on duration, duration type and minimum crew size</description>
+3. AD0-12129 Calculation for multi day based on duration, duration type and minimum crew size
+4. ADO-11981 Assign Visiting hours on work order from location</description>
     <environments>Default</environments>
     <formulas>
         <description>Formula to check if the record is created.</description>
@@ -267,11 +261,13 @@
         <name>varResultingQuotient</name>
         <dataType>Number</dataType>
         <expression>IF(
-TEXT({!$Record.DurationType}) = &quot;Hours&quot; &amp;&amp; {!$Record.Duration} &gt;0 
- &amp;&amp; {!$Record.WorkType.Duration_Based_on_Min_Crew_Size__c}=true,
+TEXT({!$Record.DurationType}) = &quot;Hours&quot; 
+&amp;&amp; {!$Record.Duration} &gt;0 
+&amp;&amp; {!$Record.WorkType.Duration_Based_on_Min_Crew_Size__c}=true 
+&amp;&amp; {!$Record.MinimumCrewSize} &gt; 1,
 {!$Record.Duration} /{!$Record.MinimumCrewSize}, {!$Record.Duration} 
  )</expression>
-        <scale>0</scale>
+        <scale>2</scale>
     </formulas>
     <formulas>
         <description>Store the text value of metadata to Number variable</description>
@@ -330,7 +326,6 @@ TEXT({!$Record.DurationType}) = &quot;Hours&quot; &amp;&amp; {!$Record.Duration}
         <connector>
             <targetReference>Record_Action</targetReference>
         </connector>
-        <filterFormula>{!$Record.RecordType.DeveloperName} = &apos;SFS_Field_Operations&apos;</filterFormula>
         <object>WorkOrder</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

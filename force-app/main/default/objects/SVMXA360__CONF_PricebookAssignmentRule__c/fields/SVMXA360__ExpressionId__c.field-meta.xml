@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__ExpressionId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The ID of the Expression using which the Pricebook Assignment rule will be qualified.</description>
+    <externalId>false</externalId>
+    <label>Qualifying Criteria</label>
+    <referenceTo>SVMXA360__CONF_Expression__c</referenceTo>
+    <relationshipLabel>Pricebook Assignment Rules</relationshipLabel>
+    <relationshipName>Pricebook_Assignment_Rules</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>THUNDER_BAY_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>THUNDER BAY</label>
+    <queue>THUNDER_BAY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

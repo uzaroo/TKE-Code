@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Title__c</fullName>
+    <defaultValue>&quot;Work Order&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>A short, descriptive title to display at the top of the kanban card.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a title to be shown on this kanban card when placed on a value stream.</inlineHelpText>
+    <label>Title</label>
+    <length>250</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SVMXA360__SearchResultsPerPSC__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This setting indicates the maximum number of PSC search results that can be generated when the user performs a PSC Search. If the estimated search results exceeds this defined maximum, the “Run Search” button in the Search Criteria Card is disabled.</description>
+    <externalId>false</externalId>
+    <label>Allowed Search Results Per PSC</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

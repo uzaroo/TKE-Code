@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__Invoiced__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This is checked true when a proper invoice has been delivered to the customer.  This only makes sense if the &quot;chargeable&quot; flag is also set.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you check this on, please also make sure the expense has been checked as &quot;chargeable&quot; and this record is not marked as a &quot;planning entry&quot; (should be actual, not planned).</inlineHelpText>
+    <label>Invoiced</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__TimeScheduleType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Types of time schedules</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of time schedule.</inlineHelpText>
+    <label>Time Schedule Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Break Time</fullName>
+                <default>false</default>
+                <label>Break Time</label>
+            </value>
+            <value>
+                <fullName>Overtime</fullName>
+                <default>false</default>
+                <label>Overtime</label>
+            </value>
+            <value>
+                <fullName>Regular</fullName>
+                <default>false</default>
+                <label>Regular</label>
+            </value>
+            <value>
+                <fullName>Personal Time</fullName>
+                <default>false</default>
+                <label>Personal Time</label>
+            </value>
+            <value>
+                <fullName>Statutory Holiday</fullName>
+                <default>false</default>
+                <label>Statutory Holiday</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+                <label>Vacation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

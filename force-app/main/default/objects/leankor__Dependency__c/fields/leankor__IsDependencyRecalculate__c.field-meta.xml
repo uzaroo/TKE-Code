@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__IsDependencyRecalculate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Recalculate due to a change in dependency schedule.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Recalculate due to a change in dependency schedule.</inlineHelpText>
+    <label>Recalculate Dependency</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

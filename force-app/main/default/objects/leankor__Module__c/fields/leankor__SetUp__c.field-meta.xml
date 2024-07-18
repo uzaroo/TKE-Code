@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__SetUp__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If true then the system automatically creates or configures this module when creating a new project.</description>
+    <externalId>false</externalId>
+    <label>Set Up</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__SuccessorType__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Successor Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Start To Start</fullName>
+                <default>true</default>
+                <label>Start To Start</label>
+            </value>
+            <value>
+                <fullName>Start To Finish</fullName>
+                <default>false</default>
+                <label>Start To Finish</label>
+            </value>
+            <value>
+                <fullName>Finish To Start</fullName>
+                <default>false</default>
+                <label>Finish To Start</label>
+            </value>
+            <value>
+                <fullName>Finish To Finish</fullName>
+                <default>false</default>
+                <label>Finish To Finish</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

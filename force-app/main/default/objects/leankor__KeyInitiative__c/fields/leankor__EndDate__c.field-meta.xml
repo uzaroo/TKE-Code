@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__EndDate__c</fullName>
+    <defaultValue>Today() + 30*6</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When this key initiative is expected to complete. Value streams, zones and kanban cards will continue to operate as normal after the end date. This date is used to calculate actual vs. expected goal achievement.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date when this key initiative is expected to complete. Value streams, zones and kanban cards will continue to operate as normal after the end date.</inlineHelpText>
+    <label>Target Date</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

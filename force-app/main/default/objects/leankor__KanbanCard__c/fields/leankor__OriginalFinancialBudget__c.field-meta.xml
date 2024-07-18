@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__OriginalFinancialBudget__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Budgeted Time (hours) multiplied by the Card owner&apos;s fully loaded hourly cost.</description>
+    <externalId>false</externalId>
+    <formula>Owner:User.leankor__Rate__c * leankor__Budgeted_Time__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Budgeted Time (hours) multiplied by the Card owner&apos;s fully loaded hourly cost.</inlineHelpText>
+    <label>Original Financial Budget</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

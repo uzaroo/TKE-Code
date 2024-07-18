@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ValueStream__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Core process to achieve this Key Initiative.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is an optional field. Select a core process which is critical in achieving goals set out by this key initiative.  This value stream may or may not be related to the zone you enter on this page.</inlineHelpText>
+    <label>Value Stream</label>
+    <referenceTo>leankor__ValueStream__c</referenceTo>
+    <relationshipLabel>Critical Processes</relationshipLabel>
+    <relationshipName>KeyInitiativeCoreProcesses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

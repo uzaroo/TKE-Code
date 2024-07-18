@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ExpenseSubCategory__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Expense Sub-Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>leankor__Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>leankor__ExpenseSubCategory</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Revenue</controllingFieldValue>
+            <valueName>General Services Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revenue</controllingFieldValue>
+            <valueName>Install Progress Invoices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revenue</controllingFieldValue>
+            <valueName>Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Revenue</controllingFieldValue>
+            <valueName>Subscription Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Labor</controllingFieldValue>
+            <valueName>External Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Labor</controllingFieldValue>
+            <valueName>External Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Labor</controllingFieldValue>
+            <valueName>Internal Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Labor</controllingFieldValue>
+            <valueName>Internal Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Materials</controllingFieldValue>
+            <valueName>Direct Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Materials</controllingFieldValue>
+            <valueName>Indirect Materials / Supplies</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

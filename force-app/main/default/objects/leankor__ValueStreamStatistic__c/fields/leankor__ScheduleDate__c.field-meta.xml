@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__ScheduleDate__c</fullName>
+    <defaultValue>Today()</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field contain Schedule Run Date for every board on per day basis.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contain Schedule Run Date for every board on per day basis.</inlineHelpText>
+    <label>Schedule Run Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

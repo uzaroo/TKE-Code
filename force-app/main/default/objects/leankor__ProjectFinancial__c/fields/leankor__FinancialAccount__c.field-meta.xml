@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leankor__FinancialAccount__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Financial Account.</description>
+    <externalId>false</externalId>
+    <label>Financial Account</label>
+    <referenceTo>leankor__FinancialAccount__c</referenceTo>
+    <relationshipLabel>Project Financials</relationshipLabel>
+    <relationshipName>ProjectFinancials_FinancialAccount</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
