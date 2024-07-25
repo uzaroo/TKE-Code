@@ -5,12 +5,13 @@
 Concatenates the address field values in Address Description field; Copies the value from Address Description field to Location Address field. This ensures that user can search a location by the address.</description>
     <environments>Default</environments>
     <formulas>
+        <description>Concatenates address field values to string.</description>
         <name>AddressValue</name>
         <dataType>String</dataType>
-        <expression>{!$Record.Street} &amp; &quot;,&quot; &amp; &quot; &quot; &amp;  {!$Record.City} &amp; &quot;,&quot; &amp; &quot; &quot; &amp; TEXT({!$Record.StateCode})  &amp; &quot;,&quot; &amp; &quot; &quot; &amp; {!$Record.PostalCode} &amp; &quot;,&quot; &amp; &quot; &quot; &amp; TEXT({!$Record.CountryCode})</expression>
+        <expression>{!$Record.Street} &amp; &quot;,&quot; &amp; &quot; &quot; &amp;  {!$Record.City} &amp; &quot;,&quot; &amp; &quot; &quot; &amp; TEXT({!$Record.StateCode})  &amp; &quot;,&quot; &amp; &quot; &quot; &amp; {!$Record.PostalCode}</expression>
     </formulas>
     <interviewLabel>Update Address Description Field {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>TKE Update Address Description Field</label>
+    <label>TKE Update Address Description Field - AfterCreateOrUpdate</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>

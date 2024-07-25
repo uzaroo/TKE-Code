@@ -1,170 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <name>Apex_Action_for_Actual_End</name>
-        <label>Apex Action for Actual End</label>
-        <locationX>50</locationX>
-        <locationY>1742</locationY>
+        <name>Call_Invocable_Apex</name>
+        <label>Call Invocable Apex</label>
+        <locationX>314</locationX>
+        <locationY>3842</locationY>
         <actionName>SFS_CalculateLocalTimeClass</actionName>
         <actionType>apex</actionType>
+        <dataTypeMappings>
+            <typeName>U__updatedRecord</typeName>
+            <typeValue>ServiceAppointment</typeValue>
+        </dataTypeMappings>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
-            <name>dttime</name>
+            <name>fieldList</name>
             <value>
-                <elementReference>currentSA.ActualEndTime</elementReference>
+                <elementReference>FieldLabelList</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>targetTimezone</name>
+            <name>recordId</name>
+            <value>
+                <elementReference>currentSA.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subtractOffset</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>theTZone</name>
             <value>
                 <elementReference>currentSA.ServiceTerritory.OperatingHours.TimeZone</elementReference>
             </value>
         </inputParameters>
         <nameSegment>SFS_CalculateLocalTimeClass</nameSegment>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
-    </actionCalls>
-    <actionCalls>
-        <name>Apex_Action_for_Actual_Start</name>
-        <label>Apex Action for Actual Start</label>
-        <locationX>50</locationX>
-        <locationY>1442</locationY>
-        <actionName>SFS_CalculateLocalTimeClass</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>ActualEndTimeChanged</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>dttime</name>
-            <value>
-                <elementReference>currentSA.ActualStartTime</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>targetTimezone</name>
-            <value>
-                <elementReference>currentSA.ServiceTerritory.OperatingHours.TimeZone</elementReference>
-            </value>
-        </inputParameters>
-        <nameSegment>SFS_CalculateLocalTimeClass</nameSegment>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
-    </actionCalls>
-    <actionCalls>
-        <name>Apex_Action_for_Arrival_Window_End</name>
-        <label>Apex Action for Arrival Window End</label>
-        <locationX>50</locationX>
-        <locationY>542</locationY>
-        <actionName>SFS_CalculateLocalTimeClass</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>SchedStartTimeChanged</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>dttime</name>
-            <value>
-                <elementReference>currentSA.ArrivalWindowEndTime</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>targetTimezone</name>
-            <value>
-                <elementReference>currentSA.ServiceTerritory.OperatingHours.TimeZone</elementReference>
-            </value>
-        </inputParameters>
-        <nameSegment>SFS_CalculateLocalTimeClass</nameSegment>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
-    </actionCalls>
-    <actionCalls>
-        <name>Apex_Action_for_Arrival_Window_Start</name>
-        <label>Apex Action for Arrival Window Start</label>
-        <locationX>50</locationX>
-        <locationY>242</locationY>
-        <actionName>SFS_CalculateLocalTimeClass</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>ArrivalWindowEndChanged</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>dttime</name>
-            <value>
-                <elementReference>currentSA.ArrivalWindowStartTime</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>targetTimezone</name>
-            <value>
-                <elementReference>currentSA.ServiceTerritory.OperatingHours.TimeZone</elementReference>
-            </value>
-        </inputParameters>
-        <nameSegment>SFS_CalculateLocalTimeClass</nameSegment>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
-    </actionCalls>
-    <actionCalls>
-        <name>Apex_Action_for_Scheduled_End</name>
-        <label>Apex Action for Scheduled End</label>
-        <locationX>50</locationX>
-        <locationY>1142</locationY>
-        <actionName>SFS_CalculateLocalTimeClass</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>ActualStartTimeChanged</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>dttime</name>
-            <value>
-                <elementReference>currentSA.SchedEndTime</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>targetTimezone</name>
-            <value>
-                <elementReference>currentSA.ServiceTerritory.OperatingHours.TimeZone</elementReference>
-            </value>
-        </inputParameters>
-        <nameSegment>SFS_CalculateLocalTimeClass</nameSegment>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
-    </actionCalls>
-    <actionCalls>
-        <name>Apex_Action_for_Scheduled_Start</name>
-        <label>Apex Action for Scheduled Start</label>
-        <locationX>50</locationX>
-        <locationY>842</locationY>
-        <actionName>SFS_CalculateLocalTimeClass</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>SchedEndTimeChanged</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>dttime</name>
-            <value>
-                <elementReference>currentSA.SchedStartTime</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>targetTimezone</name>
-            <value>
-                <elementReference>currentSA.ServiceTerritory.OperatingHours.TimeZone</elementReference>
-            </value>
-        </inputParameters>
-        <nameSegment>SFS_CalculateLocalTimeClass</nameSegment>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <outputParameters>
+            <assignToReference>currentSA</assignToReference>
+            <name>updatedRecord</name>
+        </outputParameters>
         <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>Set_APIName_ActualEndTime</name>
+        <label>Set_APIName_ActualEndTime</label>
+        <locationX>50</locationX>
+        <locationY>3542</locationY>
+        <assignmentItems>
+            <assignToReference>FieldLabelList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>ActualEndTime</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Field_List_and_territory_Decision</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_APIName_ActualStartTime</name>
+        <label>Set_APIName_ActualStartTime</label>
+        <locationX>50</locationX>
+        <locationY>3242</locationY>
+        <assignmentItems>
+            <assignToReference>FieldLabelList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>ActualStartTime</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ActualEndTimeChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_APIName_ArrivalWindowEnd</name>
+        <label>Set_APIName_ArrivalWindowEnd</label>
+        <locationX>50</locationX>
+        <locationY>2342</locationY>
+        <assignmentItems>
+            <assignToReference>FieldLabelList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>ArrivalWindowEndTime</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SchedStartTimeChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_APIName_ArrivalWindowStart</name>
+        <label>Set_APIName_ArrivalWindowStart</label>
+        <locationX>50</locationX>
+        <locationY>2042</locationY>
+        <assignmentItems>
+            <assignToReference>FieldLabelList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>ArrivalWindowStartTime</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ArrivalWindowEndChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_APIName_SchedEndTime</name>
+        <label>Set_APIName_SchedEndTime</label>
+        <locationX>50</locationX>
+        <locationY>2942</locationY>
+        <assignmentItems>
+            <assignToReference>FieldLabelList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>SchedEndTime</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ActualStartTimeChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_APIName_SchedStartTime</name>
+        <label>Set_APIName_SchedStartTime</label>
+        <locationX>50</locationX>
+        <locationY>2642</locationY>
+        <assignmentItems>
+            <assignToReference>FieldLabelList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>SchedStartTime</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SchedEndTimeChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_LocalActualEndTimeNull</name>
+        <label>Set_LocalActualEndTimeNull</label>
+        <locationX>50</locationX>
+        <locationY>1742</locationY>
+        <assignmentItems>
+            <assignToReference>currentSA.SFS_Local_Actual_End__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ArrivalWindowStartChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_LocalActualStartTimeNull</name>
+        <label>Set_LocalActualStartTimeNull</label>
+        <locationX>50</locationX>
+        <locationY>1442</locationY>
+        <assignmentItems>
+            <assignToReference>currentSA.SFS_Local_Actual_Start__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ActualEndTimeNull</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_LocalArrivalWindowEndNull</name>
+        <label>Set_LocalArrivalWindowEndNull</label>
+        <locationX>50</locationX>
+        <locationY>542</locationY>
+        <assignmentItems>
+            <assignToReference>currentSA.SFS_Local_Arrival_Window_End__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SchedStartTimeNull</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_LocalArrivalWindowStartNull</name>
+        <label>Set_LocalArrivalWindowStartNull</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>currentSA.SFS_Local_Arrival_Window_Start__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ArrivalWindowEndNull</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_LocalSchedEndTimeNull</name>
+        <label>Set_LocalSchedEndTimeNull</label>
+        <locationX>50</locationX>
+        <locationY>1142</locationY>
+        <assignmentItems>
+            <assignToReference>currentSA.SFS_Local_Scheduled_End__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ActualStartTimeNull</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_LocalSchedStartTimeNull</name>
+        <label>Set_LocalSchedStartTimeNull</label>
+        <locationX>50</locationX>
+        <locationY>842</locationY>
+        <assignmentItems>
+            <assignToReference>currentSA.SFS_Local_Scheduled_Start__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SchedEndTimeNull</targetReference>
+        </connector>
+    </assignments>
     <decisions>
         <name>ActualEndTimeChanged</name>
         <label>ActualEndTimeChanged</label>
         <locationX>182</locationX>
-        <locationY>1634</locationY>
+        <locationY>3434</locationY>
+        <defaultConnector>
+            <targetReference>Field_List_and_territory_Decision</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>True_ActualEndTimeChanged</name>
@@ -184,7 +263,39 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Apex_Action_for_Actual_End</targetReference>
+                <targetReference>Set_APIName_ActualEndTime</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ActualEndTimeNull</name>
+        <label>ActualEndTimeNull</label>
+        <locationX>182</locationX>
+        <locationY>1634</locationY>
+        <defaultConnector>
+            <targetReference>ArrivalWindowStartChanged</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_ActualEndTimeNull</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>currentSA.ActualEndTime</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>previousSA.ActualEndTime</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>currentSA.ActualEndTime</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_LocalActualEndTimeNull</targetReference>
             </connector>
             <label>True</label>
         </rules>
@@ -193,7 +304,7 @@
         <name>ActualStartTimeChanged</name>
         <label>ActualStartTimeChanged</label>
         <locationX>182</locationX>
-        <locationY>1334</locationY>
+        <locationY>3134</locationY>
         <defaultConnector>
             <targetReference>ActualEndTimeChanged</targetReference>
         </defaultConnector>
@@ -216,7 +327,39 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Apex_Action_for_Actual_Start</targetReference>
+                <targetReference>Set_APIName_ActualStartTime</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ActualStartTimeNull</name>
+        <label>ActualStartTimeNull</label>
+        <locationX>182</locationX>
+        <locationY>1334</locationY>
+        <defaultConnector>
+            <targetReference>ActualEndTimeNull</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_ActualStartTimeNull</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>currentSA.ActualStartTime</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>previousSA.ActualStartTime</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>currentSA.ActualStartTime</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_LocalActualStartTimeNull</targetReference>
             </connector>
             <label>True</label>
         </rules>
@@ -225,7 +368,7 @@
         <name>ArrivalWindowEndChanged</name>
         <label>ArrivalWindowEndChanged</label>
         <locationX>182</locationX>
-        <locationY>434</locationY>
+        <locationY>2234</locationY>
         <defaultConnector>
             <targetReference>SchedStartTimeChanged</targetReference>
         </defaultConnector>
@@ -248,7 +391,39 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Apex_Action_for_Arrival_Window_End</targetReference>
+                <targetReference>Set_APIName_ArrivalWindowEnd</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ArrivalWindowEndNull</name>
+        <label>ArrivalWindowEndNull</label>
+        <locationX>182</locationX>
+        <locationY>434</locationY>
+        <defaultConnector>
+            <targetReference>SchedStartTimeNull</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_ArrivalWindowEndNull</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>currentSA.ArrivalWindowEndTime</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>previousSA.ArrivalWindowEndTime</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>currentSA.ArrivalWindowEndTime</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_LocalArrivalWindowEndNull</targetReference>
             </connector>
             <label>True</label>
         </rules>
@@ -257,7 +432,7 @@
         <name>ArrivalWindowStartChanged</name>
         <label>ArrivalWindowStartChanged</label>
         <locationX>182</locationX>
-        <locationY>134</locationY>
+        <locationY>1934</locationY>
         <defaultConnector>
             <targetReference>ArrivalWindowEndChanged</targetReference>
         </defaultConnector>
@@ -280,16 +455,77 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Apex_Action_for_Arrival_Window_Start</targetReference>
+                <targetReference>Set_APIName_ArrivalWindowStart</targetReference>
             </connector>
             <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ArrivalWindowStartNull</name>
+        <label>ArrivalWindowStartNull</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>ArrivalWindowEndNull</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_ArrivalWindowStartNull</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>currentSA.ArrivalWindowStartTime</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>previousSA.ArrivalWindowStartTime</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>currentSA.ArrivalWindowStartTime</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_LocalArrivalWindowStartNull</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Field_List_and_territory_Decision</name>
+        <label>Field List and territory Decision</label>
+        <locationX>182</locationX>
+        <locationY>3734</locationY>
+        <defaultConnector>
+            <targetReference>Call_Invocable_Apex</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Do_not_call_apex</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>FieldLabelList</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>currentSA.ServiceTerritory.OperatingHours.TimeZone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Do not call apex</label>
         </rules>
     </decisions>
     <decisions>
         <name>SchedEndTimeChanged</name>
         <label>SchedEndTimeChanged</label>
         <locationX>182</locationX>
-        <locationY>1034</locationY>
+        <locationY>2834</locationY>
         <defaultConnector>
             <targetReference>ActualStartTimeChanged</targetReference>
         </defaultConnector>
@@ -312,7 +548,39 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Apex_Action_for_Scheduled_End</targetReference>
+                <targetReference>Set_APIName_SchedEndTime</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>SchedEndTimeNull</name>
+        <label>SchedEndTimeNull</label>
+        <locationX>182</locationX>
+        <locationY>1034</locationY>
+        <defaultConnector>
+            <targetReference>ActualStartTimeNull</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_SchedEndTimeNull</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>currentSA.SchedEndTime</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>previousSA.SchedEndTime</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>currentSA.SchedEndTime</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_LocalSchedEndTimeNull</targetReference>
             </connector>
             <label>True</label>
         </rules>
@@ -321,7 +589,7 @@
         <name>SchedStartTimeChanged</name>
         <label>SchedStartTimeChanged</label>
         <locationX>182</locationX>
-        <locationY>734</locationY>
+        <locationY>2534</locationY>
         <defaultConnector>
             <targetReference>SchedEndTimeChanged</targetReference>
         </defaultConnector>
@@ -344,7 +612,39 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Apex_Action_for_Scheduled_Start</targetReference>
+                <targetReference>Set_APIName_SchedStartTime</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>SchedStartTimeNull</name>
+        <label>SchedStartTimeNull</label>
+        <locationX>182</locationX>
+        <locationY>734</locationY>
+        <defaultConnector>
+            <targetReference>SchedEndTimeNull</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_SchedStartTimeNull</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>currentSA.SchedStartTime</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>previousSA.SchedStartTime</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>currentSA.SchedStartTime</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_LocalSchedStartTimeNull</targetReference>
             </connector>
             <label>True</label>
         </rules>
@@ -376,17 +676,24 @@
         <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>ArrivalWindowStartChanged</targetReference>
+            <targetReference>ArrivalWindowStartNull</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>currentSA</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
-        <isOutput>false</isOutput>
+        <isOutput>true</isOutput>
         <objectType>ServiceAppointment</objectType>
+    </variables>
+    <variables>
+        <name>FieldLabelList</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>previousSA</name>

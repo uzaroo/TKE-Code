@@ -32,4 +32,20 @@ public with sharing class TKE_GeocodeResponse {
         public Double lat;
         public Double lng;
     }
+
+    public static String getCountyValue(String json) {
+        String countyVal = '';
+        TKE_GeocodeResponse geoCode = (TKE_GeocodeResponse)System.JSON.deserialize(json, TKE_GeocodeResponse.class);
+        if(geoCode.status == 'OK'){
+            for(TKE_GeocodeResponse.Address_components itr :geoCode.results[0].address_components){
+                for(String type :itr.types){
+                    if(type == System.Label.TKEGeocodeParam){
+                        countyVal = itr.long_name.replaceAll(' County', '');
+                        break;
+                    }
+                }
+            }
+        }
+        return countyVal;
+    }
 }

@@ -54,7 +54,7 @@
     <decisions>
         <name>Record_created_or_updated</name>
         <label>Record created or updated</label>
-        <locationX>688</locationX>
+        <locationX>776</locationX>
         <locationY>323</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -124,6 +124,28 @@
             <label>Primary Contact removed</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>There_is_another_Primary_contact_present</name>
+        <label>There is another Primary contact present</label>
+        <locationX>1018</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Remove_Primary_contact_details_from_the_Project_record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_there_is_another_primary_contact</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_any_other_primary_contact</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <formulas>
         <name>formNewRecordCreated</name>
@@ -154,11 +176,11 @@
     <recordLookups>
         <name>Get_any_other_primary_contact</name>
         <label>Get any other primary contact</label>
-        <locationX>930</locationX>
+        <locationX>1018</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Update_Primary_contact_for_new_project_Contact</targetReference>
+            <targetReference>There_is_another_Primary_contact_present</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -250,6 +272,48 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
+        <name>Remove_Primary_contact_details_from_the_Project_record</name>
+        <label>Remove Primary contact details from the Project record</label>
+        <locationX>1106</locationX>
+        <locationY>647</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Project__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__City__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__CountryCode__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__GeocodeAccuracy__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__Latitude__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__Longitude__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__PostalCode__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__StateCode__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact_Address__Street__s</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Customer_Primary_Contact__c</field>
+        </inputAssignments>
+        <object>leankor__ProjectRoom__c</object>
+    </recordUpdates>
+    <recordUpdates>
         <name>Update_primary_contact_on_project_contact_records_to_false</name>
         <label>Update primary contact on project contact records to false</label>
         <locationX>50</locationX>
@@ -298,7 +362,7 @@
         <object>Project_Contact__c</object>
     </recordUpdates>
     <start>
-        <locationX>562</locationX>
+        <locationX>650</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Record_created_or_updated</targetReference>
@@ -307,12 +371,12 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <subflows>
         <name>Update_Primary_contact_for_new_project_Contact</name>
         <label>Update Primary contact for new project Contact</label>
-        <locationX>688</locationX>
-        <locationY>923</locationY>
+        <locationX>776</locationX>
+        <locationY>1031</locationY>
         <flowName>TKE_NiMOD_Subflow_to_update_primary_contact_details</flowName>
         <inputAssignments>
             <name>varPrimaryProjectContact</name>

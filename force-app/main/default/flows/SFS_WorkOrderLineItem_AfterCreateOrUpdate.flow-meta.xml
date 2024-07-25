@@ -1,194 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>61.0</apiVersion>
-    <assignments>
-        <name>Reset_asset_attributes_on_parent_WO</name>
-        <label>Reset asset attributes on parent WO</label>
-        <locationX>908</locationX>
-        <locationY>755</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Critical_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Medium_Health_Score_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Poor_Health_Score_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Shutdown_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Loop_through_WOLIs</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_Critical_Asset_in_Parent_WO</name>
-        <label>Set Critical Asset in Parent WO</label>
-        <locationX>116</locationX>
-        <locationY>755</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Critical_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Asset_with_poor_health_score</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_Medium_Health_Score_Asset_in_Parent_WO</name>
-        <label>Set Medium Health Score Asset in Parent WO</label>
-        <locationX>116</locationX>
-        <locationY>1355</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Medium_Health_Score_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Shut_down_Asset</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_Poor_Health_Score_Asset_in_Parent_WO</name>
-        <label>Set Poor Health Score Asset in Parent WO</label>
-        <locationX>116</locationX>
-        <locationY>1055</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Poor_Health_Score_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Asset_with_medium_health_score</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_related_WO_Id</name>
-        <label>Set related WO Id</label>
-        <locationX>545</locationX>
-        <locationY>323</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.Id</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.WorkOrderId</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Create_Update</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_Shut_Down_asset_in_Parent_WO</name>
-        <label>Set Shut Down asset in Parent WO</label>
-        <locationX>116</locationX>
-        <locationY>1655</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Shutdown_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Update_parent_WO_on_asset_create</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_WO_for_critical_asset</name>
-        <label>Set WO for critical asset</label>
-        <locationX>996</locationX>
-        <locationY>1079</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Critical_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Check_for_shut_down_asset</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_WO_for_medium_health_score_asset</name>
-        <label>Set WO for medium health score asset</label>
-        <locationX>996</locationX>
-        <locationY>1979</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Medium_Health_Score_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Check_if_all_asset_attributes_on_WO_are_true</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_WO_for_poor_health_score_asset</name>
-        <label>Set WO for poor health score asset</label>
-        <locationX>996</locationX>
-        <locationY>1679</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Poor_Health_Score_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Check_for_medium_health_score_asset</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Set_WO_for_shut_down_asset</name>
-        <label>Set WO for shut down asset</label>
-        <locationX>996</locationX>
-        <locationY>1379</locationY>
-        <assignmentItems>
-            <assignToReference>AssociatedWorkOrder.SFS_Has_Shutdown_Asset__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Check_for_poor_health_score_asset</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <name>Asset_null</name>
         <label>Asset null?</label>
         <locationX>50</locationX>
-        <locationY>539</locationY>
+        <locationY>431</locationY>
         <defaultConnector>
-            <targetReference>Critical_Asset</targetReference>
+            <targetReference>SFS_Update_WO_for_Asset_Attributes_on_WOLI_Create_Subflow</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
@@ -207,8 +26,8 @@
     <decisions>
         <name>Asset_Updated</name>
         <label>Asset Updated</label>
-        <locationX>1040</locationX>
-        <locationY>539</locationY>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
             <name>Asset_Updated_Yes</name>
@@ -221,260 +40,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_All_WOLIs_associated_with_the_parent_WO</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Asset_with_medium_health_score</name>
-        <label>Asset with medium health score?</label>
-        <locationX>248</locationX>
-        <locationY>1247</locationY>
-        <defaultConnector>
-            <targetReference>Shut_down_Asset</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Asset_with_medium_health_score_Yes</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Medium</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>medium</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_Medium_Health_Score_Asset_in_Parent_WO</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Asset_with_poor_health_score</name>
-        <label>Asset with poor health score?</label>
-        <locationX>248</locationX>
-        <locationY>947</locationY>
-        <defaultConnector>
-            <targetReference>Asset_with_medium_health_score</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Asset_with_poor_health_score_Yes</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Poor</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>poor</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_Poor_Health_Score_Asset_in_Parent_WO</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Check_for_critical_asset</name>
-        <label>Check for critical asset</label>
-        <locationX>1128</locationX>
-        <locationY>971</locationY>
-        <defaultConnector>
-            <targetReference>Check_for_shut_down_asset</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Check_for_critical_asset_Yes</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_through_WOLIs.Asset.Critical_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Critical_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_WO_for_critical_asset</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Check_for_medium_health_score_asset</name>
-        <label>Check for medium health score asset</label>
-        <locationX>1128</locationX>
-        <locationY>1871</locationY>
-        <defaultConnector>
-            <targetReference>Check_if_all_asset_attributes_on_WO_are_true</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Check_for_medium_health_score_asset_Yes</name>
-            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_through_WOLIs.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>medium</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_through_WOLIs.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Medium</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Medium_Health_Score_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_WO_for_medium_health_score_asset</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Check_for_poor_health_score_asset</name>
-        <label>Check for poor health score asset</label>
-        <locationX>1128</locationX>
-        <locationY>1571</locationY>
-        <defaultConnector>
-            <targetReference>Check_for_medium_health_score_asset</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Check_for_poor_health_score_asset_Yes</name>
-            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_through_WOLIs.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>poor</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_through_WOLIs.Asset.Health_Score__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Poor</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Poor_Health_Score_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_WO_for_poor_health_score_asset</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Check_for_shut_down_asset</name>
-        <label>Check for shut down asset</label>
-        <locationX>1128</locationX>
-        <locationY>1271</locationY>
-        <defaultConnector>
-            <targetReference>Check_for_poor_health_score_asset</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Check_for_shut_down_asset_Yes</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_through_WOLIs.Asset.Shut_Down_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Shutdown_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_WO_for_shut_down_asset</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Check_if_all_asset_attributes_on_WO_are_true</name>
-        <label>Check if all asset attributes on WO are true</label>
-        <locationX>1128</locationX>
-        <locationY>2171</locationY>
-        <defaultConnector>
-            <targetReference>Loop_through_WOLIs</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Check_if_all_asset_attributes_on_WO_are_true_Yes</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Critical_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Medium_Health_Score_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Poor_Health_Score_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AssociatedWorkOrder.SFS_Has_Shutdown_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>Update_parent_WO_on_asset_update</targetReference>
+                <targetReference>SFS_Update_WO_for_Asset_Attributes_on_WOLI_Update_Subflow</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -482,8 +48,8 @@
     <decisions>
         <name>Create_Update</name>
         <label>Create/Update</label>
-        <locationX>545</locationX>
-        <locationY>431</locationY>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
         <defaultConnector>
             <targetReference>Asset_Updated</targetReference>
         </defaultConnector>
@@ -504,56 +70,6 @@
             <label>Create</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>Critical_Asset</name>
-        <label>Critical Asset?</label>
-        <locationX>248</locationX>
-        <locationY>647</locationY>
-        <defaultConnector>
-            <targetReference>Asset_with_poor_health_score</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Critical_Asset_Yes</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Asset.Critical_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_Critical_Asset_in_Parent_WO</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Shut_down_Asset</name>
-        <label>Shut down Asset?</label>
-        <locationX>248</locationX>
-        <locationY>1547</locationY>
-        <defaultConnector>
-            <targetReference>Update_parent_WO_on_asset_create</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>Shut_down_Asset_Yes</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Asset.Shut_Down_Asset__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_Shut_Down_asset_in_Parent_WO</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
     <description>ADO ID - 12029 - This flow sets the respective checkboxes on WorkOrder to true if any of its related WOLI has either a Critical Asset or Shut Down Asset or Asset with Poor Health Score or Asset with Medium Health Score.</description>
     <environments>Default</environments>
     <formulas>
@@ -563,20 +79,6 @@
     </formulas>
     <interviewLabel>SFS WorkOrderLineItem AfterCreateOrUpdate {!$Flow.CurrentDateTime}</interviewLabel>
     <label>SFS WorkOrderLineItem AfterCreateOrUpdate</label>
-    <loops>
-        <name>Loop_through_WOLIs</name>
-        <label>Loop through WOLIs</label>
-        <locationX>908</locationX>
-        <locationY>863</locationY>
-        <collectionReference>Get_All_WOLIs_associated_with_the_parent_WO</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Check_for_critical_asset</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Update_parent_WO_on_asset_update</targetReference>
-        </noMoreValuesConnector>
-    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -596,52 +98,71 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordLookups>
-        <name>Get_All_WOLIs_associated_with_the_parent_WO</name>
-        <label>Get All WOLIs associated with the parent WO</label>
-        <locationX>908</locationX>
-        <locationY>647</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Reset_asset_attributes_on_parent_WO</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>WorkOrderId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Record.WorkOrderId</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>WorkOrderLineItem</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
     <recordUpdates>
-        <name>Update_parent_WO_on_asset_create</name>
-        <label>Update parent WO</label>
-        <locationX>248</locationX>
-        <locationY>1847</locationY>
+        <name>Update_parent_WO_for_WOLI_Creation</name>
+        <label>Update parent WO for WOLI</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
         <inputReference>AssociatedWorkOrder</inputReference>
     </recordUpdates>
     <recordUpdates>
-        <name>Update_parent_WO_on_asset_update</name>
-        <label>Update parent WO</label>
-        <locationX>908</locationX>
-        <locationY>2513</locationY>
+        <name>Update_parent_WO_for_WOLI_Update</name>
+        <label>Update parent WO for WOLI</label>
+        <locationX>446</locationX>
+        <locationY>647</locationY>
         <inputReference>AssociatedWorkOrder</inputReference>
     </recordUpdates>
     <start>
-        <locationX>419</locationX>
+        <locationX>188</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Set_related_WO_Id</targetReference>
+            <targetReference>Create_Update</targetReference>
         </connector>
         <object>WorkOrderLineItem</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
+    <subflows>
+        <name>SFS_Update_WO_for_Asset_Attributes_on_WOLI_Create_Subflow</name>
+        <label>SFS Update WO for Asset Attributes on WOLI Create Subflow</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Update_parent_WO_for_WOLI_Creation</targetReference>
+        </connector>
+        <flowName>SFS_Update_WO_for_Asset_Attributes_on_WOLI_Create_Subflow</flowName>
+        <inputAssignments>
+            <name>TriggeringWOLI</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>AssociatedWorkOrder</assignToReference>
+            <name>AssociatedWorkOrder</name>
+        </outputAssignments>
+    </subflows>
+    <subflows>
+        <name>SFS_Update_WO_for_Asset_Attributes_on_WOLI_Update_Subflow</name>
+        <label>SFS Update WO for Asset Attributes on WOLI Update Subflow</label>
+        <locationX>446</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Update_parent_WO_for_WOLI_Update</targetReference>
+        </connector>
+        <flowName>SFS_Update_WO_for_Asset_Attributes_on_WOLI_Update_Subflow</flowName>
+        <inputAssignments>
+            <name>TriggeringWOLI</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>AssociatedWorkOrder</assignToReference>
+            <name>AssociatedWorkOrder</name>
+        </outputAssignments>
+    </subflows>
     <variables>
         <name>AssociatedWorkOrder</name>
         <dataType>SObject</dataType>
@@ -649,13 +170,5 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>WorkOrder</objectType>
-    </variables>
-    <variables>
-        <name>currentItemFromSourceCollection</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>WorkOrderLineItem</objectType>
     </variables>
 </Flow>

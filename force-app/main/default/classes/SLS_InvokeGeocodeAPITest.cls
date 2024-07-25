@@ -7,31 +7,55 @@ public with sharing class SLS_InvokeGeocodeAPITest {
             testAccts.add(new Account(Name = 'TestAcct'+i,
             BillingCity = 'San Francisco',
             BillingState = 'California',
+            BillingStreet = '788 Circle 75 Parkway Southeast',
             BillingCountry = 'United States'));
         }
         insert testAccts;        
     }
-
 
     @isTest static void testCallout() {
         Account acct = [
             SELECT Id,
             BillingCity,
             BillingState,
-            BillingPostalCode 
+            BillingPostalCode,
+            BillingCountryCode,
+            BillingStreet
             FROM Account WHERE Name='TestAcct0' LIMIT 1
         ];
         acct.BillingPostalCode = '94104';
+        List<String> inputAddress = new List<String>{
+            acct.BillingCity + ',' + 
+            acct.BillingState + ',' +  
+            acct.BillingPostalCode + ',' +
+            acct.BillingCountryCode
+        };
 
-        List<String> inputAddress = new List<String>();
-        inputAddress.add(acct.BillingCity + ',' + acct.BillingState + ',' +  acct.BillingPostalCode);
-
+        Test.startTest();
         Test.setMock(HttpCalloutMock.class, new TKE_MockGeocodeApiResponse());
-        List<String> res = SLS_InvokeGeocodeAPI.getCountyInformation(inputAddress);
-        Assert.areEqual(
-            'San Francisco', 
-            res[0], 
+        List<List<String>> res = SLS_InvokeGeocodeAPI.getCountyInformation(inputAddress);
+        Assert.areNotEqual(
+            0,
+            res.size(),  
             'Please check the response returned'
         );
+        Test.stopTest();
+    }
+
+    @isTest static void testNullCallout() {
+        List<String> inputAddress = new List<String>{
+            '',
+            ''
+        };
+
+        Test.startTest();
+        Test.setMock(HttpCalloutMock.class, new TKE_MockGeocodeApiResponse());
+        List<List<String>> res = SLS_InvokeGeocodeAPI.getCountyInformation(inputAddress);
+        Assert.areNotEqual(
+            0,
+            res.size(),  
+            'Please check the response returned'
+        );
+        Test.stopTest();
     }
 }

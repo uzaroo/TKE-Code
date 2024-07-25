@@ -258,7 +258,7 @@
             <targetReference>Get_Assigned_Resource</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <description>Count the assigned resource records</description>
         <name>varARCount</name>

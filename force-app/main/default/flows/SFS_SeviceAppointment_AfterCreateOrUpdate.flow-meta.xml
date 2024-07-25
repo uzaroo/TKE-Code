@@ -5,7 +5,7 @@
         <name>Assign_WO_Id</name>
         <label>Assign WO Id</label>
         <locationX>352</locationX>
-        <locationY>1439</locationY>
+        <locationY>1847</locationY>
         <assignmentItems>
             <assignToReference>varWorkOrderAssignment.Id</assignToReference>
             <operator>Assign</operator>
@@ -21,7 +21,7 @@
         <name>Work_Order_Assignment</name>
         <label>Work Order Assignment</label>
         <locationX>220</locationX>
-        <locationY>1139</locationY>
+        <locationY>1547</locationY>
         <assignmentItems>
             <assignToReference>varWorkOrderAssignment.SFS_Hold_Reason__c</assignToReference>
             <operator>Assign</operator>
@@ -44,7 +44,7 @@
         <name>Work_Order_Assignment_Status</name>
         <label>Work Order Assignment</label>
         <locationX>484</locationX>
-        <locationY>1139</locationY>
+        <locationY>1547</locationY>
         <assignmentItems>
             <assignToReference>varWorkOrderAssignment.Status</assignToReference>
             <operator>Assign</operator>
@@ -60,7 +60,7 @@
         <name>Can_Not_Complete_Reason</name>
         <label>Can Not Complete Reason</label>
         <locationX>528</locationX>
-        <locationY>647</locationY>
+        <locationY>1055</locationY>
         <defaultConnector>
             <targetReference>Check_Status_of_Parent_WO</targetReference>
         </defaultConnector>
@@ -69,10 +69,10 @@
             <name>Follow_Up_Needed</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.Follow_Up_Visit_Needed__c</leftValueReference>
-                <operator>WasSet</operator>
+                <leftValueReference>$Record.SFS_Follow_Up_Visit_Needed__c</leftValueReference>
+                <operator>IsNull</operator>
                 <rightValue>
-                    <booleanValue>true</booleanValue>
+                    <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -85,7 +85,7 @@
         <name>Check_Status_of_Parent_WO</name>
         <label>Check Status of Parent WO</label>
         <locationX>484</locationX>
-        <locationY>1031</locationY>
+        <locationY>1439</locationY>
         <defaultConnector>
             <targetReference>Work_Order_Assignment_Check</targetReference>
         </defaultConnector>
@@ -134,7 +134,7 @@
         <locationX>176</locationX>
         <locationY>323</locationY>
         <defaultConnector>
-            <targetReference>SFS_Populate_WO_Fields_From_SA_SubFlow</targetReference>
+            <targetReference>Time_Values_Updated</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Record Updated</defaultConnectorLabel>
         <rules>
@@ -154,7 +154,7 @@
         <name>SA_Status_In_Progress</name>
         <label>SA Status - In Progress</label>
         <locationX>484</locationX>
-        <locationY>539</locationY>
+        <locationY>947</locationY>
         <defaultConnector>
             <targetReference>Check_Status_of_Parent_WO</targetReference>
         </defaultConnector>
@@ -191,6 +191,13 @@
                     <stringValue>Cannot Complete</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Can_Not_Complete_Reason</targetReference>
             </connector>
@@ -198,10 +205,70 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Time_Values_Updated</name>
+        <label>Time Values Updated</label>
+        <locationX>484</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>SFS_Populate_WO_Fields_From_SA_SubFlow</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Updated</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ArrivalWindowStartTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ArrivalWindowEndTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ActualStartTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ActualEndTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SchedStartTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SchedEndTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SFS_Convert_Date_Time_To_Another_Time_Zone</targetReference>
+            </connector>
+            <label>Updated</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Work_Order_Assignment_Check</name>
         <label>Work Order Assignment Check</label>
         <locationX>484</locationX>
-        <locationY>1331</locationY>
+        <locationY>1739</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Not_Null</name>
@@ -219,7 +286,8 @@
             <label>Not Null</label>
         </rules>
     </decisions>
-    <description>AD0-15232 Assigned resource logic to update assigned technician on WorkOrder</description>
+    <description>AD0-15232 Assigned resource logic to update assigned technician on WorkOrder
+Updated for the Story ADO-12028 and 12026</description>
     <environments>Default</environments>
     <formulas>
         <name>IsNew</name>
@@ -248,10 +316,20 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
+        <name>Update_Service_Appointment</name>
+        <label>Update Service Appointment</label>
+        <locationX>352</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>SFS_Populate_WO_Fields_From_SA_SubFlow</targetReference>
+        </connector>
+        <inputReference>SAtoUpdate</inputReference>
+    </recordUpdates>
+    <recordUpdates>
         <name>Update_Work_Order</name>
         <label>Update Work Order</label>
         <locationX>352</locationX>
-        <locationY>1547</locationY>
+        <locationY>1955</locationY>
         <inputReference>varWorkOrderAssignment</inputReference>
     </recordUpdates>
     <start>
@@ -264,13 +342,13 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <subflows>
         <description>When the SA Status is in progress, call the subflow to populate the assigned technician on work order.</description>
         <name>Assigned_Technician_Subflow</name>
         <label>Assigned Technician Subflow</label>
         <locationX>132</locationX>
-        <locationY>647</locationY>
+        <locationY>1055</locationY>
         <connector>
             <targetReference>Check_Status_of_Parent_WO</targetReference>
         </connector>
@@ -290,7 +368,7 @@
         <name>Create_Follow_Up_Work</name>
         <label>Create Follow Up Work</label>
         <locationX>396</locationX>
-        <locationY>755</locationY>
+        <locationY>1163</locationY>
         <connector>
             <targetReference>Check_Status_of_Parent_WO</targetReference>
         </connector>
@@ -307,10 +385,36 @@
         </outputAssignments>
     </subflows>
     <subflows>
+        <name>SFS_Convert_Date_Time_To_Another_Time_Zone</name>
+        <label>SFS Convert Date Time To Another Time Zone</label>
+        <locationX>352</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Update_Service_Appointment</targetReference>
+        </connector>
+        <flowName>Subflow_ConvertTimeToAnotherTimeZone</flowName>
+        <inputAssignments>
+            <name>currentSA</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>previousSA</name>
+            <value>
+                <elementReference>$Record__Prior</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>SAtoUpdate</assignToReference>
+            <name>currentSA</name>
+        </outputAssignments>
+    </subflows>
+    <subflows>
         <name>SFS_Populate_WO_Fields_From_SA_SubFlow</name>
         <label>SFS Populate WO Fields From SA SubFlow</label>
         <locationX>484</locationX>
-        <locationY>431</locationY>
+        <locationY>839</locationY>
         <connector>
             <targetReference>SA_Status_In_Progress</targetReference>
         </connector>
@@ -361,6 +465,14 @@
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SAtoUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceAppointment</objectType>
     </variables>
     <variables>
         <name>varWorkOrderAssignment</name>

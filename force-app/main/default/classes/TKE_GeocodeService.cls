@@ -2,29 +2,17 @@ public with sharing class TKE_GeocodeService {
     public static final String NAMED_CREDENTIAL = 'TKENamedGeocodeCredential';
 
 
-    public static TKE_GeocodeResponse callGeoCode(
+    public static HttpResponse callGeoCode(
         String address
     ){
-        try {
-            TKE_GeocodeResponse result = new TKE_GeocodeResponse();
-
-            HttpRequest request = new HttpRequest();
-            request.setEndpoint(
-                getEndpoint(address) + '&key=' + System.label.TKE_Geocode_API
-            );
-            request.setMethod('GET');
-            Http http = new Http();
-            HttpResponse response = http.send(request);
-
-            result = (TKE_GeocodeResponse)JSON.deserialize(response.getBody(), TKE_GeocodeResponse.class);
-            return result;
-        } catch (Exception ex) {
-            System.debug(
-                LoggingLevel.INFO,
-                'Callout Failed. Error is: ' + ex.getMessage()
-            );
-            return null;       
-        }
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint(
+            getEndpoint(address) + '&key=' + System.label.TKE_Geocode_API
+        );
+        request.setMethod('GET');
+        Http http = new Http();
+        HttpResponse response = http.send(request);
+        return response;
     }
 
     public static String getEndpoint(

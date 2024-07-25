@@ -143,7 +143,7 @@
             <name>Waiting_on_Assistance</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>CreateServiceAppointmentFrom.Follow_Up_Visit_Needed__c</leftValueReference>
+                <leftValueReference>CreateServiceAppointmentFrom.SFS_Follow_Up_Visit_Needed__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Waiting on Assistance</stringValue>
@@ -225,7 +225,7 @@
             <name>Follow_Up_Assign_To_Me</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>CreateServiceAppointmentFrom.Follow_Up_Assigned_To_Me__c</leftValueReference>
+                <leftValueReference>CreateServiceAppointmentFrom.SFS_Follow_Up_Assign_To_Me__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -398,7 +398,7 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>Overdue_Service__c</field>
+            <field>SFS_Overdue_Service__c</field>
             <value>
                 <booleanValue>true</booleanValue>
             </value>

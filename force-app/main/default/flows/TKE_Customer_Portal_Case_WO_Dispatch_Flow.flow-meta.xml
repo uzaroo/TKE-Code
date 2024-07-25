@@ -49,7 +49,7 @@
 - Creates a work order on Case creation only when Type = Service Request , Sub-Type = Customer Portal &amp; Credit Holds = FALSE.</description>
     <environments>Default</environments>
     <interviewLabel>TKE Customer Portal Case/WO Dispatch Flow {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>TKE Customer Portal Case/WO Dispatch Flow: OnCreate</label>
+    <label>DO_NOT_USE TKE Customer Portal Case/WO Dispatch Flow: AfterCreate</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -86,7 +86,13 @@
         <inputAssignments>
             <field>City</field>
             <value>
-                <elementReference>$Record.City__c</elementReference>
+                <elementReference>$Record.Address__City__s</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CountryCode</field>
+            <value>
+                <elementReference>$Record.Address__CountryCode__s</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -104,13 +110,13 @@
         <inputAssignments>
             <field>StateCode</field>
             <value>
-                <elementReference>$Record.State__c</elementReference>
+                <elementReference>$Record.Address__StateCode__s</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Street</field>
             <value>
-                <elementReference>$Record.Street__c</elementReference>
+                <elementReference>$Record.Address__Street__s</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -248,5 +254,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Draft</status>
 </Flow>

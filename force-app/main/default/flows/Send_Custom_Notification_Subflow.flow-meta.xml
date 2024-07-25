@@ -4,7 +4,7 @@
         <name>Post_to_Chatter</name>
         <label>Post to Chatter</label>
         <locationX>182</locationX>
-        <locationY>1850</locationY>
+        <locationY>1382</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -32,47 +32,31 @@
     </actionCalls>
     <apiVersion>61.0</apiVersion>
     <assignments>
-        <name>Assign_entrapment_message</name>
-        <label>Assign entrapment message</label>
-        <locationX>50</locationX>
-        <locationY>650</locationY>
-        <assignmentItems>
-            <assignToReference>varMessageToDisplay</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>varEntrapment</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Injury_Reported_Check</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Assign_Injury_Reported_message</name>
-        <label>Assign Injury Reported message</label>
-        <locationX>50</locationX>
-        <locationY>950</locationY>
-        <assignmentItems>
-            <assignToReference>varMessageToDisplay</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>varInjuryReported</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Safety_Concern_Check</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Assign_Location_message</name>
         <label>Assign Location message</label>
         <locationX>50</locationX>
-        <locationY>1550</locationY>
+        <locationY>974</locationY>
         <assignmentItems>
             <assignToReference>varMessageToDisplay</assignToReference>
             <operator>Add</operator>
             <value>
-                <stringValue>  @{!varCaseRecord.Location__r.Name}</stringValue>
+                <stringValue> at {!varCaseRecord.Location__r.Name} </stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Concatenate_Message</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Concatenate_Message</name>
+        <label>Concatenate Message</label>
+        <locationX>182</locationX>
+        <locationY>1166</locationY>
+        <assignmentItems>
+            <assignToReference>varMessageToDisplay</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>with the following details: {!varEntrapment} {!varInjuryReported}    {!varSafetyConcern}</stringValue>
             </value>
         </assignmentItems>
         <connector>
@@ -80,42 +64,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Assign_Safety_Concern_message</name>
-        <label>Assign Safety Concern message</label>
-        <locationX>50</locationX>
-        <locationY>1250</locationY>
-        <assignmentItems>
-            <assignToReference>varMessageToDisplay</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>   {!varSafetyConcern}</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Location_Check</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Concatenate_User_Ids</name>
-        <label>Concatenate User Ids</label>
-        <locationX>270</locationX>
-        <locationY>350</locationY>
-        <assignmentItems>
-            <assignToReference>varUserId</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>@[{!Iterate_Over_Users}] </stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Iterate_Over_Users</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Message_to_Post</name>
         <label>Message to Post</label>
         <locationX>182</locationX>
-        <locationY>1742</locationY>
+        <locationY>1274</locationY>
         <assignmentItems>
             <assignToReference>varUserId</assignToReference>
             <operator>Add</operator>
@@ -127,52 +79,40 @@
             <targetReference>Post_to_Chatter</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>User_Ids</name>
+        <label>User Ids</label>
+        <locationX>270</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>varUserId</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>@[{!Get_User_Id.User__r.Id}]</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_User_Id</targetReference>
+        </connector>
+    </assignments>
     <decisions>
-        <name>Entrapment_Check</name>
-        <label>Entrapment Check</label>
-        <locationX>182</locationX>
-        <locationY>542</locationY>
-        <defaultConnector>
-            <targetReference>Injury_Reported_Check</targetReference>
-        </defaultConnector>
+        <name>EscalationHierarchy_Found</name>
+        <label>EscalationHierarchy Found</label>
+        <locationX>336</locationX>
+        <locationY>458</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Yes_Entrapment</name>
+            <name>Yes_Found</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>varEntrapment</leftValueReference>
+                <leftValueReference>Get_EscalationHierarchy</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_entrapment_message</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Injury_Reported_Check</name>
-        <label>Injury Reported Check</label>
-        <locationX>182</locationX>
-        <locationY>842</locationY>
-        <defaultConnector>
-            <targetReference>Safety_Concern_Check</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes_IR</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>varInjuryReported</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Assign_Injury_Reported_message</targetReference>
+                <targetReference>Get_User_Id</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -181,9 +121,9 @@
         <name>Location_Check</name>
         <label>Location Check</label>
         <locationX>182</locationX>
-        <locationY>1442</locationY>
+        <locationY>866</locationY>
         <defaultConnector>
-            <targetReference>Message_to_Post</targetReference>
+            <targetReference>Concatenate_Message</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -203,48 +143,23 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Safety_Concern_Check</name>
-        <label>Safety Concern Check</label>
-        <locationX>182</locationX>
-        <locationY>1142</locationY>
-        <defaultConnector>
-            <targetReference>Location_Check</targetReference>
-        </defaultConnector>
+        <name>Location_Found</name>
+        <label>Location Found</label>
+        <locationX>545</locationX>
+        <locationY>242</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Yes_SC</name>
+            <name>Yes_Location_Found</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>varSafetyConcern</leftValueReference>
+                <leftValueReference>Get_Location</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Safety_Concern_message</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>User_Ids_Check</name>
-        <label>User Ids Check</label>
-        <locationX>336</locationX>
-        <locationY>134</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>varListOfIds</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Iterate_Over_Users</targetReference>
+                <targetReference>Get_EscalationHierarchy</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -259,34 +174,48 @@
     <formulas>
         <name>varEntrapment</name>
         <dataType>String</dataType>
-        <expression>if(ISPICKVAL({!varCaseRecord.Case_Sub_Type__c}, &apos;Entrapment&apos;),
- &apos; Entrapment&apos;,
-&apos;&apos;)</expression>
+        <expression>if(
+AND(
+ISPICKVAL({!varCaseRecord.Case_Sub_Type__c}, &apos;Entrapment&apos;) ,  
+OR(
+{!varCaseRecord.Injury_Reported__c}=true ,
+{!varCaseRecord.Safety_Concern__c}=true
+)
+),  &apos; Entrapment, &apos;,
+if(AND(ISPICKVAL({!varCaseRecord.Case_Sub_Type__c}, &apos;Entrapment&apos;) ,  
+OR({!varCaseRecord.Injury_Reported__c}=false , {!varCaseRecord.Safety_Concern__c}=false)),
+&apos;Entrapment &apos;,&apos;&apos;))</expression>
     </formulas>
     <formulas>
         <name>varInjuryReported</name>
         <dataType>String</dataType>
-        <expression>if({!varCaseRecord.Injury_Reported__c}==true, &apos;  Injury Reported&apos;,&apos;&apos;)</expression>
+        <expression>if(
+{!varCaseRecord.Injury_Reported__c}==true &amp;&amp; {!varCaseRecord.Safety_Concern__c}==true, 
+&apos;  Injury Reported, &apos;,
+if({!varCaseRecord.Injury_Reported__c}==true,&apos; Injury Reported&apos; , &apos;&apos;))</expression>
     </formulas>
     <formulas>
         <name>varSafetyConcern</name>
         <dataType>String</dataType>
-        <expression>if({!varCaseRecord.Safety_Concern__c}==true, &apos;  Safety Concern&apos;,&apos;&apos;)</expression>
+        <expression>if(
+{!varCaseRecord.Safety_Concern__c}==true, 
+&apos;  Safety Concern&apos;,
+&apos;&apos;)</expression>
     </formulas>
     <interviewLabel>Send Custom Notification Subflow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Send Custom Notification Subflow</label>
     <loops>
-        <name>Iterate_Over_Users</name>
-        <label>Iterate Over Users</label>
+        <name>Get_User_Id</name>
+        <label>Get User Id</label>
         <locationX>182</locationX>
-        <locationY>242</locationY>
-        <collectionReference>varListOfIds</collectionReference>
+        <locationY>566</locationY>
+        <collectionReference>Get_EscalationHierarchy</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>Concatenate_User_Ids</targetReference>
+            <targetReference>User_Ids</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Entrapment_Check</targetReference>
+            <targetReference>Location_Check</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -308,11 +237,68 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_EscalationHierarchy</name>
+        <label>Get EscalationHierarchy</label>
+        <locationX>336</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>EscalationHierarchy_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Location__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Location.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Send_Emergency_Notifications__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Escalation_Hierarchy__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get location based on office</description>
+        <name>Get_Location</name>
+        <label>Get Location</label>
+        <locationX>545</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Location_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Office__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseRecord.Office__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Record_Type_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TKE_Location</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Location</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <start>
-        <locationX>210</locationX>
+        <locationX>419</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>User_Ids_Check</targetReference>
+            <targetReference>Get_Location</targetReference>
         </connector>
     </start>
     <status>Active</status>
@@ -335,6 +321,13 @@
         </value>
     </variables>
     <variables>
+        <name>varListOfId</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
         <name>varListOfIds</name>
         <dataType>String</dataType>
         <isCollection>true</isCollection>
@@ -348,7 +341,7 @@
         <isInput>true</isInput>
         <isOutput>true</isOutput>
         <value>
-            <stringValue>There is a case created: {!varCaseRecord.CaseNumber}  with following details: </stringValue>
+            <stringValue>A case has been created</stringValue>
         </value>
     </variables>
     <variables>

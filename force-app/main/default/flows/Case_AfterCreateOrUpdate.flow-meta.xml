@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>61.0</apiVersion>
-    <assignments>
-        <name>User_Ids_Assignment</name>
-        <label>User Ids Assignment</label>
-        <locationX>270</locationX>
-        <locationY>971</locationY>
-        <assignmentItems>
-            <assignToReference>varListOfIds</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Get_User_Ids.User__r.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Get_User_Ids</targetReference>
-        </connector>
-    </assignments>
     <decisions>
         <name>Create_Update</name>
         <label>Create/Update</label>
-        <locationX>858</locationX>
+        <locationX>578</locationX>
         <locationY>323</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <defaultConnectorLabel>Update</defaultConnectorLabel>
         <rules>
             <name>Create</name>
             <conditionLogic>and</conditionLogic>
@@ -34,47 +18,39 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_Location</targetReference>
+                <targetReference>Entrapment_Cases</targetReference>
             </connector>
             <label>Create</label>
         </rules>
     </decisions>
     <decisions>
-        <name>EscalationHierarchy_Found</name>
-        <label>EscalationHierarchy Found</label>
-        <locationX>380</locationX>
-        <locationY>755</locationY>
+        <name>Entrapment_Cases</name>
+        <label>Entrapment Cases</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Yes_Found</name>
-            <conditionLogic>and</conditionLogic>
+            <name>Yes</name>
+            <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>Get_EscalationHierarchy</leftValueReference>
-                <operator>IsNull</operator>
+                <leftValueReference>$Record.Case_Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
                 <rightValue>
-                    <booleanValue>false</booleanValue>
+                    <stringValue>Entrapment</stringValue>
                 </rightValue>
             </conditions>
-            <connector>
-                <targetReference>Get_User_Ids</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Ids_Present</name>
-        <label>Ids Present</label>
-        <locationX>182</locationX>
-        <locationY>1163</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes_Id</name>
-            <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>varListOfIds</leftValueReference>
-                <operator>IsNull</operator>
+                <leftValueReference>$Record.Safety_Concern__c</leftValueReference>
+                <operator>EqualTo</operator>
                 <rightValue>
-                    <booleanValue>false</booleanValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Injury_Reported__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -82,30 +58,37 @@
             </connector>
             <label>Yes</label>
         </rules>
-    </decisions>
-    <decisions>
-        <name>Location_Found</name>
-        <label>Location Found</label>
-        <locationX>611</locationX>
-        <locationY>539</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Yes</name>
+            <name>Customer_Portal_Case</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Location</leftValueReference>
-                <operator>IsNull</operator>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Service Request</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case_Sub_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Credit_Holds__c</leftValueReference>
+                <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_EscalationHierarchy</targetReference>
+                <targetReference>Case_Without_Dispatch_Subflow</targetReference>
             </connector>
-            <label>Yes</label>
+            <label>Customer Portal Case</label>
         </rules>
     </decisions>
-    <description>Send Emergency Notification - Created as part of ADO-12296</description>
+    <description>Record triggered flow on case for after operations</description>
     <environments>Default</environments>
     <formulas>
         <name>varIsNew</name>
@@ -114,20 +97,6 @@
     </formulas>
     <interviewLabel>Case AfterCreate {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Case AfterCreateOrUpdate</label>
-    <loops>
-        <name>Get_User_Ids</name>
-        <label>Get User Id</label>
-        <locationX>182</locationX>
-        <locationY>863</locationY>
-        <collectionReference>Get_EscalationHierarchy</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>User_Ids_Assignment</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Ids_Present</targetReference>
-        </noMoreValuesConnector>
-    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -147,94 +116,36 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordLookups>
-        <name>Get_EscalationHierarchy</name>
-        <label>Get EscalationHierarchy</label>
-        <locationX>380</locationX>
-        <locationY>647</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>EscalationHierarchy_Found</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Location__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Get_Location.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Send_Emergency_Notifications__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Escalation_Hierarchy__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <description>Get location based on office</description>
-        <name>Get_Location</name>
-        <label>Get Location</label>
-        <locationX>611</locationX>
-        <locationY>431</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Location_Found</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Office__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Record.Office__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Record_Type_Name__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>TKE_Location</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Location</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
     <start>
-        <locationX>732</locationX>
+        <locationX>452</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Create_Update</targetReference>
         </connector>
-        <filterLogic>or</filterLogic>
-        <filters>
-            <field>Type</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Emergency</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Type</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Service Request</stringValue>
-            </value>
-        </filters>
         <object>Case</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
     <subflows>
+        <name>Case_Without_Dispatch_Subflow</name>
+        <label>Case Without Dispatch Subflow</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <flowName>TKE_Customer_Portal_Case_WO_Dispatch_Subflow</flowName>
+        <inputAssignments>
+            <name>varCaseRecord</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
         <name>Custom_Notification_Subflow</name>
         <label>Notification Subflow</label>
         <locationX>50</locationX>
-        <locationY>1271</locationY>
+        <locationY>539</locationY>
         <flowName>Send_Custom_Notification_Subflow</flowName>
         <inputAssignments>
             <name>varCaseRecord</name>
@@ -242,19 +153,6 @@
                 <elementReference>$Record</elementReference>
             </value>
         </inputAssignments>
-        <inputAssignments>
-            <name>varListOfIds</name>
-            <value>
-                <elementReference>varListOfIds</elementReference>
-            </value>
-        </inputAssignments>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </subflows>
-    <variables>
-        <name>varListOfIds</name>
-        <dataType>String</dataType>
-        <isCollection>true</isCollection>
-        <isInput>true</isInput>
-        <isOutput>true</isOutput>
-    </variables>
 </Flow>
