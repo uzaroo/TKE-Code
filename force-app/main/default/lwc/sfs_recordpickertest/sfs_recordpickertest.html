@@ -1,0 +1,11 @@
+<template>
+        <lightning-record-picker
+            label="Select Product"
+            placeholder="Search Product..."
+            object-api-name="PricebookEntry"
+            filter={filter}
+            matching-info={matchingInfo}
+            display-info={displayInfo}>
+        </lightning-record-picker>
+        <c-tke_object-record-picker record-picker-config-name='GetPriceBookEntry' label='Product' place-holder='Select Product'></c-tke_object-record-picker>
+</template>

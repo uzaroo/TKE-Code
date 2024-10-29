@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Safety Check In/Out" icon-name="utility:check">
+        <div class="slds-m-around_medium">
+            <lightning-button 
+                variant={buttonVariant} 
+                label={buttonLabel} 
+                onclick={handleToggle}>
+            </lightning-button>
+        </div>
+
+        <div class="slds-m-around_medium">
+            <p class="status-text">Status: {currentCheckInStatus}</p>
+            <p>Last Reported Check In: {lastReportedCheckIn}</p>
+            <p>Last Reported Check Out: {lastReportedCheckOut}</p>
+            <p>Additional Comments:</p>
+            <lightning-textarea class="comments-area" value={additionalComments} onchange={handleCommentsChange}></lightning-textarea>
+        </div>
+
+        <!-- <lightning-record-edit-form object-api-name="ServiceResource" record-id={recordId} onsuccess={handleSuccess}>
+            <lightning-input-field field-name="Check_In_Status__c"></lightning-input-field>
+            <lightning-input-field field-name="Last_Reported_Check_In__c"></lightning-input-field>
+            <lightning-input-field field-name="Last_Reported_Check_Out__c"></lightning-input-field>
+        </lightning-record-edit-form> -->
+    </lightning-card>
+</template>

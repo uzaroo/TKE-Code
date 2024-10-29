@@ -1,0 +1,68 @@
+/* .radio-group {
+    margin-bottom: 1rem; 
+    padding: 1rem;
+} */
+.visibility-visible{
+    padding-left: 10px;
+    visibility: visible;
+}
+.visibility-hidden{
+    padding-left: 10px;
+    visibility: hidden;
+}
+.datetimestyle{
+min-width: 100%;
+-webkit-appearance: none;
+padding-right:50%;
+border:none;
+}
+.iconstyle{
+
+top: 0.3rem;
+right: 0.1rem;
+position: absolute;
+}
+
+.datetimeparentdiv{
+border-radius: var(--slds-c-textarea-radius-border, var(--sds-c-textarea-radius-border, 0.25rem));
+border: 1px solid var(--slds-c-input-color-border, var(--sds-c-input-color-border, var(--slds-g-color-border-base-4, #c9c9c9)));
+}
+.footer {
+  background-color: white;
+    position: relative; /* Ensure it sits above the content */
+    margin: 0px;
+}
+
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1; /* This allows the content area to grow and fill available space */
+    overflow-y: auto; /* Enables vertical scrolling if content exceeds the height */
+    background-color: white;
+}
+
+.slds-border_top {
+    /* Additional styles if needed */
+}
+
+.error {
+    
+/* border-color: var(--slds-c-pill-error-color-border, var(--sds-c-pill-error-color-border, var(--slds-g-color-error-base-40, #ea001e))); */
+border: 0 0 5px rgba(255, 0, 0, 0.5);
+--slds-c-input-shadow: red;
+--slds-c-input-color-border: var(--slds-g-color-error-base-40, #ea001e);
+--slds-c-input-shadow: var(--slds-g-color-error-base-40, #ea001e) 0 0 0 1px inset;
+--slds-c-input-color-background: var(--slds-c-input-color-background, var(--sds-c-input-color-background, var(--slds-g-color-neutral-base-100, #fff)));
+--slds-c-input-text-color: var(--slds-c-input-text-color, var(--sds-c-input-text-color, var(--slds-g-color-neutral-base-10, #747474)));
+box-shadow: 0 0 1px rgba(255, 0, 0, 0.5);
+border: 1px solid var(--slds-g-color-error-base-40, #ea001e);
+}
+
+.errortext{
+   color: var(--slds-g-color-error-base-40, #ea001e)
+}

@@ -1,0 +1,34 @@
+<template>
+    <div class="slds-box slds-theme_shade slds-grid slds-grid_align-spread slds-m-bottom_medium">
+        <p>
+            Review Product details.
+        </p>
+    </div>
+    <div class="slds-m-around_medium">
+        <div>
+            <h1>Product Name</h1><br/>
+            <b>{selectedPriceBookEntryName}</b>
+        </div><br/>
+        <div>
+            <h1>Product Description</h1><br/>
+            <b>{selectedProductDescription}</b>
+        </div><br/>
+        <div>
+            <h1>Asset Selected</h1><br/>
+            <b>{assetListString}</b>
+        </div><br/>
+        <div>
+            <h1>Quantity</h1><br/>
+            <b>{selectedProductQuantity}</b>
+        </div><br/>
+        <p>Need to add more product consumed?</p></br>
+        <lightning-input 
+                type="toggle"
+                label="Add another Product"
+                name="addanotherproduct"
+                onchange={handleAddAnotherProduct}
+                message-toggle-active=""
+                message-toggle-inactive="">
+        </lightning-input>
+    </div>
+</template>

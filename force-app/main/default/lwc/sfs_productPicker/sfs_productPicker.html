@@ -1,0 +1,21 @@
+<template>
+<div class="slds-m-around_medium">
+        <lightning-record-picker
+            class="requiredvalidation"
+            label="Product"
+            placeholder="Search Product..."
+            object-api-name="PricebookEntry"
+            filter={filter}
+            matching-info={matchingInfo}
+            display-info={displayInfo}
+            required
+            value={selectedProductRequestId}
+            onchange={handleProductRequestSelection}>
+        </lightning-record-picker>
+    </div>
+        <slot name="productpickerbody"></slot>
+        <div class="slds-m-around_medium">
+            <lightning-input type="number" value={selectedQuantity}  data-error-message={errorMessage} class="requiredvalidation" required name="inputquanity" label="Quantity" onchange={handleQuantityValueInput}></lightning-input>
+        </div>
+   
+</template>

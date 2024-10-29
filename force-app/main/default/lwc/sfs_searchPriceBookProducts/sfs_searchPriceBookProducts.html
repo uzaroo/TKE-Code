@@ -1,0 +1,65 @@
+<template>
+
+
+    <!-- Search Input Field -->
+    <lightning-input
+        label="Search Products"
+        placeholder="Enter product name"
+        value={searchTerm}
+        onchange={handleSearchChange}>
+    </lightning-input>
+
+  <label> Total Recourd Count:  {recordcount}</label>
+
+    <!-- Product List -->
+
+    <template if:true={products}>
+        <ul>
+            <template for:each={products} for:item="product">
+                <li key={product.Id} class="selectable-item">
+                    <button class="slds-button slds-button_neutral" data-id={product.Id} onclick={handleProductSelect}>
+                        {product.Name.value}
+                    </button>
+                </li>
+            </template>
+        </ul>
+    </template>
+    <template if:true={selectedProduct}>  <label>selected product: {selectedProduct.Name.value}</label></template>
+
+        <!-- <lightning-card title="Search Results">
+            <ul>
+                <template for:each={products} for:item="product">
+                    <li key={product.Id}>
+                        <lightning-formatted-text value={product.Name.value}></lightning-formatted-text>
+                    </li>
+                </template>
+            </ul>
+        </lightning-card>
+     -->
+    </template>
+<!-- <template>
+    <lightning-input
+        label="Search Products"
+        value={searchTerm}
+        onchange={handleSearchChange}
+        placeholder="Type 3-4 words to search">
+    </lightning-input>
+
+    <template if:true={products}>
+        <template for:each={products} for:item="product">
+            <lightning-card
+                key={product.Id}
+                title={product.Name}
+                icon-name="standard:product">
+                <p class="slds-p-horizontal_medium">
+                    <strong>Product Name:</strong> {product.Name}<br/>
+                    <strong>Product Id:</strong> {product.Id}<br/>
+                </p>
+            </lightning-card>
+        </template>
+    </template>
+
+    <template if:true={isSearching}>
+        <p>Searching...</p>
+    </template>
+</template> -->

@@ -1,0 +1,50 @@
+<template>
+    <div class="maincontainer">
+      <div class="content">
+        <template lwc:if={showFirstScreen}>
+          <c-sfs_product-picker onproductrequestchange={handleProductChange}></c-sfs_product-picker>
+          <div if:true={singleAssetWO} class="slds-m-around_medium">
+            <p><strong>Asset</strong></p>
+            <p>{singleAssetName}</p>
+          </div>
+          <div if:false={singleAssetWO} class="slds-m-around_medium">
+            <abbr class="slds-required">*</abbr>
+            <c-sfs_multi-select-picklist multi-select="true" onselectoption={handleSelectOptionList} options={options} selected-values={selectedAssetList} label={assetpicklistlabel}></c-sfs_multi-select-picklist>
+          </div>    
+        </template>
+        <template lwc:if={showSecondScreen}>
+            <c-sfs_product-summary-screen onnewproducttoggle={handleAddAnotherProductConsumed} 
+            selected-price-book-entry-name={selectedPriceBookEntryName} asset-list-string={assetListString} selected-product-quantity={selectedProductQuantity}
+            selected-product-description={selectedProductDescription}></c-sfs_product-summary-screen>
+        </template>     
+      </div>
+      <div class="footer slds-border_top slds-border_bottom">
+        <div class="slds-m-around_small slds-grid slds-grid_align-spread">
+            <lightning-button 
+                class={buttonClass} 
+                variant="base"  
+                label="Back" 
+                title="Back action" 
+                onclick={handleScreenBackClick}>
+            </lightning-button>
+            <template if:true={showNextButton}>
+                <lightning-button 
+                    variant="brand" 
+                    label="Next" 
+                    title="Next action" 
+                    icon-name="utility:chevronright" 
+                    icon-position="right" 
+                    class="slds-p-right_x-small" 
+                    onclick={handleScreenNextClick}>
+                </lightning-button>
+            </template>
+        </div>
+      </div>
+    </div>
+    <c-sfs_toast-message
+    if:true={shouldShowToast}
+    message={toastMessage}
+    type={toastType}
+    onclose={hideToast}
+  ></c-sfs_toast-message>
+</template>

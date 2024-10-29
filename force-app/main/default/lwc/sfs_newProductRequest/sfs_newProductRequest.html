@@ -1,0 +1,316 @@
+<template>
+<!--text First Screen
+Logged in User Id:- {userId}
+Work order id : {currentWorkOrderId}
+Add the Destination Location. If you cannot find the location,select the toggle to add one ad-hoc.-->
+<!-- First Screen -->
+<div class="maincontainer">
+        <div class="content">
+    <template lwc:if={showFirstScreen}>
+        <div class="slds-box slds-theme_shade slds-grid slds-grid_align-spread slds-m-bottom_medium">
+            <p>
+                Add the Destination Location. If you cannot find the location, select the toggle to add one ad-hoc.
+            </p>
+        </div>
+    
+            <template lwc:if={showFirstScreenError}>
+                <label class="slds-m-around_medium" style="color: red;">* Please make one address selection.</label>
+            </template>
+            
+            <!-- Body Content -->
+            <lightning-radio-group
+                name="radioGroup"
+                label="Destination Location"
+                options={addressOptions}
+                value={selectedAddress}
+                required
+                type="radio"
+                onchange={handleSelectAddress}
+                class="slds-box slds-theme_shade slds-m-around_medium">
+            </lightning-radio-group>
+
+            <div class="slds-m-around_medium">
+                <p>
+                    Need to add an ad-hoc location?
+                </p>
+                <lightning-input 
+                    type="toggle"
+                    label="Use Ad-Hoc Location"
+                    name="adHoc"
+                    onchange={handleAdHocLocationToggle}
+                    checked={adHocLocationToggled} 
+                    message-toggle-active=""
+                    message-toggle-inactive="">
+                </lightning-input>
+            </div>
+            
+  
+    </template>
+<!-- Second Screen -->
+<template lwc:if={showSecondScreen}>
+<!-- Show the address selector if adhoc address election toggle is on -->
+    <div class="slds-box slds-theme_shade slds-grid slds-grid_align-spread slds-m-bottom_medium">
+        <p>
+            Add an ad-hoc location by adding the Ship To Address details.
+        </p>
+    </div>
+    <c-sfs_address-Selector addressheader="Ship To Address"></c-sfs_address-Selector>
+</template>
+    <template lwc:if={showThirdScreen}>
+        <div class="slds-box slds-theme_shade slds-grid slds-grid_align-spread slds-m-bottom_medium">
+            <p>
+                Add overall Product Request details
+            </p>
+        </div>
+        <div class="slds-m-around_medium">
+            <p>Destination Location</p><br/>
+            <p>{selectedAddressLocation} <br/>   </p>
+            <template lwc:if={myHomeAddress}>
+
+                <p><b>{srPersonalAddress.UserStreet}</b></p>
+                <p><b>{srPersonalAddress.UserCity}, {srPersonalAddress.UserStateCode} {srPersonalAddress.UserPostalCode}</b></p>
+                
+                <p><b>{srPersonalAddress.UserCountry}</b></p>
+            </template>
+            <template lwc:if={customerLocation}>
+                
+
+                <p><b>{woCustomerLocation.CustomerLocationStreet}</b></p>
+                <p><b>{woCustomerLocation.CustomerLocationCity}, {woCustomerLocation.CustomerLocationStateCode} {woCustomerLocation.CustomerLocationPostalCode}</b></p>
+                
+                <p><b>{woCustomerLocation.CustomerLocationCountryCode}</b></p>
+                                        
+                
+            </template>
+            <template lwc:if={officeLocation}>
+                <p><b>{woOfficeLocation.TKELocationStreet}</b></p>
+                <p><b>{woOfficeLocation.TKELocationCity}, {woOfficeLocation.TKELocationStateCode} {woOfficeLocation.TKELocationPostalCode}</b></p>
+                
+                <p><b>{woOfficeLocation.TKELocationCountryCode}</b></p>
+                <!-- add the address paramewters -->
+            </template>
+            <template lwc:if={dropShipLocation}>
+                
+                <p><b>{srPersonalAddress.DropShipStreet}</b></p>
+                <p><b>{srPersonalAddress.DropShipCity}, {srPersonalAddress.DropShipStateCode} {srPersonalAddress.DropShipPostalCode}</b></p>
+
+                <p><b>{srPersonalAddress.DropShipCountryCode}</b></p>
+            
+            </template>
+            <template lwc:if={adHocLocationToggled}>
+                <p><b>{adHocStreet}</b></p>
+                <p><b>{adHocCity}, {adHocStateCode} {adHocZipPostalCode}</b></p>
+                
+                <p><b>{adHocCountry}</b></p>
+            </template>
+        </div>
+          
+            <lightning-combobox 
+                name="progress" 
+                class="custom-combobox requiredvalidation slds-m-around_medium"
+                label="Shipment type"
+                value={selectedShipmentType}
+                options={shipmentTypeOptions}
+                onchange={handleShipmentTypeChange}
+                required>
+            </lightning-combobox>
+         <template lwc:if={mobileview}>
+            <div class="slds-form-element slds-m-around_medium">
+                <abbr class="slds-required"  title="required">*</abbr>
+                <label class="slds-form-element__label">Need By Date</label>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right datetimeparentdiv">
+                     <lightning-icon icon-name="utility:date_time" class="iconstyle"></lightning-icon>
+                     <!-- <lightning-input  type="datetime" name="needByDate"  onchange={handleNeedByDateChange} label="Need By Date"></lightning-input> -->
+                  <input type="datetime-local" value={needByDateValue}  id="needByDate" required class="slds-input datetimestyle requiredvalidation" onchange={handleNeedByDateChange} placeholder="Enter a date/time value"/>
+                
+                </div>
+                <div if:true={datetimeerrormsg} class="slds-form-element__help errortext" id="help-text-23" data-help-text="" role="status">Complete this field.</div>
+              </div>
+         </template>
+   <template lwc:else>
+    <lightning-input class="slds-m-around_medium" value={needByDateValue} type="datetime" name="needByDate"  onchange={handleNeedByDateChange} label="Need By Date"></lightning-input>
+   </template>
+    </template>
+    
+
+    <template lwc:if={showFourthScreen}>
+        <div class="slds-box slds-theme_shade slds-grid slds-grid_align-spread slds-m-bottom_medium">
+            <p>
+                Add the Products to be included in the product request. If you cannot find the product, select the Product ID Request Needed toggle.
+            </p>
+        </div>
+        <div class="slds-m-around_medium">
+            <p>Destination Location</p><br/>
+            <p>{selectedAddressLocation} <br/>   </p>
+            <template lwc:if={myHomeAddress}>
+
+                <p><b>{srPersonalAddress.UserStreet}</b></p>
+                <p><b>{srPersonalAddress.UserCity}, {srPersonalAddress.UserStateCode} {srPersonalAddress.UserPostalCode}</b></p>
+                
+                <p><b>{srPersonalAddress.UserCountry}</b></p>
+            </template>
+            <template lwc:if={customerLocation}>
+                
+
+                <p><b>{woCustomerLocation.CustomerLocationStreet}</b></p>
+                <p><b>{woCustomerLocation.CustomerLocationCity}, {woCustomerLocation.CustomerLocationStateCode} {woCustomerLocation.CustomerLocationPostalCode}</b></p>
+                
+                <p><b>{woCustomerLocation.CustomerLocationCountryCode}</b></p>
+                                        
+                
+            </template>
+            <template lwc:if={officeLocation}>
+                <p><b>{woOfficeLocation.TKELocationStreet}</b></p>
+                <p><b>{woOfficeLocation.TKELocationCity}, {woOfficeLocation.TKELocationStateCode} {woOfficeLocation.TKELocationPostalCode}</b></p>
+                
+                <p><b>{woOfficeLocation.TKELocationCountryCode}</b></p>
+                <!-- add the address paramewters -->
+            </template>
+            <template lwc:if={dropShipLocation}>
+                
+                <p><b>{srPersonalAddress.DropShipStreet}</b></p>
+                <p><b>{srPersonalAddress.DropShipCity}, {srPersonalAddress.DropShipStateCode} {srPersonalAddress.DropShipPostalCode}</b></p>
+
+                <p><b>{srPersonalAddress.DropShipCountryCode}</b></p>
+            
+            </template>
+            <template lwc:if={adHocLocationToggled}>
+                <p><b>{adHocStreet}</b></p>
+                <p><b>{adHocCity}, {adHocStateCode} {adHocZipPostalCode}</b></p>
+                
+                <p><b>{adHocCountry}</b></p>
+            </template>
+            
+ </div>
+            <c-sfs_product-picker onproductrequestchange={handleProductRequestChange} >
+                <div slot="productpickerbody">
+                    <div class="slds-m-around_medium ">
+                        <p>
+                            <strong>Need help with finding a Product?</strong>
+                        </p>
+                    </div>
+                    <!-- disabled -->
+                    <div class="slds-m-around_medium">
+                        <lightning-input 
+                            type="toggle"
+                            label="Product Id request needed"
+                            name="productidrequest"
+                            onchange={handleChangeProductIdRequest}>
+                        </lightning-input>
+                    </div>
+                </div>
+            </c-sfs_product-picker>
+            <div if:true={singleAssetWO} class="slds-m-around_medium">
+                <p>
+                    <strong>Asset</strong>
+                </p>
+                <p>
+                  {SingleAssetName}
+                </p>
+             
+        </div>
+        <div if:false={singleAssetWO} class="slds-m-around_medium">
+            <abbr class="slds-required">*</abbr>
+            <c-sfs_multi-select-picklist multi-select="true" onselectoption={handleSelectOptionList} options={options} selected-values={selectedAssetList} label={assetpicklistlabel}></c-sfs_multi-select-picklist>
+     
+    </div>
+
+    </template>
+    <template lwc:if={showFifthScreen}>
+        <div class="slds-box slds-theme_shade slds-grid slds-grid_align-spread slds-m-bottom_medium">
+            <p>
+                Add as many details as possible to help identify the product.
+            </p>
+        </div>
+
+        <c-sfs_new-product-id-request onallimagesdata={handleGetImageUploaded}></c-sfs_new-product-id-request>
+        </template>
+
+ 
+
+    <template lwc:if={showReviewScreen}>
+        <div class="slds-box slds-theme_shade slds-grid slds-grid_align-spread slds-m-bottom_medium">
+            <p>
+                Review Product details.
+            </p>
+        </div>
+
+            <div class="slds-m-around_medium">
+                <p><label>Need to add more?</label></p>
+            </div>
+            <div class="slds-m-around_medium">
+                <lightning-input 
+                    type="toggle"
+                    label="Add another Product"
+                    name="addanotherproduct"
+                    onchange={handleAddAnotherProductRequest}
+                    message-toggle-active=""
+                    message-toggle-inactive="">
+                </lightning-input>
+            </div>
+            <template lwc:if={productIdRequestToggled}>
+                <div class="slds-m-around_medium">
+                    <div class="slds-m-bottom_small">
+                        <div class="">Quantity</div>
+                        <div>{productIdRequestQuantity}</div>
+                    </div>
+                    <div class="slds-m-bottom_small">
+                        <div class="">Product Description</div>
+                        <div>{productIdRequestDescription}</div>
+                    </div>
+                    <div class="slds-m-bottom_small">
+                        <div class="">Product Usage Location</div>
+                        <div>{productIdRequestUsageLocation}</div>
+                    </div>
+                    <div class="slds-m-bottom_small">
+                        <div class="">Vendor Markings</div>
+                        <div>{productIdRequestVendorMarkings}</div>
+                    </div>
+                    <div class="slds-m-bottom_small">
+                        <div class="">Manufacturer</div>
+                        <div>{productIdRequestManufacturer}</div>
+                    </div>
+                </div>
+            </template>
+            <template lwc:else>
+                <div class="slds-m-around_medium">
+                    <p><strong>Added Product</strong></p>
+                    <p>Product</p>
+                    <p>
+                        <label>{selectedRecordName}</label>
+                    </p>
+                </div>
+                <div class="slds-m-around_medium">
+                    <p><label>Quantity</label></p>
+                    <p><label>{selectedProductRequestQuantity}</label></p>
+                </div>
+            </template>
+           
+     
+    </template>
+</div>
+<div class="footer slds-border_top slds-border_bottom">
+    <div class="slds-m-around_small slds-grid slds-grid_align-spread">
+        <lightning-button 
+            class={buttonClass} 
+            variant="base"  
+            label="Back" 
+            title="Back action" 
+            onclick={handleScreenBackClick}>
+        </lightning-button>
+
+        <template if:true={showNextButton}>
+            <lightning-button 
+                variant="brand" 
+                label="Next" 
+                title="Next action" 
+                icon-name="utility:chevronright" 
+                icon-position="right" 
+                class="slds-p-right_x-small" 
+                onclick={handleScreenNextClick}>
+            </lightning-button>
+        </template>
+    </div>
+</div>
+</div>
+</template>

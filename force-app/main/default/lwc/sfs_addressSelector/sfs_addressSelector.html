@@ -1,0 +1,69 @@
+<template>
+        <div class="slds-m-around_medium"><b><lightning-formatted-text value={addressheader} class="slds-p-bottom_x-small" ></lightning-formatted-text></b>
+        </div>
+
+        <lightning-combobox
+            label="Country"
+            name="country"
+            value={countryCode}
+            options={countryCodes}
+            onchange={handleFieldChange}
+            required
+            class="custom-combobox requiredvalidation slds-m-around_medium">
+        </lightning-combobox>
+
+        <!-- Street Field -->
+
+            <lightning-textarea
+            label="Address"
+            name="street"
+            onchange={handleFieldChange}
+            value={street}
+            maxlength="255"
+            class="requiredvalidation slds-m-around_medium"
+            required>
+        </lightning-textarea>
+
+        <!-- City Field -->
+
+            <lightning-input
+            label="City"
+            name="city"
+            value={city}
+            maxlength="40"
+            type="text"
+            required
+            onchange={handleFieldChange}
+            class="requiredvalidation slds-m-around_medium"
+            >
+        </lightning-input>
+
+        <!-- Dependent States -->
+
+            <lightning-combobox
+            label="State/Province"
+            name="state"
+            value={stateCode}
+            options={stateCodeOptions}
+            onchange={handleFieldChange}
+            required
+            class="requiredvalidation slds-m-around_medium"
+            >
+        </lightning-combobox>
+ 
+
+        <!-- Zip/Postal Code Field -->
+     
+            <lightning-input
+            label="Zip/Postal Code"
+            name="zipPostalCode"
+            value={zipPostalCode}
+            maxlength="10"
+            type="text"
+            required
+            onchange={handleFieldChange}
+            class="requiredvalidation slds-m-around_medium"
+            >
+        </lightning-input>
+
+</template>
